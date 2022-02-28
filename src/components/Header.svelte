@@ -11,7 +11,7 @@
   <div class="buttons">
     <div>
       <a href="../">
-        <img src="../../static/icon_x32.png" alt="Logo" style="width: 30px;object-fit: contain;" />
+        <img src="./icon_x32.png" alt="Logo" style="width: 30px;object-fit: contain;" />
         FreeShow
       </a>
     </div>

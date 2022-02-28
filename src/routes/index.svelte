@@ -54,13 +54,13 @@
   <Header {top} />
 
   {#if preview}
-    <Fullscreen src="../../static/preview/v0.0.1.png" alt="Preview of program" bind:preview />
+    <Fullscreen src="./preview/v0.0.1.png" alt="Preview of program" bind:preview />
   {/if}
 
   <Section style="height: 100vh;justify-content: center;flex-direction: row;position: relative;">
     <Overlay color="#2d313b">
-      <!-- <img src="../../static/preview/v0.0.1.png" alt="Preview of program" /> -->
-      <img src="../../static/preview/program_mac.jpg" alt="Preview og program on computer" />
+      <!-- <img src="./preview/v0.0.1.png" alt="Preview of program" /> -->
+      <img src="./preview/program_mac.jpg" alt="Preview og program on computer" />
     </Overlay>
     <div style="z-index: 1;display: flex;flex-direction: column;align-self: center;">
       <h1 class="title">FreeShow</h1>
@@ -88,7 +88,7 @@
       </div>
     </div>
     <!-- <div>
-      <img src="../../static/preview/program_mac.jpg" alt="Preview og program on computer" />
+      <img src="./preview/program_mac.jpg" alt="Preview og program on computer" />
     </div> -->
   </Section>
 
@@ -97,7 +97,7 @@
   <Section>
     <h2>Preview</h2>
     <div on:click={() => (preview = true)}>
-      <img src="../../static/preview/v0.0.1.png" alt="Preview of program" />
+      <img src="./preview/v0.0.1.png" alt="Preview of program" />
     </div>
   </Section>
 
