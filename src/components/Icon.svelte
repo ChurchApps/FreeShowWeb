@@ -7,7 +7,7 @@
   $: icon = icons[id]
 </script>
 
-<svg class:white xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 {24 * size} {24 * size}" width="24px" fill="#000000">{@html icon}</svg>
+<svg class:white xmlns="http://www.w3.org/2000/svg" height="{24 * size}px" viewBox="0 0 24 24" width="{24 * size}px" fill="#000000">{@html icon}</svg>
 
 <style>
   svg {

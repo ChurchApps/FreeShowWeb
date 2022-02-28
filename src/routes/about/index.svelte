@@ -1,11 +1,20 @@
-<script>
+<script lang="ts">
   import Footer from "../../components/Footer.svelte"
   import Header from "../../components/Header.svelte"
   import Section from "../../components/Section.svelte"
+
+  // header scroll
+  let top: boolean = true
+  function scroll() {
+    if (window.scrollY === 0) top = true
+    else top = false
+  }
 </script>
 
+<svelte:window on:scroll={scroll} />
+
 <main>
-  <Header />
+  <Header {top} />
 
   <Section>Created by Kristoffer Vassbø</Section>
 

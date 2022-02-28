@@ -5,6 +5,7 @@
   class:outline={$$props.outline}
   class:big={$$props.big}
   class:center={$$props.center}
+  tabindex={$$props.tabindex}
 >
   <slot />
 </button>
@@ -20,6 +21,7 @@
     display: flex;
     gap: 10px;
     align-items: center;
+    transition: background-color 0.3s;
   }
   button:hover:not(button:disabled) {
     background-color: var(--hover);
@@ -35,17 +37,21 @@
   button.colored {
     background-color: var(--secondary);
   }
-  button.colored:hover {
+  button.colored:hover:not(button:disabled) {
     background-color: var(--secondary-opacity);
   }
-  button.colored:active {
+  button.colored:active:not(button:disabled) {
     background-color: var(--secondary-opacity);
     opacity: 0.8;
   }
 
   button.outline {
-    /* border: 2px solid var(--secondary); */
-    color: var(--secondary);
+    border: 4px solid var(--secondary);
+    background-color: transparent;
+    background-color: var(--secondary-opacity);
+  }
+  button.outline:hover:not(button:disabled) {
+    background-color: var(--secondary);
   }
 
   button.big {

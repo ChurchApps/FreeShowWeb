@@ -47,7 +47,15 @@
           <Button style="width: 100%;">
             <div style="flex: 1;">
               <span>
-                <Icon id="download" />
+                {#if asset.name.includes("mac") || asset.name.includes(".dmg")}
+                  <Icon id="mac" />
+                {:else if asset.name.includes("linux") || asset.name.includes(".AppImage") || asset.name.includes(".deb")}
+                  <Icon id="linux" />
+                {:else if asset.name.includes("windows") || asset.name.includes(".exe")}
+                  <Icon id="windows" />
+                {:else}
+                  <Icon id="download" />
+                {/if}
               </span>
               <span class="name">
                 {asset.name}

@@ -6,7 +6,7 @@ export function getOS(): string {
     iosPlatforms: string[] = ["iPhone", "iPad", "iPod"],
     os: string | null = null
 
-  if (macosPlatforms.indexOf(platform) !== -1) os = "MacOS"
+  if (macosPlatforms.indexOf(platform) !== -1) os = "Mac"
   else if (iosPlatforms.indexOf(platform) !== -1) os = "iOS"
   else if (windowsPlatforms.indexOf(platform) !== -1) os = "Windows"
   else if (/Android/.test(userAgent)) os = "Android"

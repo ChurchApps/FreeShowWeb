@@ -1,14 +1,19 @@
-<script>
+<script lang="ts">
   import Icon from "./Icon.svelte"
+
+  export let top: boolean
 </script>
 
-<header>
+<header class:top>
   <div class="menu">
     <Icon id="menu" white />
   </div>
   <div class="buttons">
     <div>
-      <a href="../">FreeShow</a>
+      <a href="../">
+        <img src="../../static/icon_x32.png" alt="Logo" style="width: 30px;object-fit: contain;" />
+        FreeShow
+      </a>
     </div>
     <div>
       <a href="../downloads">
@@ -29,12 +34,24 @@
 </header>
 
 <style>
+  header {
+    position: fixed;
+    /* top: 0; */
+    z-index: 10;
+  }
+
+  header.top,
+  header.top .buttons {
+    background-color: transparent;
+  }
+
   header,
   .buttons {
     width: 100%;
     display: flex;
     flex-direction: column;
     background-color: var(--primary);
+    transition: background-color 0.3s;
   }
   .buttons {
     display: none;
@@ -62,7 +79,7 @@
   }
 
   a {
-    padding: 10px;
+    padding: 18px 14px;
     color: var(--text);
     text-decoration: none;
 
