@@ -16,7 +16,13 @@
 <main>
   <Header {top} />
 
-  <Section>Created by Kristoffer Vassbø</Section>
+  <Section style="padding-top: 60px;">
+    Media comming soon...
+    <br />
+    <br />
+    Want to give media content:
+    <a href="mailto:dev@freeshow.app" title="Send media" style="color: white;">dev@freeshow.app</a>
+  </Section>
 
   <Footer />
 </main>
@@ -45,7 +51,6 @@
   }
 
   main {
-    width: 100vw;
     height: 100vh;
     background-color: var(--primary);
     color: var(--text);

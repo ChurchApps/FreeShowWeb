@@ -21,7 +21,7 @@
 
   @media only screen and (min-width: 1000px) {
     section {
-      padding: 20px 300px;
+      padding: 20px 200px;
     }
   }
 </style>

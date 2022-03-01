@@ -32,7 +32,7 @@
   }
 </script>
 
-<main>
+<main style="padding-top: 60px;min-height: 100%;">
   {#if data}
     <div style="padding: 20px;">
       <h2 on:dblclick={() => (counter = !counter)}>{data.tag_name}</h2>

@@ -16,7 +16,9 @@
 <main>
   <Header {top} />
 
-  <Section>comming...</Section>
+  <Section style="padding-top: 60px;">Comming... ;)</Section>
+
+  <!-- FreeShow Guides, Tutorials -->
 
   <Footer />
 </main>
@@ -45,7 +47,6 @@
   }
 
   main {
-    width: 100vw;
     height: 100vh;
     background-color: var(--primary);
     color: var(--text);

@@ -38,7 +38,7 @@
     downloadURL = data.assets.find((a) => a.name.includes(extensions[os]))?.browser_download_url || ""
   }
 
-  export let preview: boolean = false
+  export let preview: null | string = null
 
   // header scroll
   let top: boolean = true
@@ -54,7 +54,7 @@
   <Header {top} />
 
   {#if preview}
-    <Fullscreen src="./preview/v0.0.1.png" alt="Preview of program" bind:preview />
+    <Fullscreen src="./preview/{preview}.png" alt="Preview of program" bind:preview />
   {/if}
 
   <Section style="height: 100vh;justify-content: center;flex-direction: row;position: relative;">
@@ -62,7 +62,7 @@
       <!-- <img src="./preview/v0.0.1.png" alt="Preview of program" /> -->
       <img src="./preview/program_mac.jpg" alt="Preview og program on computer" />
     </Overlay>
-    <div style="z-index: 1;display: flex;flex-direction: column;align-self: center;">
+    <div class="main">
       <h1 class="title">FreeShow</h1>
       <p>A free and <a href="https://github.com/vassbo/freeshow" target="_blank" title="View Source Code on GitHub">open source</a> presenter for anyone to use with ease.</p>
       <br />
@@ -96,15 +96,89 @@
 
   <Section>
     <h2>Preview</h2>
-    <div on:click={() => (preview = true)}>
-      <img src="./preview/v0.0.1.png" alt="Preview of program" />
+    <div class="previews">
+      <div>
+        <span>
+          <h3>Show</h3>
+          <p>Create a show for a song, or a slideshow or some information. Add slides and arrange them, or disable them. Preview slides and have full control over the output.</p>
+        </span>
+        <img on:click={() => (preview = "show")} src="./preview/show.png" alt="Show" />
+      </div>
+      <hr />
+      <div>
+        <span>
+          <h3>Edit</h3>
+          <p>A powerful editor. Resize text, change font family or color, and much more. The posibilities are endless (almost)!</p>
+        </span>
+        <img on:click={() => (preview = "edit")} src="./preview/edit.png" alt="Edit" />
+      </div>
+      <hr />
+      <div>
+        <span>
+          <h3>Stage</h3>
+          <p>
+            Create and edit multiple stage views. Add current and next slide, or a countdown timer. Anyone on the same WiFi can connect from the browser and choose a view, or you
+            can disable or add a password to a view.
+          </p>
+        </span>
+        <img on:click={() => (preview = "stage")} src="./preview/stage.png" alt="Stage" />
+      </div>
+      <hr />
+      <div>
+        <span>
+          <h3>Draw</h3>
+          <p>Highlight your slides while presenting, or draw on them.</p>
+        </span>
+        <img on:click={() => (preview = "draw")} src="./preview/draw.png" alt="Draw" />
+      </div>
+      <hr />
+      <div>
+        <span>
+          <h3>Calendar</h3>
+          <p>A calendar for all your events, select dates and create a show with info about upcomming events. Or schedule shows to play, or timers to start (TBA).</p>
+        </span>
+        <img on:click={() => (preview = "calendar")} src="./preview/calendar.png" alt="Calendar" />
+      </div>
+      <!-- groups -->
+      <hr />
+      <div>
+        <span>
+          <h3>Media</h3>
+          <p>Show images/videos and add them to slides</p>
+        </span>
+        <img on:click={() => (preview = "media")} src="./preview/media.png" alt="Media" />
+      </div>
+      <hr />
+      <div>
+        <span>
+          <h3>Stage View</h3>
+          <p>Setup stage views on any device.</p>
+        </span>
+        <img on:click={() => (preview = "stage_view")} src="./preview/stage_view.png" alt="Stage View" />
+      </div>
+      <hr />
+      <div>
+        <span>
+          <h3>Remote</h3>
+          <p>Control your project from your phone</p>
+        </span>
+        <img on:click={() => (preview = "remote")} src="./preview/remote.png" alt="Remote" />
+      </div>
+      <hr />
+      <div>
+        <span>
+          <h3>Lyrics</h3>
+          <p>View live lyrics from the current show.</p>
+        </span>
+        <img on:click={() => (preview = "lyrics")} src="./preview/lyrics.png" alt="Lyrics" />
+      </div>
     </div>
   </Section>
 
   <hr />
 
   <Section>
-    <h2>Features</h2>
+    <h2>Features (WIP)</h2>
     <Features />
   </Section>
 
@@ -112,7 +186,10 @@
 
   <Section>
     <h2>It's free!</h2>
-    Why free? Trustworthy? Donate!?
+    Yes you heard it right. It's free for everyone to use anywhere. Becuase I thought all the "good" alternatives was way too expensive and some was lacking some essential features.
+    <br />
+    What are you waiting for? Download it and try it out!
+    <!-- Why free? Trustworthy? Donate!? -->
   </Section>
 
   <Footer />
@@ -155,7 +232,8 @@
   }
 
   h1,
-  h2 {
+  h2,
+  h3 {
     color: var(--secondary);
     text-align: center;
   }
@@ -173,23 +251,6 @@
     color: var(--secondary);
   } */
 
-  @media only screen and (min-width: 800px) {
-    h1,
-    h2 {
-      text-align: initial;
-    }
-
-    h1 {
-      font-size: 5em;
-    }
-  }
-
-  @media only screen and (min-width: 1200px) {
-    h1 {
-      font-size: 8em;
-    }
-  }
-
   img {
     width: 100%;
     height: 100%;
@@ -202,6 +263,14 @@
     background-color: var(--primary-darker);
     width: 100%;
     border: none;
+  }
+
+  .main {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 100%;
   }
 
   a {
@@ -218,5 +287,54 @@
   .link {
     color: var(--text);
     text-decoration: none;
+  }
+
+  /* previews */
+  .previews {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .previews div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .previews span,
+  .previews img {
+    max-height: 300px;
+    object-fit: contain;
+  }
+
+  /* media */
+
+  @media only screen and (min-width: 800px) {
+    h1,
+    h2 {
+      text-align: initial;
+    }
+
+    h1 {
+      font-size: 5em;
+    }
+
+    .previews div {
+      flex-direction: row;
+    }
+    .previews span,
+    .previews img {
+      width: 50%;
+    }
+
+    .main {
+      width: initial;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    h1 {
+      font-size: 8em;
+    }
   }
 </style>

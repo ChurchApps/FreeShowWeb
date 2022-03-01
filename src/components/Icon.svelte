@@ -12,6 +12,7 @@
 <style>
   svg {
     fill: var(--secondary);
+    display: flex;
   }
   svg.white {
     fill: var(--text);

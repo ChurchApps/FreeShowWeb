@@ -9,8 +9,16 @@
     <div>
       <!-- social media -->
       <!-- email -->
-      <a href="mailto:kristoffervassbo@gmail.com" title="Send mail">kristoffervassbo@gmail.com</a>
+      <span>
+        <p>Send feedback to:</p>
+        <a href="mailto:dev@freeshow.app" title="Send mail">dev@freeshow.app</a>
+      </span>
       <!-- phone number -->
+      <!-- github -->
+      <span>
+        <p>Report a bug or request a feature on:</p>
+        <a href="https://github.com/vassbo/freeshow/issues" target="_blank">GitHub Issues</a>
+      </span>
     </div>
     <div style="flex-direction: column;">
       <!-- form -->
@@ -45,33 +53,19 @@
   }
   footer div {
     display: flex;
+    flex-direction: column;
   }
 
   .footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 20px;
   }
 
   .copy {
     align-self: center;
     opacity: 0.5;
-  }
-
-  @media only screen and (min-width: 600px) {
-    .footer {
-      flex-direction: row;
-    }
-
-    .footer div {
-      flex-direction: column;
-    }
-  }
-
-  @media only screen and (min-width: 1000px) {
-    footer {
-      padding: 20px 300px;
-    }
   }
 
   a {
@@ -95,6 +89,13 @@
     align-items: center;
   }
 
+  footer div span {
+    display: flex;
+    gap: 10px;
+  }
+
+  /* form */
+
   input,
   textarea,
   button {
@@ -107,6 +108,7 @@
     font-size: inherit;
     font-family: inherit;
     transition: background-color 0.3s;
+    width: 100%;
   }
   input:hover {
     background-color: rgb(255 255 255 / 0.1);
@@ -120,5 +122,23 @@
   }
   button:hover {
     background-color: var(--secondary);
+  }
+
+  /* media */
+
+  @media only screen and (min-width: 600px) {
+    .footer {
+      flex-direction: row;
+    }
+
+    /* .footer div {
+      flex-direction: column;
+    } */
+  }
+
+  @media only screen and (min-width: 1000px) {
+    footer {
+      padding: 20px 300px;
+    }
   }
 </style>

@@ -1,9 +1,10 @@
 <script lang="ts">
-  export let preview: boolean
+  import { scale, fade } from "svelte/transition"
+  export let preview: string | null
 </script>
 
-<div class="overlay" on:click={() => (preview = false)}>
-  <img src={$$props.src} alt={$$props.alt || ""} />
+<div class="overlay" on:click={() => (preview = null)} transition:fade={{ duration: 100 }}>
+  <img src={$$props.src} alt={$$props.alt || ""} transition:scale={{ duration: 200 }} />
 </div>
 
 <style>
@@ -17,9 +18,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 20;
   }
 
   img {
     width: 100%;
+    height: 100%;
+    object-fit: contain;
+    user-select: none;
   }
 </style>
