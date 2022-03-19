@@ -1,4 +1,4 @@
-<section style={$$props.style || null}>
+<section class={$$props.class} style={$$props.style || null}>
   <slot />
 </section>
 

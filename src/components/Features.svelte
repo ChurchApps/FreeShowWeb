@@ -1,18 +1,23 @@
 <ul>
-  <li>Create slides</li>
-  <li>Projects</li>
-  <li>Media</li>
-  <li>Audio</li>
-  <li>Output to screen</li>
-  <li>Transitions</li>
-  <li>Layouts + Groups</li>
-  <li>Overlays</li>
-  <li>Templates</li>
-  <li>Stage</li>
-  <li>Remote</li>
-  <li>Mirror screen</li>
-  <li>Webcam</li>
-  <li>Player</li>
-  <li>Calendar</li>
-  <li>Edit!</li>
+  <li><b>CMG Sans:</b> Includes a beautiful font by Church Motion Graphics.</li>
+  <li><b>Projects:</b> Project manager inside the application.</li>
+  <li><b>Countdowns:</b> Add custom countdown timers.</li>
+  <li><b>Backgrounds:</b> Add backgrounds to your slides to make them stand out.</li>
+  <li><b>Overlays:</b> Have as many overlays as you want on top of the main text.</li>
+  <li><b>Templates:</b> Add templates to quickly change the style of shows.</li>
+  <li><b>Live:</b> Mirror any screen or program on the computer to the output screen.</li>
+  <li><b>Player:</b> Play YouTube videos directly in the program. More platforms comming...</li>
+  <li><b>Audio:</b> Play one or more audio tracks, and link them to your slides. (TBA)</li>
+  <li><b>Lock Output:</b> Lock the output to know for sure that you can't accidentally change the output.</li>
+  <li><b>Transitions:</b> Add custom transitions for all your shows.</li>
+  <!-- <li>Webcam: Remote webcam from your phone</li> -->
 </ul>
+
+<style>
+  ul {
+    list-style: inside;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+</style>

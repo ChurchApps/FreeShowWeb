@@ -2,13 +2,14 @@
   import Icon from "./Icon.svelte"
 
   export let top: boolean
+  export let path: string = "./"
 </script>
 
 <header class:top>
   <div class="menu">
     <div>
       <a href="../" style="padding: 4px;">
-        <img src="./icon_x32.png" alt="Logo" style="width: 30px;object-fit: contain;" />
+        <img src={`${path}icon_x32.png`} alt="Logo" style="width: 30px;object-fit: contain;" />
         FreeShow
       </a>
     </div>
@@ -19,7 +20,7 @@
   <div class="buttons">
     <div class="hide">
       <a href="../">
-        <img src="./icon_x32.png" alt="Logo" style="width: 30px;object-fit: contain;" />
+        <img src={`${path}icon_x32.png`} alt="Logo" style="width: 30px;object-fit: contain;" />
         FreeShow
       </a>
     </div>
@@ -145,10 +146,15 @@
     }
   }
 
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: 800px) {
+    header {
+      padding: 0 100px;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
     header {
       padding: 0 300px;
-      /* flex-direction: row; */
     }
   }
 </style>

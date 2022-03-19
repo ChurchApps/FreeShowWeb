@@ -11,6 +11,10 @@
   }
 </script>
 
+<svelte:head>
+  <title>FreeShow | Downloads</title>
+</svelte:head>
+
 <svelte:window on:scroll={scroll} />
 
 <main>

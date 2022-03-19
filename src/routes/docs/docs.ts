@@ -1,0 +1,17 @@
+export const docs: any = {
+  start: {
+    title: "Get started",
+    content:
+      'Thank you for choosing FreeShow. Follow the next steps if you want to install the program.<br>Please note that I have not purchased any code signing keys yet (about $100/year for each platform), so you will be prompted with a warning when installing on Windows/Mac as for now.<br><br>Install on Windows:<br>Double-click on the .exe file, then click "More info", then "Run anyway". Then you are good to go.<br><br>Install on Mac OS:<br>Right-click on the .dmg file, click "Open". When promted click "Open" again. Then you should be good to go.<br><br>Install on Linux:<br>Right-click the .AppImage file, choose "Properties", go to "Permissions", and check the box that says "Allow executing file as program", then double-click the file and you should be good to go!',
+  },
+  tips: {
+    title: "Tips & Tricks",
+    content:
+      '- Add backgrounds to your slide to make them stand out<br>- Remove unwanted punctuations, like dots (.) and commas (,) at the end of lines<br>- Capitalize the first letter on each line<br>- Divide and add more breaks to the song to make it feel less cluttered and messy. Shorter lines of text makes the song feel less "heavy" to sing.<br>- Practice is key. Making mistakes is normal, everybody does it, the more you do something the better you become.',
+  },
+  show: {
+    title: "How to show lyrics in church",
+    content:
+      "Showing text on a screen should be easy to read and follow along and can be pretty.<br>When showing text, there are many factors to count for, like how big is the screen, who are the audience.<br><br>Let's start with the basics:<br>Your text should should be clear, meaning you should center the text and remove unwanted punctuations like dots and exclamation marks. You should also try to keep a maximum of 5 lines. Meaning if your verse is longer that that tou should divide it.<br><br>Backgrounds are key:<br>Use matching backgrounds, preferable with suttle movements, but don't let the background distract from the main show.<br><br>Customize for your audience:<br>If you have an old audience you should keep a high contrast between the text and the background. A good tip is to add a black background behind just the text, which means you can have any background, and an easy to read text.<br><br>Font:<br>The font you use could be day/night difference, the letters should not be clumped together and you can use bold text to make it easier to read. I recommend CMG Sans, or Tahoma.<br><br>Simple:<br>I have noticed people using \"(x4)\" at the end of some slides, which would seem like a simple way. But it's bad, because both you and the audience \"have to count\" which could be distracting, and there is a possibility you could miscount, or the numbers could be wrong. It's much better to repeat the same slide in your layout, which is easy to do in FreeShow. Meaning you always know where you are in the lyrics.<br><br>Be early:<br>It's much better to switch slides one or two words before the next line, because people read and remember it unconsciously, and they then have time to read the first word on the new slide.<br><br>Breaks:<br>If there is a long break, or outro in a song you should remove the text and keep only the background. Of course you will have to remember how long the break lasts, you can use notes to help. Because if you can do that, the audience gets a much nicer experience, and they can know that they are supposed to sing at that moment.",
+  },
+}

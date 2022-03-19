@@ -65,6 +65,7 @@
 
   .copy {
     align-self: center;
+    text-align: center;
     opacity: 0.5;
   }
 

@@ -11,12 +11,16 @@
   }
 </script>
 
+<svelte:head>
+  <title>FreeShow | Media</title>
+</svelte:head>
+
 <svelte:window on:scroll={scroll} />
 
 <main>
   <Header {top} />
 
-  <Section style="padding-top: 60px;">
+  <Section style="min-height: 100%;padding-top: 60px;">
     Media comming soon...
     <br />
     <br />

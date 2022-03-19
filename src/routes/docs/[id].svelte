@@ -1,7 +1,9 @@
 <script lang="ts">
-  import Section from "../../components/Section.svelte"
+  import { page } from "$app/stores"
   import Footer from "../../components/Footer.svelte"
   import Header from "../../components/Header.svelte"
+  import Section from "../../components/Section.svelte"
+  import { docs } from "./docs"
   import Sidebar from "./Sidebar.svelte"
 
   // header scroll
@@ -10,22 +12,27 @@
     if (window.scrollY === 0) top = true
     else top = false
   }
+
+  $: id = $page.params.id
 </script>
 
 <svelte:head>
-  <title>FreeShow | Docs</title>
+  <title>FreeShow | Docs - {docs[id]?.title || ""}</title>
 </svelte:head>
 
 <svelte:window on:scroll={scroll} />
 
 <main>
-  <Header {top} />
+  <Header {top} path="../" />
 
-  <Section style="min-height: 100%;padding-top: 60px;align-items: center;">
+  <Section class="main" style="min-height: 100%;gap: 30px;padding-top: 60px;">
     <Sidebar />
-  </Section>
 
-  <!-- FreeShow Guides, Tutorials -->
+    <div>
+      <h2>{docs[id]?.title}</h2>
+      {@html docs[id]?.content}
+    </div>
+  </Section>
 
   <Footer />
 </main>
@@ -59,5 +66,11 @@
     color: var(--text);
     font-family: Roboto, "Segoe UI", Tahoma, sans-serif;
     font-size: 1.2em;
+  }
+
+  @media only screen and (min-width: 800px) {
+    main :global(.main) {
+      flex-direction: row;
+    }
   }
 </style>
