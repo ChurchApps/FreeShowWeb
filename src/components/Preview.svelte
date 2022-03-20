@@ -6,7 +6,7 @@
 </script>
 
 {#if preview}
-  <Fullscreen src="./preview/{preview}.png" alt="Preview of program" bind:preview />
+  <Fullscreen src="./preview/{preview}.jpg" alt="Preview of program" bind:preview />
 {/if}
 
 <Section>
@@ -20,7 +20,15 @@
           have full control over the output.
         </p>
       </span>
-      <img on:click={() => (preview = "show")} src="./preview/show.png" alt="Show" />
+      <img on:click={() => (preview = "show")} src="./preview/show.jpg" alt="Show" />
+    </div>
+    <hr />
+    <div>
+      <span>
+        <h3>Lyrics</h3>
+        <p>Different previews to match the show.</p>
+      </span>
+      <img on:click={() => (preview = "lyrics_view")} src="./preview/lyrics_view.jpg" alt="Lyrics View" />
     </div>
     <hr />
     <div>
@@ -28,7 +36,7 @@
         <h3>Edit</h3>
         <p>A powerful editor. It is easy to make changes while presenting. Resize text, change font family or color, and much more. The posibilities are endless (almost)!</p>
       </span>
-      <img on:click={() => (preview = "edit")} src="./preview/edit.png" alt="Edit" />
+      <img on:click={() => (preview = "edit")} src="./preview/edit.jpg" alt="Edit" />
     </div>
     <hr />
     <div>
@@ -39,7 +47,7 @@
           add a password to a view.
         </p>
       </span>
-      <img on:click={() => (preview = "stage")} src="./preview/stage.png" alt="Stage" />
+      <img on:click={() => (preview = "stage")} src="./preview/stage.jpg" alt="Stage" />
     </div>
     <hr />
     <div>
@@ -47,7 +55,7 @@
         <h3>Draw</h3>
         <p>Shine a light on your slides while presenting. Or draw a beautiful drawing, (TBA).</p>
       </span>
-      <img on:click={() => (preview = "draw")} src="./preview/draw.png" alt="Draw" />
+      <img on:click={() => (preview = "draw")} src="./preview/draw.jpg" alt="Draw" />
     </div>
     <hr />
     <div>
@@ -55,7 +63,16 @@
         <h3>Calendar</h3>
         <p>A calendar for all your events, select dates and create a show with info about upcomming events. Or schedule shows to play, or timers to start (TBA).</p>
       </span>
-      <img on:click={() => (preview = "calendar")} src="./preview/calendar.png" alt="Calendar" />
+      <img on:click={() => (preview = "calendar")} src="./preview/calendar.jpg" alt="Calendar" />
+    </div>
+
+    <hr />
+    <div>
+      <span>
+        <h3>Themes</h3>
+        <p>Create you own themes, tweak the colors and UI to the extreme.</p>
+      </span>
+      <img on:click={() => (preview = "customize")} src="./preview/customize.jpg" alt="Customize" />
     </div>
     <!-- groups -->
     <hr />
@@ -64,7 +81,7 @@
         <h3>Media</h3>
         <p>Show images/videos easily. Add filters and link them to your shows.</p>
       </span>
-      <img on:click={() => (preview = "media")} src="./preview/media.png" alt="Media" />
+      <img on:click={() => (preview = "media")} src="./preview/media.jpg" alt="Media" />
     </div>
     <!-- <hr />
       <div>
@@ -72,7 +89,7 @@
           <h3>Stage View</h3>
           <p>Setup stage views on any device.</p>
         </span>
-        <img on:click={() => (preview = "stage_view")} src="./preview/stage_view.png" alt="Stage View" />
+        <img on:click={() => (preview = "stage_view")} src="./preview/stage_view.jpg" alt="Stage View" />
       </div> -->
     <hr />
     <div>
@@ -81,8 +98,8 @@
         <p>Control your project from your phone, with an easy-to-navigate interface. You can even view lyrics from the active show.</p>
       </span>
       <span class="width">
-        <img style="width: initial;" on:click={() => (preview = "remote")} src="./preview/remote.png" alt="Remote" />
-        <img style="width: initial;" on:click={() => (preview = "lyrics")} src="./preview/lyrics.png" alt="Lyrics" />
+        <img style="width: initial;" on:click={() => (preview = "remote")} src="./preview/remote.jpg" alt="Remote" />
+        <img style="width: initial;" on:click={() => (preview = "lyrics")} src="./preview/lyrics.jpg" alt="Lyrics" />
       </span>
     </div>
   </div>

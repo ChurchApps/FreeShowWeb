@@ -1,5 +1,7 @@
 <ul>
+  <li><b>Languages:</b> FreeShow supports English and Norwegian.</li>
   <li><b>CMG Sans:</b> Includes a beautiful font by Church Motion Graphics.</li>
+  <li><b>Drawer:</b> All the tools you need in one place.</li>
   <li><b>Projects:</b> Project manager inside the application.</li>
   <li><b>Countdowns:</b> Add custom countdown timers.</li>
   <li><b>Backgrounds:</b> Add backgrounds to your slides to make them stand out.</li>
