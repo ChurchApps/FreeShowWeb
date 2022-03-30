@@ -6,6 +6,7 @@
   class:big={$$props.big}
   class:center={$$props.center}
   tabindex={$$props.tabindex}
+  on:click
 >
   <slot />
 </button>

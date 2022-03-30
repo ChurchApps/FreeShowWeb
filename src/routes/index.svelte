@@ -4,12 +4,13 @@
   import Features from "../components/Features.svelte"
   import Footer from "../components/Footer.svelte"
   import Header from "../components/Header.svelte"
+  import Icon from "../components/Icon.svelte"
   // import Icon from "../components/Icon.svelte"
   import Overlay from "../components/Overlay.svelte"
-  import Section from "../components/Section.svelte"
-  import Icon from "../components/Icon.svelte"
-  import { getOS } from "../scripts/getOS"
+  import Popup from "../components/Popup.svelte"
   import Preview from "../components/Preview.svelte"
+  import Section from "../components/Section.svelte"
+  import { getOS } from "../scripts/getOS"
 
   let os: string = ""
 
@@ -34,8 +35,21 @@
     Windows: ".exe",
     Linux: ".AppImage",
   }
+
+  let message: string = ""
+  let active: boolean = false
+
   $: if (data) {
     downloadURL = data.assets.find((a) => a.name.includes(extensions[os]))?.browser_download_url || ""
+
+    // check version
+    const query = window.location.href.split("/?v")
+    if (query.length > 1) {
+      let oldVersion = data.tag_name.slice(1, data.tag_name.length)
+      if (query[1] !== oldVersion) message = "There is a new update! :D<br>Your version: " + query[1] + "<br>New version: " + oldVersion
+      else message = "You are up to date! ;)"
+      active = true
+    }
   }
 
   // header scroll
@@ -53,6 +67,10 @@
 <svelte:window on:scroll={scroll} />
 
 <main>
+  <Popup {active}>
+    {@html message}
+    <Button on:click={() => (active = false)} center>Okay</Button>
+  </Popup>
   <Header {top} />
 
   <Section style="height: 100vh;justify-content: center;flex-direction: row;position: relative;">

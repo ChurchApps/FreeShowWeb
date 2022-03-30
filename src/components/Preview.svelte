@@ -43,8 +43,8 @@
       <span>
         <h3>Stage</h3>
         <p>
-          Create and edit multiple stage views. Add current and next slide, or a countdown timer. Anyone on the same WiFi can connect from the browser and choose a view. You can
-          add a password to a view.
+          Connect using the computer IP + default port 5511 from any browser on the same network. Create and edit multiple stage views. Add current and next slide, or a countdown
+          timer. Anyone on the same WiFi can connect from the browser and choose a view. You can add a password to a view.
         </p>
       </span>
       <img on:click={() => (preview = "stage")} src="./preview/stage.jpg" alt="Stage" />
@@ -83,6 +83,14 @@
       </span>
       <img on:click={() => (preview = "media")} src="./preview/media.jpg" alt="Media" />
     </div>
+    <hr />
+    <div>
+      <span>
+        <h3>Scripture</h3>
+        <p>Over 100 bible versions from api.bible.</p>
+      </span>
+      <img on:click={() => (preview = "scripture")} src="./preview/scripture.jpg" alt="Scripture" />
+    </div>
     <!-- <hr />
       <div>
         <span>
@@ -95,7 +103,10 @@
     <div>
       <span>
         <h3>Remote</h3>
-        <p>Control your project from your phone, with an easy-to-navigate interface. You can even view lyrics from the active show.</p>
+        <p>
+          Connect using the computer IP + default port 5510 from any browser on the same network. Control your project from your phone, with an easy-to-navigate interface. You can
+          even view lyrics from the active show.
+        </p>
       </span>
       <span class="width">
         <img style="width: initial;" on:click={() => (preview = "remote")} src="./preview/remote.jpg" alt="Remote" />

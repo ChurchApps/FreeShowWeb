@@ -8,7 +8,7 @@
     /* display: flex;
     flex-direction: column; */
     background-color: var(--primary);
-    padding: 20px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
   }
@@ -21,7 +21,7 @@
 
   @media only screen and (min-width: 1000px) {
     section {
-      padding: 20px 200px;
+      padding: 80px 200px;
     }
   }
 </style>

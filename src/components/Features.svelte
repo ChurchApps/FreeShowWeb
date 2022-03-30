@@ -4,6 +4,9 @@
   <li><b>Drawer:</b> All the tools you need in one place.</li>
   <li><b>Projects:</b> Project manager inside the application.</li>
   <li><b>Countdowns:</b> Add custom countdown timers.</li>
+  <li><b>Import:</b> TBA.</li>
+  <!-- JSON, SHOW -->
+  <li><b>Export:</b> Export to various formats (TXT, PDF, and more comming).</li>
   <li><b>Backgrounds:</b> Add backgrounds to your slides to make them stand out.</li>
   <li><b>Overlays:</b> Have as many overlays as you want on top of the main text.</li>
   <li><b>Templates:</b> Add templates to quickly change the style of shows.</li>
