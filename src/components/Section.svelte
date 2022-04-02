@@ -8,7 +8,7 @@
     /* display: flex;
     flex-direction: column; */
     background-color: var(--primary);
-    padding: 40px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
   }
@@ -19,7 +19,13 @@
     }
   } */
 
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: 800px) {
+    section {
+      padding: 40px;
+    }
+  }
+
+  @media only screen and (min-width: 1400px) {
     section {
       padding: 80px 200px;
     }

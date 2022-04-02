@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte"
   import Button from "../components/Button.svelte"
+  import Donate from "../components/Donate.svelte"
   import Features from "../components/Features.svelte"
   import Footer from "../components/Footer.svelte"
   import Header from "../components/Header.svelte"
@@ -129,6 +130,22 @@
     <br />
     What are you waiting for? Download it and try it out!
     <!-- Why free? Trustworthy? Donate!? -->
+  </Section>
+
+  <hr />
+
+  <Section>
+    <h2>Donate?</h2>
+    <p>Unfortunatly it's not free to create a program like this! It takes much time, so a small or big donation would help out a lot.</p>
+    <p>Here is a list of all of my current expenses:</p>
+    <ul style="list-style: inside;">
+      <li>Domain: $25 /yr</li>
+      <li>Windows code sigining: About $80 /yr (Not purchased yet)</li>
+      <li>Mac code sigining: $129 /yr (Not purchased yet)</li>
+      <!-- <li>Potential bible api: $X /yr</li> -->
+    </ul>
+    Total is at least $230 every year
+    <Donate />
   </Section>
 
   <Footer />

@@ -35,10 +35,10 @@
       </a>
       <!-- blogs -->
       <!-- about -->
-      <a href="../media">
+      <!-- <a href="../media">
         <Icon id="media" />
         <span>Media</span>
-      </a>
+      </a> -->
     </div>
   </div>
 </header>

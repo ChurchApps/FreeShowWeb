@@ -30,13 +30,23 @@
     const i = Math.floor(Math.log(bytes) / Math.log(k))
     return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + " " + sizes[i]
   }
+
+  function toDate(d: string) {
+    let date: Date = new Date(d)
+    let year = date.getFullYear()
+    let month = ("0" + (date.getMonth() + 1)).slice(-2)
+    let day = ("0" + date.getDate()).slice(-2)
+    return `${day}.${month}-${year}`
+  }
 </script>
 
 <main style="padding-top: 60px;min-height: 100%;">
   {#if data}
     <div style="padding: 20px;">
-      <h2 on:dblclick={() => (counter = !counter)}>{data.tag_name}</h2>
-      <p>{data.published_at}</p>
+      <h2 on:dblclick={() => (counter = !counter)}>
+        {data.tag_name}
+        <span style="color: white;opacity: 0.5;font-size: 0.5em;font-weight: normal;">{toDate(data.published_at)}</span>
+      </h2>
       {#if data.prerelease}
         This is currently in beta
       {/if}

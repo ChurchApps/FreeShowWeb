@@ -15,6 +15,7 @@
     flex-direction: column;
     background-color: var(--primary-darker);
     padding: 20px;
+    gap: 5px;
   }
 
   a {

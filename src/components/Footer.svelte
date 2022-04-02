@@ -20,6 +20,10 @@
         <p>Report a bug or request a feature on:</p>
         <a href="https://github.com/vassbo/freeshow/issues" target="_blank">GitHub Issues</a>
       </span>
+      <span>
+        <p>Donate on:</p>
+        <a href="https://www.paypal.com/donate/?hosted_button_id=Y9PJC9TN4528A" target="_blank">PayPal</a>
+      </span>
     </div>
     <div style="flex-direction: column;">
       <!-- form -->
@@ -48,9 +52,9 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     background-color: var(--primary-darker);
-    padding: 20px;
+    padding: 30px 20px;
   }
   footer div {
     display: flex;
@@ -61,7 +65,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 20px;
+    gap: 40px;
   }
 
   .copy {
@@ -94,6 +98,9 @@
   footer div span {
     display: flex;
     gap: 10px;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 2px solid var(--primary-lighter);
   }
 
   /* form */
@@ -138,9 +145,20 @@
     } */
   }
 
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: 800px) {
     footer {
-      padding: 20px 300px;
+      padding: 20px 40px;
+    }
+  }
+
+  @media only screen and (min-width: 1400px) {
+    footer {
+      padding: 20px 200px;
+    }
+
+    footer div span {
+      padding: 0;
+      border-bottom: none;
     }
   }
 </style>
