@@ -51,4 +51,13 @@
     max-width: 100%;
     max-height: 100%;
   }
+
+  .popup :global(a) {
+    color: var(--secondary);
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  .popup :global(a):hover {
+    background-color: rgb(0 0 0 / 0.3);
+  }
 </style>

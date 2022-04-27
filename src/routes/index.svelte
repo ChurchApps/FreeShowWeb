@@ -32,7 +32,7 @@
 
   function downloading() {
     message =
-      "Thank you for downloading! ;)<br><br>Keep in mind that you will get a warning when installing right now, because I have not purchased any code signing keys yet. (Around $200 /yr)"
+      "Thank you for downloading! ;)<br><br>Keep in mind that you will get a warning when installing right now,<br>because I have not purchased any code signing keys yet. (Around $200 /yr)<br><br><p>Also, the first people that <a target='_blank' href='https://reviews.capterra.com/new/251606/25c379b8-6a14-4583-bab4-d458913d407c'>review my software on Capterra</a> will get a $20 Amazon gift card by Capterra.<br>Honest reviews are appreciated, it would help other people find the program.</p>"
     active = true
   }
 
@@ -45,6 +45,7 @@
 
   let message: string = ""
   let active: boolean = false
+  downloading()
 
   $: if (data) {
     downloadURL = data.assets.find((a) => a.name.includes(extensions[os]))?.browser_download_url || ""
