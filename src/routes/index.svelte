@@ -45,7 +45,6 @@
 
   let message: string = ""
   let active: boolean = false
-  downloading()
 
   $: if (data) {
     downloadURL = data.assets.find((a) => a.name.includes(extensions[os]))?.browser_download_url || ""
