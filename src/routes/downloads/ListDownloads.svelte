@@ -83,6 +83,11 @@
         </a>
       {/each}
     </div>
+    <br />
+    <div class="changelog">
+      <h3>What's new</h3>
+      {@html data.body.replaceAll("\n", "<br>")}
+    </div>
   {/if}
 </main>
 

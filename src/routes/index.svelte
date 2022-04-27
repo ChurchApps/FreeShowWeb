@@ -30,6 +30,12 @@
       })
   })
 
+  function downloading() {
+    message =
+      "Thank you for downloading! ;)<br><br>Keep in mind that you will get a warning when installing right now, because I have not purchased any code signing keys yet. (Around $200 /yr)"
+    active = true
+  }
+
   let downloadURL: string = "/downloads"
   const extensions: any = {
     Mac: ".dmg",
@@ -81,10 +87,13 @@
     </Overlay>
     <div class="main">
       <h1 class="title">FreeShow</h1>
-      <p>A free and <a href="https://github.com/vassbo/freeshow" target="_blank" title="View Source Code on GitHub">open source</a> presenter for anyone to use with ease.</p>
+      <p>
+        A free and <a href="https://github.com/vassbo/freeshow" target="_blank" title="View Source Code on GitHub">open-source</a> presenter built on
+        <a href="https://www.electronjs.org/" target="_blank" title="Electron website">electron</a> for anyone to use with ease.
+      </p>
       <br />
       <br />
-      <a class="link" href={downloadURL} disabled={os === "Android" || os === "iOS"}>
+      <a on:click={downloading} class="link" href={downloadURL} disabled={os === "Android" || os === "iOS"}>
         <Button tabindex={-1} disabled={os === "Android" || os === "iOS"} style="width: 100%;" outline big center>
           {#if os === "Android" || os === "iOS"}
             <Icon id="download" size={1.2} white />
@@ -95,7 +104,7 @@
           <span style="opacity: 0.6;font-size: 1.2em;">{data?.tag_name || ""}</span>
         </Button>
       </a>
-      <p>Detected {os === "Mac" ? "Mac OS" : os}. <a href="/downloads">Download for another OS?</a></p>
+      <p>Detected {os === "Mac" ? "Mac OS" : os}. <a href="/downloads" title="Downloads page">Download for another OS?</a></p>
       <br />
       <div style="display: flex;justify-content: center;gap: 20px;">
         <!-- <p>Windows, Mac or Linux</p> -->

@@ -4,7 +4,7 @@
       <!-- links  -->
       <a href="../downloads">Downloads</a>
       <a href="../docs">Docs</a>
-      <a href="../media">Media</a>
+      <!-- <a href="../media">Media</a> -->
       <!-- <a href="../about">About</a> -->
     </div>
     <div>

@@ -26,7 +26,7 @@
     <div>
       <span>
         <h3>Lyrics</h3>
-        <p>Different previews to match the show.</p>
+        <p>Change slide preivew to lyrics mode if it is preferred.</p>
       </span>
       <img on:click={() => (preview = "lyrics_view")} src="./preview/lyrics_view.jpg" alt="Lyrics View" />
     </div>
