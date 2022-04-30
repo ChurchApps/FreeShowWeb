@@ -40,7 +40,7 @@
   }
 </script>
 
-<main style="padding-top: 60px;min-height: 100%;">
+<main style="padding-top: 60px;min-height: 100%;background-color: var(--primary);">
   {#if data}
     <div style="padding: 20px;">
       <h2 on:dblclick={() => (counter = !counter)}>
@@ -121,6 +121,10 @@
   a {
     color: var(--text);
     text-decoration: none;
+  }
+
+  .changelog {
+    padding: 15px;
   }
 
   @media only screen and (min-width: 1000px) {

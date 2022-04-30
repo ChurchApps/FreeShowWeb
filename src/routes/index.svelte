@@ -32,7 +32,7 @@
 
   function downloading() {
     message =
-      "Thank you for downloading! ;)<br><br>Keep in mind that you will get a warning when installing right now,<br>because I have not purchased any code signing keys yet. (Around $200 /yr)<br><br><p>Also, the first people that <a target='_blank' href='https://reviews.capterra.com/new/251606/25c379b8-6a14-4583-bab4-d458913d407c'>review my software on Capterra</a> will get a $20 Amazon gift card by Capterra.<br>Honest reviews are appreciated, it would help other people find the program.</p>"
+      "Thank you for downloading! ;)<br><br>Keep in mind that you will get a warning when installing right now,<br>because I have not purchased any code signing keys yet. (Around $200 /yr)<br><br><p>Also, the first people that <a target='_blank' href='https://reviews.capterra.com/new/251606/25c379b8-6a14-4583-bab4-d458913d407c'>review FreeShow on Capterra</a> will get a $20 Amazon gift card by Capterra.<br>Honest reviews are appreciated, it would help other people find the program.</p>"
     active = true
   }
 
@@ -53,7 +53,8 @@
     const query = window.location.href.split("/?v")
     if (query.length > 1) {
       let oldVersion = data.tag_name.slice(1, data.tag_name.length)
-      if (query[1] !== oldVersion) message = "There is a new update! :D<br>Your version: " + query[1] + "<br>New version: " + oldVersion
+      if (query[1] !== oldVersion)
+        message = "<h3>There is a new update! :D</h3>" + query[1] + " -> " + oldVersion + "<br><br><b>What's new</b>" + data.body.replaceAll("\n", "<br>")
       else message = "You are up to date! ;)"
       active = true
     }
@@ -119,6 +120,20 @@
   </Section>
 
   <hr style="height: 10px;" />
+
+  <Section>
+    <h2>Trailer</h2>
+    <iframe
+      style="aspect-ratio: 16/9;"
+      src="https://www.youtube.com/embed/6zArghvgUok"
+      title="Introducing FreeShow"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    />
+  </Section>
+
+  <hr />
 
   <Preview />
 
