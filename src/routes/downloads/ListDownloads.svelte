@@ -10,7 +10,7 @@
       .then((response) => response.json())
       .then((a) => {
         console.log(a)
-        let current = a.filter((a) => a.draft === false)[0]
+        let current = a.filter((a) => a.draft === false && a.prerelease === false)[0]
         data = current
       })
       .catch((error) => {
@@ -47,9 +47,6 @@
         {data.tag_name}
         <span style="color: white;opacity: 0.5;font-size: 0.5em;font-weight: normal;">{toDate(data.published_at)}</span>
       </h2>
-      {#if data.prerelease}
-        This is currently in beta
-      {/if}
     </div>
     <div class="assets">
       {#each data.assets.filter((a) => !a.name.includes(".blockmap") && !a.name.includes(".yml") && !a.name.includes(".png")) as asset}

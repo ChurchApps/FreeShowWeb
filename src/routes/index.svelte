@@ -147,6 +147,14 @@
   <hr />
 
   <Section>
+    <h2>Available on UbuntuCE</h2>
+    <p><a href="https://ubuntuce.com/" target="_blank">UbuntuCE</a> is a a Linux-based free and open source operating system geared towards Christians.</p>
+    <p>And it comes preinstalled with many useful softwares and tools, including FreeShow.</p>
+  </Section>
+
+  <hr />
+
+  <Section>
     <h2>It's free!</h2>
     Yes you heard it right. It's free for everyone to use anywhere.
     <br />
@@ -168,7 +176,8 @@
       <li>Mac code sigining: $129 /yr (Not purchased yet)</li>
       <!-- <li>Potential bible api: $X /yr</li> -->
     </ul>
-    Total is at least $230 every year
+    <p>Total is at least $230 every year</p>
+    <p>You can donate directly bank to bank: <span title="My account number" style="font-weight: bold;">3335 29 03928</span>. Or via PayPal:</p>
     <Donate />
   </Section>
 

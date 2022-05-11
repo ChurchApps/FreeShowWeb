@@ -14,7 +14,14 @@
     {
       name: "Multiple languages",
       programs: { fs: "{y}", pp: "{y}", ew: "{n}", vp: "{y}", ol: "{y}", pc: "{y}" },
-      note: { fs: "English, Norwegian & more comming", pp: "10 languages", ew: "Only english", vp: "Around 50 languages", ol: "At least 26 languages", pc: "English & Spanish" },
+      note: {
+        fs: "English, Norwegian, Slovak & more comming",
+        pp: "10 languages",
+        ew: "Only english",
+        vp: "Around 50 languages",
+        ol: "At least 26 languages",
+        pc: "English & Spanish",
+      },
     },
     {
       name: "Customer support",
