@@ -17,6 +17,9 @@ export const docs: any = {
   drawer: {
     title: "The drawer",
   },
+  scripture: {
+    title: "Scripture",
+  },
   tips: {
     title: "Tips & Tricks",
   },

@@ -181,6 +181,49 @@
     <Donate />
   </Section>
 
+  <hr />
+
+  <Section>
+    <div class="flex">
+      <!-- Capterra -->
+      <a class="badge" href="https://www.capterra.com/reviews/251606/FreeShow?utm_source=vendor&utm_medium=badge&utm_campaign=capterra_reviews_badge" target="_blank">
+        <img src="https://assets.capterra.com/badge/9d71bff6e2634c97eea1ed5485aacba4.svg?v=2207453&p=251606" alt="FreeShow reviews Capterra" />
+      </a>
+
+      <!-- GetApp -->
+      <a class="badge" href="https://www.getapp.com/nonprofit-software/a/freeshow/reviews/" target="_blank">
+        <img src="https://www.getapp.com/ext/reviews_widget/v1/dark/freeshow-application" alt="FreeShow reviews GetApp" />
+      </a>
+
+      <!-- SourceForge -->
+      <div class="sf-root badge" data-id="3503885" data-badge="customers-love-us-white" data-variant-id="sf" style="width:125px">
+        <a href="https://sourceforge.net/software/product/FreeShow/" target="_blank">FreeShow reviews SourceForge</a>
+      </div>
+
+      <!-- Slashdot -->
+      <div class="sf-root badge" data-id="3503885" data-badge="users-love-us-new-white" data-variant-id="sd" style="width:125px">
+        <a href="https://slashdot.org/software/p/FreeShow/" target="_blank">FreeShow reviews Slashdot</a>
+      </div>
+
+      <script>
+        ;(function () {
+          var p = document.getElementsByTagName("script")[0]
+          let badgeId = "https://b.sf-syn.com/badge_js?sf_id=3503885&variant_id="
+          // SF
+          var sf = document.createElement("script")
+          sf.async = true
+          sf.src = badgeId + "sf"
+          p.parentNode.insertBefore(sf, p)
+          // SD
+          var sd = document.createElement("script")
+          sd.async = true
+          sd.src = badgeId + "sd"
+          p.parentNode.insertBefore(sd, p)
+        })()
+      </script>
+    </div>
+  </Section>
+
   <Footer />
 </main>
 
@@ -266,15 +309,32 @@
     font-weight: bold;
     transition: background-color 0.3s;
   }
-  a:hover {
+  a:hover:not(.badge) {
     /* opacity: 0.9; */
     /* background-color: rgba(45, 49, 59, 0.9); */
     background-color: rgb(0 0 0 / 0.3);
   }
 
+  .badge {
+    text-align: center;
+    transition: filter 0.2s;
+  }
+  .badge:hover {
+    filter: brightness(0.5);
+  }
+
   .link {
     color: var(--text);
     text-decoration: none;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   /* media */
@@ -291,6 +351,10 @@
 
     .main {
       width: initial;
+    }
+
+    .flex {
+      flex-direction: row;
     }
   }
 

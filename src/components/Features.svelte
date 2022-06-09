@@ -1,5 +1,5 @@
 <ul>
-  <li><b>Languages:</b> FreeShow supports English, Norwegian & Slovak.</li>
+  <li><b>Languages:</b> FreeShow supports English, Norwegian, Spanish & Slovak.</li>
   <li><b>CMG Sans:</b> Includes a beautiful font by Church Motion Graphics.</li>
   <li><b>Drawer:</b> All the tools you need in one place.</li>
   <li><b>Projects:</b> Project manager inside the application.</li>

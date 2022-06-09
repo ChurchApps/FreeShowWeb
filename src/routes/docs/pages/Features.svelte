@@ -15,7 +15,7 @@
       name: "Multiple languages",
       programs: { fs: "{y}", pp: "{y}", ew: "{n}", vp: "{y}", ol: "{y}", pc: "{y}" },
       note: {
-        fs: "English, Norwegian, Slovak & more comming",
+        fs: "English, Norwegian, Spanish, Slovak & more comming",
         pp: "10 languages",
         ew: "Only english",
         vp: "Around 50 languages",
@@ -26,7 +26,7 @@
     {
       name: "Customer support",
       programs: { fs: "{y}", pp: "{y}", ew: "{y}", vp: "{y}", ol: "{y}", pc: "{y}" },
-      note: { fs: "Via email", ew: "With subscription", vp: "Via email", ol: "Forums" },
+      note: { fs: "Via email or GitHub", ew: "With subscription", vp: "Via email", ol: "Forums" },
     },
     {
       name: "Projects",
@@ -58,7 +58,7 @@
     },
     { name: "Overlays", programs: { fs: "{y}", pp: "{y}", ew: "{y}", vp: "{y}", ol: "{n}", pc: "{y}" } },
     { name: "Music", info: "Play audio", programs: { fs: "{n}", pp: "{y}", ew: "{y}", vp: "{y}", ol: "{n}", pc: "{y}" }, note: { fs: "Planned" } },
-    { name: "Bibles", programs: { fs: "{y}", pp: "{y}", ew: "{y}", vp: "{y}", ol: "{y}", pc: "{y}" }, note: { fs: "Import purchased planned" } },
+    { name: "Bibles", programs: { fs: "{y}", pp: "{y}", ew: "{y}", vp: "{y}", ol: "{y}", pc: "{y}" } },
     { name: "Calendar", info: "Create events and schedule shows", programs: { fs: "{y}", pp: "{n}", ew: "{n}", vp: "{n}", ol: "{n}", pc: "{y}" } },
     { name: "Lock output", info: "Prevent changes to the output", programs: { fs: "{y}", pp: "{n}", ew: "{n}", vp: "{n}", ol: "{n}", pc: "{n}" } },
     { name: "Remote controller", programs: { fs: "{y}", pp: "{y}", ew: "{y}", vp: "{n}", ol: "{y}", pc: "{y}" }, note: { pp: "Costs $4.99" } },
@@ -73,7 +73,7 @@
     { name: "NDI support", info: "Multiple outputs", programs: { fs: "{n}", pp: "{y}", ew: "{y}", vp: "{n}", ol: "{n}", pc: "{n}" }, note: { fs: "Planned" } },
     { name: "MIDI support", info: "MIDI controllers", programs: { fs: "{n}", pp: "{y}", ew: "{y}", vp: "{n}", ol: "{n}", pc: "{y}" }, note: { fs: "Planned" } },
     { name: "CCLI", info: "Church Copyright Licensing International", programs: { fs: "{n}", pp: "{y}", ew: "{y}", vp: "{y}", ol: "{y}", pc: "{y}" }, note: { fs: "Planned" } },
-    { name: "Import PowerPoint", programs: { fs: "{y}", pp: "{y}", ew: "{y}", vp: "{y}", ol: "{y}", pc: "{y}" }, note: { fs: "Planned" } },
+    { name: "Import PowerPoint", programs: { fs: "{y}", pp: "{y}", ew: "{y}", vp: "{y}", ol: "{y}", pc: "{y}" } },
     { name: "Export as PDF", programs: { fs: "{y}", pp: "{y}", ew: "{n}", vp: "{n}", ol: "{n}", pc: "{n}" } },
     { name: "Continious mode", info: "Show all project elements on one continious page", programs: { fs: "{n}", pp: "{y}", ew: "{n}", vp: "{n}", ol: "{n}", pc: "{y}" } },
     { name: "Draw", info: "Draw/point over output", programs: { fs: "{y}", pp: "{y}", ew: "{n}", vp: "{n}", ol: "{n}", pc: "{n}" } },

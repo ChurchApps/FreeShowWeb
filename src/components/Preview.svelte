@@ -87,7 +87,7 @@
     <div>
       <span>
         <h3>Scripture</h3>
-        <p>Over 100 bible versions from api.bible.</p>
+        <p>Import your own from a local file, or select from over 100 bibles from <a href="https://scripture.api.bible/" target="_blank">API.Bible</a>.</p>
       </span>
       <img on:click={() => (preview = "scripture")} src="./preview/scripture.jpg" alt="Scripture" />
     </div>
@@ -158,6 +158,15 @@
     display: flex;
     justify-content: center;
     gap: 10px;
+  }
+
+  div :global(a) {
+    color: var(--secondary);
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  div :global(a):hover {
+    background-color: rgb(0 0 0 / 0.3);
   }
 
   @media only screen and (min-width: 800px) {

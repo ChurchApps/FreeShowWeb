@@ -13,6 +13,7 @@
   import Styling from "./pages/Styling.svelte"
   import Tips from "./pages/Tips.svelte"
   import Sidebar from "./Sidebar.svelte"
+  import Scripture from "./pages/Scripture.svelte"
 
   // header scroll
   let top: boolean = true
@@ -50,6 +51,8 @@
         <Output />
       {:else if id === "drawer"}
         <Drawer />
+      {:else if id === "scripture"}
+        <Scripture />
       {:else if id === "tips"}
         <Tips />
       {:else if id === "styling"}
@@ -106,6 +109,15 @@
     list-style: inside;
     list-style-type: square;
     /* list-style-type: disclosure-closed; */
+  }
+
+  div :global(a) {
+    color: var(--secondary);
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  div :global(a):hover {
+    background-color: rgb(0 0 0 / 0.3);
   }
 
   @media only screen and (min-width: 800px) {

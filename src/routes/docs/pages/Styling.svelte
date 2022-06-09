@@ -7,7 +7,7 @@
   <h4>Let's start with the basics</h4>
   <p>
     Your text should should be clear, meaning you should center the text and remove unwanted punctuations like dots and exclamation marks. You should also try to keep a maximum of
-    5 lines. Meaning if your verse is longer that that tou should divide it.
+    5 lines. Meaning if your verse is longer that that you should divide it.
   </p>
 </section>
 
