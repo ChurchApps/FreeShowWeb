@@ -24,11 +24,15 @@
         <p>Donate on:</p>
         <a href="https://www.paypal.com/donate/?hosted_button_id=Y9PJC9TN4528A" target="_blank">PayPal</a>
       </span>
+      <span>
+        <p>Support on:</p>
+        <a href="https://www.patreon.com/freeshowapp" target="_blank">Patreon</a>
+      </span>
     </div>
     <div style="flex-direction: column;">
       <!-- form -->
       <h3>Contact</h3>
-      <form class="contact" name="contact" netlify>
+      <form class="contact" name="contact" action="submitted" data-netlify="true">
         <div>
           <label>Name <input type="text" name="name" /></label>
         </div>

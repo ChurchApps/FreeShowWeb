@@ -1,7 +1,7 @@
 <script lang="ts">
   import Icon from "./Icon.svelte"
 
-  export let top: boolean
+  export let top: boolean = true
   export let path: string = "./"
 </script>
 

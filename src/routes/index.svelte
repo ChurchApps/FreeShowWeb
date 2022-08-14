@@ -16,11 +16,17 @@
   let os: string = ""
 
   let data: any = null
+  let downloads: number = 0
   onMount(async () => {
     os = getOS()
     fetch("https://api.github.com/repos/vassbo/freeshow/releases")
       .then((response) => response.json())
       .then((a) => {
+        downloads = a.reduce((total, data) => {
+          let currentVersionDownloads: number = data.assets.reduce((total, asset) => total + asset.download_count, 0)
+          return total + currentVersionDownloads
+        }, 0)
+
         let current = a.filter((a) => a.draft === false)[0]
         data = current
       })
@@ -147,6 +153,13 @@
   <hr />
 
   <Section>
+    <h2>Install on Linux with snap</h2>
+    <p>Check out FreeShow on <a href="https://snapcraft.io/freeshow" target="_blank">snapcraft</a>.</p>
+    <p style="border-left: 2px solid rgb(255 255 255 / 0.2);font-family: monospace;font-size: 1.3em;padding: 0 10px;margin: 10px 0;">sudo snap install freeshow</p>
+
+    <br />
+    <br />
+
     <h2>Available on UbuntuCE</h2>
     <p><a href="https://ubuntuce.com/" target="_blank">UbuntuCE</a> is a a Linux-based free and open source operating system geared towards Christians.</p>
     <p>And it comes preinstalled with many useful softwares and tools, including FreeShow.</p>
@@ -177,8 +190,35 @@
       <!-- <li>Potential bible api: $X /yr</li> -->
     </ul>
     <p>Total is at least $230 every year</p>
-    <p>You can donate directly bank to bank: <span title="My account number" style="font-weight: bold;">3335 29 03928</span>. Or via PayPal:</p>
-    <Donate />
+    <br />
+    <p>You can currently donate with these methods:</p>
+    <ul style="list-style: inside;">
+      <li>
+        <div style="display: inline-flex;align-items: center;gap: 10px;min-height: 40px;">
+          Bank: <span title="My bank account number" style="font-weight: bold;">3335 29 03928</span>
+        </div>
+      </li>
+      <li>
+        <div style="display: inline-flex;align-items: center;gap: 10px;min-height: 50px;">
+          PayPal: <Donate />
+        </div>
+      </li>
+      <li>
+        <div style="display: inline-flex;align-items: center;gap: 10px;min-height: 50px;">
+          Patreon: <span class="patreon">
+            <a href="https://www.patreon.com/bePatron?u=52787216" data-patreon-widget-type="become-patron-button">Become a Patron!</a>
+            <script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </Section>
+
+  <hr />
+
+  <Section style="align-items: center;">
+    <h2>Total downloads</h2>
+    <p style="font-size: 5em;font-weight: bold;">{downloads}</p>
   </Section>
 
   <hr />
@@ -196,12 +236,12 @@
       </a>
 
       <!-- SourceForge -->
-      <div class="sf-root badge" data-id="3503885" data-badge="customers-love-us-white" data-variant-id="sf" style="width:125px">
+      <div class="sf-root badge" data-id="3503885" data-badge="customers-love-us-black" data-variant-id="sf" style="width:125px">
         <a href="https://sourceforge.net/software/product/FreeShow/" target="_blank">FreeShow reviews SourceForge</a>
       </div>
 
       <!-- Slashdot -->
-      <div class="sf-root badge" data-id="3503885" data-badge="users-love-us-new-white" data-variant-id="sd" style="width:125px">
+      <div class="sf-root badge" data-id="3503885" data-badge="users-love-us-new-black" data-variant-id="sd" style="width:125px">
         <a href="https://slashdot.org/software/p/FreeShow/" target="_blank">FreeShow reviews Slashdot</a>
       </div>
 
@@ -313,6 +353,10 @@
     /* opacity: 0.9; */
     /* background-color: rgba(45, 49, 59, 0.9); */
     background-color: rgb(0 0 0 / 0.3);
+  }
+
+  .patreon a {
+    color: var(--text);
   }
 
   .badge {
