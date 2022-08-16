@@ -32,7 +32,7 @@
     <div style="flex-direction: column;">
       <!-- form -->
       <h3>Contact</h3>
-      <form class="contact" name="contact" action="submitted" data-netlify="true">
+      <form class="contact" name="contact" action="submitted" method="POST" data-netlify="true">
         <div>
           <label>Name <input type="text" name="name" /></label>
         </div>
@@ -48,7 +48,7 @@
       </form>
     </div>
   </div>
-  <div class="copy">&copy; FreeShow — Kristoffer Vassbø 2022</div>
+  <div class="copy" style="font-size: 0.8em;">&copy; FreeShow — Kristoffer Vassbø 2022</div>
 </footer>
 
 <style>
@@ -76,15 +76,6 @@
     align-self: center;
     text-align: center;
     opacity: 0.5;
-  }
-
-  a {
-    color: white;
-    opacity: 0.8;
-    transition: opacity 0.2s;
-  }
-  a:hover {
-    opacity: 1;
   }
 
   .contact {

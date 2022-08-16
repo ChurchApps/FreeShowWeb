@@ -6,6 +6,7 @@
   <li><b>Projects:</b> Project manager inside the application.</li>
   <li><b>Countdowns:</b> Add custom countdown timers.</li>
   <li><b>Multiple outputs:</b> Add as many outputs as you want, with easy control.</li>
+  <li><b>Output layers:</b> Set and clear different layers: background/slide/overlays.</li>
   <li><b>Import:</b> Clipboard, TXT, PDF, PowerPoint, ProPresenter, EasyWorship, VideoPsalm, OpenLP, OpenSong.</li>
   <li><b>Export:</b> Export to various formats (TXT, PDF, and more comming).</li>
   <li><b>Backgrounds:</b> Add backgrounds to your slides to make them stand out.</li>

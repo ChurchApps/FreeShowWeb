@@ -85,12 +85,11 @@
     {@html message}
     <Button on:click={() => (active = false)} center>Okay</Button>
   </Popup>
-  <Header {top} />
 
   <Section style="height: 100vh;justify-content: center;flex-direction: row;position: relative;">
     <Overlay color="#2d313b">
       <!-- <img src="./preview/v0.0.1.png" alt="Preview of program" /> -->
-      <img src="./preview/program_mac.jpg" alt="Preview og program on computer" />
+      <img src="/preview/program_mac.jpg" alt="Preview og program on computer" />
     </Overlay>
     <div class="main">
       <h1 class="title">FreeShow</h1>
@@ -121,7 +120,7 @@
       </div>
     </div>
     <!-- <div>
-      <img src="./preview/program_mac.jpg" alt="Preview og program on computer" />
+      <img src="/preview/program_mac.jpg" alt="Preview og program on computer" />
     </div> -->
   </Section>
 
@@ -145,12 +144,12 @@
 
   <hr />
 
-  <Section>
+  <!-- <Section>
     <h2>More features</h2>
     <Features />
   </Section>
 
-  <hr />
+  <hr /> -->
 
   <Section>
     <h2>Install on Linux with snap</h2>
@@ -169,19 +168,16 @@
 
   <Section>
     <h2>It's free!</h2>
-    Yes you heard it right. It's free for everyone to use anywhere.
-    <br />
-    Why? Becuase all the "good" alternatives was way too expensive and some was hard and time consuming to use.
-    <br />
-    What are you waiting for? Download it and try it out!
-    <!-- Why free? Trustworthy? Donate!? -->
+    <p>Yes you heard it right. It's free for everyone to use anywhere.</p>
+    <p>Why? Most of the other programs I have used was either very expensive or hard to use, and had an outdated inerface.</p>
+    <p>What are you waiting for? <a href="/downloads">Download it</a> and try it out!</p>
   </Section>
 
   <hr />
 
   <Section>
     <h2>Donate?</h2>
-    <p>Unfortunatly it's not free to create a program like this! It takes much time, so a small or big donation would help out a lot.</p>
+    <p>Unfortunatly it's not free to create a program like this! It takes much time, so any donation would help the project continue.</p>
     <p>Here is a list of all of my current expenses:</p>
     <ul style="list-style: inside;">
       <li>Domain: $25 /yr</li>
@@ -263,46 +259,9 @@
       </script>
     </div>
   </Section>
-
-  <Footer />
 </main>
 
 <style>
-  :global(:root) {
-    --primary: #2d313b;
-    --primary-lighter: #41444c;
-    --primary-darker: #202129;
-    --primary-darkest: #191923;
-    --text: #f0f0ff;
-    --textInvert: #131313;
-    --secondary: #e6349c;
-    --secondary-opacity: rgba(230, 52, 156, 0.5);
-    --secondary-text: #f0f0ff;
-
-    --hover: rgb(255 255 255 / 0.05);
-    --focus: rgb(255 255 255 / 0.1);
-    /* --active: rgb(230 52 156 / .8); */
-  }
-
-  :global(*) {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  main {
-    /* width: 100vw;
-    height: 100vh; */
-    background-color: var(--primary);
-    color: var(--text);
-    font-family: Roboto, "Segoe UI", Tahoma, sans-serif;
-    font-size: 1.2em;
-
-    /* display: flex;
-    flex-direction: column; */
-    /* justify-content: space-between; */
-  }
-
   h1,
   h2 {
     color: var(--secondary);
@@ -342,17 +301,6 @@
     flex-direction: column;
     align-self: center;
     width: 100%;
-  }
-
-  a {
-    color: var(--secondary);
-    font-weight: bold;
-    transition: background-color 0.3s;
-  }
-  a:hover:not(.badge) {
-    /* opacity: 0.9; */
-    /* background-color: rgba(45, 49, 59, 0.9); */
-    background-color: rgb(0 0 0 / 0.3);
   }
 
   .patreon a {

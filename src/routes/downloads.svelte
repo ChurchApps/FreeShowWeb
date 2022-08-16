@@ -1,7 +1,7 @@
 <script lang="ts">
-  import Button from "../../components/Button.svelte"
+  import Button from "../components/Button.svelte"
   import { onMount } from "svelte"
-  import Icon from "../../components/Icon.svelte"
+  import Icon from "../components/Icon.svelte"
 
   let data: any = null
 
@@ -39,6 +39,10 @@
     return `${day}.${month}-${year}`
   }
 </script>
+
+<svelte:head>
+  <title>FreeShow | Downloads</title>
+</svelte:head>
 
 <main style="padding-top: 60px;min-height: 100%;background-color: var(--primary);">
   {#if data}
@@ -85,6 +89,8 @@
       <h3>What's new</h3>
       {@html data.body.replaceAll("\n", "<br>")}
     </div>
+  {:else}
+    <div style="text-align: center;font-size: 1.3em;margin: 20px;">Loading version...</div>
   {/if}
 </main>
 
@@ -116,7 +122,6 @@
   }
 
   a {
-    color: var(--text);
     text-decoration: none;
   }
 

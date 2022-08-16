@@ -2,14 +2,13 @@
   import Icon from "./Icon.svelte"
 
   export let top: boolean = true
-  export let path: string = "./"
 </script>
 
 <header class:top>
   <div class="menu">
     <div>
       <a href="../" style="padding: 4px;">
-        <img src={`${path}icon_x32.png`} alt="Logo" style="width: 30px;object-fit: contain;" />
+        <img src="/icon_x32.png" alt="Logo" style="width: 30px;object-fit: contain;" />
         FreeShow
       </a>
     </div>
@@ -20,7 +19,7 @@
   <div class="buttons">
     <div class="hide">
       <a href="../">
-        <img src={`${path}icon_x32.png`} alt="Logo" style="width: 30px;object-fit: contain;" />
+        <img src="/icon_x32.png" alt="Logo" style="width: 30px;object-fit: contain;" />
         FreeShow
       </a>
     </div>

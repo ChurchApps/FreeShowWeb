@@ -6,7 +6,7 @@
 </script>
 
 {#if preview}
-  <Fullscreen src="./preview/{preview}.jpg" alt="Preview of program" bind:preview />
+  <Fullscreen src="/preview/{preview}.jpg" alt="Preview of program" bind:preview />
 {/if}
 
 <Section>
@@ -20,7 +20,7 @@
           have full control over the output.
         </p>
       </span>
-      <img on:click={() => (preview = "show")} src="./preview/show.jpg" alt="Show" />
+      <img on:click={() => (preview = "show")} src="/preview/show.jpg" alt="Show" />
     </div>
     <hr />
     <div>
@@ -28,7 +28,7 @@
         <h3>Lyrics</h3>
         <p>Change slide preivew to lyrics mode if it is preferred.</p>
       </span>
-      <img on:click={() => (preview = "lyrics_view")} src="./preview/lyrics_view.jpg" alt="Lyrics View" />
+      <img on:click={() => (preview = "lyrics_view")} src="/preview/lyrics_view.jpg" alt="Lyrics View" />
     </div>
     <hr />
     <div>
@@ -36,7 +36,7 @@
         <h3>Edit</h3>
         <p>A powerful editor. It is easy to make changes while presenting. Resize text, change font family or color, and much more. The posibilities are endless (almost)!</p>
       </span>
-      <img on:click={() => (preview = "edit")} src="./preview/edit.jpg" alt="Edit" />
+      <img on:click={() => (preview = "edit")} src="/preview/edit.jpg" alt="Edit" />
     </div>
     <hr />
     <div>
@@ -47,15 +47,15 @@
           timer. Anyone on the same WiFi can connect from the browser and choose a view. You can add a password to a view.
         </p>
       </span>
-      <img on:click={() => (preview = "stage")} src="./preview/stage.jpg" alt="Stage" />
+      <img on:click={() => (preview = "stage")} src="/preview/stage.jpg" alt="Stage" />
     </div>
     <hr />
     <div>
       <span>
         <h3>Draw</h3>
-        <p>Shine a light on your slides while presenting. Or draw a beautiful drawing, (TBA).</p>
+        <p>Shine a light on your slides while presenting. Play with particles, or draw a beautiful drawing.</p>
       </span>
-      <img on:click={() => (preview = "draw")} src="./preview/draw.jpg" alt="Draw" />
+      <img on:click={() => (preview = "draw")} src="/preview/draw.jpg" alt="Draw" />
     </div>
     <hr />
     <div>
@@ -63,7 +63,7 @@
         <h3>Calendar</h3>
         <p>A calendar for all your events, select dates and create a show with info about upcomming events. Or schedule shows to play, or timers to start (TBA).</p>
       </span>
-      <img on:click={() => (preview = "calendar")} src="./preview/calendar.jpg" alt="Calendar" />
+      <img on:click={() => (preview = "calendar")} src="/preview/calendar.jpg" alt="Calendar" />
     </div>
 
     <hr />
@@ -72,16 +72,16 @@
         <h3>Themes</h3>
         <p>Create you own themes, tweak the colors and UI to the extreme.</p>
       </span>
-      <img on:click={() => (preview = "customize")} src="./preview/customize.jpg" alt="Customize" />
+      <img on:click={() => (preview = "customize")} src="/preview/customize.jpg" alt="Customize" />
     </div>
     <!-- groups -->
     <hr />
     <div>
       <span>
         <h3>Media</h3>
-        <p>Show images/videos easily. Add filters and link them to your shows.</p>
+        <p>Show images/videos easily. Add filters and drag them on your slides to make background.</p>
       </span>
-      <img on:click={() => (preview = "media")} src="./preview/media.jpg" alt="Media" />
+      <img on:click={() => (preview = "media")} src="/preview/media.jpg" alt="Media" />
     </div>
     <hr />
     <div>
@@ -89,7 +89,7 @@
         <h3>Scripture</h3>
         <p>Import your own from a local file, or select from over 100 bibles from <a href="https://scripture.api.bible/" target="_blank">API.Bible</a>.</p>
       </span>
-      <img on:click={() => (preview = "scripture")} src="./preview/scripture.jpg" alt="Scripture" />
+      <img on:click={() => (preview = "scripture")} src="/preview/scripture.jpg" alt="Scripture" />
     </div>
     <!-- <hr />
       <div>
@@ -97,7 +97,7 @@
           <h3>Stage View</h3>
           <p>Setup stage views on any device.</p>
         </span>
-        <img on:click={() => (preview = "stage_view")} src="./preview/stage_view.jpg" alt="Stage View" />
+        <img on:click={() => (preview = "stage_view")} src="/preview/stage_view.jpg" alt="Stage View" />
       </div> -->
     <hr />
     <div>
@@ -109,8 +109,8 @@
         </p>
       </span>
       <span class="width">
-        <img style="width: initial;" on:click={() => (preview = "remote")} src="./preview/remote.jpg" alt="Remote" />
-        <img style="width: initial;" on:click={() => (preview = "lyrics")} src="./preview/lyrics.jpg" alt="Lyrics" />
+        <img style="width: initial;" on:click={() => (preview = "remote")} src="/preview/remote.jpg" alt="Remote" />
+        <img style="width: initial;" on:click={() => (preview = "lyrics")} src="/preview/lyrics.jpg" alt="Lyrics" />
       </span>
     </div>
   </div>
@@ -158,15 +158,6 @@
     display: flex;
     justify-content: center;
     gap: 10px;
-  }
-
-  div :global(a) {
-    color: var(--secondary);
-    font-weight: bold;
-    transition: background-color 0.3s;
-  }
-  div :global(a):hover {
-    background-color: rgb(0 0 0 / 0.3);
   }
 
   @media only screen and (min-width: 800px) {
