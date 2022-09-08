@@ -6,14 +6,14 @@ const config = {
   // Consult https://github.com/sveltejs/svelte-preprocess
   // for more information about preprocessors
   preprocess: preprocess(),
-  prerender: {
-    crawl: true,
-    enabled: true,
-    onError: "continue",
-    entries: ["*"],
-  },
   kit: {
     adapter: adapter(),
+    prerender: {
+      crawl: true,
+      enabled: true,
+      onError: "continue",
+      entries: ["*"],
+    },
   },
 }
 

@@ -37,6 +37,7 @@
       <!-- form -->
       <h3>Contact</h3>
       <form class="contact" name="contact" action="submitted" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
         <div>
           <label>Name <input type="text" name="name" /></label>
         </div>
