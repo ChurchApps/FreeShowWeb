@@ -159,6 +159,9 @@
     justify-content: center;
     gap: 10px;
   }
+  .width img {
+    max-width: 50%;
+  }
 
   @media only screen and (min-width: 800px) {
     h2 {
@@ -172,6 +175,9 @@
     .previews img,
     .width {
       width: 50%;
+    }
+    .width img {
+      width: initial;
     }
   }
 </style>

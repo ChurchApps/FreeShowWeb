@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true
+</script>
+
 <footer>
   <div class="footer">
     <div>
@@ -32,7 +36,7 @@
     <div style="flex-direction: column;">
       <!-- form -->
       <h3>Contact</h3>
-      <form class="contact" name="contact" action="submitted" method="POST" data-netlify="true">
+      <form class="contact" name="contact" action="submitted" method="POST" netlify-honeypot="bot-field" data-netlify="true">
         <div>
           <label>Name <input type="text" name="name" /></label>
         </div>
@@ -92,10 +96,16 @@
 
   footer div span {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     align-items: center;
     padding: 10px 0;
     border-bottom: 2px solid var(--primary-lighter);
+  }
+
+  footer a {
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   /* form */

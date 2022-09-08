@@ -214,7 +214,7 @@
 
   <Section style="align-items: center;">
     <h2>Total downloads</h2>
-    <p style="font-size: 5em;font-weight: bold;">{downloads}</p>
+    <p class="downloads">{downloads}</p>
   </Section>
 
   <hr />
@@ -303,10 +303,6 @@
     width: 100%;
   }
 
-  .patreon a {
-    color: var(--text);
-  }
-
   .badge {
     text-align: center;
     transition: filter 0.2s;
@@ -329,6 +325,11 @@
     align-items: center;
   }
 
+  .downloads {
+    font-size: 3em;
+    font-weight: bold;
+  }
+
   /* media */
 
   @media only screen and (min-width: 800px) {
@@ -347,6 +348,10 @@
 
     .flex {
       flex-direction: row;
+    }
+
+    .downloads {
+      font-size: 5em;
     }
   }
 

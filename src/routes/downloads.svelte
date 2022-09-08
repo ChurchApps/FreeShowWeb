@@ -123,6 +123,7 @@
 
   a {
     text-decoration: none;
+    opacity: 1;
   }
 
   .changelog {

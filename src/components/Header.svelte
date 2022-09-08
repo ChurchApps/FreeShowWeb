@@ -103,7 +103,8 @@
 
   a {
     padding: 18px 14px;
-    color: var(--text);
+    /* color: var(--text); */
+    opacity: 1;
     text-decoration: none;
 
     display: flex;
