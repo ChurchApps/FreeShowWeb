@@ -22,3 +22,20 @@
     accidentally change the output in any way. And lastly there is a play / reset button which will show the selected show or replay the current shown slide.
   </p>
 </section>
+
+<section>
+  <h4>Changing the output</h4>
+  <p>
+    In the settings under "Output", you can change the position and choose the screen where you want to display the output. There are also some other settings you can tweak here.
+  </p>
+</section>
+
+<section>
+  <h4>Multiple outputs</h4>
+  <p>In the settings you can add as many outputs as you would like.</p>
+  <p>Note: you can enable or disable each individual output. It's recommended to have different colors on different outputs.</p>
+  <p>
+    If you have more than one output, when in "Show" mode, you can see them in the right, over the preview. Here all you need to do is click the output you want to present to. And
+    also hold ctrl/cmd while clicking to select multiple.
+  </p>
+</section>

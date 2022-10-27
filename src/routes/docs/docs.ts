@@ -2,6 +2,7 @@ import Compare from "./pages/Compare.svelte"
 import Drawer from "./pages/Drawer.svelte"
 import Features from "./pages/Features.svelte"
 import FirstShow from "./pages/FirstShow.svelte"
+import Importing from "./pages/Importing.svelte"
 import Installation from "./pages/Installation.svelte"
 import Intro from "./pages/Intro.svelte"
 import Output from "./pages/Output.svelte"
@@ -42,7 +43,7 @@ export const docs: any = {
     comp: Projects,
   },
   output: {
-    title: "The output",
+    title: "Output",
     category: "Manual",
     comp: Output,
   },
@@ -55,6 +56,11 @@ export const docs: any = {
     title: "Scripture",
     category: "Manual",
     comp: Scripture,
+  },
+  importing: {
+    title: "Importing",
+    category: "Manual",
+    comp: Importing,
   },
   roadmap: {
     title: "Roadmap",

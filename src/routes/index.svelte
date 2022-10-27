@@ -159,9 +159,12 @@
     <br />
     <br />
 
-    <h2>Available on UbuntuCE</h2>
-    <p><a href="https://ubuntuce.com/" target="_blank">UbuntuCE</a> is a a Linux-based free and open source operating system geared towards Christians.</p>
-    <p>And it comes preinstalled with many useful softwares and tools, including FreeShow.</p>
+    <h2>Available on various Linux distributions</h2>
+    <p>These come preinstalled with many useful softwares and tools, including FreeShow:</p>
+    <ul style="list-style: inside;">
+      <li><a href="https://ubuntuce.com/" target="_blank">UbuntuCE</a> is a Linux-based free and open source operating system geared towards Christians.</li>
+      <li><a href="https://ubuntustudio.org/" target="_blank">Ubuntu Studio</a> is also a free and open source operating system made for creative people.</li>
+    </ul>
   </Section>
 
   <hr />
