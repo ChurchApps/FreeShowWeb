@@ -1,15 +1,15 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from "@sveltejs/adapter-netlify"
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-  extensions: ['.svelte', '.md'],
+    extensions: [".svelte", ".md"],
 
-  kit: {
-    adapter: adapter(),
-    prerender: {
-      handleMissingId: 'warn',
+    kit: {
+        adapter: adapter(),
+        prerender: {
+            handleMissingId: "warn",
+        },
     },
-  },
-};
+}
 
-export default config;
+export default config

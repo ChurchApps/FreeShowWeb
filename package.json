@@ -12,9 +12,9 @@
     },
     "devDependencies": {
         "@iconify-json/ri": "^1.1.1",
-        "@sveltejs/adapter-auto": "next",
+        "@sveltejs/adapter-netlify": "1.0.0-next.49",
         "@sveltejs/adapter-static": "next",
-        "@sveltejs/kit": "next",
+        "@sveltejs/kit": "1.0.0-next.291",
         "@svelteness/kit-docs": "^1.1.1",
         "shiki": "^0.10.1",
         "svelte": "^3.54.0",
