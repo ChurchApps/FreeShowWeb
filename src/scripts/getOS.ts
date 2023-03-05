@@ -1,16 +1,15 @@
-export function getOS(): string {
-  var userAgent: string = window.navigator.userAgent,
-    platform: string = window.navigator.platform,
-    macosPlatforms: string[] = ["Macintosh", "MacIntel", "MacPPC", "Mac68K"],
-    windowsPlatforms: string[] = ["Win32", "Win64", "Windows", "WinCE"],
-    iosPlatforms: string[] = ["iPhone", "iPad", "iPod"],
-    os: string | null = null
+export function getOS() {
+    var userAgent = window.navigator.userAgent,
+        platform = window.navigator.platform,
+        macosPlatforms = ["Macintosh", "MacIntel", "MacPPC", "Mac68K"],
+        windowsPlatforms = ["Win32", "Win64", "Windows", "WinCE"],
+        iosPlatforms = ["iPhone", "iPad", "iPod"]
 
-  if (macosPlatforms.indexOf(platform) !== -1) os = "Mac"
-  else if (iosPlatforms.indexOf(platform) !== -1) os = "iOS"
-  else if (windowsPlatforms.indexOf(platform) !== -1) os = "Windows"
-  else if (/Android/.test(userAgent)) os = "Android"
-  else if (!os && /Linux/.test(platform)) os = "Linux"
+    if (macosPlatforms.indexOf(platform) !== -1) return "Mac"
+    if (iosPlatforms.indexOf(platform) !== -1) return "iOS"
+    if (windowsPlatforms.indexOf(platform) !== -1) return "Windows"
+    if (/Android/.test(userAgent)) return "Android"
+    if (/Linux/.test(platform)) return "Linux"
 
-  return os
+    return ""
 }

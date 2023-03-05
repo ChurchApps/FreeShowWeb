@@ -1,0 +1,29 @@
+---
+title: Show
+---
+
+# Showtime
+
+> A show is your slideshow. It can be song lyrics, events, presentations, images, bible verses, and much more.
+
+## Creating a show
+
+First you have to go to "Shows" in the [drawer](./drawer). Here you will find a large "Add show" button, in the bottom center. Clicking it will display a popup. Here you can type a name, and tweak some settings. Also there is a textarea for quick lyrics, which is recommended if you want create song lyrics. The program will try to apply groups automaticly. Finally press "Create show".
+
+## Presenting
+
+When opening a show, you will by default get a _"WYSIWYG"_ view, meaning the style of each slide will match the style of the output. You can click any slide to show it, and use the arrow right/left keys to change slides, or press spacebar. In the bottom of the show view you have some buttons to change the layout of the current view.
+
+:::admonition type=tip
+Pressing spacebar at the end of a show will go to the next show in the current project.
+
+Pressing the arrow keys will always change the slides of the current outputted show, even when another show is active. But pressing spacebar will always play active show.
+:::
+
+## Backgrounds
+
+Adding backgrounds are as easy as dragging them over any of the slides. Say you add a background to the first slide, then that background will be applied to all the concurrent slides as "ghost" backgrounds, meaning they behave the same as the first slide when clicked, but you can only interact with the element on one slide. But you can right click on any slide and select "Remove background" under "Actions".
+
+## Importing a show
+
+If you have any existing lyrics from other programs, you can [import](./importing) them from the application menu.
