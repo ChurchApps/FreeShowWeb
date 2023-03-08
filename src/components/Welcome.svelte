@@ -81,8 +81,8 @@
         </p>
         <br />
         <br />
-        <a on:click={downloading} class="link" data-disabled={os === "Android" || os === "iOS"}>
-            <Button href={downloadURL} tabindex={-1} disabled={os === "Android" || os === "iOS"} style="width: 100%;" outline big center>
+        <a on:click={downloading} href={downloadURL} class="link" data-disabled={os === "Android" || os === "iOS"}>
+            <Button tabindex={-1} disabled={os === "Android" || os === "iOS"} style="width: 100%;" outline big center>
                 {#if os === "Android" || os === "iOS"}
                     <Icon id="download" size={1.2} white />
                 {:else}
