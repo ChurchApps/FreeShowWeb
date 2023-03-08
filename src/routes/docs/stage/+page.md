@@ -8,7 +8,14 @@ title: Stage
 
 ### Connect to stage
 
-Open any browser and type the IP found in settings under "Connection", it should be simular to this: _192.168.10.100:5511_. The IP is different for each device, and the port can be changed. Make sure both the computer with FreeShow and the device you want the stage display on, are connected to the same network.
+Open any browser and type the IP found in settings under "Connection", it should be similar to this: _192.168.10.100:5511_. The IP is different for each device, and the port can be changed.
+
+### Troubleshooting
+
+-   Make sure the IP and port is correct.
+-   Make sure both the computer with FreeShow and the device you want the stage display on, are connected to the same network.
+-   Check if the router port isolation settings allows local connections.
+<!-- -   Try connecting to the remote from the same computer first to see if it works, it should work. Then type the exact same IP-address into the other device. If the IP is correct and it doesn't work, then you have to change the router port isolation settings, because it doesn't allow local connections to open ports. -->
 
 ### Editing
 

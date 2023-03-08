@@ -1,3 +1,5 @@
+// https://kit-docs.svelteness.dev/docs/default-layout/components
+
 import { redirect } from "@sveltejs/kit"
 
 export const prerender = true
