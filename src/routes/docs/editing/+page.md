@@ -4,7 +4,9 @@ title: Editing
 
 # Editing a show
 
-To edit a show, go to the "Edit" view in the top, with a show active. Here you can select any slide on the left, change text and move/resize items in the center, and see more tools on the right side.
+To edit a show, go to the "Edit" view in the top, with a show active. Here you can select any slide, or add new on the left, change text and move/resize items in the center, and see more tools on the right side.
+
+You can zoom in/out or enable chords in the bottom center. And if you hold _CTRL/CMD_ and scroll up or down over the slides in the left panel you can have two or more slides in a line.
 
 ## Tools
 

@@ -10,6 +10,10 @@ title: Show
 
 First you have to go to "Shows" in the [drawer](./drawer). Here you will find a large "Add show" button, in the bottom center. Clicking it will display a popup. Here you can type a name, and tweak some settings. Also there is a textarea for quick lyrics, which is recommended if you want create song lyrics. The program will try to apply groups automaticly. Finally press "Create show".
 
+## Finding your shows
+
+All your shows can be found in the "Shows" tab in the drawer. Here you can organize them into different categories, the category changes the icon a show has in the project list. In the top right corner og the drawer you will find a serach bar to search through all of your shows. When a show is opened or changed, the text content will be cached, so you can search by the content as well as the title.
+
 ## Presenting
 
 When opening a show, you will by default get a _"WYSIWYG"_ view, meaning the style of each slide will match the style of the output. You can click any slide to show it, and use the arrow right/left keys to change slides, or press spacebar. In the bottom of the show view you have some buttons to change the layout of the current view.

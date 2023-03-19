@@ -8,6 +8,8 @@ title: Drawer
 
 The drawer is located at the bottom of the application, it can be opened by clicking on any tab, or you can resize it by dragging on the line at the top of the drawer. In the drawer you get access to a lot of essential tools. When opened you have a navigation area at the left, a content area in the center, and a clock, info or more tools on the right side.
 
+Hold _CTRL/CMD_ while pressing any _arrow keys_ to navigate inside the drawer.
+
 The drawer has a serach bar on the right to quickly find what you are looking for.
 Here is a list of all the tabs you can find in the drawer:
 

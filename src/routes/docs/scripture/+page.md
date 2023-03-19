@@ -10,7 +10,13 @@ Choose from over 200 bible versions from [API.Bible](https://scripture.api.bible
 
 Start searching to quickly select any verse in the bible, it will auto complete the book name. Can be like this: **"John 1:1-4"**, or like this: **"Genesis 1:1-2+5"**, then press _enter_ to show in output.
 
-You can also select verses manually by holding CTRL/CMD while clicking on them. Double clicking any verse will show it in the output.
+## Selecting
+
+You can select verses manually by holding _CTRL/CMD_ while clicking on them. Double clicking any verse will show it in the output. Pressing _enter_ when verses are selected will output them directly. Holding _CTRL/CMD_ and pressing _arrow left/right_ will move the selection to the next verses.
+
+## Create a collection
+
+Select two or more of the scriptures in the left drawer panel, right click and press _"New collection"_. Collections are found in the same panel. Selecting one will preview only the first one in the center, but selecting it you can see that it's showing multiple versions at the same time.
 
 ## Create a show
 
