@@ -21,7 +21,7 @@
             name: "Multiple languages",
             programs: { fs: "{y}", pp: "{y}", ew: "{n}", vp: "{y}", ol: "{y}", pc: "{y}" },
             note: {
-                fs: "English, Norwegian, Spanish, Slovak, Brazilian Portuguese, German & more comming",
+                fs: "7 languages & more comming",
                 pp: "10 languages",
                 ew: "Only english",
                 vp: "Around 50 languages",

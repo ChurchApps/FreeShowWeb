@@ -70,6 +70,9 @@
                     // { title: "Remote", slug: "/docs/remote" },
                     { title: "Stage", slug: "/docs/stage" },
                 ],
+                Cloud: [
+                    {title: "Drive API", slug: "/docs/drive"}
+                ],
                 Actions: [
                     { title: "Importing", slug: "/docs/importing" },
                     { title: "Exporting", slug: "/docs/exporting" },

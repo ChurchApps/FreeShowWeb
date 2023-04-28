@@ -6,7 +6,7 @@ title: Features
 
 _These are some of the main features._
 
--   **Languages:** FreeShow supports English, Norwegian, Spanish, Slovak, Brazilian Portuguese & German.
+-   **Languages:** FreeShow supports English, Norwegian, Spanish, Slovak, Brazilian Portuguese, German & Italian.
 -   **Fast startup:** Average startup time is estimated to 1.5 seconds.
 -   **CMG Sans:** Includes a beautiful font by Church Motion Graphics.
 -   **Drawer:** All the tools you need in one place.
