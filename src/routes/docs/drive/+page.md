@@ -1,10 +1,10 @@
 ---
-title: Drive API
+title: Cloud Sync using Google Drive API
 ---
 
-# Google Drive Sync
+# Cloud Sync with Google Drive
 
-> Sync all your important files to Google Drive for automatic backups, and access your projects on another computer. This is 100% free
+> Sync all your important files to Google Drive for automatic backups, and access your projects on another computer. This is 100% free!
 
 :::admonition type=info
 
@@ -42,7 +42,7 @@ Now the key file should be downloaded to your computer. Keep it a secure place. 
 
 You have to give access to a folder in Google Drive, where you want all the files to be uploaded.
 
-1. Copy the service account **mail adress**. (Should look like this: _freeshow@<project_id>.iam.gserviceaccount.com_)
+1. Copy the service account **mail adress**. (Should look like this: _freeshow@<project_id>.iam.gserviceaccount.com_).
 2. In your Google Drive, **create a new folder** and call it e.g. **"FreeShow"**.
 3. Right click and choose **"Share"**.
 4. Paste the service account adress, **disable "Send notification"**, and click **"Share"**. (Make sure the access is set to "Editor").
@@ -51,5 +51,7 @@ You have to give access to a folder in Google Drive, where you want all the file
 
 1. Go to settings, then **"Cloud"**.
 2. Click **"Import keys file"**, and select the file.
-3. Now you should get a popup indicating that the sync has started.
-4. _Optional:_ If you have shared multiple folders, you can edit the main folder by copying the folder ID from the URL inside the folder, and pasting it in the textbox in the settings.
+
+Now you should get a popup indicating that the sync has started.
+
+_Optional:_ If you have shared multiple folders, you can change the main folder by copying the folder ID from the URL inside the folder, and pasting it in the textbox in the settings.

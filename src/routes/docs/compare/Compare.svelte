@@ -2,7 +2,7 @@
     import Icon from "../../../components/Icon.svelte"
 
     // y, n, ?, ~
-    // freeshow, propresenter, easyworship, videopsalm, openlp, proclaim, (mediashout), powerpoint
+    // freeshow, propresenter, easyworship, videopsalm, openlp, proclaim, (mediashout), (presenter), powerpoint
     // fs, pp, ew, vp, ol, pc, ms
     /** @type any */
     const features = [
@@ -27,6 +27,16 @@
                 vp: "Around 50 languages",
                 ol: "At least 26 languages",
                 pc: "English & Spanish",
+            },
+        },
+        {
+            name: "Cloud Sync",
+            programs: { fs: "{y}", pp: "{y}", ew: "{n}", vp: "{y}", ol: "{n}", pc: "{y}" },
+            note: {
+                fs: "Sync with your Google Drive using your own Google API. Or use a repository linked to your local file system.",
+                pp: "Use a repository linked to your local file system.",
+                vp: "Use a repository linked to your local file system.",
+                pc: "Build with sync in mind.",
             },
         },
         {
@@ -92,12 +102,12 @@
     <table>
         <tr>
             <th>Feature</th>
-            <th><a href="https://freeshow.app/" target="_blank">FreeShow</a></th>
-            <th><a href="https://renewedvision.com/propresenter/" target="_blank">ProPresenter</a></th>
-            <th><a href="https://www.easyworship.com/" target="_blank">EasyWorship</a></th>
-            <th><a href="https://myvideopsalm.weebly.com/" target="_blank">VideoPsalm</a></th>
-            <th><a href="https://openlp.org/" target="_blank">OpenLP</a></th>
-            <th><a href="https://faithlife.com/products/proclaim" target="_blank">ProClaim</a></th>
+            <th><a href="https://freeshow.app/" target="_blank" rel="noreferrer">FreeShow</a></th>
+            <th><a href="https://renewedvision.com/propresenter/" target="_blank" rel="noreferrer">ProPresenter</a></th>
+            <th><a href="https://www.easyworship.com/" target="_blank" rel="noreferrer">EasyWorship</a></th>
+            <th><a href="https://myvideopsalm.weebly.com/" target="_blank" rel="noreferrer">VideoPsalm</a></th>
+            <th><a href="https://openlp.org/" target="_blank" rel="noreferrer">OpenLP</a></th>
+            <th><a href="https://faithlife.com/products/proclaim" target="_blank" rel="noreferrer">ProClaim</a></th>
         </tr>
         {#each features as feature}
             <tr>
