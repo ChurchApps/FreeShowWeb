@@ -51,7 +51,14 @@ You have to give access to a folder in Google Drive, where you want all the file
 
 1. Go to settings, then **"Cloud"**.
 2. Click **"Import keys file"**, and select the file.
+3. If you have existing data in the cloud, you will get asked to choose to either keep the local data, or keep the data in the cloud.
 
 Now you should get a popup indicating that the sync has started.
 
 _Optional:_ If you have shared multiple folders, you can change the main folder by copying the folder ID from the URL inside the folder, and pasting it in the textbox in the settings.
+
+:::admonition type=tip
+
+In Google Drive you can right click any of the files and click "Manage versions" to see and download old versions of the file (younger than 30 days) if you need it.
+
+:::
