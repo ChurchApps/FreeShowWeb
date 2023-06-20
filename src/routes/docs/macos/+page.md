@@ -16,9 +16,9 @@ title: Install on MacOS
 !!!
 !!!step title="Open"|description='Go to "Applications", right-click on the FreeShow app, and click "Open"'
 !!!
-!!!step title="Prompt"|description='Click "Cancel"'
+!!!step title="Prompt"|description='Click "Cancel", instead of "Move to Trash"'
 !!!
-!!!step title="Privacy&Security"|description='Go to "System Preferences" -> Security & Privacy -> Scroll down and click "Open anyway" next to "FreeShow was blocked[...]"'
+!!!step title="Open"|description='Again, go to "Applications", right-click on the FreeShow app, and click "Open"'
 !!!
 !!!step title="Prompt"|description='Click "Open"'
 !!!
