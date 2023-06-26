@@ -44,7 +44,7 @@
                 ],
                 Installation: [
                     { title: "Windows", slug: "/docs/windows" },
-                    { title: "MacOS", slug: "/docs/macos" },
+                    { title: "macOS", slug: "/docs/macos" },
                     { title: "Linux", slug: "/docs/linux" },
                 ],
                 Projects: [
@@ -53,30 +53,43 @@
                 ],
                 Show: [
                     { title: "Shows", slug: "/docs/show" },
+                    { title: "Views", slug: "/docs/views" },
                     { title: "Editing", slug: "/docs/editing" },
                     { title: "Items", slug: "/docs/items" },
+                    { title: "Chords", slug: "/docs/chords" },
+                    { title: "Groups", slug: "/docs/groups" },
                     { title: "Layouts", slug: "/docs/layouts" },
                     { title: "Tools", slug: "/docs/tools" },
+                    { title: "Slide Actions", slug: "/docs/actions" },
                 ],
                 Drawer: [
                     { title: "Drawer", slug: "/docs/drawer" },
+                    { title: "Media", slug: "/docs/media" },
+                    { title: "Overlays", slug: "/docs/overlays" },
                     { title: "Scripture", slug: "/docs/scripture" },
+                    { title: "Live", slug: "/docs/live" },
+                    { title: "Timers", slug: "/docs/timers" },
+                    { title: "Templates", slug: "/docs/templates" },
                 ],
                 Outputs: [
                     { title: "Output", slug: "/docs/output" },
                     { title: "Multiple outputs", slug: "/docs/outputs" },
+                    { title: "Styles", slug: "/docs/styles" },
                 ],
+                Calendar: [{ title: "Events", slug: "/docs/events" }],
                 Remote: [
-                    // { title: "Remote", slug: "/docs/remote" },
-                    { title: "Stage", slug: "/docs/stage" },
+                    { title: "Connecting", slug: "/docs/connecting" },
+                    { title: "RemoteShow", slug: "/docs/remote" },
+                    { title: "StageShow", slug: "/docs/stage" },
+                    { title: "ControlShow", slug: "/docs/controller" },
                 ],
-                Cloud: [
-                    {title: "Drive API", slug: "/docs/drive"}
-                ],
+                Cloud: [{ title: "Drive API", slug: "/docs/drive" }],
                 Actions: [
+                    { title: "MIDI", slug: "/docs/midi" },
                     { title: "Importing", slug: "/docs/importing" },
                     { title: "Exporting", slug: "/docs/exporting" },
                 ],
+                Advanced: [{ title: "Mirrors", slug: "/docs/mirrors" }],
                 Tips: [
                     // { title: "Roadmap", slug: "/docs/roadmap" },
                     { title: "Styling", slug: "/docs/styling" },

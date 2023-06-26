@@ -1,5 +1,6 @@
 ---
 title: Styling
+description: Showing text on a screen should be easy to read and follow, and should be inviting to look at.
 ---
 
 # Styling a song

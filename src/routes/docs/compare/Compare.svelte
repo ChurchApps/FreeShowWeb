@@ -65,7 +65,7 @@
         { name: "Chords", info: "Add chords in text", programs: { fs: "{y}", pp: "{n}", ew: "{n}", vp: "{y}", ol: "{y}", pc: "{n}" }, note: { fs: "WIP" } },
         { name: "Slide actions", info: "Add actions that execute when a slide is activated", programs: { fs: "{y}", pp: "{y}", ew: "{n}", vp: "{n}", ol: "{n}", pc: "{y}" } },
         { name: "Transitions", programs: { fs: "{y}", pp: "{y}", ew: "{y}", vp: "{y}", ol: "{n}", pc: "{y}" }, note: { ew: "Can't be changed easily" } },
-        { name: "Timers", programs: { fs: "{y}", pp: "{y}", ew: "{y}", vp: "{y}", ol: "{y}", pc: "{y}" }, note: { fs: "WIP" } },
+        { name: "Timers", programs: { fs: "{y}", pp: "{y}", ew: "{y}", vp: "{y}", ol: "{y}", pc: "{y}" } },
         {
             name: "Media",
             info: "Preview media and set as background",
@@ -88,7 +88,7 @@
         { name: "Cameras", programs: { fs: "{y}", pp: "{y}", ew: "{y}", vp: "{y}", ol: "{n}", pc: "{y}" } },
         { name: "YouTube", info: "Play YouTube videos inside the program", programs: { fs: "{y}", pp: "{n}", ew: "{n}", vp: "{n}", ol: "{n}", pc: "{n}" } },
         { name: "NDI support", info: "Multiple outputs", programs: { fs: "{n}", pp: "{y}", ew: "{y}", vp: "{n}", ol: "{n}", pc: "{n}" }, note: { fs: "Planned" } },
-        { name: "MIDI support", info: "MIDI controllers", programs: { fs: "{y}", pp: "{y}", ew: "{y}", vp: "{n}", ol: "{n}", pc: "{y}" }, note: { fs: "WIP" } },
+        { name: "MIDI support", info: "MIDI controllers", programs: { fs: "{y}", pp: "{y}", ew: "{y}", vp: "{n}", ol: "{n}", pc: "{y}" } },
         { name: "CCLI", info: "Church Copyright Licensing International", programs: { fs: "{y}", pp: "{y}", ew: "{y}", vp: "{y}", ol: "{y}", pc: "{y}" } },
         { name: "Import PowerPoint", programs: { fs: "{y}", pp: "{y}", ew: "{y}", vp: "{y}", ol: "{y}", pc: "{y}" } },
         { name: "Export as PDF", programs: { fs: "{y}", pp: "{y}", ew: "{n}", vp: "{n}", ol: "{n}", pc: "{n}" } },

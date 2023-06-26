@@ -1,5 +1,6 @@
 ---
 title: Features
+description: A list of some core features of FreeShow.
 ---
 
 # List of features

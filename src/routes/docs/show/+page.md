@@ -1,5 +1,6 @@
 ---
 title: Show
+description: A show is your slideshow. It can be song lyrics, events, presentations, images, bible verses, and much more.
 ---
 
 # Showtime
@@ -16,7 +17,7 @@ All your shows can be found in the "Shows" tab in the drawer. Here you can organ
 
 ## Presenting
 
-When opening a show, you will by default get a _"WYSIWYG"_ view, meaning the style of each slide will match the style of the output. You can click any slide to show it, and use the arrow right/left keys to change slides, or press spacebar. In the bottom of the show view you have some buttons to change the layout of the current view.
+When opening a show, you will by default get a _"WYSIWYG"_ view, meaning the style of each slide will match the style of the output. You can click any slide to show it, and use the arrow right/left keys to change slides, or press spacebar. In the bottom of the show view you have some buttons to change the [layout](./layouts) of the current view.
 
 :::admonition type=tip
 Pressing spacebar at the end of a show will go to the next show in the current project.
@@ -24,9 +25,13 @@ Pressing spacebar at the end of a show will go to the next show in the current p
 Pressing the arrow keys will always change the slides of the current outputted show, even when another show is active. But pressing spacebar will always play active show.
 :::
 
+## Transitions
+
+At the bottom right of the center show view, one of the buttons are for changing the global output transition of slide content or media content. If you want to change the transition you have to go to the ["Layout" tool](./tools#layout) on the right.
+
 ## Backgrounds
 
-Adding backgrounds are as easy as dragging them over any of the slides. Say you add a background to the first slide, then that background will be applied to all the concurrent slides as "ghost" backgrounds, meaning they behave the same as the first slide when clicked, but you can only interact with the element on one slide. But you can right click on any slide and select "Remove background" under "Actions".
+Adding backgrounds are as easy as [dragging them](./media#add-as-backgrounds) over any of the slides. Say you add a background to the first slide, then that background will be applied to all the concurrent slides as "ghost" backgrounds, meaning they behave the same as the first slide when clicked, but you can only interact with the element on one slide. If you don't want any background to play on a specific slide, you can right click on the slide, choose "Actions", and click "Remove background".
 
 ## Importing a show
 

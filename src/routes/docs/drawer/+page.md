@@ -1,5 +1,6 @@
 ---
 title: Drawer
+description: The drawer is a simple way to access many of the essential tools without leaving the presentation view.
 ---
 
 # The drawer

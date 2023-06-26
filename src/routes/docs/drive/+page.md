@@ -1,5 +1,6 @@
 ---
 title: Cloud Sync using Google Drive API
+description: Sync all your important files to Google Drive for automatic backups, and access your projects on another computer.
 ---
 
 # Cloud Sync with Google Drive

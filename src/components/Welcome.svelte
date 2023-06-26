@@ -54,8 +54,7 @@
         const query = window.location.href.split("/?v")
         if (query.length > 1) {
             let oldVersion = data.tag_name.slice(1, data.tag_name.length)
-            if (query[1] !== oldVersion)
-                message = "<h2>There is a new update! :D</h2>" + query[1] + " -> " + oldVersion + "<br><br><b>What's new</b>" + data.body.replaceAll("\n", "<br>")
+            if (query[1] !== oldVersion) message = "<h2>There is a new update! :D</h2>" + query[1] + " -> " + oldVersion + "<br><br><b>What's new</b>" + data.body.replaceAll("\n", "<br>")
             else message = "You are up to date! ;)"
             active = true
         }
@@ -67,7 +66,7 @@
     <Button on:click={() => (active = false)} center>Okay</Button>
 </Popup>
 
-<section style="height: calc(100vh - var(--kd--navbar-height));">
+<section style="height: calc(100dvh - var(--kd--navbar-height));">
     <Overlay color="#2d313b">
         <!-- <img src="./preview/v0.0.1.png" alt="Preview of program" /> -->
         <img src="/program_mac.webp" alt="Preview of program on computer" />
@@ -75,12 +74,10 @@
 
     <div class="main">
         <h1 class="title">FreeShow</h1>
-        <p>
+        <p style="margin-bottom: 40px;">
             A free and <Link href="https://github.com/vassbo/freeshow" target="_blank" rel="noreferrer" title="View Source Code on GitHub">open-source</Link> presenter built on
             <Link href="https://www.electronjs.org/" target="_blank" rel="noreferrer" title="Electron website">electron</Link> for anyone to use with ease.
         </p>
-        <br />
-        <br />
         <a on:click={downloading} href={downloadURL} class="link" data-disabled={os === "Android" || os === "iOS"}>
             <Button tabindex={-1} disabled={os === "Android" || os === "iOS"} style="width: 100%;" outline big center>
                 {#if os === "Android" || os === "iOS"}
@@ -93,8 +90,7 @@
             </Button>
         </a>
         <p>Detected {os === "Mac" ? "MacOS" : os}. <Link href="/downloads" title="Downloads page">Download another version.</Link></p>
-        <br />
-        <div style="display: flex;justify-content: center;gap: 20px;">
+        <div style="display: flex;justify-content: center;gap: 20px;margin-top: 20px;">
             <!-- <p>Windows, Mac or Linux</p> -->
             <span title="Windows"><Icon id="windows" size={2} white /></span>
             <span title="Mac"><Icon id="mac" size={2} white /></span>

@@ -1,5 +1,6 @@
 ---
 title: Exporting
+description: FreeShow can export a song to various different formats.
 ---
 
 # Exporting

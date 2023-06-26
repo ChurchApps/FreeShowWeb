@@ -1,5 +1,6 @@
 ---
 title: Introduction
+description: FreeShow is a free and open-source program to show slides and lyrics on a screen.
 ---
 
 # Introduction

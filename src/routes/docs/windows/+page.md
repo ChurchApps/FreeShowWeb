@@ -1,5 +1,6 @@
 ---
 title: Install on Windows
+description: How to install the application on Windows.
 ---
 
 # Install on Windows
@@ -21,5 +22,7 @@ title: Install on Windows
 :::admonition type=info
 
 Note that I have not purchased any code signing keys yet _(about $80/year)_, so you will be prompted with a warning when installing as for now.
+
+After launch, you will get an alert that the Firewall has blocked some features. If you don't allow access, then you can't connect to the application remotely. This includes the stage display, and remote controllers.
 
 :::

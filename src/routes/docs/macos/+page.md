@@ -1,8 +1,9 @@
 ---
-title: Install on MacOS
+title: Install on macOS
+description: How to install the application on macOS.
 ---
 
-# Install on MacOS
+# Install on macOS
 
 <!-- -   **dmg:** Right-click on the .dmg file, click "Open". When promted click "Open" again. Then you should be good to go. -->
 
@@ -10,13 +11,13 @@ title: Install on MacOS
 
 :::steps
 
-!!!step title="Open"|description='Right-click on the .dmg file, and click "Open"'
+!!!step title="Install"|description='Open the .dmg file'
 !!!
-!!!step title="Copy"|description='Drag "FreeShow" icon into "Applications" folder'
+!!!step title="Copy"|description='Drag "FreeShow" icon into the "Applications" folder'
 !!!
 !!!step title="Open"|description='Go to "Applications", right-click on the FreeShow app, and click "Open"'
 !!!
-!!!step title="Prompt"|description='Click "Cancel", instead of "Move to Trash"'
+!!!step title="Prompt"|description='If it says "Open", click it. If it says "Move to Trash", click "Cancel" and proceed'
 !!!
 !!!step title="Open"|description='Again, go to "Applications", right-click on the FreeShow app, and click "Open"'
 !!!
@@ -29,7 +30,6 @@ title: Install on MacOS
 
 Note that I have not purchased any code signing keys yet _($129/year)_, so you will be prompted with a warning when installing as for now.
 
-After launch, you will be asked for permission to allow incoming network connections. If you deny, then RemoteShow, StageShow and ControlShow won't work.
-
+After launch, you will be asked for permission to allow incoming network connections. If you deny, then you can't connect to the application remotely. This includes the stage display, and remote controllers.
 
 :::

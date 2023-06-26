@@ -1,5 +1,6 @@
 ---
 title: Compare
+description: Compare FreeShow to simular applications.
 ---
 
 <script>

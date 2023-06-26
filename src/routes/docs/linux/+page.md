@@ -1,5 +1,6 @@
 ---
 title: Install on Linux
+description: How to install the application on Linux.
 ---
 
 # Install on Linux

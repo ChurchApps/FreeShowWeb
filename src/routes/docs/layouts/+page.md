@@ -1,5 +1,6 @@
 ---
 title: Layouts
+description: Use layouts to create different layouts in the same show, using the same slides.
 ---
 
 # What are layouts
@@ -9,10 +10,6 @@ Layouts are used to create different layouts in the same show, using the same sl
 ## Creating a layout
 
 To create a new layout, select a show and go to "Show" view. Then click on the colored "+" button at the bottom. You can click them to select them. By default there is one layout called "Standard". You can rename the layouts.
-
-## Groups
-
-All the current groups are located at the right side of a show. One group can be a verse, and another for chorus. A group can have multiple slides. Click or drag a group from the right to the center to add it to your current layout. Changing the slide in one group, will change all of the same groups in your layouts at the same time. Groups can be changed from the context menu.
 
 ## Tools
 
