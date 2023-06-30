@@ -14,3 +14,7 @@ The program was created because I couldn't find any free and good softwares to m
 FreeShow is availiable on Windows, Mac OS and Linux. It has many good features, and is still in active development, so is should get more amazing and unique features.
 
 If you haven't already, you can download the application from the homepage: [freeshow.app](https://freeshow.app)
+
+## Get Started Using FreeShow
+
+[![](https://markdown-videos.vercel.app/youtube/9_1lUNcrU1w)](https://youtu.be/9_1lUNcrU1w)
