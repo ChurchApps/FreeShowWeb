@@ -67,7 +67,7 @@
 </Popup>
 
 <section style="height: calc(100dvh - var(--kd--navbar-height));">
-    <Overlay color="#2d313b">
+    <Overlay color="#292c36">
         <!-- <img src="./preview/v0.0.1.png" alt="Preview of program" /> -->
         <img src="/program_mac.webp" alt="Preview of program on computer" />
     </Overlay>

@@ -1,6 +1,7 @@
 :root,
 .prefers-light-scheme {
-    --kd-color-brand: 230 52 156;
+    /* secondary */
+    --kd-color-brand: 240 0 140;
     --kd-color-focus: 79 70 229;
     --kd-color-soft: 68 78 94;
     --kd-color-body: 250 250 250;
@@ -13,8 +14,7 @@
     font-size: 16px;
     scroll-padding-top: 6rem;
 
-    --kd-font-family-sans: Inter VF, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --kd-font-family-sans: Inter VF, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
     --kd-font-family-mono: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation, Mono, Fira Code VF, monospace;
 
@@ -62,12 +62,16 @@
 :root.dark,
 .prefers-dark-scheme {
     color-scheme: dark;
-    --kd-color-brand: 230 52 156;
+    /* secondary */
+    --kd-color-brand: 240 0 140;
     --kd-color-soft: 184 191 207;
     --kd-color-inverse: 245 245 245;
-    --kd-color-border: 25 25 35;
-    --kd-color-elevate: 32 33 41;
-    --kd-color-body: 45 49 59;
+    /* primary darkest */
+    --kd-color-border: 15 15 20;
+    /* primary darker */
+    --kd-color-elevate: 25 25 35;
+    /* primary */
+    --kd-color-body: 41 44 54;
     --kd-color-focus: 129 140 248;
 }
 
