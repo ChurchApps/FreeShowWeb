@@ -11,6 +11,14 @@ Right click on a slide to add an action. All the actions of a slide will show as
 
 Here is a short summary of all the different actions:
 
+### Next slide timer
+
+Set a value in seconds to automatically change to the next slide starting when the slide is activated. Setting to 0 will never change slide.
+
+### Go to start
+
+When the slide is outputted it will go back to the start of the show when the next slide button is triggered. You can still click on the slides after directly to play them.
+
 ### Go to start
 
 When the slide is outputted it will go back to the start of the show when the next slide button is triggered. You can still click on the slides after directly to play them.

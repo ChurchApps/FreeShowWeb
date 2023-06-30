@@ -27,7 +27,7 @@ Pressing the arrow keys will always change the slides of the current outputted s
 
 ## Transitions
 
-At the bottom right of the center show view, one of the buttons are for changing the global output transition of slide content or media content. If you want to change the transition you have to go to the ["Layout" tool](./tools#layout) on the right.
+At the bottom right of the center show view, one of the buttons are for changing the global transition of slide content or media content. If you want to set transitions for individual slides, or a specific show, select the slides, right click and choose "Transition".
 
 ## Backgrounds
 
