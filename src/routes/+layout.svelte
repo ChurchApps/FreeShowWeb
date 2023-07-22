@@ -93,6 +93,7 @@
                 Tips: [
                     // { title: "Roadmap", slug: "/docs/roadmap" },
                     { title: "Styling", slug: "/docs/styling" },
+                    { title: "Keyboard Shortcuts", slug: "/docs/shortcuts"}
                 ],
             },
         }
