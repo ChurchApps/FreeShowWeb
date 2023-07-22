@@ -3,35 +3,37 @@ title: Keyboard Shortcuts
 description: A list of shortcuts available in FreeShow.
 ---
 
+<script>
+import Key from '../../../components/Key.svelte';
+</script>
+
 # Keyboard Shortcuts
 
-*These commands can simplify and speed up common tasks in FreeShow.*
+_These commands can simplify and speed up common tasks in FreeShow._
 
-
-|          Command          |  Shortcut  |
-|---------------------------|------------|
-| Change Tab                | NUM        |
-| Change Drawer Tab         | CTRL + NUM |
-| Select All                | CTRL + A   |
-| Copy                      | CTRL + C   |
-| Duplicate                 | CTRL + D   |
-| Export                    | CTRL + E   |
-| Toggle Fullscreen Preview | CTRL + F   |
-| Import                    | CTRL + I   |
-| Lock Output               | CTRL + L   |
-| Mute                      | CTRL + M   |
-| New Show                  | CTRL + N   |
-| Toggle Output Screen      | CTRL + O   |
-| Update Output             | CTRL + R   |
-| Save                      | CTRL + S   |
-| Paste                     | CTRL + V   |
-| Cut                       | CTRL + X   |
-| Redo                      | CTRL + Y   |
-| Undo                      | CTRL + Z   |
-| Clear All                 | ESC        |
-| Clear Background          | F1         |
-| Clear Slide               | F2         |
-| Clear Overlays            | F3         |
-| Clear Audio               | F4         |
-| Toggle Fullscreen         | F11        |
-
+| Command                   | Shortcut              |
+| ------------------------- | --------------------- |
+| Change Tab                | <Key>NUM</Key>        |
+| Change Drawer Tab         | <Key>CTRL + NUM</Key> |
+| Select All                | <Key>CTRL + A</Key>   |
+| Copy                      | <Key>CTRL + C</Key>   |
+| Duplicate                 | <Key>CTRL + D</Key>   |
+| Export                    | <Key>CTRL + E</Key>   |
+| Toggle Fullscreen Preview | <Key>CTRL + F</Key>   |
+| Import                    | <Key>CTRL + I</Key>   |
+| Lock Output               | <Key>CTRL + L</Key>   |
+| Mute                      | <Key>CTRL + M</Key>   |
+| New Show                  | <Key>CTRL + N</Key>   |
+| Toggle Output Screen      | <Key>CTRL + O</Key>   |
+| Update Output             | <Key>CTRL + R</Key>   |
+| Save                      | <Key>CTRL + S</Key>   |
+| Paste                     | <Key>CTRL + V</Key>   |
+| Cut                       | <Key>CTRL + X</Key>   |
+| Redo                      | <Key>CTRL + Y</Key>   |
+| Undo                      | <Key>CTRL + Z</Key>   |
+| Clear All                 | <Key>ESC</Key>        |
+| Clear Background          | <Key>F1</Key>         |
+| Clear Slide               | <Key>F2</Key>         |
+| Clear Overlays            | <Key>F3</Key>         |
+| Clear Audio               | <Key>F4</Key>         |
+| Toggle Fullscreen         | <Key>F11</Key>        |
