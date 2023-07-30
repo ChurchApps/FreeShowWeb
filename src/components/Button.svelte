@@ -3,6 +3,7 @@
     class={$$props.class || null}
     disabled={$$props.disabled}
     class:colored={$$props.colored}
+    class:border={$$props.border}
     class:outline={$$props.outline}
     class:big={$$props.big}
     class:center={$$props.center}
@@ -45,6 +46,12 @@
     button.colored:active:not(button:disabled) {
         background-color: var(--secondary-opacity);
         opacity: 0.8;
+    }
+
+    button.border {
+        border: 4px solid var(--secondary) !important;
+        /* background-color: transparent;
+        background-color: var(--secondary-opacity); */
     }
 
     button.outline {

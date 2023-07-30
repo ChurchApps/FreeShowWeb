@@ -1,6 +1,6 @@
 ---
 title: Scripture
-description: Choose from over 200 online bible versions, or import your own bibles.
+description: Choose from over 250 online bible versions, or import your own bibles.
 ---
 
 # Scripture

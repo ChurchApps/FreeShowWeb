@@ -9,6 +9,16 @@ Access from the application menu: **File** -> **Import**. Or press _CTRL/CMD + I
 
 Here you have a bunch of different options to import different file types from various programs. Most of them will create a new show.
 
+## Supported files
+
+-   FreeShow
+-   ProPresenter 4-7 (If you have a .proBundle file, add .zip to the end and extract.)
+-   EasyWorship 6-7
+-   VideoPsalm
+-   OpenLP + OpenLyrics
+-   OpenSong
+-   ChordPro
+
 ## PowerPoint
 
 Clicking on "PowerPoint" and selecting a presentation will import just the text and create a new show, which is useful for importing song lyrics.

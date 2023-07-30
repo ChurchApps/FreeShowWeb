@@ -31,8 +31,26 @@
             })
     })
 
+    function startDownload() {
+        if (!localStorage.getItem("purchased")) return (chooseCustomPrice = true)
+
+        window.open(downloadURL, "_self")
+        downloading()
+    }
+
+    function download() {
+        if (!chosenOption) return
+        if (chosenOption === "pay") return window.open("https://buy.stripe.com/aEU8zL9s38X0bxmbIJ", "_self")
+
+        chooseCustomPrice = false
+        window.open(downloadURL, "_self")
+        downloading()
+    }
+
     function downloading() {
-        message = "Thank you! ;)<br><br>Note that on Windows & MacOS you will get a warning when installing currently,<br>because I haven't purchased any code signing keys yet."
+        message = "<h2>Thank you for choosing FreeShow! ;)</h2>"
+        if (os === "Mac") message += "Note that on MacOS you will get a warning when installing currently,<br>because I have not purchased any code signing keys yet."
+        if (os === "Windows") message += "Note that on Windows you will get a warning when installing currently,<br>because I have not purchased any code signing keys yet."
         active = true
     }
 
@@ -49,21 +67,62 @@
 
     $: if (data) {
         downloadURL = data.assets.find((/** @type any */ { name }) => name.includes(extensions[os]))?.browser_download_url || ""
+        const query = window.location.href.split("/?")[1] || ""
 
-        // check version
-        const query = window.location.href.split("/?v")
-        if (query.length > 1) {
-            let oldVersion = data.tag_name.slice(1, data.tag_name.length)
-            if (query[1] !== oldVersion) message = "<h2>There is a new update! :D</h2>" + query[1] + " -> " + oldVersion + "<br><br><b>What's new</b>" + data.body.replaceAll("\n", "<br>")
+        // /?v0.1.0
+        if (query[0] === "v" && query.length > 2 && query.length < 8) {
+            let newVersion = data.tag_name.slice(1, data.tag_name.length)
+            if (query !== newVersion) message = "<h2>There is a new update! :D</h2>" + query.slice(1) + " -> " + newVersion + "<br><br><b>What's new</b>" + data.body.replaceAll("\n", "<br>")
             else message = "You are up to date! ;)"
             active = true
         }
+
+        // /?download
+        if (query === "download") {
+            window.open(downloadURL, "_self")
+            message = "Your download should begin shortly."
+            active = true
+        }
+
+        // /?payment_successful
+        if (query === "payment_successful") {
+            localStorage.setItem("purchased", "true")
+            window.open(downloadURL, "_self")
+            message = "<h2>Thank you for being awesome! :)</h2>Your download should begin shortly."
+            active = true
+        }
     }
+
+    let chooseCustomPrice = false
+    let chosenOption = ""
 </script>
 
-<Popup {active}>
+<Popup bind:active>
     {@html message}
     <Button on:click={() => (active = false)} center>Okay</Button>
+</Popup>
+
+<Popup bind:active={chooseCustomPrice}>
+    <h2 style="text-align: center;color: var(--text);font-size: 2em;">Download FreeShow</h2>
+
+    <div class="choose">
+        <Button style="border: 4px solid var(--primary-darkest);" border={chosenOption === "pay"} on:click={() => (chosenOption = "pay")}>
+            <span><h3 style="color: var(--secondary);font-size: 2em;min-width: 120px;">$19</h3></span>
+            <span style="text-align: left;max-width: 40vw;">
+                <h6 style="margin-bottom: 2px;">Custom price</h6>
+                <p style="opacity: 0.7;font-size: 0.8em;">Pay what you think this software is actually worth, <br />and support the continued development of this software.</p>
+            </span>
+        </Button>
+        <Button style="border: 4px solid var(--primary-darkest);" border={chosenOption === "free"} on:click={() => (chosenOption = "free")}>
+            <span><h3 style="color: var(--secondary);font-size: 2em;min-width: 120px;">$0</h3></span>
+            <span style="text-align: left;max-width: 40vw;">
+                <h6 style="margin-bottom: 5px2">Get for free</h6>
+                <p style="opacity: 0.7;font-size: 0.8em;">This software will always be free to download, <br />but you will not support the developer.</p>
+            </span>
+        </Button>
+    </div>
+
+    <Button disabled={!chosenOption} on:click={download} center>{chosenOption === "pay" ? "Purchase" : chosenOption === "free" ? "Download" : "Choose an option"}</Button>
 </Popup>
 
 <section style="height: calc(100dvh - var(--kd--navbar-height));">
@@ -78,17 +137,17 @@
             A free and <Link href="https://github.com/vassbo/freeshow" target="_blank" rel="noreferrer" title="View Source Code on GitHub">open-source</Link> presenter built on
             <Link href="https://www.electronjs.org/" target="_blank" rel="noreferrer" title="Electron website">electron</Link> for anyone to use with ease.
         </p>
-        <a on:click={downloading} href={downloadURL} class="link" data-disabled={os === "Android" || os === "iOS"}>
-            <Button tabindex={-1} disabled={os === "Android" || os === "iOS"} style="width: 100%;" outline big center>
-                {#if os === "Android" || os === "iOS"}
-                    <Icon id="download" size={1.2} white />
-                {:else}
-                    <Icon id={os.toLowerCase()} size={1.2} white />
-                {/if}
-                <span style="font-weight: bold;font-size: 1.5em;padding-left: 10px;">Download</span>
-                <span style="opacity: 0.6;font-size: 1.2em;">{data?.tag_name || ""}</span>
-            </Button>
-        </a>
+        <!-- <a href={downloadURL} class="link" data-disabled={os === "Android" || os === "iOS"}> -->
+        <Button on:click={startDownload} tabindex={-1} disabled={os === "Android" || os === "iOS"} style="width: 100%;" outline big center>
+            {#if os === "Android" || os === "iOS"}
+                <Icon id="download" size={1.2} white />
+            {:else}
+                <Icon id={os.toLowerCase()} size={1.2} white />
+            {/if}
+            <span style="font-weight: bold;font-size: 1.5em;padding-left: 10px;">Download</span>
+            <span style="opacity: 0.6;font-size: 1.2em;">{data?.tag_name || ""}</span>
+        </Button>
+        <!-- </a> -->
         <p>Detected {os === "Mac" ? "MacOS" : os}. <Link href="/downloads" title="Downloads page">Download another version.</Link></p>
         <div style="display: flex;justify-content: center;gap: 20px;margin-top: 20px;">
             <!-- <p>Windows, Mac or Linux</p> -->
@@ -122,14 +181,6 @@
 
     :global(.on-this-page) {
         display: none !important;
-    }
-
-    /* popup */
-    .popup :global(.not-prose.relative) {
-        width: 100%;
-    }
-    .popup :global(.absolute) {
-        left: 0;
     }
 
     h1 {
@@ -173,14 +224,21 @@
         overflow: auto;
     }
 
-    .link {
+    /* .link {
         color: var(--text);
         text-decoration: none;
-    }
+    } */
 
     .downloads {
         font-size: 3em;
         font-weight: bold;
+    }
+
+    .choose {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin: 20px 0;
     }
 
     /* media */
