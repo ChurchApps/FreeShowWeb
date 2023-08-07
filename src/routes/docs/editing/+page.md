@@ -3,11 +3,15 @@ title: Editing
 description: The different tools for editing a show.
 ---
 
+<script>
+    import Key from '../../../components/Key.svelte';
+</script>
+
 # Editing a show
 
 To edit a show, go to the "Edit" view in the top, with a show active. Here you can select any slide, or add new on the left, change text and move/resize items in the center, and see more tools on the right side.
 
-You can zoom in/out or enable [chords](./chords) in the bottom center. And if you hold _CTRL/CMD_ and scroll up or down over the slides in the left panel you can show more slides at once.
+You can zoom in/out or enable [chords](./chords) in the bottom center. And if you hold <Key>CTRL/CMD</Key> and scroll up or down over the slides in the left panel you can show more slides at once.
 
 :::admonition type=tip
 Hold ALT and press Enter when the cursor is placed anywhere in a textbox to split the text in two slides.

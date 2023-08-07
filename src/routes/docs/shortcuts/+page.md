@@ -13,16 +13,16 @@ _These commands can simplify and speed up common tasks in FreeShow._
 
 | Command              | Shortcut                  |
 | -------------------- | ------------------------- |
-| Change Tab           | <Key>NUM</Key>            |
-| Change Drawer Tab    | <Key>CTRL/CMD + NUM</Key> |
 | Select All           | <Key>CTRL/CMD + A</Key>   |
 | Bold                 | <Key>CTRL/CMD + B</Key>   |
 | Copy                 | <Key>CTRL/CMD + C</Key>   |
 | Duplicate            | <Key>CTRL/CMD + D</Key>   |
+| Toggle Drawer        | <Key>CTRL/CMD + D</Key>   |
 | Export               | <Key>CTRL/CMD + E</Key>   |
 | Search               | <Key>CTRL/CMD + F</Key>   |
-| Import               | <Key>CTRL/CMD + I</Key>   |
+| History              | <Key>CTRL/CMD + H</Key>   |
 | Italic               | <Key>CTRL/CMD + I</Key>   |
+| Import               | <Key>CTRL/CMD + I</Key>   |
 | Lock Output          | <Key>CTRL/CMD + L</Key>   |
 | Mute                 | <Key>CTRL/CMD + M</Key>   |
 | New Show             | <Key>CTRL/CMD + N</Key>   |
@@ -35,9 +35,15 @@ _These commands can simplify and speed up common tasks in FreeShow._
 | Redo                 | <Key>CTRL/CMD + Y</Key>   |
 | Undo                 | <Key>CTRL/CMD + Z</Key>   |
 | Shortcuts            | <Key>CTRL/CMD + ?</Key>   |
+|                      |                           |
+| Remove Selection     | <Key>ESC</Key>            |
 | Clear All            | <Key>ESC</Key>            |
 | Clear Background     | <Key>F1</Key>             |
+| Rename               | <Key>F2</Key>             |
 | Clear Slide          | <Key>F2</Key>             |
 | Clear Overlays       | <Key>F3</Key>             |
 | Clear Audio          | <Key>F4</Key>             |
 | Toggle Fullscreen    | <Key>F11</Key>            |
+|                      |                           |
+| Change Tab           | <Key>NUM</Key>            |
+| Change Drawer Tab    | <Key>CTRL/CMD + NUM</Key> |

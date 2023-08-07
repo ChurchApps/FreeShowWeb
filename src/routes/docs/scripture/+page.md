@@ -1,7 +1,11 @@
 ---
 title: Scripture
-description: Choose from over 250 online bible versions, or import your own bibles.
+description: Choose from over 230 online bible versions, or import your own bibles.
 ---
+
+<script>
+    import Key from '../../../components/Key.svelte';
+</script>
 
 # Scripture
 
@@ -9,11 +13,11 @@ Choose from over 200 bible versions from [API.Bible](https://scripture.api.bible
 
 ## Search
 
-Start searching to quickly select any verse in the bible, it will auto complete the book name. Can be like this: **"John 1:1-4"**, or like this: **"Genesis 1:1-2+5"**, then press _enter_ to show in output.
+Start searching to quickly select any verse in the bible, it will auto complete the book name. Can be like this: **"John 1:1-4"**, or like this: **"Genesis 1:1-2+5"**, then press <Key>Enter</Key> to show in output.
 
 ## Selecting
 
-You can select verses manually by holding _CTRL/CMD_ while clicking on them. Double clicking any verse will show it in the output. Pressing _enter_ when verses are selected will output them directly. Holding _CTRL/CMD_ and pressing _arrow left/right_ will move the selection to the next verses.
+You can select verses manually by holding <Key>CTRL/CMD</Key> while clicking on them. Double clicking any verse will show it in the output. Pressing <Key>Enter</Key> when verses are selected will output them directly. Holding <Key>CTRL/CMD</Key> and pressing <Key>Arrow left/right</Key> will move the selection to the next verses.
 
 ## Create a collection
 

@@ -41,16 +41,17 @@
     function download() {
         if (!chosenOption) return
         if (chosenOption === "pay") return window.open("https://buy.stripe.com/aEU8zL9s38X0bxmbIJ", "_self")
+        if (chosenOption === "yearly") return window.open("https://buy.stripe.com/cN26rDcEfa14cBq5km", "_self")
 
         chooseCustomPrice = false
         window.open(downloadURL, "_self")
         downloading()
     }
 
-    function downloading() {
-        message = "<h2>Thank you for choosing FreeShow! ;)</h2>"
-        if (os === "Mac") message += "Note that on MacOS you will get a warning when installing currently,<br>because I have not purchased any code signing keys yet."
-        if (os === "Windows") message += "Note that on Windows you will get a warning when installing currently,<br>because I have not purchased any code signing keys yet."
+    function downloading(msg = "<h2>Thank you for choosing FreeShow! ;)</h2>") {
+        message = msg
+        if (os === "Mac") message += '<span style="font-size: 0.8em;opacity: 0.6;">Note that on MacOS you will get a warning when installing currently,<br>because I have not purchased any code signing keys yet.</span>'
+        if (os === "Windows") message += '<span style="font-size: 0.8em;opacity: 0.6;">Note that on Windows you will get a warning when installing currently,<br>because I have not purchased any code signing keys yet.</span>'
         active = true
     }
 
@@ -80,16 +81,14 @@
         // /?download
         if (query === "download") {
             window.open(downloadURL, "_self")
-            message = "Your download should begin shortly."
-            active = true
+            downloading("Your download should begin shortly.<br>")
         }
 
         // /?payment_successful
         if (query === "payment_successful") {
             localStorage.setItem("purchased", "true")
             window.open(downloadURL, "_self")
-            message = "<h2>Thank you for being awesome! :)</h2>Your download should begin shortly."
-            active = true
+            downloading("<h2>Thank you for being awesome! :)</h2>Your download should begin shortly.<br>")
         }
     }
 
@@ -106,23 +105,30 @@
     <h2 style="text-align: center;color: var(--text);font-size: 2em;">Download FreeShow</h2>
 
     <div class="choose">
-        <Button style="border: 4px solid var(--primary-darkest);" border={chosenOption === "pay"} on:click={() => (chosenOption = "pay")}>
-            <span><h3 style="color: var(--secondary);font-size: 2em;min-width: 120px;">$19</h3></span>
+        <Button style="border: 4px solid var(--primary-darkest);padding: 5px;" border={chosenOption === "pay"} on:click={() => (chosenOption = "pay")}>
+            <span><h3 style="color: var(--secondary);font-size: 1.7em;min-width: 110px;">$19</h3></span>
             <span style="text-align: left;max-width: 40vw;">
                 <h6 style="margin-bottom: 2px;">Custom price</h6>
-                <p style="opacity: 0.7;font-size: 0.8em;">Pay what you think this software is actually worth, <br />and support the continued development of this software.</p>
+                <p style="opacity: 0.7;font-size: 0.7em;">Pay what you think this software is actually worth, <br />and support the development of this software.</p>
             </span>
         </Button>
-        <Button style="border: 4px solid var(--primary-darkest);" border={chosenOption === "free"} on:click={() => (chosenOption = "free")}>
-            <span><h3 style="color: var(--secondary);font-size: 2em;min-width: 120px;">$0</h3></span>
+        <Button style="border: 4px solid var(--primary-darkest);padding: 5px;" border={chosenOption === "yearly"} on:click={() => (chosenOption = "yearly")}>
+            <span><h3 style="color: var(--secondary);font-size: 1.7em;min-width: 110px;">$25</h3></span>
+            <span style="text-align: left;max-width: 40vw;">
+                <h6 style="margin-bottom: 2px;">Yearly subscription</h6>
+                <p style="opacity: 0.7;font-size: 0.7em;">Ensure the continued development of this software, <br />and support the developer yearly.</p>
+            </span>
+        </Button>
+        <Button style="border: 4px solid var(--primary-darkest);padding: 5px;" border={chosenOption === "free"} on:click={() => (chosenOption = "free")}>
+            <span><h3 style="color: var(--secondary);font-size: 1.7em;min-width: 110px;">$0</h3></span>
             <span style="text-align: left;max-width: 40vw;">
                 <h6 style="margin-bottom: 5px2">Get for free</h6>
-                <p style="opacity: 0.7;font-size: 0.8em;">This software will always be free to download, <br />but you will not support the developer.</p>
+                <p style="opacity: 0.7;font-size: 0.7em;">This software will always be free to download, <br />but you will not support the development.</p>
             </span>
         </Button>
     </div>
 
-    <Button disabled={!chosenOption} on:click={download} center>{chosenOption === "pay" ? "Purchase" : chosenOption === "free" ? "Download" : "Choose an option"}</Button>
+    <Button disabled={!chosenOption} on:click={download} center>{chosenOption === "pay" ? "Purchase" : chosenOption === "yearly" ? "Subscribe" : chosenOption === "free" ? "Download" : "Choose an option"}</Button>
 </Popup>
 
 <section style="height: calc(100dvh - var(--kd--navbar-height));">
@@ -134,8 +140,8 @@
     <div class="main">
         <h1 class="title">FreeShow</h1>
         <p style="margin-bottom: 40px;">
-            A free and <Link href="https://github.com/vassbo/freeshow" target="_blank" rel="noreferrer" title="View Source Code on GitHub">open-source</Link> presenter built on
-            <Link href="https://www.electronjs.org/" target="_blank" rel="noreferrer" title="Electron website">electron</Link> for anyone to use with ease.
+            A user-friendly and <Link href="https://github.com/vassbo/freeshow" target="_blank" rel="noreferrer" title="View Source Code on GitHub">open-source</Link> presenter built on
+            <Link href="https://www.electronjs.org/" target="_blank" rel="noreferrer" title="Electron website">electron</Link>.
         </p>
         <!-- <a href={downloadURL} class="link" data-disabled={os === "Android" || os === "iOS"}> -->
         <Button on:click={startDownload} tabindex={-1} disabled={os === "Android" || os === "iOS"} style="width: 100%;" outline big center>

@@ -66,22 +66,21 @@
                     { title: "Drawer", slug: "/docs/drawer" },
                     { title: "Media", slug: "/docs/media" },
                     { title: "Overlays", slug: "/docs/overlays" },
-                    { title: "Scripture", slug: "/docs/scripture" },
-                    { title: "Live", slug: "/docs/live" },
-                    { title: "Timers", slug: "/docs/timers" },
                     { title: "Templates", slug: "/docs/templates" },
+                    { title: "Scripture", slug: "/docs/scripture" },
+                    { title: "Calendar", slug: "/docs/calendar" },
                 ],
                 Outputs: [
                     { title: "Output", slug: "/docs/output" },
                     { title: "Multiple outputs", slug: "/docs/outputs" },
                     { title: "Styles", slug: "/docs/styles" },
                 ],
-                Calendar: [{ title: "Events", slug: "/docs/events" }],
                 Remote: [
                     { title: "Connecting", slug: "/docs/connecting" },
                     { title: "RemoteShow", slug: "/docs/remote" },
                     { title: "StageShow", slug: "/docs/stage" },
                     { title: "ControlShow", slug: "/docs/controller" },
+                    { title: "OutputShow", slug: "/docs/outputstream" },
                 ],
                 Cloud: [{ title: "Drive API", slug: "/docs/drive" }],
                 Actions: [
@@ -93,7 +92,7 @@
                 Tips: [
                     // { title: "Roadmap", slug: "/docs/roadmap" },
                     { title: "Styling", slug: "/docs/styling" },
-                    { title: "Keyboard Shortcuts", slug: "/docs/shortcuts"}
+                    { title: "Keyboard Shortcuts", slug: "/docs/shortcuts" },
                 ],
             },
         }

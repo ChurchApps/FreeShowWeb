@@ -19,13 +19,17 @@ Set a value in seconds to automatically change to the next slide starting when t
 
 When the slide is outputted it will go back to the start of the show when the next slide button is triggered. You can still click on the slides after directly to play them.
 
-### Go to start
+### Animate
 
-When the slide is outputted it will go back to the start of the show when the next slide button is triggered. You can still click on the slides after directly to play them.
+Add custom animations for text or items, on the selected slides.
+
+### Start show
+
+Trigger another show when a slide with this action is played.
 
 ### Next after media
 
-This will automatically play the next slide when a video background has ended. This triggers even when the video is set to "loop".
+This will automatically play the next slide when a video background, audio or timer has ended. This triggers even when the video is set to "loop".
 
 ### Start timer
 

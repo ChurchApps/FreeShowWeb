@@ -3,9 +3,13 @@ title: Importing
 description: Import songs from many different programs.
 ---
 
+<script>
+    import Key from '../../../components/Key.svelte';
+</script>
+
 # Importing
 
-Access from the application menu: **File** -> **Import**. Or press _CTRL/CMD + I_.
+Access from the application menu: **File** -> **Import**. Or press <Key>CTRL/CMD + I</Key>.
 
 Here you have a bunch of different options to import different file types from various programs. Most of them will create a new show.
 
@@ -35,4 +39,4 @@ A FreeShow project is a file containing a project and all of it shows, it's usef
 
 ## Calendar
 
-Import a calendar .ics file. It will be converted to the programs own calendar format, that can be accessed from the "Calendar" view. If you import the same calendar multiple times, only the new/changed events are imported.
+Import a calendar .ics file. It will be converted to the programs own calendar format, that can be accessed from the ["Calendar"](./calendar) drawer menu. If you import the same calendar multiple times, only the new/changed events are imported.

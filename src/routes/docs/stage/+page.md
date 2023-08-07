@@ -7,15 +7,20 @@ description: Stage is used to display content exclusive to the people on stage.
 
 > Stage is used to display content exclusive to the people on stage.
 
-If you are ready to connect, [see this](./connecting).
-
 ### Editing
 
-When you are in "Stage" view, you can edit the apperance of your stage displays. You can add multiple slides/layouts in the left panel, and choose one of them when connecting. In the right panel you can click on any of the options to activate them, or change the style of any selected. And resize them in the middle.
+When you are in "Stage" view, you can edit the apperance of your stage displays. You can add multiple slides/layouts with the "New layout" button in the left panel. In the right panel you can click on any of the options to activate them, or change the style of any selected. And resize them in the middle.
 
 :::admonition type=tip
 Right click on a stage slide for the option to disable it, or move all connected devices to that one.
 :::
+
+### Connecting
+
+When you are ready to connect, [see this](./connecting).
+
+If you have multiple stage layouts, you will have to choose one of them, this will be remembered for that device.
+When inside a stage view in a browser you can click on the screen to reveal some buttons to go "home", or to toggle fullscreen.
 
 ### Slide
 

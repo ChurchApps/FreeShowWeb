@@ -1,11 +1,6 @@
 <div class="flex">
     <!-- Capterra -->
-    <a
-        class="badge"
-        href="https://www.capterra.com/reviews/251606/FreeShow?utm_source=vendor&utm_medium=badge&utm_campaign=capterra_reviews_badge"
-        target="_blank"
-        rel="noreferrer"
-    >
+    <a class="badge" href="https://www.capterra.com/reviews/251606/FreeShow?utm_source=vendor&utm_medium=badge&utm_campaign=capterra_reviews_badge" target="_blank" rel="noreferrer">
         <img src="https://assets.capterra.com/badge/9d71bff6e2634c97eea1ed5485aacba4.svg?v=2207453&p=251606" alt="FreeShow reviews Capterra" />
     </a>
 
@@ -26,18 +21,20 @@
 
     <script>
         ;(function () {
-            var p = document.getElementsByTagName("script")[0]
-            let badgeId = "https://b.sf-syn.com/badge_js?sf_id=3503885&variant_id="
-            // SF
-            var sf = document.createElement("script")
-            sf.async = true
-            sf.src = badgeId + "sf"
-            p.parentNode.insertBefore(sf, p)
-            // SD
-            var sd = document.createElement("script")
-            sd.async = true
-            sd.src = badgeId + "sd"
-            p.parentNode.insertBefore(sd, p)
+            setTimeout(() => {
+                var p = document.getElementsByTagName("script")[0]
+                let badgeId = "https://b.sf-syn.com/badge_js?sf_id=3503885&variant_id="
+                // SF
+                var sf = document.createElement("script")
+                sf.async = true
+                sf.src = badgeId + "sf"
+                p.parentNode.insertBefore(sf, p)
+                // SD
+                var sd = document.createElement("script")
+                sd.async = true
+                sd.src = badgeId + "sd"
+                p.parentNode.insertBefore(sd, p)
+            }, 3000)
         })()
     </script>
 </div>

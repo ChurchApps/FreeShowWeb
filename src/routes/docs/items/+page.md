@@ -27,6 +27,10 @@ This is for adding a timer to your slide, that can be controlled from "Timers" i
 
 Show the system time either analog og digital.
 
+### Variable
+
+Add a dynamic item to your slide. For creating and changing variables [see this](./overlays#variables).
+
 ### Mirror
 
 This is for adding a "link" to another shows item, can be used for showing multiple versions of a song/scripture in the same show. Or to show a stage display. [See more here.](./mirrors)

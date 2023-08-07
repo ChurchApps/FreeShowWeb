@@ -3,6 +3,10 @@ title: Output
 description: The output is one or more windows that displays the main content to the audience.
 ---
 
+<script>
+    import Key from '../../../components/Key.svelte';
+</script>
+
 # The output
 
 > The output is one or more windows that displays the main content to the audience.
@@ -15,7 +19,7 @@ To activate the output window, you have to press the button with an arrow in the
 
 Double click the window to hide it.
 
-Hold CTRL/CMD while hovering over the output window to show a drag bar at the top.
+Hold <Key>CTRL/CMD</Key> while hovering over the output window to show a drag bar at the top.
 
 :::
 

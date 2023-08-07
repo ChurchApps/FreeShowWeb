@@ -87,7 +87,7 @@
         },
         { name: "Cameras", programs: { fs: "{y}", pp: "{y}", ew: "{y}", vp: "{y}", ol: "{n}", pc: "{y}" } },
         { name: "YouTube", info: "Play YouTube videos inside the program", programs: { fs: "{y}", pp: "{n}", ew: "{n}", vp: "{n}", ol: "{n}", pc: "{n}" } },
-        { name: "NDI support", info: "Multiple outputs", programs: { fs: "{n}", pp: "{y}", ew: "{y}", vp: "{n}", ol: "{n}", pc: "{n}" }, note: { fs: "Planned" } },
+        { name: "NDI support", info: "Multiple outputs, useful for streaming", programs: { fs: "{n}", pp: "{y}", ew: "{y}", vp: "{n}", ol: "{n}", pc: "{n}" }, note: { fs: "Planned" } },
         { name: "MIDI support", info: "MIDI controllers", programs: { fs: "{y}", pp: "{y}", ew: "{y}", vp: "{n}", ol: "{n}", pc: "{y}" } },
         { name: "CCLI", info: "Church Copyright Licensing International", programs: { fs: "{y}", pp: "{y}", ew: "{y}", vp: "{y}", ol: "{y}", pc: "{y}" } },
         { name: "Import PowerPoint", programs: { fs: "{y}", pp: "{y}", ew: "{y}", vp: "{y}", ol: "{y}", pc: "{y}" } },
@@ -102,12 +102,12 @@
     <table>
         <tr>
             <th>Feature</th>
-            <th><a href="https://freeshow.app/" target="_blank" rel="noreferrer">FreeShow</a></th>
-            <th><a href="https://renewedvision.com/propresenter/" target="_blank" rel="noreferrer">ProPresenter</a></th>
-            <th><a href="https://www.easyworship.com/" target="_blank" rel="noreferrer">EasyWorship</a></th>
-            <th><a href="https://myvideopsalm.weebly.com/" target="_blank" rel="noreferrer">VideoPsalm</a></th>
-            <th><a href="https://openlp.org/" target="_blank" rel="noreferrer">OpenLP</a></th>
-            <th><a href="https://faithlife.com/products/proclaim" target="_blank" rel="noreferrer">ProClaim</a></th>
+            <th style="text-align: center;"><a href="https://freeshow.app/" target="_blank" rel="noreferrer">FreeShow</a></th>
+            <th style="text-align: center;"><a href="https://renewedvision.com/propresenter/" target="_blank" rel="noreferrer">ProPresenter</a></th>
+            <th style="text-align: center;"><a href="https://www.easyworship.com/" target="_blank" rel="noreferrer">EasyWorship</a></th>
+            <th style="text-align: center;"><a href="https://myvideopsalm.weebly.com/" target="_blank" rel="noreferrer">VideoPsalm</a></th>
+            <th style="text-align: center;"><a href="https://openlp.org/" target="_blank" rel="noreferrer">OpenLP</a></th>
+            <th style="text-align: center;"><a href="https://faithlife.com/products/proclaim" target="_blank" rel="noreferrer">ProClaim</a></th>
         </tr>
         {#each features as feature}
             <tr>
@@ -129,7 +129,7 @@
                                 <Icon id="windows" color="#0078D7" />
                             {/if}
                             {#if feature.programs[id].includes("{mac}")}
-                                <Icon id="mac" color="#999999" />
+                                <Icon id="mac" color="#cccccc" />
                             {/if}
                             {#if feature.programs[id].includes("{linux}")}
                                 <Icon id="linux" color="#dd4814" />

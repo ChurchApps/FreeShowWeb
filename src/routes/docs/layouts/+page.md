@@ -9,7 +9,7 @@ Layouts are used to create different layouts in the same show, using the same sl
 
 ## Creating a layout
 
-To create a new layout, select a show and go to "Show" view. Then click on the colored "+" button at the bottom. You can click them to select them. By default there is one layout called "Standard". You can rename the layouts.
+By default there is just one layout. To create a new layout, select a show and go to "Show" view. Then click on the "Add layout" button at the bottom. You can click a layout to select it, or right click to rename.
 
 ## Tools
 

@@ -15,15 +15,16 @@ _These are some of the main features._
 -   **Countdowns:** Add custom countdown timers.
 -   **Multiple outputs:** Add as many outputs as you want, with easy control.
 -   **Output layers:** Set and clear different layers: background/slide/overlays.
--   **Import:** Text, PDF, PowerPoint, ProPresenter, EasyWorship, VideoPsalm, OpenLP, OpenSong and more.
+-   **Animations:** Add custom animations to the items on your slides.
+-   **Import:** Text, ChordPro, PDF, PowerPoint, ProPresenter, EasyWorship, VideoPsalm, OpenLP, OpenSong and more.
 -   **Export:** Export shows as text, PDF, or export an entire project.
 -   **Backgrounds:** Add backgrounds to your slides to make them stand out.
 -   **Overlays:** Have as many overlays as you want on top of any slide.
 -   **Templates:** Add templates to quickly change the style of your slides.
--   **Live:** Mirror any screen or program on the computer to the output screen.
+-   **Recorder:** Mirror any screen or program on the computer to the output screen, and record them.
 -   **Player:** Play YouTube & Vimeo videos directly in the program. More platforms may be added.
--   **Audio:** Play one or more audio tracks, and link them to your slides.
+-   **Audio:** Play one or more audio tracks, or microphones, and link them to your slides.
 -   **Chords:** Add chords to the text and show them in stage display.
 -   **Lock Output:** Lock the output to know for sure that you can't accidentally change the output.
--   **Transitions:** Add custom transitions for every single slide.
+-   **Transitions:** Add custom transitions for every single slide and items.
 -   **Cloud Sync:** Sync all the data with your Google Drive using your own Google API.

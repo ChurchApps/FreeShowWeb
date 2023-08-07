@@ -15,6 +15,10 @@ Right click on the view button to quickly change to any view.
 
 This is the most common view. Here you can see all of the slides as they are outputted in a grid. Useful for presenting.
 
+### Simple view
+
+This is a trimmed down version of the grid view. All the slide icons, labels, and also any disabled slides are hidden.
+
 ### List view
 
 All of the slides from the grid view are shows on the left in a list, and on the right you can quickly change the text of any textboxes on the slides. Useful for quick editing of typos.

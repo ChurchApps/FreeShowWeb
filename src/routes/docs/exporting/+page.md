@@ -3,9 +3,13 @@ title: Exporting
 description: FreeShow can export a song to various different formats.
 ---
 
+<script>
+    import Key from '../../../components/Key.svelte';
+</script>
+
 # Exporting
 
-Access from the application menu: **File** -> **Export**. Or press _CTRL/CMD + E_.
+Access from the application menu: **File** -> **Export**. Or press <Key>CTRL/CMD + E</Key>.
 
 These are the currently cupported export options:
 
