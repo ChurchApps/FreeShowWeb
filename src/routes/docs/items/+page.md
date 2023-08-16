@@ -31,6 +31,10 @@ Show the system time either analog og digital.
 
 Add a dynamic item to your slide. For creating and changing variables [see this](./overlays#variables).
 
+### Website
+
+Load a website or a local html file. You can navigate this in the output window.
+
 ### Mirror
 
 This is for adding a "link" to another shows item, can be used for showing multiple versions of a song/scripture in the same show. Or to show a stage display. [See more here.](./mirrors)

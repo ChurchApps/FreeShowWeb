@@ -33,3 +33,11 @@ Note that I have not purchased any code signing keys yet _($129/year)_, so you w
 After launch, you will be asked for permission to allow incoming network connections. If you deny, then you can't connect to the application remotely. This includes the stage display, and remote controllers.
 
 :::
+
+### Application data path
+
+_For advanced users_
+
+```json
+~/Library/Application Support/FreeShow/
+```

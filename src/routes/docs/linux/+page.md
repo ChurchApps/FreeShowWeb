@@ -32,3 +32,11 @@ Check out FreeShow on [snapcraft.io](https://snapcraft.io/freeshow).
 !!!
 
 :::
+
+### Application data path
+
+_For advanced users_
+
+```json
+~/.config/freeshow
+```

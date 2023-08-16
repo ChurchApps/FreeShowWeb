@@ -14,6 +14,7 @@ _These are some of the main features._
 -   **Projects:** Project manager inside the application.
 -   **Countdowns:** Add custom countdown timers.
 -   **Multiple outputs:** Add as many outputs as you want, with easy control.
+-   **NDI®:** Send outputs over IP, useful for streaming.
 -   **Output layers:** Set and clear different layers: background/slide/overlays.
 -   **Animations:** Add custom animations to the items on your slides.
 -   **Import:** Text, ChordPro, PDF, PowerPoint, ProPresenter, EasyWorship, VideoPsalm, OpenLP, OpenSong and more.
