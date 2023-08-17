@@ -72,16 +72,15 @@
 
         // /?v0.1.0
         if (query[0] === "v" && query.length > 2 && query.length < 8) {
-            let newVersion = data.tag_name.slice(1, data.tag_name.length)
-            if (query !== newVersion) message = "<h2>There is a new update! :D</h2>" + query.slice(1) + " -> " + newVersion + "<br><br><b>What's new</b>" + data.body.replaceAll("\n", "<br>")
+            let newVersion = data.tag_name
+            if (query !== newVersion) message = "<h2>There is a new update! :D</h2>" + query + " -> " + newVersion + "<br><br><b>What's new</b>" + data.body.replaceAll("\n", "<br>")
             else message = "You are up to date! ;)"
             active = true
         }
 
         // /?download
         if (query === "download") {
-            window.open(downloadURL, "_self")
-            downloading("Your download should begin shortly.<br>")
+            startDownload()
         }
 
         // /?payment_successful
