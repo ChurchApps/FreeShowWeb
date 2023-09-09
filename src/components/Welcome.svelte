@@ -12,23 +12,28 @@
     /** @type any */
     let data = null
     let downloads = 0
-    onMount(async () => {
+    onMount(() => {
         os = getOS()
-        fetch("https://api.github.com/repos/vassbo/freeshow/releases")
+
+        fetch("https://api.github.com/repos/vassbo/freeshow/releases?per_page=200")
             .then((response) => response.json())
             .then((a) => {
-                downloads = a.reduce((/** @type number */ total, /** @type any */ data) => {
-                    let currentVersionDownloads = data.assets.reduce((/** @type number */ total, /** @type any */ asset) => total + asset.download_count, 0)
-                    return total + currentVersionDownloads
-                }, 0)
-
-                let current = a.filter((/** @type any */ a) => a.draft === false)[0]
-                data = current
+                if (Array.isArray(a)) countDownloads(a)
             })
             .catch((error) => {
                 console.warn(error)
                 return []
             })
+
+        function countDownloads(/** @type any[] */ releases) {
+            downloads = releases.reduce((/** @type number */ total, /** @type any */ data) => {
+                let currentVersionDownloads = data.assets.reduce((/** @type number */ total, /** @type any */ asset) => total + asset.download_count, 0)
+                return total + currentVersionDownloads
+            }, 0)
+
+            let current = releases.filter((/** @type any */ a) => a.draft === false)[0]
+            data = current
+        }
     })
 
     function startDownload() {
