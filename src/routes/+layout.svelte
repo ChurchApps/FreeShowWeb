@@ -140,7 +140,7 @@
         </div>
 
         <div class="socials" slot="navbar-right-alt">
-            <SocialLink type="gitHub" href="https://github.com/vassbo/freeshow" />
+            <SocialLink type="gitHub" href="https://github.com/ChurchApps/FreeShow" />
         </div>
 
         <slot />

@@ -11,18 +11,18 @@
         <div>
             <!-- <span>
                 <p>Report a bug or request a feature on&nbsp;</p>
-                <a href="https://github.com/vassbo/freeshow/issues" target="_blank" rel="noreferrer">GitHub Issues</a>
+                <a href="https://github.com/ChurchApps/FreeShow/issues" target="_blank" rel="noreferrer">GitHub Issues</a>
             </span> -->
             <span>
                 <Button href="/contact">Contact</Button>
             </span>
             <p style="opacity: 0.5;">●</p>
             <span>
-                <Button href="/support">Support</Button>
+                <Button href="https://livecs.org/partner">Support FreeShow</Button>
             </span>
         </div>
     </div>
-    <div class="copy" style="font-size: 0.8em;">&copy; FreeShow 2022-2023 — <a href="https://nettbiter.no" target="_blank" rel="noreferrer">Vassbø Nettbiter</a></div>
+    <div class="copy" style="font-size: 0.8em;">2023 &copy; <a href="https://livecs.org" target="_blank" rel="noreferrer">Live Church Solutions</a> - A 501(c)(3) organization with EIN 45-5349618</div>
 </footer>
 
 <style>

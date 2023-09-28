@@ -15,7 +15,7 @@
     onMount(() => {
         os = getOS()
 
-        fetch("https://api.github.com/repos/vassbo/freeshow/releases?per_page=200")
+        fetch("https://api.github.com/repos/ChurchApps/FreeShow/releases?per_page=200")
             .then((response) => response.json())
             .then((a) => {
                 if (Array.isArray(a)) countDownloads(a)
@@ -144,7 +144,7 @@
     <div class="main">
         <h1 class="title">FreeShow</h1>
         <p style="margin-bottom: 40px;">
-            A user-friendly and <Link href="https://github.com/vassbo/freeshow" target="_blank" rel="noreferrer" title="View Source Code on GitHub">open-source</Link> presenter built on
+            A user-friendly and <Link href="https://github.com/ChurchApps/FreeShow" target="_blank" rel="noreferrer" title="View Source Code on GitHub">open-source</Link> presenter built on
             <Link href="https://www.electronjs.org/" target="_blank" rel="noreferrer" title="Electron website">electron</Link>.
         </p>
         <!-- <a href={downloadURL} class="link" data-disabled={os === "Android" || os === "iOS"}> -->
