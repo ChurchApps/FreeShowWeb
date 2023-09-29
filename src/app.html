@@ -12,7 +12,7 @@
             name="keywords"
             content="FreeShow, presenter, church, lyrics, show, free, pro, easy, worship, media, present, backgrounds, windows, macos, linux, software, best, text, info, slides, slideshow, remote, stage, audience, experience, nice, very easy, easy-to-use"
         />
-        <meta name="author" content="Kristoffer Vassbø" />
+        <meta name="author" content="Live Church Solutions" />
         <!-- Open Graph protocols -->
         <meta property="og:type" content="website" />
         <meta property="og:title" content="FreeShow — A free and open source presenter" />
@@ -37,6 +37,15 @@
             } else {
                 document.documentElement.classList.remove("dark")
             }
+        </script>
+        
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWZY86K89K"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-GWZY86K89K');
         </script>
 
         %sveltekit.head%

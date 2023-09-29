@@ -40,7 +40,7 @@
     <br />
     <h2>Support?</h2>
     <p>Creating a program like this is not free for me, as it takes much of my time.</p>
-    <p>So please feel free to <Button href="/support">support the developer</Button>, so I can continue working on the program.</p>
+    <p>So please feel free to <Button href="https://livecs.org/partner">support the developers</Button>, so I can continue working on the program.</p>
     <br />
     <h2>Review?</h2>
     <p>Reviews are a great way for others to find the program. If you like it, I would love if you could give an honest review.</p>

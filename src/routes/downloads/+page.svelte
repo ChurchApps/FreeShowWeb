@@ -8,7 +8,7 @@
     let data = null
 
     onMount(async () => {
-        fetch("https://api.github.com/repos/vassbo/freeshow/releases")
+        fetch("https://api.github.com/repos/ChurchApps/FreeShow/releases")
             .then((response) => response.json())
             .then((a) => {
                 console.log(a)
@@ -89,7 +89,7 @@
             {/each}
 
             <span style="margin-top: 10px;margin-left: 10px;">
-                <Link href="https://github.com/vassbo/freeshow/releases" target="_blank">-> See all releases</Link>
+                <Link href="https://github.com/ChurchApps/FreeShow/releases" target="_blank">-> See all releases</Link>
             </span>
         </div>
         <br />
@@ -102,7 +102,7 @@
         <div style="text-align: center;font-size: 1.3em;margin: 20px;">Loading version...</div>
 
         <span style="margin-top: 10px;">
-            <Link href="https://github.com/vassbo/freeshow/releases" target="_blank">-> See all releases</Link>
+            <Link href="https://github.com/ChurchApps/FreeShow/releases" target="_blank">-> See all releases</Link>
         </span>
     {/if}
 </main>

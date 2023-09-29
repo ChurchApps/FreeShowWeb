@@ -11,7 +11,7 @@
 <div class="mail">
     <div>
         <p>Report a bug or request a feature?</p>
-        <Button href="https://github.com/vassbo/freeshow/issues" title="Go to FreeShow issues on GitHub" target="_blank" rel="noreferrer">-> GitHub Issues</Button>
+        <Button href="https://github.com/ChurchApps/FreeShow/issues" title="Go to FreeShow issues on GitHub" target="_blank" rel="noreferrer">-> GitHub Issues</Button>
     </div>
 
     <hr />
