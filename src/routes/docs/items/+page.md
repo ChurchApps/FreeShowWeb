@@ -21,11 +21,11 @@ This is for adding images or videos to your slide.
 
 ### Timer
 
-This is for adding a timer to your slide, that can be controlled from "Timers" in the drawer. You can also change the type to show a line or circle going from 100% filled to 0%.
+This is for adding a timer to your slide, that can be controlled from "Timers" found under the "Calendar" tab in the drawer. You can also change the type to show a line or circle going from 100% filled to 0%.
 
 ### Clock
 
-Show the system time either analog og digital.
+Show the system time either analog of digital.
 
 ### Variable
 
