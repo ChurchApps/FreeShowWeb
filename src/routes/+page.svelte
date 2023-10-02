@@ -45,7 +45,7 @@
     <h2>Review?</h2>
     <p>Reviews are a great way for others to find the program. If you like it, I would love if you could give an honest review.</p>
     <p>
-        So please feel free to <Button href="https://reviews.capterra.com/new/251606/25c379b8-6a14-4583-bab4-d458913d407c" target="_blank">review FreeShow on Capterra</Button>, and receive a $20 Amazon gift card. Or press any of the badges below.
+        So please feel free to <Button href="https://reviews.capterra.com/new/251606/25c379b8-6a14-4583-bab4-d458913d407c" target="_blank">review FreeShow on Capterra</Button>, or press any of the badges below.
     </p>
 </section>
 
