@@ -1,31 +1,34 @@
 {
-    "name": "freeshow-net",
-    "type": "module",
-    "scripts": {
-        "dev": "vite dev --port 3002",
-        "build": "pnpm sync && vite build",
-        "package": "svelte-kit package",
-        "preview": "vite preview --port 3002",
-        "sync": "svelte-kit sync",
-        "check": "svelte-check --tsconfig ./tsconfig.json",
-        "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch"
-    },
-    "devDependencies": {
-        "@iconify-json/ri": "^1.1.1",
-        "@sveltejs/adapter-netlify": "2.0.5",
-        "@sveltejs/adapter-static": "2.0.1",
-        "@sveltejs/kit": "1.7.1",
-        "@svelteness/kit-docs": "^1.1.1",
-        "shiki": "^0.10.1",
-        "svelte": "^3.54.0",
-        "svelte-check": "^2.2.6",
-        "svelte-preprocess": "^4.10.1",
-        "tslib": "^2.3.1",
-        "typescript": "~4.6.2",
-        "unplugin-icons": "^0.14.7",
-        "vite": "^4.0.0"
-    },
-    "dependencies": {
-        "clsx": "^1.1.1"
-    }
+	"name": "freeshowwebnew",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"format": "prettier --plugin-search-dir . --write ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/kit": "^1.20.4",
+		"@typescript-eslint/eslint-plugin": "^6.0.0",
+		"@typescript-eslint/parser": "^6.0.0",
+		"eslint": "^8.28.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-svelte": "^2.30.0",
+		"prettier": "^2.8.0",
+		"prettier-plugin-svelte": "^2.10.1",
+		"svelte": "^4.0.5",
+		"svelte-check": "^3.4.3",
+		"tslib": "^2.4.1",
+		"typescript": "^5.0.0",
+		"vite": "^4.4.2"
+	},
+	"type": "module",
+	"dependencies": {
+		"svelte-icons-pack": "^2.1.0"
+	}
 }
