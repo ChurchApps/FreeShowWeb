@@ -4,9 +4,11 @@
 	export let title: string = '';
 	export let icon: string = '';
 	export let size: number = 0;
+	export let coloredIcon: boolean = false;
 	export let primary: boolean = false;
 	export let outline: boolean = false;
 	export let variant: boolean = false;
+	export let disabled: boolean = false;
 	export let style: string = '';
 
 	export let hasContent: boolean = !!$$props.$$slots?.default;
@@ -21,12 +23,13 @@
 	class:variant
 	class:big
 	class:hasContent
+	{disabled}
 	{style}
 	on:click
 >
 	<span>
 		{#if icon}
-			<Icon {icon} size={big ? 2.2 : size} white />
+			<Icon {icon} size={big ? 2.2 : size} white={!coloredIcon} />
 		{/if}
 
 		<p><slot /></p>
@@ -49,6 +52,11 @@
 		z-index: 0;
 
 		transition: background-color 0.15s;
+	}
+
+	button:disabled {
+		opacity: 0.5;
+		cursor: default;
 	}
 
 	button p {
@@ -168,28 +176,28 @@
 
 	/* interaction */
 
-	button.outline:hover,
+	button.outline:hover:not(:disabled),
 	button.outline:focus {
 		background-color: #120016;
 		background-position: 0 -70px;
 	}
-	button.outline.variant:hover,
+	button.outline.variant:hover:not(:disabled),
 	button.outline.variant:focus {
 		background-position: 0 -84px;
 	}
-	button.outline:active,
-	button.outline.variant:active {
+	button.outline:active:not(:disabled),
+	button.outline.variant:active:not(:disabled) {
 		background-color: #09000a;
 		background-position: 0 -142px;
 	}
 
-	button:hover,
+	button:hover:not(:disabled),
 	button:focus {
 		background-color: rgb(var(--secondary-rgb), 0.6);
 		--offset: 2px;
 	}
 
-	button:active {
+	button:active:not(:disabled) {
 		background-color: rgb(var(--secondary-rgb), 0.5);
 		--offset: 0px;
 	}

@@ -7,6 +7,10 @@ import FaSolidKey from 'svelte-icons-pack/fa/FaSolidKey';
 import FaSolidCheckCircle from 'svelte-icons-pack/fa/FaSolidCheckCircle';
 import FaSolidTimesCircle from 'svelte-icons-pack/fa/FaSolidTimesCircle';
 import FaSolidInfoCircle from 'svelte-icons-pack/fa/FaSolidInfoCircle';
+import FaSolidStar from 'svelte-icons-pack/fa/FaSolidStar';
+import FaSolidStarHalfAlt from 'svelte-icons-pack/fa/FaSolidStarHalfAlt';
+import FaSolidArrowLeft from 'svelte-icons-pack/fa/FaSolidArrowLeft';
+import FaSolidArrowRight from 'svelte-icons-pack/fa/FaSolidArrowRight';
 import HiSolidArrowNarrowDown from 'svelte-icons-pack/hi/HiSolidArrowNarrowDown';
 import BsPeopleFill from 'svelte-icons-pack/bs/BsPeopleFill';
 import BsCameraVideoFill from 'svelte-icons-pack/bs/BsCameraVideoFill';
@@ -24,6 +28,10 @@ export const icons: any = {
 	yes: FaSolidCheckCircle,
 	no: FaSolidTimesCircle,
 	info: FaSolidInfoCircle,
+	star: FaSolidStar,
+	star_half: FaSolidStarHalfAlt,
+	left: FaSolidArrowLeft,
+	right: FaSolidArrowRight,
 
 	down: HiSolidArrowNarrowDown,
 

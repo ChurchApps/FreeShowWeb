@@ -4,9 +4,11 @@
 
 <footer>
 	<div class="more">
-		<Button icon="windows" title="Download for Windows" outline />
-		<Button icon="apple" title="Download for MacOS" outline variant />
-		<Button icon="linux" title="Download for Linux" outline />
+		<div class="center">
+			<Button icon="windows" title="Download for Windows" outline />
+			<Button icon="apple" title="Download for MacOS" outline variant />
+			<Button icon="linux" title="Download for Linux" outline />
+		</div>
 	</div>
 
 	<div class="rights">
@@ -29,8 +31,39 @@
 	}
 
 	.more {
+		width: 100%;
+		position: relative;
+	}
+	.more .center {
 		display: flex;
+		justify-content: center;
 		gap: 12px;
+	}
+	.more::after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 100%;
+
+		--border-width: 1px;
+		transform: translateY(calc(var(--border-width) / 2 * -1));
+
+		border-bottom: var(--border-width) solid var(--secondary);
+		border-image-slice: 1;
+		border-image-source: linear-gradient(
+			to right,
+			transparent,
+			transparent,
+			#6937bf,
+			#d71e93,
+			transparent,
+			transparent,
+			#d71e93,
+			#6937bf,
+			transparent,
+			transparent
+		);
 	}
 
 	.rights {

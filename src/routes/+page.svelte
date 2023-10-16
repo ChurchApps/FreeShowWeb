@@ -7,7 +7,9 @@
 	import Image from '$lib/components/main/Image.svelte';
 	import Section from '$lib/components/main/Section.svelte';
 	import Video from '$lib/components/main/Video.svelte';
+	import Badges from '$lib/components/special/Badges.svelte';
 	import Compare from '$lib/components/special/Compare.svelte';
+	import Reviews from '$lib/components/special/Reviews.svelte';
 </script>
 
 <Section
@@ -74,7 +76,6 @@
 	<Image src="special/divider.png" alt="Divider" />
 </Section>
 
-<!-- style="z-index: 0;" -->
 <Section white center style="padding-bottom: 0;">
 	<div class="head" style="display: flex;flex-direction: column;align-items: center;gap: 15px;">
 		<Icon icon="video" />
@@ -82,25 +83,19 @@
 		<p>Some text here!</p>
 	</div>
 
-	<!-- <div class="card" style="position: relative;display: flex;justify-content: center;"> -->
-	<Card
-		outline
-		glass
-		style="width: 80%;overflow: initial;z-index: 1;--primary: rgb(var(--primary-inverted-rgb), 0.6)"
-	>
-		<!-- TODO: place behind card -->
-		<!-- z-index: -1; -->
+	<div class="center" style="position: relative;width: 80%;display: flex;justify-content: center;">
+		<Card
+			outline
+			glass
+			style="overflow: initial;z-index: 1;--primary: rgb(var(--primary-inverted-rgb), 0.6)"
+		>
+			<Video src="Introducing FreeShow.mp4" thumbnail="Introducing FreeShow.jpg" />
+		</Card>
+
 		<div class="circle" style="position: absolute;top: -50px;left: -50px;width: 150px;">
 			<Image src="special/circle-bg.png" alt="Design circle" />
 		</div>
-
-		<Video src="Introducing FreeShow.mp4" thumbnail="Introducing FreeShow.jpg" />
-	</Card>
-
-	<!-- <div class="circle" style="position: absolute;top: -50px;left: -50px;width: 150px;">
-			<Image src="special/circle-bg.png" alt="Design circle" />
-		</div>
-	</div> -->
+	</div>
 </Section>
 
 <Section
@@ -327,10 +322,7 @@
 	<div class="compare" style="position: relative;">
 		<Compare maxItems={13} />
 
-		<div
-			class="circle"
-			style="position: absolute;bottom: -60px;right: -60px;width: 150px;z-index: 0;"
-		>
+		<div class="circle" style="position: absolute;bottom: -60px;right: -60px;width: 150px;">
 			<Image src="special/circle-bg.png" alt="Design circle" />
 		</div>
 	</div>
@@ -338,8 +330,21 @@
 	<Link link="compare" primary style="align-self: center;">View All</Link>
 </Section>
 
-<Section>
-	<h2>What Others <span class="gradient">are Saying</span></h2>
+<Section style="padding-bottom: calc(var(--section-padding) / 2);" center>
+	<div class="head" style="align-self: center;">
+		<Icon icon="options" />
+		<h2>What Others <span class="gradient">are Saying</span></h2>
+	</div>
+
+	<Reviews />
+</Section>
+
+<!-- <Section style="padding: 0;"> -->
+<Image src="special/footer-divider-bg.png" alt="Divider" />
+<!-- </Section> -->
+
+<Section style="padding: calc(var(--section-padding) / 2) var(--margin);" center>
+	<Badges />
 </Section>
 
 <style>

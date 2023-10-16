@@ -40,7 +40,6 @@
 			{#if !maxItems || i < maxItems}
 				<tr>
 					<td class:info={feature.info}>
-						<!-- style="padding: 2px 6px;display: flex;gap: 10px;align-items: center;white-space: nowrap;" -->
 						{feature.name}
 						{#if feature.info && !maxItems}
 							<div class="hidden-info">
@@ -52,7 +51,6 @@
 						{/if}
 					</td>
 
-					<!-- TODO: reduce colors and notes when maxItems is set -->
 					{#each Object.values(feature.programs) as program}
 						<td class:note={program.note && !maxItems}>
 							<div class="content">
@@ -64,6 +62,7 @@
 										black={!program.content}
 									/>
 								{:else}
+									<!-- TODO: icon borders & table border!!! -->
 									{#if program.content.includes('{win}')}
 										<Icon icon="windows" color={maxItems ? '' : '#0078D7'} />
 									{/if}
