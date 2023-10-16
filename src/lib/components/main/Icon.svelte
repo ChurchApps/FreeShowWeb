@@ -6,13 +6,14 @@
 	export let icon: string;
 	export let white: boolean = false;
 	export let black: boolean = false;
+	export let color: string = '';
 	export let size = 0;
 
 	console.log(icons[icon] || {});
 </script>
 
 <!-- fade in ? -->
-<div class="icon" class:white class:black>
+<div class="icon" class:white class:black style={color ? `--secondary: ${color};` : ''}>
 	<SvelteIcon src={icons[icon] || { a: {} }} size="{size || 1.6}em" />
 </div>
 

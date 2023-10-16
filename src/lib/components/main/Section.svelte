@@ -29,7 +29,7 @@
 >
 	{#if background}
 		<div class="background" style="top: {background.top || 0}px;">
-			<Image src={background.src} alt={background.alt} borderRadius={false} />
+			<Image src={background.src} alt={background.alt} draggable={false} borderRadius={false} />
 		</div>
 	{/if}
 

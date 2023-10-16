@@ -11,11 +11,12 @@
 	export let outline: boolean = false;
 	export let variant: boolean = false;
 	export let big: boolean = false;
+	export let style: string = '';
 
 	const hasContent = !!$$props.$$slots?.default;
 </script>
 
-<a tabindex="-1" href={link} target={link.includes('http') ? '_blank' : '_self'}>
+<a tabindex="-1" href={link} target={link.includes('http') ? '_blank' : '_self'} {style}>
 	<Button {title} {icon} {size} {primary} {outline} {variant} {big} {hasContent}>
 		<slot />
 	</Button>

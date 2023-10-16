@@ -4,6 +4,9 @@ import FaBrandsApple from 'svelte-icons-pack/fa/FaBrandsApple';
 import FaBrandsLinux from 'svelte-icons-pack/fa/FaBrandsLinux';
 import FaSolidPlay from 'svelte-icons-pack/fa/FaSolidPlay';
 import FaSolidKey from 'svelte-icons-pack/fa/FaSolidKey';
+import FaSolidCheckCircle from 'svelte-icons-pack/fa/FaSolidCheckCircle';
+import FaSolidTimesCircle from 'svelte-icons-pack/fa/FaSolidTimesCircle';
+import FaSolidInfoCircle from 'svelte-icons-pack/fa/FaSolidInfoCircle';
 import HiSolidArrowNarrowDown from 'svelte-icons-pack/hi/HiSolidArrowNarrowDown';
 import BsPeopleFill from 'svelte-icons-pack/bs/BsPeopleFill';
 import BsCameraVideoFill from 'svelte-icons-pack/bs/BsCameraVideoFill';
@@ -18,6 +21,9 @@ export const icons: any = {
 
 	play: FaSolidPlay,
 	key: FaSolidKey,
+	yes: FaSolidCheckCircle,
+	no: FaSolidTimesCircle,
+	info: FaSolidInfoCircle,
 
 	down: HiSolidArrowNarrowDown,
 

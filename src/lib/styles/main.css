@@ -74,6 +74,11 @@ h4 {
 	font-weight: 500;
 }
 
+h5 {
+	font-size: calc(var(--text-size) * 0.5);
+	font-weight: 500;
+}
+
 a {
 	color: inherit;
 }

@@ -7,6 +7,7 @@
 	import Image from '$lib/components/main/Image.svelte';
 	import Section from '$lib/components/main/Section.svelte';
 	import Video from '$lib/components/main/Video.svelte';
+	import Compare from '$lib/components/special/Compare.svelte';
 </script>
 
 <Section
@@ -81,6 +82,7 @@
 		<p>Some text here!</p>
 	</div>
 
+	<!-- <div class="card" style="position: relative;display: flex;justify-content: center;"> -->
 	<Card
 		outline
 		glass
@@ -94,6 +96,11 @@
 
 		<Video src="Introducing FreeShow.mp4" thumbnail="Introducing FreeShow.jpg" />
 	</Card>
+
+	<!-- <div class="circle" style="position: absolute;top: -50px;left: -50px;width: 150px;">
+			<Image src="special/circle-bg.png" alt="Design circle" />
+		</div>
+	</div> -->
 </Section>
 
 <Section
@@ -177,14 +184,18 @@
 		</div>
 
 		<div class="image" style="filter: brightness(0.9);padding-top: 50px;">
-			<Image src="special/devices.png" alt="Person working with FreeShow" />
+			<Image
+				src="special/devices.png"
+				alt="Person working with FreeShow"
+				style="height: initial;"
+			/>
 		</div>
 	</div>
 
 	<Image src="special/flow-bottom.png" alt="Esthetic waves end" borderRadius={false} />
 </Section>
 
-<Section column style="gap: 60px;">
+<Section column style="gap: 60px;padding-bottom: calc(var(--section-padding) / 2);">
 	<div class="circle" style="position: absolute;left: 0;top: 50%;transform: translateY(-15%);">
 		<Image src="special/half-circle.png" alt="Esthetic half circle" />
 	</div>
@@ -260,6 +271,7 @@
 <Section
 	column
 	background={{ src: 'main/working.png', alt: 'Distant background of person working on FreeShow' }}
+	style="padding-top: calc(var(--section-padding) / 2);"
 >
 	<div class="row">
 		<div class="text" style="align-self: center;">
@@ -295,8 +307,35 @@
 	</div>
 </Section>
 
-<Section white>
-	<h2>How FreeShow <span class="gradient">Compares</span></h2>
+<Section white column>
+	<div class="row" style="align-items: center;">
+		<div class="head" style="width: var(--text-div-fill);">
+			<Icon icon="options" />
+			<h2>How FreeShow <span class="gradient">Compares</span></h2>
+		</div>
+
+		<p style="width: 100%;">
+			Unlike other presentation software providers, we are not a business. We are a non-profit that
+			exists solely to serve churches. Our biggest difference is in the name. FreeShow is and always
+			will be free. This is possible due to the generous support of donors.
+			<a href="https://churchapps.org/contribute" target="_blank">Learn more.</a>
+			That isn't the only way FreeShow stands above the alternatives. It is also a very feature-rich
+			application. Here is how we stack up.
+		</p>
+	</div>
+
+	<div class="compare" style="position: relative;">
+		<Compare maxItems={13} />
+
+		<div
+			class="circle"
+			style="position: absolute;bottom: -60px;right: -60px;width: 150px;z-index: 0;"
+		>
+			<Image src="special/circle-bg.png" alt="Design circle" />
+		</div>
+	</div>
+
+	<Link link="compare" primary style="align-self: center;">View All</Link>
 </Section>
 
 <Section>

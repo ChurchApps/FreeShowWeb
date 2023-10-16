@@ -7,12 +7,23 @@
 	export let primary: boolean = false;
 	export let outline: boolean = false;
 	export let variant: boolean = false;
-	export let big: boolean = false;
+	export let style: string = '';
 
 	export let hasContent: boolean = !!$$props.$$slots?.default;
+
+	let big: boolean = false;
 </script>
 
-<button class:primary class:outline class:variant class:big class:hasContent {title} on:click>
+<button
+	{title}
+	class:primary
+	class:outline
+	class:variant
+	class:big
+	class:hasContent
+	{style}
+	on:click
+>
 	<span>
 		{#if icon}
 			<Icon {icon} size={big ? 2.2 : size} white />

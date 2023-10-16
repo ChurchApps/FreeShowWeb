@@ -87,6 +87,10 @@
 		gap: 8px;
 	}
 
+	/* h3 {
+		text-shadow: 0 0 2px rgb(0 0 0 / 50%);
+	} */
+
 	.logo {
 		height: 35px;
 	}
