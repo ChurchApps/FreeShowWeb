@@ -69,7 +69,14 @@
 		<Link link="mission">Mission</Link>
 		<Link link="features">Features</Link>
 		<Link link="docs">Docs</Link>
-		<Link link="https://github.com/ChurchApps/FreeShow" icon="github" size={1.2} outline />
+		<!-- <p style="z-index: 1;" class="onlyMenu">Source code</p> -->
+		<Link
+			title="Source code"
+			link="https://github.com/ChurchApps/FreeShow"
+			icon="github"
+			size={1.2}
+			outline
+		/>
 		<Link link="downloads" primary>Downloads</Link>
 	</div>
 </header>
@@ -162,5 +169,9 @@
 		.menu {
 			display: none;
 		}
+
+		/* .onlyMenu {
+			display: none;
+		} */
 	}
 </style>

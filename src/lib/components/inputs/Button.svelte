@@ -5,6 +5,7 @@
 	export let icon: string = '';
 	export let size: number = 0;
 	export let coloredIcon: boolean = false;
+	export let active: boolean = false;
 	export let primary: boolean = false;
 	export let outline: boolean = false;
 	export let variant: boolean = false;
@@ -18,6 +19,7 @@
 
 <button
 	{title}
+	class:active
 	class:primary
 	class:outline
 	class:variant
@@ -197,9 +199,14 @@
 		--offset: 2px;
 	}
 
-	button:active:not(:disabled) {
+	button:active:not(:disabled),
+	button.active:not(:disabled) {
 		background-color: rgb(var(--secondary-rgb), 0.5);
 		--offset: 0px;
+	}
+
+	button.active:not(:disabled) {
+		background-color: rgb(var(--secondary-rgb), 0.9);
 	}
 
 	/* button:hover,

@@ -31,6 +31,7 @@ import FaSolidFileExport from 'svelte-icons-pack/fa/FaSolidFileExport';
 import FaSolidCloudUploadAlt from 'svelte-icons-pack/fa/FaSolidCloudUploadAlt';
 import FaSolidExchangeAlt from 'svelte-icons-pack/fa/FaSolidExchangeAlt';
 import FaSolidQuoteRight from 'svelte-icons-pack/fa/FaSolidQuoteRight';
+import FaSolidTags from 'svelte-icons-pack/fa/FaSolidTags';
 import HiSolidArrowNarrowDown from 'svelte-icons-pack/hi/HiSolidArrowNarrowDown';
 import BsPeopleFill from 'svelte-icons-pack/bs/BsPeopleFill';
 import BsCameraVideoFill from 'svelte-icons-pack/bs/BsCameraVideoFill';
@@ -73,6 +74,7 @@ export const icons: any = {
 	cloud: FaSolidCloudUploadAlt,
 	compare: FaSolidExchangeAlt,
 	quote: FaSolidQuoteRight,
+	tags: FaSolidTags,
 
 	down: HiSolidArrowNarrowDown,
 
