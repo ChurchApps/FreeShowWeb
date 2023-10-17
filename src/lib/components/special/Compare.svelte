@@ -5,108 +5,119 @@
 	export let maxItems: number = 0;
 </script>
 
-<table>
-	<thead>
-		<tr>
-			<th><h5>Feature</h5></th>
-			<th style="text-align: center;"
-				><a href="https://freeshow.app/" target="_blank" rel="noreferrer">FreeShow</a></th
-			>
-			<th style="text-align: center;"
-				><a href="https://renewedvision.com/propresenter/" target="_blank" rel="noreferrer"
-					>ProPresenter</a
-				></th
-			>
-			<th style="text-align: center;"
-				><a href="https://www.easyworship.com/" target="_blank" rel="noreferrer">EasyWorship</a></th
-			>
-			<th style="text-align: center;"
-				><a href="https://myvideopsalm.weebly.com/" target="_blank" rel="noreferrer">VideoPsalm</a
-				></th
-			>
-			<th style="text-align: center;"
-				><a href="https://openlp.org/" target="_blank" rel="noreferrer">OpenLP</a></th
-			>
-			<th style="text-align: center;"
-				><a href="https://faithlife.com/products/proclaim" target="_blank" rel="noreferrer"
-					>ProClaim</a
-				></th
-			>
-		</tr>
-	</thead>
+<div class="scroll">
+	<table>
+		<thead>
+			<tr>
+				<th><h5>Feature</h5></th>
+				<th style="text-align: center;"
+					><a href="https://freeshow.app/" target="_blank" rel="noreferrer">FreeShow</a></th
+				>
+				<th style="text-align: center;"
+					><a href="https://renewedvision.com/propresenter/" target="_blank" rel="noreferrer"
+						>ProPresenter</a
+					></th
+				>
+				<th style="text-align: center;"
+					><a href="https://www.easyworship.com/" target="_blank" rel="noreferrer">EasyWorship</a
+					></th
+				>
+				<th style="text-align: center;"
+					><a href="https://myvideopsalm.weebly.com/" target="_blank" rel="noreferrer">VideoPsalm</a
+					></th
+				>
+				<th style="text-align: center;"
+					><a href="https://openlp.org/" target="_blank" rel="noreferrer">OpenLP</a></th
+				>
+				<th style="text-align: center;"
+					><a href="https://faithlife.com/products/proclaim" target="_blank" rel="noreferrer"
+						>ProClaim</a
+					></th
+				>
+			</tr>
+		</thead>
 
-	<tbody>
-		{#each features as feature, i}
-			{#if !maxItems || i < maxItems}
-				<tr>
-					<td class:info={feature.info}>
-						{feature.name}
-						{#if feature.info && !maxItems}
-							<div class="hidden-info">
-								<Icon icon="info" size={0.7} color="rgb(0 0 0 / 0.2)" />
-								<div class="hidden">
-									{feature.info}
-								</div>
-							</div>
-						{/if}
-					</td>
-
-					{#each Object.values(feature.programs) as program}
-						<td class:note={program.note && !maxItems}>
-							<div class="content">
-								{#if typeof program.content === 'boolean'}
-									<Icon
-										icon={program.content ? 'yes' : 'no'}
-										size={1.1}
-										color={maxItems ? '' : program.content ? '#19e119' : '#ff4d4d'}
-										black={!program.content}
-									/>
-								{:else}
-									<!-- TODO: icon borders & table border!!! -->
-									{#if program.content.includes('{win}')}
-										<Icon icon="windows" color={maxItems ? '' : '#0078D7'} />
-									{/if}
-									{#if program.content.includes('{mac}')}
-										<Icon icon="apple" color={maxItems ? '' : '#cccccc'} />
-									{/if}
-									{#if program.content.includes('{linux}')}
-										<Icon icon="linux" color={maxItems ? '' : '#dd4814'} />
-									{/if}
-
-									{program.content.replace(/(\{.*?\})/g, '')}
-								{/if}
-							</div>
-
-							{#if program.note && !maxItems}
-								<div class="hidden">
-									{program.note}
+		<tbody>
+			{#each features as feature, i}
+				{#if !maxItems || i < maxItems}
+					<tr>
+						<td class:info={feature.info}>
+							{feature.name}
+							{#if feature.info && !maxItems}
+								<div class="hidden-info">
+									<Icon icon="info" size={0.7} color="rgb(0 0 0 / 0.2)" />
+									<div class="hidden">
+										{feature.info}
+									</div>
 								</div>
 							{/if}
 						</td>
-					{/each}
-				</tr>
-			{/if}
-		{/each}
-	</tbody>
-</table>
+
+						{#each Object.values(feature.programs) as program}
+							<td class:note={program.note && !maxItems}>
+								<div class="content">
+									{#if typeof program.content === 'boolean'}
+										<Icon
+											icon={program.content ? 'yes' : 'no'}
+											size={1.1}
+											color={maxItems ? '' : program.content ? '#13a813' : '#d40f0f'}
+											black={!program.content}
+										/>
+									{:else}
+										<!-- TODO: icon borders & table border!!! -->
+										{#if program.content.includes('{win}')}
+											<Icon icon="windows" color={maxItems ? '' : '#0078D7'} />
+										{/if}
+										{#if program.content.includes('{mac}')}
+											<Icon icon="apple" color={maxItems ? '' : '#aaaaaa'} />
+										{/if}
+										{#if program.content.includes('{linux}')}
+											<Icon icon="linux" color={maxItems ? '' : '#dd4814'} />
+										{/if}
+
+										{program.content.replace(/(\{.*?\})/g, '')}
+									{/if}
+								</div>
+
+								{#if program.note && !maxItems}
+									<div class="hidden">
+										{program.note}
+									</div>
+								{/if}
+							</td>
+						{/each}
+					</tr>
+				{/if}
+			{/each}
+		</tbody>
+	</table>
+</div>
 
 <style>
+	.scroll {
+		position: relative;
+		overflow-x: auto;
+		overflow-y: hidden;
+
+		padding: 2px;
+		width: 100%;
+
+		z-index: 1;
+	}
+
 	table {
 		border-spacing: 0;
 		/* border-spacing: 10px 0; */
 		width: 100%;
 		font-size: 0.8em;
-
-		position: relative;
-		z-index: 1;
 	}
 
 	table tbody {
 		background-color: white;
 		border-radius: var(--border-radius);
 
-		/* TODO: border */
-		outline: 2px solid black;
+		/* TODO: gradient border? */
+		outline: 2px solid var(--secondary);
 	}
 
 	/* border radius */
@@ -147,6 +158,7 @@
 
 		/* 6 softwares */
 		width: calc(80% / 6);
+		min-width: 110px;
 	}
 
 	td {
@@ -162,7 +174,7 @@
 
 	tr th a {
 		display: block;
-		padding: 10px 0;
+		padding: 10px;
 		width: 100%;
 		height: 100%;
 		border-radius: calc(var(--border-radius) / 1.2) calc(var(--border-radius) / 1.2) 0 0;
@@ -182,6 +194,9 @@
 		text-decoration: underline;
 	}
 
+	thead tr th:nth-child(2) a {
+		background: linear-gradient(20deg, #d71e93, #c32aac, #8a32cd);
+	}
 	tbody tr td:nth-child(2) .content {
 		font-weight: bold;
 		/* background-color: rgb(var(--primary-rgb), 0.01); */
@@ -222,11 +237,18 @@
 		filter: brightness(0.8);
 	}
 
+	td {
+		position: relative;
+	}
+
 	.hidden {
 		position: absolute;
+		bottom: 0;
+		left: 5px;
+		transform: translateY(70%);
+
 		padding: 8px;
-		/* background-color: var(--primary); */
-		background-color: rgb(var(--kd-color-elevate) / var(--tw-bg-opacity));
+		background-color: var(--primary);
 		box-shadow: 1px 1px 5px rgb(0 0 0 / 0.2);
 		font-style: italic;
 		white-space: nowrap;

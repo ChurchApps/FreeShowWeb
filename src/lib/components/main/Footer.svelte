@@ -11,6 +11,8 @@
 		</div>
 	</div>
 
+	<!-- TODO: social accounts! -->
+
 	<div class="rights">
 		<span>2023 &copy; </span><a href="https://livecs.org" target="_blank" rel="noreferrer"
 			>Live Church Solutions</a
@@ -33,6 +35,7 @@
 	.more {
 		width: 100%;
 		position: relative;
+		margin-top: var(--card-padding);
 	}
 	.more .center {
 		display: flex;
@@ -40,6 +43,8 @@
 		gap: 12px;
 	}
 	.more::after {
+		display: var(--hide-small-show-big);
+
 		content: '';
 		position: absolute;
 		top: 50%;

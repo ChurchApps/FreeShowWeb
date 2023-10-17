@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Button from '../inputs/Button.svelte';
 	import Link from '../inputs/Link.svelte';
 	import Image from './Image.svelte';
 
@@ -42,11 +43,17 @@
 		posWhenChanged = window.scrollY;
 		hideHeader = false;
 	}
+
+	let menuOpened = false;
+
+	function mousedown(e: any) {
+		if (!e.target.closest('header')) menuOpened = false;
+	}
 </script>
 
-<svelte:window on:scroll={scrolling} on:keyup={checkFocus} />
+<svelte:window on:scroll={scrolling} on:keyup={checkFocus} on:mousedown={mousedown} />
 
-<header class:hideHeader style="--scroll: {scrollPercentage}%;">
+<header class:hideHeader class:black={menuOpened} style="--scroll: {scrollPercentage}%;">
 	<div class="logo">
 		<Link link="/">
 			<Image src="favicon.png" alt="FreeShow Logo" />
@@ -54,7 +61,11 @@
 		</Link>
 	</div>
 
-	<div>
+	<div class="menu">
+		<Button on:click={() => (menuOpened = !menuOpened)} icon="lines" white />
+	</div>
+
+	<div class="links" class:show={menuOpened}>
 		<Link link="mission">Mission</Link>
 		<Link link="features">Features</Link>
 		<Link link="docs">Docs</Link>
@@ -78,7 +89,10 @@
 		justify-content: space-between;
 		align-items: center;
 
-		transition: 0.5s transform;
+		transition: 0.5s transform, 0.3s background-color;
+	}
+	header.black {
+		background-color: rgb(0, 0, 0, 0.8);
 	}
 
 	header div {
@@ -97,5 +111,56 @@
 
 	.hideHeader {
 		transform: translateY(-110%);
+	}
+
+	.links {
+		/* display: none; */
+		opacity: 0;
+		pointer-events: none;
+		position: absolute;
+
+		transition: 0.3s background-color;
+	}
+	.menu {
+		display: initial;
+	}
+
+	.links.show {
+		/* display: flex; */
+		opacity: 1;
+		pointer-events: all;
+
+		flex-direction: column;
+		width: 100%;
+
+		padding: 10px;
+
+		left: 0;
+		bottom: 0;
+		transform: translateY(100%);
+
+		background-color: rgb(0, 0, 0, 0.8);
+		box-shadow: 0 10px 10px rgb(0 0 0 / 0.5);
+	}
+	.links.show :global(a),
+	.links.show :global(button) {
+		width: 100%;
+	}
+	.links.show :global(button span) {
+		justify-content: center;
+	}
+
+	/* media */
+
+	@media only screen and (min-width: 900px) {
+		.links {
+			/* display: flex; */
+			opacity: 1;
+			pointer-events: all;
+			position: relative;
+		}
+		.menu {
+			display: none;
+		}
 	}
 </style>

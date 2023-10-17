@@ -2,10 +2,11 @@
 	export let style: string = '';
 	export let outline: boolean = false;
 	export let variant: boolean = false;
+	export let bubble: number = 0;
 	export let glass: boolean = false;
 </script>
 
-<div class="card" {style} class:outline class:variant class:glass>
+<div class="card bubble{bubble}" {style} class:outline class:variant class:glass class:bubble>
 	<slot />
 </div>
 
@@ -17,6 +18,53 @@
 		padding: var(--card-padding);
 
 		overflow: hidden;
+	}
+
+	.card.bubble::after {
+		content: '';
+		position: absolute;
+		z-index: 0;
+
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+
+		box-shadow: 0px -200px 200px 30px blue;
+	}
+	.card.bubble1::after {
+		left: 50%;
+		transform: translate(-50%, 200%);
+		bottom: 0;
+
+		box-shadow: 0 -200px 200px 30px #613ee3;
+	}
+	.card.bubble2::after {
+		left: 50%;
+		transform: translate(-50%, -200%);
+		top: 0;
+
+		box-shadow: 0 200px 200px 30px #d71e93;
+	}
+	.card.bubble3::after {
+		/* TODO: mobile layout */
+		background: linear-gradient(
+			to right,
+			#6937bf,
+			rgb(157 51 196 / 0.6),
+			rgb(195 25 133 / 0.9),
+			rgb(195 25 133 / 0.8)
+		);
+
+		opacity: 0.9;
+
+		width: 600px;
+		height: 500px;
+
+		left: 20%;
+		transform: translate(-50%, 50%);
+		bottom: 0;
+
+		box-shadow: 100px 0 200px 10px #c31985;
 	}
 
 	/* WIP custom outline */

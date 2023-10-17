@@ -3,10 +3,11 @@
 	import Image from './Image.svelte';
 
 	export let height: number = 0;
-	export let background: { src: string; alt: string; top?: number } | null = null;
+	export let background: { src: string; alt: string; top?: number; filter?: string } | null = null;
 	export let continueButton: boolean = false;
 	export let white: boolean = false;
 	export let center: boolean = false;
+	export let bubble: boolean = false;
 	export let column: boolean = false;
 	export let style: string = '';
 
@@ -23,12 +24,13 @@
 	bind:this={sectionElem}
 	class:white
 	class:center
+	class:bubble
 	class:column
 	class:fixedHeight={!!height}
 	style="--height: {height}dvh;{style}"
 >
 	{#if background}
-		<div class="background" style="top: {background.top || 0}px;">
+		<div class="background" style="top: {background.top || 0}px;filter: {background.filter || ''};">
 			<Image src={background.src} alt={background.alt} draggable={false} borderRadius={false} />
 		</div>
 	{/if}
@@ -91,6 +93,38 @@
 		height: var(--height);
 
 		align-items: center;
+	}
+
+	/* bubble */
+	section.bubble::after {
+		content: '';
+		position: absolute;
+		z-index: 0;
+
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+
+		left: 30%;
+		transform: translate(-50%, 200%);
+		bottom: 0;
+
+		box-shadow: 0 -100px 300px 120px #e33e9e;
+	}
+	section.bubble::before {
+		content: '';
+		position: absolute;
+		z-index: 0;
+
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+
+		right: 10%;
+		top: 0;
+		transform: translate(50%, -200%);
+
+		box-shadow: 0 100px 300px 100px #833ee3;
 	}
 
 	/* background */

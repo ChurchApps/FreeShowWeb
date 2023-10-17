@@ -25,7 +25,7 @@
 			<span>Presentations</span>
 			<span>with FreeShow</span>
 		</h1>
-		<p style="padding: 15px 0;">
+		<p style="padding: 15px 0;max-width: 370px;">
 			A dynamic, user-friendly, and open-source presenter built for all of your presentation.
 		</p>
 
@@ -44,16 +44,16 @@
 </Section>
 
 <Section white>
-	<Card outline variant>
-		<div class="image">
+	<div class="image">
+		<Card outline variant>
 			<Image src="main/mission.png" alt="Person using FreeShow at computer" />
-		</div>
-	</Card>
+		</Card>
+	</div>
 
 	<!-- style="justify-content: space-between;" -->
 	<div class="text">
 		<div class="head">
-			<Icon icon="people" />
+			<Icon icon="mission" />
 			<h2>Our <span class="gradient">Mission</span></h2>
 		</div>
 
@@ -80,7 +80,11 @@
 	<div class="head" style="display: flex;flex-direction: column;align-items: center;gap: 15px;">
 		<Icon icon="video" />
 		<h2>What is <span class="gradient">FreeShow</span></h2>
-		<p>Some text here!</p>
+		<p>
+			Here is a short intro video explaining the basics of this software.
+			<br />
+			To learn more please head over to our <a href="docs">documentation</a>.
+		</p>
 	</div>
 
 	<div class="center" style="position: relative;width: 80%;display: flex;justify-content: center;">
@@ -119,7 +123,7 @@
 				A Robust editor to alter text font, size, color, and add outlines, shadows, with almost
 				boundless possibilities.
 			</Feature>
-			<Feature icon="options" title="On-the-Fly Text Editing">
+			<Feature icon="edit" title="On-the-Fly Text Editing">
 				Make live changes to your text during presentations with the Edit mode.
 			</Feature>
 		</div>
@@ -140,13 +144,11 @@
 
 		<div class="text" style="align-self: center;">
 			<h4>Timed & Automated Play</h4>
-			<Feature icon="options" title="Autoplay">
-				Set timers on slides for seamless transitions.
-			</Feature>
-			<Feature icon="options" title="Countdowns">
+			<Feature icon="play" title="Autoplay">Set timers on slides for seamless transitions.</Feature>
+			<Feature icon="timer" title="Countdowns">
 				Easily let your congregation know when services will start with built in countdowns.
 			</Feature>
-			<Feature icon="options" title="Midi Controls">
+			<Feature icon="midi" title="Midi Controls">
 				Receive Midi commands to advance slides or send midi commands on slide change to trigger
 				lighting and other changes.
 			</Feature>
@@ -160,19 +162,19 @@
 	<div class="row" style="padding: 0 var(--margin);background-color: #980057;">
 		<div class="text" style="align-self: center;padding: 30px 0;">
 			<h4>Multiple Views</h4>
-			<Feature icon="options" title="Simultaneous Outputs" white>
+			<Feature icon="person" title="Simultaneous Outputs" white>
 				Show the same presentation with different looks for your in-person audience, online audience
 				and a stage view for leaders.
 			</Feature>
-			<Feature icon="options" title="Web Output" white>
+			<Feature icon="tv" title="Web Output" white>
 				Users can connect to the presentation from their mobile devices. Perfect for pastor sermon
 				notes or musicians.
 			</Feature>
-			<Feature icon="options" title="NDI Support" white>
+			<Feature icon="network" title="NDI Support" white>
 				We fully support output over NDI. No need for converters or SDI cables to send your lyrics
 				to the computer running your online stream.
 			</Feature>
-			<Feature icon="options" title="Remote Control" white>
+			<Feature icon="mobile" title="Remote Control" white>
 				Allow your pastor or worship minister to control the show directly from their mobile device.
 				Excellent for rehearsals of for smaller churches.
 			</Feature>
@@ -197,7 +199,12 @@
 
 	<div class="row">
 		<!-- TODO: bubble -->
-		<Card outline variant style="--card-padding: 40px;width: var(--full-small-half-big);">
+		<Card
+			outline
+			variant
+			bubble={1}
+			style="--card-padding: 40px;width: var(--full-small-half-big);"
+		>
 			<div
 				class="image"
 				style="margin: calc((var(--card-padding) - var(--outline-width)) * -1) calc((var(--card-padding) - var(--outline-width)) * -1) var(--card-padding) 0;"
@@ -205,25 +212,25 @@
 				<Image src="preview/template.png" alt="Preview of software. Drawer with templates open." />
 			</div>
 
-			<div style="display: flex;flex-direction: column;gap: 25px;">
+			<div style="display: flex;flex-direction: column;gap: 25px;position: relative;z-index: 1;">
 				<h4>Template & Design</h4>
-				<Feature icon="options" title="Sleek Templates">
+				<Feature icon="template" title="Sleek Templates">
 					Modify your slide styles swiftly with a variety of templates.
 				</Feature>
-				<Feature icon="options" title="Dynamic Layouts">
+				<Feature icon="layout" title="Dynamic Layouts">
 					Resize and organize your display areas as per your requirement.
 				</Feature>
 			</div>
 		</Card>
 
-		<Card outline style="--card-padding: 40px;width: var(--full-small-half-big);">
-			<div style="display: flex;flex-direction: column;gap: 25px;">
+		<Card outline bubble={2} style="--card-padding: 40px;width: var(--full-small-half-big);">
+			<div style="display: flex;flex-direction: column;gap: 25px;position: relative;z-index: 1;">
 				<h4>Create & Show</h4>
-				<Feature icon="options" title="Create Impactful Shows">
+				<Feature icon="magic" title="Create Impactful Shows">
 					Easily arrange slides and layouts for lyrics, presentations, events, and more, ensuring a
 					smooth flow in your presentations.
 				</Feature>
-				<Feature icon="options" title="Dynamic Media Integration">
+				<Feature icon="image" title="Dynamic Media Integration">
 					Effortlessly drag images and videos into your slides as backgrounds enhancing the visual
 					appeal of your presentations.
 				</Feature>
@@ -240,21 +247,22 @@
 
 	<Card
 		outline
+		bubble={3}
 		style="--card-padding: 40px;display: flex;flex-direction: var(--column-small-row-big);width: 100%;"
 	>
 		<div
 			class="image"
-			style="margin: calc((var(--card-padding) - var(--outline-width)) * -1) var(--card-padding) var(--card-padding) calc((var(--card-padding) - var(--outline-width)) * -1)"
+			style="z-index: 1;margin: calc((var(--card-padding) - var(--outline-width)) * -1) var(--card-padding) var(--card-padding) calc((var(--card-padding) - var(--outline-width)) * -1)"
 		>
 			<Image src="preview/scripture.png" alt="Preview of software. Drawer with templates open." />
 		</div>
 
-		<div class="text" style="align-self: center;">
+		<div class="text" style="align-self: center;z-index: 1;">
 			<h4>Scripture & Lyric Integration</h4>
-			<Feature icon="options" title="Scripture Integration">
+			<Feature icon="bible" title="Scripture Integration">
 				Easily look up passages and turn them into slides with one click.
 			</Feature>
-			<Feature icon="options" title="Lyric Integration">
+			<Feature icon="music" title="Lyric Integration">
 				It's no longer necessary to manually enter the lyrics to all the songs. Just enter the title
 				and click search and be amazed as the slides are automatically created for you.
 			</Feature>
@@ -271,14 +279,14 @@
 	<div class="row">
 		<div class="text" style="align-self: center;">
 			<h4>Play Well With Others</h4>
-			<Feature icon="options" title="Import">
+			<Feature icon="import" title="Import">
 				Import Presentations from PowerPoint, ProPresenter, EasyWorship, OpenSong, and other
 				platforms.
 			</Feature>
-			<Feature icon="options" title="Export">
+			<Feature icon="export" title="Export">
 				You're not locked in and can export your content in multiple formats at any time.
 			</Feature>
-			<Feature icon="options" title="Cloud Sync">
+			<Feature icon="cloud" title="Cloud Sync">
 				Allow multiple people within your church to work on presentations from different computers
 				with cloud sync.
 			</Feature>
@@ -305,7 +313,7 @@
 <Section white column>
 	<div class="row" style="align-items: center;">
 		<div class="head" style="width: var(--text-div-fill);">
-			<Icon icon="options" />
+			<Icon icon="compare" />
 			<h2>How FreeShow <span class="gradient">Compares</span></h2>
 		</div>
 
@@ -327,12 +335,12 @@
 		</div>
 	</div>
 
-	<Link link="compare" primary style="align-self: center;">View All</Link>
+	<Link link="features" primary style="align-self: center;">View All</Link>
 </Section>
 
 <Section style="padding-bottom: calc(var(--section-padding) / 2);" center>
 	<div class="head" style="align-self: center;">
-		<Icon icon="options" />
+		<Icon icon="quote" />
 		<h2>What Others <span class="gradient">are Saying</span></h2>
 	</div>
 

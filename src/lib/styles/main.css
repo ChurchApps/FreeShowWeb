@@ -27,16 +27,17 @@
 	--margin-1800: 20vw;
 
 	/* TEXT */
-	--text-size: 1em;
-	--text-size-400: 2em;
+	--text-size: 2em;
+	--text-size-400: 2.5em;
 	--text-size-600: 3em;
-	--text-size-1800: 4em;
+	--text-size-1800: 3.5em;
 
 	/* FLEX */
 	--column-small-row-big: column;
 	--text-div-fill: 100%;
 	--full-small-half-big: 100%;
 	--center-small-left-big: center;
+	--hide-small-show-big: none;
 }
 
 * {
@@ -110,10 +111,18 @@ span.gradient {
 		--margin: var(--margin-600);
 		--text-size: var(--text-size-600);
 		--section-padding: var(--section-padding-600);
-		--column-small-row-big: row;
 		--text-div-fill: 42%;
-		--full-small-half-big: 50%;
+		--full-small-half-big: 80%;
 		--center-small-left-big: flex-start;
+	}
+}
+
+/* computers */
+@media only screen and (min-width: 900px) {
+	:root {
+		--full-small-half-big: 50%;
+		--column-small-row-big: row;
+		--hide-small-show-big: flex;
 	}
 }
 
