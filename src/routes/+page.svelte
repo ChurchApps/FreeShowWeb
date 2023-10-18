@@ -199,7 +199,10 @@
 				class="image"
 				style="margin: calc((var(--card-padding) - var(--outline-width)) * -1) calc((var(--card-padding) - var(--outline-width)) * -1) var(--card-padding) 0;"
 			>
-				<Image src="preview/template.png" alt="Preview of software. Drawer with templates open." />
+				<Image
+					src="preview/main_template.png"
+					alt="Preview of software. Drawer with templates open."
+				/>
 			</div>
 
 			<div style="display: flex;flex-direction: column;gap: 25px;position: relative;z-index: 1;">
@@ -230,7 +233,10 @@
 				class="image"
 				style="margin: var(--card-padding) 0 calc((var(--card-padding) - var(--outline-width)) * -1) 0;"
 			>
-				<Image src="preview/create.png" alt="Preview of software. Drawer with templates open." />
+				<Image
+					src="preview/main_create.png"
+					alt="Preview of software. Drawer with templates open."
+				/>
 			</div>
 		</Card>
 	</div>
@@ -244,7 +250,10 @@
 			class="image"
 			style="z-index: 1;margin: calc((var(--card-padding) - var(--outline-width)) * -1) var(--card-padding) var(--card-padding) calc((var(--card-padding) - var(--outline-width)) * -1)"
 		>
-			<Image src="preview/scripture.png" alt="Preview of software. Drawer with templates open." />
+			<Image
+				src="preview/main_scripture.png"
+				alt="Preview of software. Drawer with templates open."
+			/>
 		</div>
 
 		<div class="text" style="align-self: center;z-index: 1;">

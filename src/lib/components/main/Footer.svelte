@@ -7,10 +7,22 @@
 
 	<!-- TODO: social accounts! -->
 
-	<div class="rights">
-		<span>2023 &copy; </span><a href="https://livecs.org" target="_blank" rel="noreferrer"
-			>Live Church Solutions</a
+	<div class="text">
+		<a
+			href="https://github.com/ChurchApps/FreeShow/issues"
+			title="Go to FreeShow issues on GitHub"
+			target="_blank"
+			rel="noreferrer"
 		>
+			Report a bug or request a feature
+		</a>
+		<span>●</span>
+		<a href="mailto:dev@freeshow.app" title="Send mail to the developers">dev@freeshow.app</a>
+
+		<br /><br />
+
+		<span>2023 &copy; </span>
+		<a href="https://livecs.org" target="_blank" rel="noreferrer"> Live Church Solutions </a>
 		<span> - A 501(c)(3) organization with EIN 45-5349618</span>
 	</div>
 </footer>
@@ -64,11 +76,19 @@
 		);
 	}
 
-	.rights {
-		padding: calc(var(--card-padding) * 1.5);
+	.text {
+		padding: var(--card-padding) 0;
 	}
 
-	.rights span {
+	.text span {
 		opacity: 0.7;
+	}
+
+	/* media */
+
+	@media only screen and (min-width: 900px) {
+		.text {
+			padding: calc(var(--card-padding) * 1.5);
+		}
 	}
 </style>
