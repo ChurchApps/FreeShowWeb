@@ -8,8 +8,6 @@
 	export let black: boolean = false;
 	export let color: string = '';
 	export let size = 0;
-
-	console.log(icons[icon] || {});
 </script>
 
 <!-- fade in ? -->

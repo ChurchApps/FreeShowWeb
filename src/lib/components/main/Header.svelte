@@ -144,10 +144,10 @@
 
 		left: 0;
 		bottom: 0;
-		transform: translateY(100%);
+		transform: translateY(99.8%);
 
 		background-color: rgb(0, 0, 0, 0.8);
-		box-shadow: 0 10px 10px rgb(0 0 0 / 0.5);
+		box-shadow: 0 10px 10px rgb(0 0 0 / 0.2);
 	}
 	.links.show :global(a),
 	.links.show :global(button) {

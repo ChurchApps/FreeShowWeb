@@ -1,5 +1,4 @@
-<script>
-	import Button from '$lib/components/inputs/Button.svelte';
+<script lang="ts">
 	import Link from '$lib/components/inputs/Link.svelte';
 	import Card from '$lib/components/main/Card.svelte';
 	import Feature from '$lib/components/main/Feature.svelte';
@@ -9,6 +8,7 @@
 	import Video from '$lib/components/main/Video.svelte';
 	import Badges from '$lib/components/special/Badges.svelte';
 	import Compare from '$lib/components/special/Compare.svelte';
+	import Download from '$lib/components/special/Download.svelte';
 	import Reviews from '$lib/components/special/Reviews.svelte';
 </script>
 
@@ -30,15 +30,7 @@
 		</p>
 
 		<div class="download">
-			<Button primary icon="windows" big>Download for Windows</Button>
-
-			<p style="opacity: 0.8;font-size: 0.8em;">Download another version:</p>
-
-			<div class="more">
-				<Button icon="windows" title="Download for Windows" outline />
-				<Button icon="apple" title="Download for MacOS" outline variant />
-				<Button icon="linux" title="Download for Linux" outline />
-			</div>
+			<Download />
 		</div>
 	</div>
 </Section>
@@ -72,7 +64,6 @@
 </Section>
 
 <Section white style="padding: 0;">
-	<!-- WIP get the correct divider -->
 	<Image src="special/divider.png" alt="Divider" />
 </Section>
 
@@ -198,7 +189,6 @@
 	</div>
 
 	<div class="row">
-		<!-- TODO: bubble -->
 		<Card
 			outline
 			variant
@@ -300,13 +290,7 @@
 	</div>
 
 	<div class="download" style="align-items: center;">
-		<Button primary icon="windows" big>Download for Windows</Button>
-
-		<div class="more">
-			<Button icon="windows" title="Download for Windows" outline />
-			<Button icon="apple" title="Download for MacOS" outline variant />
-			<Button icon="linux" title="Download for Linux" outline />
-		</div>
+		<Download />
 	</div>
 </Section>
 
@@ -369,10 +353,5 @@
 		flex-direction: column;
 		gap: 12px;
 		align-items: var(--center-small-left-big);
-	}
-
-	.more {
-		display: flex;
-		gap: 10px;
 	}
 </style>

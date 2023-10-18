@@ -16,7 +16,12 @@
 	const hasContent = !!$$props.$$slots?.default;
 </script>
 
-<a tabindex="-1" href={link} target={link.includes('http') ? '_blank' : '_self'} {style}>
+<a
+	tabindex="-1"
+	href={link}
+	target={link.includes('http') && !link.includes('releases') ? '_blank' : '_self'}
+	{style}
+>
 	<Button {title} {icon} {size} {primary} {outline} {variant} {big} {hasContent}>
 		<slot />
 	</Button>

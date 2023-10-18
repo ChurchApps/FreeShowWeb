@@ -48,6 +48,37 @@ export async function getReleases(countedReleases = 200): Promise<Release[]> {
 	});
 }
 
+export function getLatest(releases: Release[]) {
+	let filteredReleases = releases.filter((a: any) => a.draft === false && a.prerelease === false);
+	return filteredReleases[0];
+}
+
+// assets
+
+export const osIcons: any = { Windows: 'windows', MacOS: 'apple', Linux: 'linux' };
+const assetKeys: any = {
+	Windows: ['exe'],
+	MacOS: ['dmg', 'zip'],
+	Linux: ['AppImage', 'deb']
+};
+// Others: blockmap, yml, png
+export function getAssets(latest: Release | null, activeOS: string) {
+	if (!latest) return [];
+	let newAssets: Asset[] = [];
+
+	let keys = assetKeys[activeOS];
+	keys.forEach((extension: string) => {
+		let asset = latest!.assets.find((a) => a.name.includes('.' + extension));
+		if (!asset) return;
+
+		newAssets.push(asset);
+	});
+
+	return newAssets;
+}
+
+// other
+
 export function convertSize(bytes: number, decimals = 0) {
 	if (bytes <= 0) return '0 Bytes';
 
@@ -70,7 +101,12 @@ export function toDate(d: string) {
 	return `${day}.${month}-${year}`;
 }
 
-export function getOS() {
+export function getOS(getSaved: boolean = false) {
+	if (getSaved && typeof localStorage !== 'undefined') {
+		let savedOS = localStorage.getItem('os');
+		if (savedOS) return savedOS;
+	}
+
 	let platform = window.navigator.platform;
 
 	// desktop
@@ -83,5 +119,5 @@ export function getOS() {
 	// let userAgent = window.navigator.userAgent;
 	// if (userAgent.includes('Android')) return 'Android';
 
-	return '';
+	return 'Windows';
 }

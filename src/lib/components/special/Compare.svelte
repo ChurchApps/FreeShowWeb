@@ -72,7 +72,7 @@
 											<Icon icon="apple" color={maxItems ? '' : '#aaaaaa'} />
 										{/if}
 										{#if program.content.includes('{linux}')}
-											<Icon icon="linux" color={maxItems ? '' : '#dd4814'} />
+											<Icon icon="linux" color={maxItems ? '' : '#db1200'} />
 										{/if}
 
 										{program.content.replace(/(\{.*?\})/g, '')}

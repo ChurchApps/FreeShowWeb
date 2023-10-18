@@ -9,15 +9,16 @@
 		getReleases,
 		toDate,
 		type Asset,
-		type Release
+		type Release,
+		getLatest,
+		getAssets,
+		osIcons
 	} from '$lib/components/scripts/releases';
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
 
 	onMount(async () => {
-		// get current os
-		if (typeof localStorage === 'undefined') return (activeOS = getOS() || 'Windows');
-		activeOS = localStorage.getItem('os') || getOS();
+		activeOS = getOS(true);
 
 		let releases = await getReleases();
 		readReleases(releases);
@@ -25,50 +26,23 @@
 
 	$: if (activeOS) updateOS();
 	function updateOS() {
-		getAssets();
+		currentAssets = getAssets(latest, activeOS);
 
 		if (typeof localStorage === 'undefined') return;
 		localStorage.setItem('os', activeOS);
 	}
 
 	let latest: Release | null = null;
+	let currentAssets: Asset[] = [];
 	let totalDownloads: number = 0;
 	let activeOS: string = '';
 	let showIndividualDownloads: boolean = false;
 	let changelogOpened: boolean = false;
 
 	function readReleases(releases: Release[]) {
-		console.log('RELEASES:', releases);
-
+		latest = getLatest(releases);
+		currentAssets = getAssets(latest, activeOS);
 		countDownloads(releases);
-
-		let filteredReleases = releases.filter((a: any) => a.draft === false && a.prerelease === false);
-		latest = filteredReleases[0];
-
-		getAssets();
-	}
-
-	const osIcons: any = { Windows: 'windows', MacOS: 'apple', Linux: 'linux' };
-	const assetKeys: any = {
-		Windows: ['exe'],
-		MacOS: ['dmg', 'zip'],
-		Linux: ['AppImage', 'deb']
-	};
-	// Others: blockmap, yml, png
-	let currentAssets: Asset[] = [];
-	function getAssets() {
-		if (!latest) return;
-		let newAssets: Asset[] = [];
-
-		let keys = assetKeys[activeOS];
-		keys.forEach((extension: string) => {
-			let asset = latest!.assets.find((a) => a.name.includes('.' + extension));
-			if (!asset) return;
-
-			newAssets.push(asset);
-		});
-
-		currentAssets = newAssets;
 	}
 
 	function countDownloads(releases: any[]) {
@@ -129,11 +103,16 @@
 
 	<div class="assets">
 		{#if currentAssets.length}
-			{#each currentAssets as asset}
-				<Link title="Download" link={asset.browser_download_url} style="width: 100%;">
+			{#each currentAssets as asset, i}
+				<Link
+					title="Download"
+					link={asset.browser_download_url}
+					style="width: 100%;"
+					outline={i === 0}
+				>
 					<div
 						class="flex"
-						style="display: flex;justify-content: space-between;align-items: center;width: 100%;"
+						style="display: flex;justify-content: space-between;align-items: center;width: 100%;z-index: 1;"
 					>
 						<div class="name" style="display: flex;align-items: center;gap: 10px;">
 							<Icon icon={osIcons[activeOS]} />
@@ -196,6 +175,7 @@
 	.assets {
 		display: flex;
 		flex-direction: column;
+		gap: 5px;
 
 		margin: 0 var(--margin);
 		background-color: var(--text-inverted);

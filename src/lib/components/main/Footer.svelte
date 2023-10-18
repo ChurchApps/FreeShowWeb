@@ -1,15 +1,9 @@
 <script>
-	import Button from '../inputs/Button.svelte';
+	import Download from '../special/Download.svelte';
 </script>
 
 <footer>
-	<div class="more">
-		<div class="center">
-			<Button icon="windows" title="Download for Windows" outline />
-			<Button icon="apple" title="Download for MacOS" outline variant />
-			<Button icon="linux" title="Download for Linux" outline />
-		</div>
-	</div>
+	<Download disableMain />
 
 	<!-- TODO: social accounts! -->
 
@@ -32,17 +26,16 @@
 		padding: var(--card-padding);
 	}
 
-	.more {
+	footer :global(.more) {
 		width: 100%;
 		position: relative;
 		margin-top: var(--card-padding);
-	}
-	.more .center {
+
 		display: flex;
 		justify-content: center;
 		gap: 12px;
 	}
-	.more::after {
+	footer :global(.more)::after {
 		display: var(--hide-small-show-big);
 
 		content: '';
