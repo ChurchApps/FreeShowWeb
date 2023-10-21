@@ -23,7 +23,7 @@
 		<br />
 
 		<div class="center">
-			<Link link="docs" primary>Documentation</Link>
+			<Link link="/docs" primary>Documentation</Link>
 		</div>
 	</div>
 </Section>

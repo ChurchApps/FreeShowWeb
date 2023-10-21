@@ -10,6 +10,10 @@
 	--secondary: #c50074;
 	--secondary-rgb: 197, 0, 116;
 
+	/* FONT */
+	--font: 'Roboto', 'Segoe UI', Candara, 'Bitstream Vera Sans', 'DejaVu Sans', 'Bitstream Vera Sans',
+		'Trebuchet MS', Verdana, 'Verdana Ref', sans-serif;
+
 	/* BORDER */
 	--border-radius: 10px;
 	--button-radius: 4px;
@@ -49,8 +53,7 @@
 }
 
 body {
-	font-family: 'Roboto', 'Segoe UI', Candara, 'Bitstream Vera Sans', 'DejaVu Sans',
-		'Bitstream Vera Sans', 'Trebuchet MS', Verdana, 'Verdana Ref', sans-serif;
+	font-family: var(--font);
 	background-color: var(--primary);
 	color: var(--text);
 

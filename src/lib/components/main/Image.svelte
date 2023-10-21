@@ -5,7 +5,7 @@
 	export let draggable: boolean = true;
 	export let borderRadius: boolean = true;
 
-	let path = `images/${src}`;
+	let path = `/images/${src}`;
 </script>
 
 <img src={path} {alt} {style} {draggable} class:borderRadius />

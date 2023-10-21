@@ -3,8 +3,8 @@
 	import Link from '../inputs/Link.svelte';
 	import Image from './Image.svelte';
 
-	const hideHeaderPos = 300;
-	const hideMargin = 20;
+	const hideHeaderPos = 280;
+	const hideMargin = 5;
 	let hideHeader = false;
 	let scrollPercentage = 0;
 
@@ -66,9 +66,9 @@
 	</div>
 
 	<div class="links" class:show={menuOpened}>
-		<Link link="mission">Mission</Link>
-		<Link link="features">Features</Link>
-		<Link link="docs">Docs</Link>
+		<Link link="/mission">Mission</Link>
+		<Link link="/features">Features</Link>
+		<Link link="/docs">Docs</Link>
 		<!-- <p style="z-index: 1;" class="onlyMenu">Source code</p> -->
 		<Link
 			title="Source code"
@@ -77,7 +77,7 @@
 			size={1.2}
 			outline
 		/>
-		<Link link="downloads" primary>Downloads</Link>
+		<Link link="/downloads" primary>Downloads</Link>
 	</div>
 </header>
 
@@ -88,9 +88,10 @@
 		width: 100%;
 
 		background: rgb(0, 0, 0, 0.2);
-		background: linear-gradient(0deg, rgba(0, 0, 0, 0) 2%, rgba(0, 0, 0, 0.8) 100%);
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0) 2%, rgba(0, 0, 20, 0.8) 100%);
+		pointer-events: none;
 
-		z-index: 10;
+		z-index: 50;
 
 		display: flex;
 		justify-content: space-between;
@@ -106,6 +107,7 @@
 		display: flex;
 		align-items: center;
 		gap: 8px;
+		pointer-events: initial;
 	}
 
 	/* h3 {

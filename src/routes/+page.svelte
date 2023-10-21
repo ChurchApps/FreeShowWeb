@@ -59,7 +59,7 @@
 			mission of the Church instead of overhead.
 		</p>
 
-		<Link link="mission" primary>Mission</Link>
+		<Link link="/mission" primary>Mission</Link>
 	</div>
 </Section>
 
@@ -328,7 +328,7 @@
 		</div>
 	</div>
 
-	<Link link="features" primary style="align-self: center;">View All</Link>
+	<Link link="/features" primary style="align-self: center;">View All</Link>
 </Section>
 
 <Section style="padding-bottom: calc(var(--section-padding) / 2);" center>
