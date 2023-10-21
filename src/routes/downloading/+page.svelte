@@ -3,6 +3,10 @@
 	import Section from '$lib/components/main/Section.svelte';
 </script>
 
+<svelte:head>
+	<title>Downloading...</title>
+</svelte:head>
+
 <Section center bubble>
 	<h1 style="z-index: 1;">Thank <span class="gradient">You</span></h1>
 </Section>

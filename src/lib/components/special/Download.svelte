@@ -76,7 +76,6 @@
 		console.log(downloadURL);
 
 		if (!downloadURL) return;
-		// TODO: uncomment
 		window.open(downloadURL, '_self');
 
 		if (redirect) goto('downloading');

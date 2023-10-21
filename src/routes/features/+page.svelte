@@ -5,6 +5,10 @@
 	import Gallery from '$lib/components/special/Gallery.svelte';
 </script>
 
+<svelte:head>
+	<title>FreeShow | Compare features</title>
+</svelte:head>
+
 <Section center bubble>
 	<h1 style="z-index: 1;">Key <span class="gradient">Features</span></h1>
 </Section>

@@ -33,6 +33,7 @@ import FaSolidExchangeAlt from 'svelte-icons-pack/fa/FaSolidExchangeAlt';
 import FaSolidQuoteRight from 'svelte-icons-pack/fa/FaSolidQuoteRight';
 import FaSolidTags from 'svelte-icons-pack/fa/FaSolidTags';
 import HiSolidArrowNarrowDown from 'svelte-icons-pack/hi/HiSolidArrowNarrowDown';
+import HiSolidMenuAlt3 from 'svelte-icons-pack/hi/HiSolidMenuAlt3';
 import BsPeopleFill from 'svelte-icons-pack/bs/BsPeopleFill';
 import BsCameraVideoFill from 'svelte-icons-pack/bs/BsCameraVideoFill';
 import IoStatsChart from 'svelte-icons-pack/io/IoStatsChart';
@@ -54,7 +55,6 @@ export const icons: any = {
 	star_half: FaSolidStarHalfAlt,
 	left: FaSolidArrowLeft,
 	right: FaSolidArrowRight,
-	lines: FaSolidGripLines,
 	mission: FaSolidHandHoldingHeart,
 	options: FaSolidSlidersH,
 	edit: FaSolidEdit,
@@ -77,6 +77,7 @@ export const icons: any = {
 	tags: FaSolidTags,
 
 	down: HiSolidArrowNarrowDown,
+	lines: HiSolidMenuAlt3,
 
 	people: BsPeopleFill,
 	video: BsCameraVideoFill,

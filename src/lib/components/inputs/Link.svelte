@@ -20,6 +20,7 @@
 	tabindex="-1"
 	href={link}
 	target={link.includes('http') && !link.includes('releases') ? '_blank' : '_self'}
+	aria-label={title || 'Link'}
 	{style}
 >
 	<Button {title} {icon} {size} {primary} {outline} {variant} {big} {hasContent}>

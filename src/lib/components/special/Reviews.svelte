@@ -24,7 +24,7 @@
 				<!-- no one has images -->
 				<!-- <Card outline style="width: var(--text-div-fill);--card-padding: 8px;--border-radius: 50%;">
 					<Image
-						src="reviewers/{review.image || 'blank.jpg'}"
+						src="reviewers/{review.image || 'blank.webp'}"
 						alt="Image of person reviewing"
 						style="border-radius: 50%;"
 					/>
@@ -60,7 +60,7 @@
 		display: flex;
 		align-items: center;
 		width: 100%;
-		gap: 20px;
+		gap: var(--gap-small);
 	}
 
 	.transition {
@@ -72,7 +72,7 @@
 	.review {
 		display: flex;
 		text-align: left;
-		gap: 20px;
+		gap: var(--gap-small);
 		flex-direction: var(--column-small-row-big);
 		flex: 1;
 

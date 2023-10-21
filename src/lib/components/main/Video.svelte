@@ -35,7 +35,7 @@
 			transition:fade={{ duration: 200 }}
 		>
 			<div class="play" title="Play video">
-				<Icon icon="play" white />
+				<Icon icon="play" size={1.4} white />
 			</div>
 
 			<Image src="thumbnails/{thumbnail}" alt="Video thumbnail" />
@@ -70,7 +70,7 @@
 		transform: translate(-50%, -50%);
 
 		background-color: var(--secondary);
-		padding: 30px;
+		padding: 15px;
 		border-radius: 50%;
 
 		display: flex;
@@ -114,5 +114,13 @@
 
 	.thumbnail:hover {
 		filter: brightness(1.1);
+	}
+
+	/* media */
+
+	@media only screen and (min-width: 600px) {
+		.play {
+			padding: 30px;
+		}
 	}
 </style>

@@ -3,6 +3,10 @@
 	import Section from '$lib/components/main/Section.svelte';
 </script>
 
+<svelte:head>
+	<title>FreeShow | Our Mission</title>
+</svelte:head>
+
 <Section
 	center
 	bubble

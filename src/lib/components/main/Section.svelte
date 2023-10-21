@@ -30,7 +30,11 @@
 	style="--height: {height}dvh;{style}"
 >
 	{#if background}
-		<div class="background" style="top: {background.top || 0}px;filter: {background.filter || ''};">
+		<div
+			class="background"
+			class:header={background.src.includes('header')}
+			style="top: {background.top || 0}px;filter: {background.filter || ''};"
+		>
 			<Image src={background.src} alt={background.alt} draggable={false} borderRadius={false} />
 		</div>
 	{/if}
@@ -52,7 +56,7 @@
 		display: flex;
 		justify-content: space-between;
 		flex-direction: var(--column-small-row-big);
-		gap: 80px;
+		gap: var(--gap-big);
 	}
 	section.column {
 		flex-direction: column;
@@ -71,7 +75,7 @@
 	section :global(.row) {
 		display: flex;
 		flex-direction: var(--column-small-row-big);
-		gap: 60px;
+		gap: var(--gap);
 	}
 
 	section.white {
@@ -127,16 +131,6 @@
 		box-shadow: 0 100px 300px 100px #833ee3;
 	}
 
-	/* background */
-	.background {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: -1;
-	}
-
 	/* down */
 
 	.down {
@@ -189,5 +183,33 @@
 
 	.down :global(button span) {
 		padding: 9px 2px;
+	}
+
+	/* background */
+	.background {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+
+	.background.header :global(img) {
+		object-position: bottom right;
+		object-fit: contain;
+		width: 200%;
+		transform: translateX(-50%);
+	}
+
+	/* media */
+
+	@media only screen and (min-width: 600px) {
+		.background.header :global(img) {
+			object-position: right;
+			object-fit: cover;
+			width: 100%;
+			transform: none;
+		}
 	}
 </style>

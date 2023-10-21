@@ -62,6 +62,13 @@
 	</div>
 
 	<div class="menu">
+		<!-- <Link
+			title="Source code"
+			link="https://github.com/ChurchApps/FreeShow"
+			icon="github"
+			size={0.8}
+			outline
+		/> -->
 		<Button on:click={() => (menuOpened = !menuOpened)} icon="lines" white />
 	</div>
 

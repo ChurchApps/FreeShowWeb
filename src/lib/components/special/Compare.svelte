@@ -64,7 +64,7 @@
 											black={!program.content}
 										/>
 									{:else}
-										<!-- TODO: icon borders & table border!!! -->
+										<!-- TODO: icon borders? -->
 										{#if program.content.includes('{win}')}
 											<Icon icon="windows" color={maxItems ? '' : '#0078D7'} />
 										{/if}

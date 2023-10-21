@@ -14,12 +14,13 @@
 
 <Section
 	height={95}
-	background={{ src: 'main/header-bg.png', alt: 'Header image - person using FreeShow at concert' }}
+	background={{
+		src: 'main/header-bg.webp',
+		alt: 'Header image - person using FreeShow at concert'
+	}}
 	continueButton
 >
-	<div
-		style="width: var(--full-small-half-big);display: flex;flex-direction: column;align-items: var(--center-small-left-big);"
-	>
+	<div class="top-content">
 		<h1>
 			<span style="font-weight: 300;">Elevate Your</span>
 			<span>Presentations</span>
@@ -38,7 +39,7 @@
 <Section white>
 	<div class="image">
 		<Card outline variant>
-			<Image src="main/mission.png" alt="Person using FreeShow at computer" />
+			<Image src="main/mission.webp" alt="Person using FreeShow at computer" />
 		</Card>
 	</div>
 
@@ -52,19 +53,19 @@
 		<p>
 			Every year churches spend hundreds of millions of dollars on the software needed to operate
 			effectively and efficiently. We believe that within the Church the talent exists to create all
-			the software that churches need and provide it free of charge.
+			the software that churches need and <strong>provide it free of charge.</strong>
 		</p>
 		<p>
 			Doing so would free up a significant amount of funds that can be spent on accomplishing the
 			mission of the Church instead of overhead.
 		</p>
 
-		<Link link="/mission" primary>Mission</Link>
+		<Link link="/mission" title="Learn more about our mission" primary>Learn more</Link>
 	</div>
 </Section>
 
 <Section white style="padding: 0;">
-	<Image src="special/divider.png" alt="Divider" />
+	<Image src="special/divider.webp" alt="Divider" />
 </Section>
 
 <Section white center style="padding-bottom: 0;">
@@ -78,17 +79,23 @@
 		</p>
 	</div>
 
-	<div class="center" style="position: relative;width: 80%;display: flex;justify-content: center;">
+	<div
+		class="center"
+		style="position: relative;width: var(--full-small-80-big);display: flex;justify-content: center;"
+	>
 		<Card
 			outline
 			glass
 			style="overflow: initial;z-index: 1;--primary: rgb(var(--primary-inverted-rgb), 0.6)"
 		>
-			<Video src="Introducing FreeShow.mp4" thumbnail="Introducing FreeShow.jpg" />
+			<Video src="Introducing FreeShow.mp4" thumbnail="Introducing FreeShow.webp" />
 		</Card>
 
-		<div class="circle" style="position: absolute;top: -50px;left: -50px;width: 150px;">
-			<Image src="special/circle-bg.png" alt="Design circle" />
+		<div
+			class="circle"
+			style="position: absolute;top: -40px;left: -40px;width: 120px;opacity: 0.7;"
+		>
+			<Image src="special/circle-bg.webp" alt="Design circle" />
 		</div>
 	</div>
 </Section>
@@ -97,7 +104,7 @@
 	column
 	style="z-index: 0;"
 	background={{
-		src: 'special/features-bg-affix.png',
+		src: 'main/features-bg-affix.webp',
 		alt: 'Distant background of computer running FreeShow',
 		top: -120
 	}}
@@ -107,7 +114,7 @@
 		<h2>FreeShow Key <span class="gradient">Features</span></h2>
 	</div>
 
-	<div class="row">
+	<div class="row" style="flex-direction: var(--inverted-column-small-row-big);">
 		<div class="text" style="align-self: center;">
 			<h4>Powerful Editing</h4>
 			<Feature icon="options" title="Limitless Customization">
@@ -121,7 +128,7 @@
 
 		<div class="image">
 			<Card outline>
-				<Image src="main/editing.png" alt="Person editing slides in FreeShow" />
+				<Image src="main/editing.webp" alt="Person editing slides in FreeShow" />
 			</Card>
 		</div>
 	</div>
@@ -129,7 +136,7 @@
 	<div class="row">
 		<div class="image">
 			<Card outline variant>
-				<Image src="main/automated.png" alt="Person working with FreeShow" />
+				<Image src="main/automated.webp" alt="Person working with FreeShow" />
 			</Card>
 		</div>
 
@@ -148,11 +155,16 @@
 </Section>
 
 <Section column style="padding: 0;gap: 0;">
-	<Image src="special/flow-top.png" alt="Esthetic waves start" borderRadius={false} />
+	<Image
+		src="special/flow-top.webp"
+		alt="Esthetic waves start"
+		draggable={false}
+		borderRadius={false}
+	/>
 
 	<div class="row" style="padding: 0 var(--margin);background-color: #980057;">
 		<div class="text" style="align-self: center;padding: 30px 0;">
-			<h4>Multiple Views</h4>
+			<h4 style="text-align: var(--center-small-left-big);width: 100%;">Multiple Views</h4>
 			<Feature icon="person" title="Simultaneous Outputs" white>
 				Show the same presentation with different looks for your in-person audience, online audience
 				and a stage view for leaders.
@@ -173,19 +185,24 @@
 
 		<div class="image" style="filter: brightness(0.9);padding-top: 50px;">
 			<Image
-				src="special/devices.png"
+				src="special/devices.webp"
 				alt="Person working with FreeShow"
 				style="height: initial;"
 			/>
 		</div>
 	</div>
 
-	<Image src="special/flow-bottom.png" alt="Esthetic waves end" borderRadius={false} />
+	<Image
+		src="special/flow-bottom.webp"
+		alt="Esthetic waves end"
+		draggable={false}
+		borderRadius={false}
+	/>
 </Section>
 
-<Section column style="gap: 60px;padding-bottom: calc(var(--section-padding) / 2);">
+<Section column style="gap: var(--gap);padding-bottom: calc(var(--section-padding) / 2);">
 	<div class="circle" style="position: absolute;left: 0;top: 50%;transform: translateY(-15%);">
-		<Image src="special/half-circle.png" alt="Esthetic half circle" />
+		<Image src="special/half-circle.webp" alt="Esthetic half circle" />
 	</div>
 
 	<div class="row">
@@ -193,14 +210,14 @@
 			outline
 			variant
 			bubble={1}
-			style="--card-padding: 40px;width: var(--full-small-half-big);"
+			style="--card-padding: var(--card-padding-big);width: var(--full-small-half-big);"
 		>
 			<div
 				class="image"
 				style="margin: calc((var(--card-padding) - var(--outline-width)) * -1) calc((var(--card-padding) - var(--outline-width)) * -1) var(--card-padding) 0;"
 			>
 				<Image
-					src="preview/main_template.png"
+					src="preview/main_template.webp"
 					alt="Preview of software. Drawer with templates open."
 				/>
 			</div>
@@ -216,7 +233,11 @@
 			</div>
 		</Card>
 
-		<Card outline bubble={2} style="--card-padding: 40px;width: var(--full-small-half-big);">
+		<Card
+			outline
+			bubble={2}
+			style="--card-padding: var(--card-padding-big);width: var(--full-small-half-big);"
+		>
 			<div style="display: flex;flex-direction: column;gap: 25px;position: relative;z-index: 1;">
 				<h4>Create & Show</h4>
 				<Feature icon="magic" title="Create Impactful Shows">
@@ -234,7 +255,7 @@
 				style="margin: var(--card-padding) 0 calc((var(--card-padding) - var(--outline-width)) * -1) 0;"
 			>
 				<Image
-					src="preview/main_create.png"
+					src="preview/main_create.webp"
 					alt="Preview of software. Drawer with templates open."
 				/>
 			</div>
@@ -244,14 +265,14 @@
 	<Card
 		outline
 		bubble={3}
-		style="--card-padding: 40px;display: flex;flex-direction: var(--column-small-row-big);width: 100%;"
+		style="--card-padding: var(--card-padding-big);display: flex;flex-direction: var(--column-small-row-big);width: 100%;"
 	>
 		<div
 			class="image"
 			style="z-index: 1;margin: calc((var(--card-padding) - var(--outline-width)) * -1) var(--card-padding) var(--card-padding) calc((var(--card-padding) - var(--outline-width)) * -1)"
 		>
 			<Image
-				src="preview/main_scripture.png"
+				src="preview/main_scripture.webp"
 				alt="Preview of software. Drawer with templates open."
 			/>
 		</div>
@@ -272,10 +293,10 @@
 <!-- this should be a different image -->
 <Section
 	column
-	background={{ src: 'main/working.png', alt: 'Distant background of person working on FreeShow' }}
+	background={{ src: 'main/working.webp', alt: 'Distant background of person working on FreeShow' }}
 	style="padding-top: calc(var(--section-padding) / 2);"
 >
-	<div class="row">
+	<div class="row" style="flex-direction: var(--inverted-column-small-row-big);">
 		<div class="text" style="align-self: center;">
 			<h4>Play Well With Others</h4>
 			<Feature icon="import" title="Import">
@@ -293,7 +314,7 @@
 
 		<div class="image">
 			<Card outline>
-				<Image src="main/plays-well.png" alt="Computer sitting on desk with FreeShow open" />
+				<Image src="main/plays-well.webp" alt="Computer sitting on desk with FreeShow open" />
 			</Card>
 		</div>
 	</div>
@@ -305,7 +326,7 @@
 
 <Section white column>
 	<div class="row" style="align-items: center;">
-		<div class="head" style="width: var(--text-div-fill);">
+		<div class="head" style="width: var(--text-div-fill);text-align: var(--center-small-left-big);">
 			<Icon icon="compare" />
 			<h2>How FreeShow <span class="gradient">Compares</span></h2>
 		</div>
@@ -323,12 +344,20 @@
 	<div class="compare" style="position: relative;">
 		<Compare maxItems={13} />
 
-		<div class="circle" style="position: absolute;bottom: -60px;right: -60px;width: 150px;">
-			<Image src="special/circle-bg.png" alt="Design circle" />
+		<div
+			class="circle"
+			style="position: absolute;bottom: -45px;right: -45px;width: 120px;opacity: 0.7;"
+		>
+			<Image src="special/circle-bg.webp" alt="Design circle" />
 		</div>
 	</div>
 
-	<Link link="/features" primary style="align-self: center;">View All</Link>
+	<Link
+		link="/features"
+		title="See more features of this program"
+		primary
+		style="align-self: center;">View All</Link
+	>
 </Section>
 
 <Section style="padding-bottom: calc(var(--section-padding) / 2);" center>
@@ -341,12 +370,14 @@
 </Section>
 
 <!-- <Section style="padding: 0;"> -->
-<Image src="special/footer-divider-bg.png" alt="Divider" />
+<Image src="special/footer-divider-bg.webp" alt="Divider" />
+
 <!-- </Section> -->
 
-<Section style="padding: calc(var(--section-padding) / 2) var(--margin);" center>
+<!-- WIP this is temporarily removed -->
+<!-- <Section style="padding: calc(var(--section-padding) / 2) var(--margin);" center>
 	<Badges />
-</Section>
+</Section> -->
 
 <style>
 	h1 {
@@ -361,6 +392,27 @@
 		display: flex;
 		flex-direction: column;
 		gap: 12px;
-		align-items: var(--center-small-left-big);
+		align-items: var(--center-small-start-big);
+	}
+
+	.top-content {
+		width: var(--full-small-half-big);
+		display: flex;
+		flex-direction: column;
+		align-items: var(--center-small-start-big);
+		text-align: var(--center-small-left-big);
+		padding-top: 30px;
+	}
+
+	:global(body) {
+		overflow-x: hidden;
+	}
+
+	/* media */
+
+	@media only screen and (min-width: 400px) {
+		.top-content {
+			padding-top: 10px;
+		}
 	}
 </style>

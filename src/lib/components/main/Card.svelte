@@ -46,7 +46,6 @@
 		box-shadow: 0 200px 200px 30px #d71e93;
 	}
 	.card.bubble3::after {
-		/* TODO: mobile layout */
 		background: linear-gradient(
 			to right,
 			#6937bf,
@@ -61,7 +60,7 @@
 		height: 500px;
 
 		left: 20%;
-		transform: translate(-50%, 50%);
+		transform: translate(-50%, 100%);
 		bottom: 0;
 
 		box-shadow: 100px 0 200px 10px #c31985;
@@ -120,5 +119,13 @@
 		/* backdrop-filter: brightness(0.9) blur(5px); */
 		background-color: rgba(163, 0, 163, 0.2);
 		/* background-color: rgb(var(--secondary-rgb), 0.1); */
+	}
+
+	/* media */
+
+	@media only screen and (min-width: 600px) {
+		.card.bubble3::after {
+			transform: translate(-50%, 50%);
+		}
 	}
 </style>

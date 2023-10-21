@@ -19,6 +19,7 @@
 
 <button
 	{title}
+	aria-label={title || 'Action button'}
 	class:active
 	class:primary
 	class:outline
