@@ -58,6 +58,7 @@
 
 <svelte:head>
 	<title>FreeShow | All downloads</title>
+	<meta name="description" content="Download FreeShow software for Windows, macOS or Linux." />
 </svelte:head>
 
 <Section center bubble>

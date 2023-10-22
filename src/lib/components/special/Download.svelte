@@ -91,7 +91,14 @@
 </Popup>
 
 {#if !disableMain}
-	<Button on:click={() => startDownload()} primary icon="windows" disabled={!activeOS} big>
+	<Button
+		on:click={() => startDownload()}
+		title="Download FreeShow {latest?.tag_name} for {activeOS || 'OS'}"
+		primary
+		icon="windows"
+		disabled={!activeOS}
+		big
+	>
 		Download{activeOS ? ` for ${activeOS}` : ''}
 	</Button>
 

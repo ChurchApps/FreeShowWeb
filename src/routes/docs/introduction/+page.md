@@ -18,3 +18,26 @@ If you haven't already, you can download the application from the homepage: [fre
 ## Get Started Using FreeShow
 
 [![](https://markdown-videos.vercel.app/youtube/9_1lUNcrU1w)](https://youtu.be/9_1lUNcrU1w)
+
+## Socials
+
+- [Tutorials on YouTube](https://youtube.com/@freeshowapp)
+- [Community on Facebook](https://facebook.com/groups/freeshowapp)
+- [Tips on Instagram](https://instagram.com/freeshowapp)
+- [QNA on Reddit](https://reddit.com/r/freeshowapp)
+
+<!-- ## Other links
+
+- [Source code on GitHub](https://github.com/ChurchApps/FreeShow)
+- [FreeShow on Snapcraft](https://snapcraft.io/freeshow) -->
+
+## Reviews
+
+- [Capterra](https://www.capterra.com/p/251606/FreeShow/)
+- [SourceForge](https://sourceforge.net/software/product/FreeShow/)
+- [GetApp](https://www.getapp.com/nonprofit-software/a/freeshow/)
+- [AlternativeTo](https://alternativeto.net/software/freeshow/about/)
+- [G2](https://www.g2.com/products/freeshow/reviews)
+<!-- - [Software Advice](https://www.softwareadvice.com/church-presentation/freeshow-profile/reviews/)
+- [Slashdot](https://slashdot.org/software/p/FreeShow/)
+- [Softpedia](https://www.softpedia.com/get/Office-tools/Other-Office-Tools/FreeShow.shtml) -->
