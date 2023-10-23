@@ -6,7 +6,6 @@
 	import Image from '$lib/components/main/Image.svelte';
 	import Section from '$lib/components/main/Section.svelte';
 	import Video from '$lib/components/main/Video.svelte';
-	import Badges from '$lib/components/special/Badges.svelte';
 	import Compare from '$lib/components/special/Compare.svelte';
 	import Download from '$lib/components/special/Download.svelte';
 	import Reviews from '$lib/components/special/Reviews.svelte';
