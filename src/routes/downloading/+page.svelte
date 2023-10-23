@@ -1,3 +1,7 @@
+<script context="module">
+	export const prerender = true;
+</script>
+
 <script>
 	import Link from '$lib/components/inputs/Link.svelte';
 	import Section from '$lib/components/main/Section.svelte';
