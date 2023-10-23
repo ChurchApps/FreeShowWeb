@@ -11,7 +11,7 @@
 	center
 	bubble
 	background={{
-		src: 'main/mission.png',
+		src: 'main/mission.webp',
 		alt: 'Person using FreeShow at computer',
 		filter: 'brightness(0.2);'
 	}}
