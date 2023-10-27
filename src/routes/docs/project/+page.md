@@ -4,7 +4,7 @@ description: A project is a playlist with all the songs, videos, presentations a
 ---
 
 <script>
-    import Key from '../../../components/Key.svelte';
+    import Key from '../../../lib/components/markdown/Key.svelte';
 </script>
 
 # Project

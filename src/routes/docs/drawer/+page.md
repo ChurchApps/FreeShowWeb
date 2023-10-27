@@ -4,7 +4,7 @@ description: The drawer is a simple way to access many of the essential tools wi
 ---
 
 <script>
-    import Key from '../../../components/Key.svelte';
+    import Key from '../../../lib/components/markdown/Key.svelte';
 </script>
 
 # The drawer

@@ -1,85 +1,153 @@
-:root,
-.prefers-light-scheme {
-    /* secondary */
-    --kd-color-brand: 240 0 140;
-    --kd-color-focus: 79 70 229;
-    --kd-color-soft: 68 78 94;
-    --kd-color-body: 250 250 250;
-    --kd-color-elevate: 243 244 246;
-    --kd-color-inverse: 5 11 23;
-    --kd-color-border: 209 213 219;
+:root {
+	/* font-size: 16px; */
+	scroll-padding-top: 6rem;
+
+	/* secondary */
+	--kd-color-brand: 240 0 140;
+	--kd-color-soft: 184 191 207;
+	--kd-color-inverse: 245 245 245;
+	/* primary darkest */
+	--kd-color-border: 15 15 20;
+	/* primary darker */
+	--kd-color-elevate: 25 25 35;
+	/* primary */
+	--kd-color-body: 10 10 25;
+	/* --kd-color-body: 5 2 13; */
+	--kd-color-focus: 129 140 248;
+
+	/* --kd-font-family-sans: Inter VF, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+		'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+		'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; */
+	--kd-font-family-sans: var(--font);
+
+	--kd-font-family-mono: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation, Mono,
+		Fira Code VF, monospace;
+
+	--kd-navbar-height: 4rem;
+	--kd-navbar-padding: 1rem 0.5rem;
+	--kd-navbar-max-width: 1440px;
+	--kd-navbar-border-bottom: 1px solid rgb(var(--kd-color-border));
+	--kd-breadcrumbs-height: 5rem;
+
+	--kd-sidebar-min-width: 320px;
+	--kd-sidebar-max-width: screen;
+	--kd-sidebar-padding: 0 1.75rem 2rem;
+	--kd-sidebar-border-active: rgb(var(--kd-color-brand));
+
+	--kd-content-max-width: 1440px;
+	/* --kd-main-max-width: unset; */
+	--kd-article-max-width: 85ch;
+
+	--kd-main-padding-x: 1rem;
 }
 
-:root {
-    font-size: 16px;
-    scroll-padding-top: 6rem;
+body .kit-docs .scrollbar::-webkit-scrollbar-thumb {
+	background-color: rgb(255 255 255 / 0.2) !important;
+}
+body .kit-docs .scrollbar::-webkit-scrollbar-track {
+	background-color: rgb(255 255 255 / 0.1) !important;
+}
 
-    --kd-font-family-sans: Inter VF, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+.kit-docs div.mx-auto.w-full.flex div.\39 92\:flex-1 {
+	flex: 0;
+}
+.kit-docs div.mx-auto.w-full.flex main.w-full {
+	flex: 1;
+	max-width: initial !important;
+}
 
-    --kd-font-family-mono: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation, Mono, Fira Code VF, monospace;
+body {
+	width: 100% !important;
+}
 
-    --kd-navbar-height: 4rem;
-    --kd-navbar-padding: 1rem 0.5rem;
-    --kd-navbar-max-width: 1440px;
-    --kd-navbar-border-bottom: 1px solid rgb(var(--kd-color-border));
-    --kd-breadcrumbs-height: 5rem;
+header {
+	font-size: 0.8em;
+}
+header h3 {
+	font-weight: bold;
+}
 
-    --kd-sidebar-min-width: 320px;
-    --kd-sidebar-max-width: screen;
-    --kd-sidebar-padding: 0 1.75rem 2rem;
-    --kd-sidebar-border-active: rgb(var(--kd-color-brand));
+h1 {
+	letter-spacing: inherit !important;
+}
 
-    --kd-content-max-width: 1440px;
-    /* --kd-main-max-width: unset; */
-    --kd-article-max-width: 85ch;
+/* .kit-docs main.w-full.overflow-x-hidden.min-h-screen,
+.on-this-page {
+	margin-top: 70px;
+}
+#main-sidebar {
+	padding-top: 70px;
+} */
 
-    --kd-main-padding-x: 1rem;
+/* header */
+.kit-docs
+	.fixed.top-0.z-30.w-full.flex-none.transform-gpu.transition-transform
+	div
+	div.flex.w-full.items-center
+	div {
+	display: none;
+}
+.kit-docs
+	.fixed.top-0.z-30.w-full.flex-none.transform-gpu.transition-transform
+	div
+	div.border-border {
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+.kit-docs
+	.fixed.top-0.z-30.w-full.flex-none.transform-gpu.transition-transform
+	div.flex.w-full.flex-col.items-center.justify-center.mx-auto {
+	height: 95px;
+	margin-top: 50px;
+	padding-bottom: 0;
+}
+/* .kit-docs .fixed.top-0.z-30.w-full.flex-none.transform-gpu.transition-transform.blur-bg {
+	backdrop-filter: none;
+	background: none;
+} */
+
+#main-sidebar .sticky.top-0.left-0.flex.items-center {
+	pointer-events: none;
+}
+
+a:hover {
+	filter: contrast(1.2);
 }
 
 @media screen and (min-width: 992px) {
-    :root {
-        --kd-main-padding-x: 4rem;
-        --kd-breadcrumbs-height: 0px;
-        --kd-sidebar-min-width: 15rem;
-        --kd-sidebar-max-width: 17rem;
-        --kd-sidebar-padding: 0 0.5rem 2rem 1.5rem;
-    }
+	:root {
+		--kd-main-padding-x: 4rem;
+		--kd-breadcrumbs-height: 0px;
+		--kd-sidebar-min-width: 15rem;
+		--kd-sidebar-max-width: 17rem;
+		--kd-sidebar-padding: 0 0.5rem 2rem 1.5rem;
+	}
+
+	.kit-docs
+		.fixed.top-0.z-30.w-full.flex-none.transform-gpu.transition-transform.duration-150.ease-out.blur-bg.translate-y-0 {
+		display: none;
+	}
 }
 
 @media screen and (min-width: 1200px) {
-    :root {
-        --kd-navbar-padding: 1.25rem 1.25rem;
-    }
+	:root {
+		--kd-navbar-padding: 1.25rem 1.25rem;
+	}
 }
 
 @media screen and (min-width: 1460px) {
-    :root {
-        --kd-navbar-padding: 1.25rem 0;
-        --kd-sidebar-padding: 0 0.5rem 2rem 0.25rem;
-    }
-}
-
-:root.dark,
-.prefers-dark-scheme {
-    color-scheme: dark;
-    /* secondary */
-    --kd-color-brand: 240 0 140;
-    --kd-color-soft: 184 191 207;
-    --kd-color-inverse: 245 245 245;
-    /* primary darkest */
-    --kd-color-border: 15 15 20;
-    /* primary darker */
-    --kd-color-elevate: 25 25 35;
-    /* primary */
-    --kd-color-body: 41 44 54;
-    --kd-color-focus: 129 140 248;
+	:root {
+		--kd-navbar-padding: 1.25rem 0;
+		--kd-sidebar-padding: 0 0.5rem 2rem 0.25rem;
+	}
 }
 
 .code-fence {
-    --kd-code-fence-bg: rgb(var(--kd-color-body));
-    --kd-code-fence-top-bar-bg: rgb(var(--kd-color-body) / 0.6);
-    --kd-code-copied-bg-color: rgb(var(--kd-color-brand) / 0.8);
-    --kd-terminal-line-pointer: rgb(var(--kd-color-brand));
-    --kd-code-highlight-border: rgb(var(--kd-color-brand));
-    --kd-code-highlight-color: rgb(var(--kd-color-brand) / 0.08);
+	--kd-code-fence-bg: rgb(var(--kd-color-body));
+	--kd-code-fence-top-bar-bg: rgb(var(--kd-color-body) / 0.6);
+	--kd-code-copied-bg-color: rgb(var(--kd-color-brand) / 0.8);
+	--kd-terminal-line-pointer: rgb(var(--kd-color-brand));
+	--kd-code-highlight-border: rgb(var(--kd-color-brand));
+	--kd-code-highlight-color: rgb(var(--kd-color-brand) / 0.08);
 }

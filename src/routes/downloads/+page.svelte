@@ -1,152 +1,218 @@
-<script>
-    import Button from "../../components/Button.svelte"
-    import Icon from "../../components/Icon.svelte"
-    import { onMount } from "svelte"
-    import { Button as Link } from "@svelteness/kit-docs"
+<script lang="ts">
+	import Button from '$lib/components/inputs/Button.svelte';
+	import Link from '$lib/components/inputs/Link.svelte';
+	import Icon from '$lib/components/main/Icon.svelte';
+	import Section from '$lib/components/main/Section.svelte';
+	import {
+		convertSize,
+		getOS,
+		getReleases,
+		toDate,
+		type Asset,
+		type Release,
+		getLatest,
+		getAssets,
+		osIcons
+	} from '$lib/components/scripts/releases';
+	import { onMount } from 'svelte';
+	import { fade } from 'svelte/transition';
 
-    /** @type any */
-    let data = null
+	onMount(async () => {
+		activeOS = getOS(true);
 
-    onMount(async () => {
-        fetch("https://api.github.com/repos/ChurchApps/FreeShow/releases")
-            .then((response) => response.json())
-            .then((a) => {
-                console.log(a)
-                let current = a.filter((/** @type any */ a) => a.draft === false && a.prerelease === false)[0]
-                data = current
-            })
-            .catch((error) => {
-                console.warn(error)
-                return []
-            })
-    })
+		let releases = await getReleases();
+		readReleases(releases);
+	});
 
-    /** @type boolean */
-    let counter = false
+	$: if (activeOS) updateOS();
+	function updateOS() {
+		currentAssets = getAssets(latest, activeOS);
 
-    function convertSize(/** @type number */ bytes, decimals = 0) {
-        if (bytes <= 0) return "0 Bytes"
+		if (typeof localStorage === 'undefined') return;
+		localStorage.setItem('os', activeOS);
+	}
 
-        const k = 1024
-        const dm = decimals < 0 ? 0 : decimals
-        const sizes = ["Bytes", "KB", "MB", "GB"]
-        const i = Math.floor(Math.log(bytes) / Math.log(k))
-        return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + " " + sizes[i]
-    }
+	let latest: Release | null = null;
+	let currentAssets: Asset[] = [];
+	let totalDownloads: number = 0;
+	let activeOS: string = '';
+	let showIndividualDownloads: boolean = false;
+	let changelogOpened: boolean = false;
 
-    function toDate(/** @type string */ d) {
-        /** @type Date */
-        let date = new Date(d)
-        let year = date.getFullYear()
-        let month = ("0" + (date.getMonth() + 1)).slice(-2)
-        let day = ("0" + date.getDate()).slice(-2)
-        return `${day}.${month}-${year}`
-    }
+	function readReleases(releases: Release[]) {
+		latest = getLatest(releases);
+		currentAssets = getAssets(latest, activeOS);
+		countDownloads(releases);
+	}
+
+	function countDownloads(releases: any[]) {
+		totalDownloads = releases.reduce((total: number, data: any) => {
+			let currentVersionDownloads = data.assets.reduce(
+				(total: number, asset: any) => total + asset.download_count,
+				0
+			);
+			return total + currentVersionDownloads;
+		}, 0);
+	}
 </script>
 
 <svelte:head>
-    <title>FreeShow | All downloads</title>
+	<title>FreeShow | All downloads</title>
+	<meta name="description" content="Download FreeShow software for Windows, macOS or Linux." />
 </svelte:head>
 
-<main style="padding-top: 60px;min-height: 100%;">
-    {#if data}
-        <div style="padding: 20px;">
-            <h2 on:dblclick={() => (counter = !counter)}>
-                {data.tag_name}
-                <span style="color: rgb(var(--kd-color-inverse));opacity: 0.5;font-size: 0.5em;font-weight: normal;">{toDate(data.published_at)}</span>
-            </h2>
-        </div>
-        <div class="assets">
-            {#each data.assets.filter((/** @type any */ a) => !a.name.includes(".blockmap") && !a.name.includes(".yml") && !a.name.includes(".png")) as asset}
-                <a href={asset.browser_download_url}>
-                    <Button style="width: 100%;">
-                        <div style="flex: 1;">
-                            <span>
-                                {#if asset.name.includes("mac") || asset.name.includes(".dmg")}
-                                    <Icon id="mac" />
-                                {:else if asset.name.includes("linux") || asset.name.includes(".AppImage") || asset.name.includes(".deb")}
-                                    <Icon id="linux" />
-                                {:else if asset.name.includes("windows") || asset.name.includes(".exe")}
-                                    <Icon id="windows" />
-                                {:else}
-                                    <Icon id="download" />
-                                {/if}
-                            </span>
-                            <span class="name">
-                                {asset.name}
-                            </span>
-                        </div>
-                        <div>
-                            {convertSize(asset.size)}
-                            {#if counter}
-                                <span style="min-width: 50px;text-align: right;">
-                                    {asset.download_count}
-                                </span>
-                            {/if}
-                        </div>
-                    </Button>
-                </a>
-            {/each}
+<Section center bubble>
+	<h1 style="z-index: 1;">Latest <span class="gradient">Release</span></h1>
+</Section>
 
-            <span style="margin-top: 10px;margin-left: 10px;">
-                <Link href="https://github.com/ChurchApps/FreeShow/releases" target="_blank">-> See all releases</Link>
-            </span>
-        </div>
-        <br />
-        <div class="changelog">
-            <h3 style="font-weight: bold;font-size: 1.8em;">What's new</h3>
-            {@html data.body.replaceAll("\n", "<br>")}
-        </div>
-        <br />
-    {:else}
-        <div style="text-align: center;font-size: 1.3em;margin: 20px;">Loading version...</div>
+<Section white column>
+	<div class="row" style="width: 100%;justify-content: space-between;align-items: center;">
+		<h2 on:dblclick={() => (showIndividualDownloads = !showIndividualDownloads)}>
+			{latest?.tag_name || 'v0.0.0'}
+			<span style="opacity: 0.5;font-size: 0.6em;font-weight: normal;">
+				{toDate(latest?.published_at || '')}
+			</span>
+		</h2>
 
-        <span style="margin-top: 10px;">
-            <Link href="https://github.com/ChurchApps/FreeShow/releases" target="_blank">-> See all releases</Link>
-        </span>
-    {/if}
-</main>
+		<div class="os" style="background-color: var(--text-inverted);">
+			<Button
+				title="Select Windows"
+				active={activeOS === 'Windows'}
+				style="border-radius: 0;"
+				on:click={() => (activeOS = 'Windows')}
+			>
+				<Icon icon="windows" size={2.5} white />
+			</Button>
+			<Button
+				title="Select MacOS"
+				active={activeOS === 'MacOS'}
+				style="border-radius: 0;"
+				on:click={() => (activeOS = 'MacOS')}
+			>
+				<Icon icon="apple" size={2.5} white />
+			</Button>
+			<Button
+				title="Select Linux"
+				active={activeOS === 'Linux'}
+				style="border-radius: 0;"
+				on:click={() => (activeOS = 'Linux')}
+			>
+				<Icon icon="linux" size={2.5} white />
+			</Button>
+		</div>
+	</div>
+
+	<div class="assets">
+		{#if currentAssets.length}
+			{#each currentAssets as asset, i}
+				<Link
+					title="Download"
+					link={asset.browser_download_url}
+					style="width: 100%;"
+					outline={i === 0}
+				>
+					<div
+						class="flex"
+						style="display: flex;justify-content: space-between;align-items: center;width: 100%;z-index: 1;"
+					>
+						<div class="name" style="display: flex;align-items: center;gap: 10px;">
+							<Icon icon={osIcons[activeOS]} />
+							{asset.name}
+						</div>
+
+						<div class="size">
+							{convertSize(asset.size)}
+							{#if showIndividualDownloads}
+								<span style="min-width: 50px;text-align: right;">
+									- {asset.download_count} downloads
+								</span>
+							{/if}
+						</div>
+					</div>
+				</Link>
+			{/each}
+		{:else}
+			<p style="text-align: center;opacity: 0.8;">Getting releases! Please wait...</p>
+		{/if}
+
+		<Link
+			link="https://github.com/ChurchApps/FreeShow/releases"
+			target="_blank"
+			style="margin-top: 10px;"
+		>
+			<div class="center">
+				<Icon icon="tags" white />
+				See all releases
+			</div>
+		</Link>
+	</div>
+
+	{#if changelogOpened}
+		<div class="changelog" transition:fade>
+			<h3 style="font-weight: bold;font-size: 1.8em;">What's new</h3>
+			{@html latest?.body?.replaceAll('\n', '<br>') || ''}
+		</div>
+	{:else}
+		<Button on:click={() => (changelogOpened = true)} style="align-self: center;" primary>
+			View Changelog
+		</Button>
+	{/if}
+</Section>
+
+<Section column center style="gap: 10px;padding-bottom: 40px;">
+	<h2>All time downloads</h2>
+	<p class="downloads"><span class="gradient">{totalDownloads}</span></p>
+</Section>
 
 <style>
-    h2 {
-        color: var(--secondary);
-        font-size: 2em;
-        font-weight: bold;
-        /* text-align: center; */
-    }
+	.os {
+		display: flex;
 
-    main :global(button) {
-        justify-content: space-between;
-    }
-    main :global(button div) {
-        display: flex;
-        overflow: hidden;
-        white-space: nowrap;
-        gap: 10px;
-    }
+		border-radius: var(--border-radius);
+		overflow: hidden;
+		/* border: 5px solid var(--secondary); */
+	}
 
-    .name {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+	.assets {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
 
-    .assets {
-        display: flex;
-        flex-direction: column;
-    }
+		margin: 0 var(--margin);
+		background-color: var(--text-inverted);
+		padding: var(--card-padding);
+		border-radius: var(--border-radius);
+		color: var(--text);
+	}
 
-    a {
-        text-decoration: none;
-        opacity: 1;
-    }
+	.assets :global(button),
+	.assets :global(button p) {
+		width: 100%;
+	}
+	.assets .center {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
-    .changelog {
-        padding: 15px;
-    }
+		width: 100%;
+		gap: 10px;
+	}
 
-    /* @media only screen and (min-width: 1000px) {
-        main {
-            padding: 20px 300px;
-        }
-    } */
+	.name {
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.downloads {
+		font-size: 4em;
+		font-weight: bold;
+	}
+
+	/* media */
+
+	@media only screen and (min-width: 900px) {
+		.downloads {
+			font-size: 8em;
+		}
+	}
 </style>

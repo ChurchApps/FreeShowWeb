@@ -4,7 +4,7 @@ description: The output is one or more windows that displays the main content to
 ---
 
 <script>
-    import Key from '../../../components/Key.svelte';
+    import Key from '../../../lib/components/markdown/Key.svelte';
 </script>
 
 # The output
@@ -33,9 +33,9 @@ On Mac and Linux you also get the option to enable kiosk mode. Try enabling this
 
 But if you want to change the position of the current output window, try this:
 
--   Click "Choose screen", and follow the instructions on screen.
--   If you have to change the output values manually then change the X/Y values (use the mouse wheel to change faster) until you can see the window over the screen.
--   Remember to click the button in the top right to enable the output windows. It should be red when activated.
+- Click "Choose screen", and follow the instructions on screen.
+- If you have to change the output values manually then change the X/Y values (use the mouse wheel to change faster) until you can see the window over the screen.
+- Remember to click the button in the top right to enable the output windows. It should be red when activated.
 
 ## Controls
 

@@ -4,7 +4,7 @@ description: With FreeShow you can have multiple different outputs.
 ---
 
 <script>
-    import Key from '../../../components/Key.svelte';
+    import Key from '../../../lib/components/markdown/Key.svelte';
 </script>
 
 # Multiple outputs

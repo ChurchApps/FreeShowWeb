@@ -4,7 +4,7 @@ description: The different tools for editing a show.
 ---
 
 <script>
-    import Key from '../../../components/Key.svelte';
+    import Key from '../../../lib/components/markdown/Key.svelte';
 </script>
 
 # Editing a show

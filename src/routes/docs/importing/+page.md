@@ -4,7 +4,7 @@ description: Import songs from many different programs.
 ---
 
 <script>
-    import Key from '../../../components/Key.svelte';
+    import Key from '../../../lib/components/markdown/Key.svelte';
 </script>
 
 # Importing
@@ -15,13 +15,13 @@ Here you have a bunch of different options to import different file types from v
 
 ## Supported files
 
--   FreeShow
--   ProPresenter 4-7 (If you have a .proBundle file, add .zip to the end and extract.)
--   EasyWorship 6-7
--   VideoPsalm
--   OpenLP + OpenLyrics
--   OpenSong
--   ChordPro
+- FreeShow
+- ProPresenter 4-7 (If you have a .proBundle file, add .zip to the end and extract.)
+- EasyWorship 6-7
+- VideoPsalm
+- OpenLP + OpenLyrics
+- OpenSong
+- ChordPro
 
 ## PowerPoint
 

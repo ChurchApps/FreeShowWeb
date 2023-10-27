@@ -4,7 +4,7 @@ description: A list of shortcuts available in FreeShow.
 ---
 
 <script>
-    import Key from '../../../components/Key.svelte';
+    import Key from '../../../lib/components/markdown/Key.svelte';
 </script>
 
 # Keyboard Shortcuts

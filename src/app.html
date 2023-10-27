@@ -1,56 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>FreeShow — A free and open-source presenter</title>
-        <!-- Meta tags -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#292c36" />
-        <!-- SEO meta tags -->
-        <meta name="description" content="FreeShow is a free and open-source presenter software for anyone to use with ease." />
-        <meta
-            name="keywords"
-            content="FreeShow, presenter, church, lyrics, show, free, pro, easy, worship, media, present, backgrounds, windows, macos, linux, software, best, text, info, slides, slideshow, remote, stage, audience, experience, nice, very easy, easy-to-use"
-        />
-        <meta name="author" content="Live Church Solutions" />
-        <!-- Open Graph protocols -->
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="FreeShow — A free and open source presenter" />
-        <meta property="og:image" content="https://freeshow.app/freeshow.jpg" />
-        <meta property="og:description" content="FreeShow is a free and open-source presenter software for anyone to use with ease." />
-        <meta property="og:url" content="https://freeshow.app" />
 
-        <!-- Favicons -->
-        <!-- <link rel="icon" href="%svelte.assets%/favicon.png" /> -->
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<head>
+	<title>FreeShow — A free and open-source presenter</title>
 
-        <script>
-            const key = "svelteness::color-scheme"
-            const scheme = localStorage[key]
+	<!-- Meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="#292c36" />
+	<!-- SEO meta tags -->
+	<meta name="description"
+		content="FreeShow is a free and open-source presenter software for anyone to use with ease." />
+	<meta name="keywords"
+		content="FreeShow, presenter, church, lyrics, show, free, pro, easy, worship, media, present, backgrounds, windows, macos, linux, software, best, text, info, slides, slideshow, remote, stage, audience, experience, nice, very easy, easy-to-use, churchapps" />
+	<meta name="author" content="Live Church Solutions" />
+	<!-- Open Graph protocols -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="FreeShow — A free and open source presenter" />
+	<meta property="og:image" content="https://freeshow.app/freeshow.jpg" />
+	<meta property="og:description"
+		content="FreeShow is a free and open-source presenter software for anyone to use with ease." />
+	<meta property="og:url" content="https://freeshow.app" />
 
-            // const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
-            const prefersDark = true
+	<!-- Favicons -->
+	<!-- <link rel="icon" href="%svelte.assets%/favicon.png" /> -->
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 
-            if (scheme === "dark" || (scheme !== "light" && prefersDark)) {
-                document.documentElement.classList.add("dark")
-            } else {
-                document.documentElement.classList.remove("dark")
-            }
-        </script>
-        
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWZY86K89K"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-GWZY86K89K');
-        </script>
+	<!-- Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
 
-        %sveltekit.head%
-    </head>
-    <body>
-        <div>%sveltekit.body%</div>
-    </body>
+	<script>
+		const key = "svelteness::color-scheme"
+		const scheme = localStorage[key]
+
+		// const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
+		const prefersDark = true
+
+		if (scheme === "dark" || (scheme !== "light" && prefersDark)) {
+			document.documentElement.classList.add("dark")
+		} else {
+			document.documentElement.classList.remove("dark")
+		}
+	</script>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GWZY86K89K"></script>
+	<script>
+		window.dataLayer = window.dataLayer || []
+		function gtag() { dataLayer.push(arguments) }
+		gtag('js', new Date())
+		gtag('config', 'G-GWZY86K89K');
+	</script>
+
+	%sveltekit.head%
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents">%sveltekit.body%</div>
+</body>
+
 </html>

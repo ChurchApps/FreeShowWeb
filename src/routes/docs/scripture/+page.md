@@ -4,7 +4,7 @@ description: Choose from over 230 online bible versions, or import your own bibl
 ---
 
 <script>
-    import Key from '../../../components/Key.svelte';
+    import Key from '../../../lib/components/markdown/Key.svelte';
 </script>
 
 # Scripture

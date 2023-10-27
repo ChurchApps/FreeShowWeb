@@ -4,7 +4,7 @@ description: FreeShow can export a song to various different formats.
 ---
 
 <script>
-    import Key from '../../../components/Key.svelte';
+    import Key from '../../../lib/components/markdown/Key.svelte';
 </script>
 
 # Exporting
