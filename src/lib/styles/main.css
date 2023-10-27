@@ -29,13 +29,13 @@
 	--margin: 2vw;
 	--margin-400: 8vw;
 	--margin-600: 12vw;
-	--margin-1800: 20vw;
+	--margin-2200: 20vw;
 
 	/* TEXT */
 	--text-size: 2em;
 	--text-size-400: 2.5em;
 	--text-size-600: 3em;
-	--text-size-1800: 3.5em;
+	--text-size-2200: 3.5em;
 
 	/* FLEX */
 	--column-small-row-big: column;
@@ -58,6 +58,11 @@
 	box-sizing: border-box;
 
 	scroll-behavior: smooth;
+}
+
+html,
+body {
+	overflow-x: hidden;
 }
 
 body {
@@ -164,9 +169,9 @@ span.gradient {
 }
 
 /* big screens  */
-@media only screen and (min-width: 1800px) {
+@media only screen and (min-width: 2200px) {
 	:root {
-		--margin: var(--margin-1800);
-		--text-size: var(--text-size-1800);
+		--margin: var(--margin-2200);
+		--text-size: var(--text-size-2200);
 	}
 }

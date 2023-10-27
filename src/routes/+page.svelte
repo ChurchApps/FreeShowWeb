@@ -46,7 +46,7 @@
 	<div class="text">
 		<div class="head">
 			<Icon icon="mission" />
-			<h2>Our <span class="gradient">Mission</span></h2>
+			<h2 id="mission">Our <span class="gradient">Mission</span></h2>
 		</div>
 
 		<p>
@@ -55,11 +55,14 @@
 			the software that churches need and <strong>provide it free of charge.</strong>
 		</p>
 		<p>
-			Doing so would free up a significant amount of funds that can be spent on accomplishing the
-			mission of the Church instead of overhead.
+			Changing how we handle church software can not only save a lot of money, but also bring
+			believers together. If we use the skills within our own community, we can make the software
+			that the Church needs without the costly expense. This way, more of our funds can go directly
+			to the Church's mission instead of overhead. It's about working together, saving money, and
+			focusing on what truly matters.
 		</p>
 
-		<Link link="/mission" title="Learn more about our mission" primary>Learn more</Link>
+		<Link link="https://livecs.org/" title="Learn more about our mission" primary>Learn More</Link>
 	</div>
 </Section>
 
@@ -70,11 +73,12 @@
 <Section white center style="padding-bottom: 0;">
 	<div class="head" style="display: flex;flex-direction: column;align-items: center;gap: 15px;">
 		<Icon icon="video" />
-		<h2>What is <span class="gradient">FreeShow</span></h2>
+		<h2 id="video">What is <span class="gradient">FreeShow</span></h2>
 		<p>
 			Here is a short intro video explaining the basics of this software.
 			<br />
-			To learn more please head over to our <a href="docs">documentation</a>.
+			To learn more please head over to our
+			<Link link="/docs" inline>documentation</Link>.
 		</p>
 	</div>
 
@@ -110,7 +114,7 @@
 >
 	<div class="head" style="text-align: center;">
 		<Icon icon="key" />
-		<h2>FreeShow Key <span class="gradient">Features</span></h2>
+		<h2 id="features">FreeShow Key <span class="gradient">Features</span></h2>
 	</div>
 
 	<div class="row" style="flex-direction: var(--inverted-column-small-row-big);">
@@ -327,7 +331,7 @@
 	<div class="row" style="align-items: center;">
 		<div class="head" style="width: var(--text-div-fill);text-align: var(--center-small-left-big);">
 			<Icon icon="compare" />
-			<h2>How FreeShow <span class="gradient">Compares</span></h2>
+			<h2 id="compares">How FreeShow <span class="gradient">Compares</span></h2>
 		</div>
 
 		<p style="width: 100%;">
@@ -362,7 +366,7 @@
 <Section style="padding-bottom: calc(var(--section-padding) / 2);" center>
 	<div class="head" style="align-self: center;">
 		<Icon icon="quote" />
-		<h2>What Others <span class="gradient">are Saying</span></h2>
+		<h2 id="reviews">What Others <span class="gradient">are Saying</span></h2>
 	</div>
 
 	<Reviews />
@@ -401,10 +405,6 @@
 		align-items: var(--center-small-start-big);
 		text-align: var(--center-small-left-big);
 		padding-top: 30px;
-	}
-
-	:global(body) {
-		overflow-x: hidden;
 	}
 
 	/* media */

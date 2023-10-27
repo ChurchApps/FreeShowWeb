@@ -44,11 +44,6 @@
 </div>
 
 <style>
-	:global(body) {
-		/* scroll for some reason on phones */
-		overflow-x: hidden;
-	}
-
 	.image {
 		width: 100%;
 		object-fit: cover;

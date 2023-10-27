@@ -30,12 +30,17 @@
 		</p>
 
 		<p>
-			Doing so would free up a significant amount of funds that can be spent on accomplishing the
-			mission of the Church instead of overhead.
+			Changing how we handle church software can not only save a lot of money, but also bring
+			believers together. If we use the skills within our own community, we can make the software
+			that the Church needs without the costly expense. This way, more of our funds can go directly
+			to the Church's mission instead of overhead. It's about working together, saving money, and
+			focusing on what truly matters.
 		</p>
 
 		<div class="center">
-			<Link link="https://churchapps.org/" primary>Learn more</Link>
+			<Link link="https://livecs.org/" title="Learn more about our mission" primary>
+				Learn More
+			</Link>
 		</div>
 	</div>
 </Section>
