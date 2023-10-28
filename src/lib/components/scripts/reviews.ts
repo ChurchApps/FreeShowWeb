@@ -9,7 +9,7 @@ export const reviews: Review[] = [
 	{
 		name: 'Kingsley N.',
 		description:
-			'Creating presentations is extremely easy. The quality of presentations we can create without having to spend a dime is mind blowing.',
+			'Creating presentations is extremely easy. The quality of presentations we can create without having to spend a dime is mind-blowing.',
 		stars: 5,
 		image: ''
 	},

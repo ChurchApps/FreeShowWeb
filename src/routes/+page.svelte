@@ -26,7 +26,7 @@
 			<span>with FreeShow</span>
 		</h1>
 		<p style="padding: 15px 0;max-width: 370px;">
-			A dynamic, user-friendly, and open-source presenter built for all of your presentation.
+			A dynamic, user-friendly, and open-source presenter built for all of your presentations.
 		</p>
 
 		<div class="download">
@@ -149,8 +149,8 @@
 			<Feature icon="timer" title="Countdowns">
 				Easily let your congregation know when services will start with built in countdowns.
 			</Feature>
-			<Feature icon="midi" title="Midi Controls">
-				Receive Midi commands to advance slides or send midi commands on slide change to trigger
+			<Feature icon="midi" title="MIDI Controls">
+				Receive MIDI commands to advance slides or send MIDI commands on slide change to trigger
 				lighting and other changes.
 			</Feature>
 		</div>
@@ -169,7 +169,7 @@
 		<div class="text" style="align-self: center;padding: 30px 0;">
 			<h4 style="text-align: var(--center-small-left-big);width: 100%;">Multiple Views</h4>
 			<Feature icon="person" title="Simultaneous Outputs" white>
-				Show the same presentation with different looks for your in-person audience, online audience
+				Show the same presentation with different looks for your in-person audience, online audience,
 				and a stage view for leaders.
 			</Feature>
 			<Feature icon="tv" title="Web Output" white>
@@ -301,7 +301,7 @@
 >
 	<div class="row" style="flex-direction: var(--inverted-column-small-row-big);">
 		<div class="text" style="align-self: center;">
-			<h4>Play Well With Others</h4>
+			<h4>Plays Well With Others</h4>
 			<Feature icon="import" title="Import">
 				Import Presentations from PowerPoint, ProPresenter, EasyWorship, OpenSong, and other
 				platforms.
