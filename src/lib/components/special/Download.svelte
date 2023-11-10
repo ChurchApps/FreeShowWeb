@@ -8,7 +8,8 @@
 		getOS,
 		getReleases,
 		type Asset,
-		type Release
+		type Release,
+		osIcons
 	} from '../scripts/releases';
 	import Popup from '../main/Popup.svelte';
 
@@ -95,7 +96,7 @@
 		on:click={() => startDownload()}
 		title="Download FreeShow {latest?.tag_name} for {activeOS || 'OS'}"
 		primary
-		icon="windows"
+		icon={osIcons[activeOS]}
 		disabled={!activeOS}
 		big
 	>

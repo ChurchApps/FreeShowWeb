@@ -112,7 +112,7 @@ export function getOS(getSaved: boolean = false) {
 	// desktop
 	if (platform.includes('Win')) return 'Windows'; // "Win32", "Win64", "Windows", "WinCE"
 	if (platform.includes('Mac')) return 'MacOS'; // "Macintosh", "MacIntel", "MacPPC", "Mac68K"
-	if (platform.includes('Linux')) return 'Linux';
+	if (platform.includes('Linux')) return 'Linux'; // Android is also Linux
 
 	// mobile
 	// if (platform.includes('iP')) return 'iOS'; // "iPhone", "iPad", "iPod"

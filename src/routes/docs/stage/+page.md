@@ -22,8 +22,12 @@ When you are ready to connect, [see this](./connecting).
 If you have multiple stage layouts, you will have to choose one of them, this will be remembered for that device.
 When inside a stage view in a browser you can click on the screen to reveal some buttons to go "home", or to toggle fullscreen.
 
+### Items
+
+On the right side, under the menu "Items" you can select a bunch of different boxes that can be sent as a stage output. This includes only the text of the current/next slide, or the text with style and any background. The "Current output" mirrored. And some more options.
+
 ### Slide
 
-On the right side, if you select "Slide" you can change some options, like the background color. Here you can also set the output if you have multiple outputs and want the slide to show a specific output, instead of the first enabled output.
+On the right side, if you select "Slide" you can change some options, like the background color. Here you can also set the output if you have multiple outputs and want the slide to show a specific output, instead of the first enabled output. And toggle "Output screen" to enable the stage view as a normal output (that can be sent through HDMI/NDI).
 
 <!-- Passwords are comming -->

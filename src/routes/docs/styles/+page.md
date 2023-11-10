@@ -12,6 +12,11 @@ description: Use styles to override the output with different looks.
 Change the background color, or set a background image that will always show when you clear all.
 You can also change the resolution if you want. In most cases you just want to leave it at the default. This does not affect the resolution of the content itself, just the placement and the size.
 
+## Resolution
+
+Change the output resolution. (Note that this does not affect the [output screen size](./output#settings)).
+This also goes hand in hand with the "Media Fit" option, in many cases this should be set to "Cover" when changing the resolution. You also have to create a new template that matches the new resolution.
+
 ## Lines
 
 If you set this to 2 all the textboxes will show max 2 lines in the output at the time. This is useful if you show e.g. 4-5 lines in the main output, and want a second live stream output to only show 2 outputs at a time. Set to 0 to show all lines.
