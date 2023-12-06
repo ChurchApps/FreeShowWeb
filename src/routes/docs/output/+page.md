@@ -37,6 +37,12 @@ But if you want to change the position of the current output window, try this:
 - If you have to change the output values manually then change the X/Y values (use the mouse wheel to change faster) until you can see the window over the screen.
 - Remember to click the button in the top right to enable the output windows. It should be red when activated.
 
+:::admonition type=info
+
+If the preview frame rate is slow. You can go to settings, then "Other", and change the "Preview frame rate" from "Auto" to "Full". This will prevent the preview capture from slowing down at over 95% CPU usage, but keep in mind that this might slow down the main output!
+
+:::
+
 ## Controls
 
 Right under the output preview area on the right you will find some output controls.

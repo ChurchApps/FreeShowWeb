@@ -28,8 +28,6 @@ description: How to install the application on macOS.
 
 :::admonition type=info
 
-Note that I have not purchased any code signing keys yet _($129/year)_, so you will be prompted with a warning when installing as for now.
-
 After launch, you will be asked for permission to allow incoming network connections. If you deny, then you can't connect to the application remotely. This includes the stage display, and remote controllers.
 
 :::

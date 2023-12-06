@@ -33,6 +33,10 @@ At the bottom right of the center show view, one of the buttons are for changing
 
 Adding backgrounds are as easy as [dragging them](./media#add-as-backgrounds) over any of the slides. Say you add a background to the first slide, then that background will be applied to all the concurrent slides as "ghost" backgrounds, meaning they behave the same as the first slide when clicked, but you can only interact with the element on one slide. If you don't want any background to play on a specific slide, you can right click on the slide, choose "Actions", and click "Remove background".
 
+:::admonition type=tip
+If the background can't be found, e.g. the file is moved, or different computer, the program will auto search and find any media with matching file name, as long as it's inside a folder added to "Media" in the drawer.
+:::
+
 ## Importing a show
 
 If you have any existing lyrics from other programs, you can [import](./importing) them from the application menu.
