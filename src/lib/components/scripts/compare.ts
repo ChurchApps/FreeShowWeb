@@ -382,28 +382,7 @@ export const features: Features = [
 			pc: { content: true }
 		}
 	},
-	{
-		name: 'Import PowerPoint',
-		programs: {
-			fs: { content: true },
-			pp: { content: true },
-			ew: { content: true },
-			vp: { content: true },
-			ol: { content: true },
-			pc: { content: true }
-		}
-	},
-	{
-		name: 'Export as PDF',
-		programs: {
-			fs: { content: true },
-			pp: { content: true },
-			ew: { content: false },
-			vp: { content: false },
-			ol: { content: false },
-			pc: { content: false }
-		}
-	},
+	
 	// { name: "Contigious mode", info: "Show all project elements on one continious page", programs: { fs: "{n}", pp: "{y}", ew: "{n}", vp: "{n}", ol: "{n}", pc: "{y}" } },
 	{
 		name: 'Draw',
@@ -425,6 +404,28 @@ export const features: Features = [
 			pp: { content: false },
 			ew: { content: false },
 			vp: { content: true, note: 'Skins' },
+			ol: { content: false },
+			pc: { content: false }
+		}
+	},
+  {
+		name: 'Import PowerPoint',
+		programs: {
+			fs: { content: true },
+			pp: { content: true },
+			ew: { content: true },
+			vp: { content: true },
+			ol: { content: true },
+			pc: { content: true }
+		}
+	},
+	{
+		name: 'Export as PDF',
+		programs: {
+			fs: { content: true },
+			pp: { content: true },
+			ew: { content: false },
+			vp: { content: false },
 			ol: { content: false },
 			pc: { content: false }
 		}
