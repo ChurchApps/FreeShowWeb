@@ -57,9 +57,9 @@ export function getLatest(releases: Release[]) {
 
 export const osIcons: any = { Windows: 'windows', MacOS: 'apple', Linux: 'linux' };
 const assetKeys: any = {
-	Windows: ['exe'],
-	MacOS: ['dmg', 'zip'],
-	Linux: ['AppImage', 'deb']
+	Windows: ['.exe'],
+	MacOS: ['.dmg', '.zip'],
+	Linux: ['.AppImage', '.deb', 'arm64.AppImage']
 };
 // Others: blockmap, yml, png
 export function getAssets(latest: Release | null, activeOS: string) {
@@ -68,7 +68,9 @@ export function getAssets(latest: Release | null, activeOS: string) {
 
 	let keys = assetKeys[activeOS];
 	keys.forEach((extension: string) => {
-		let asset = latest!.assets.find((a) => a.name.includes('.' + extension));
+		let asset = latest!.assets.find((a) =>
+			a.name.includes('arm64') && !extension.includes('arm64') ? false : a.name.includes(extension)
+		);
 		if (!asset) return;
 
 		newAssets.push(asset);
