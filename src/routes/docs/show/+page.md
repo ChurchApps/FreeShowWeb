@@ -13,7 +13,7 @@ First you have to go to "Shows" in the [drawer](./drawer). Here you will find a 
 
 ## Finding your shows
 
-All your shows can be found in the "Shows" tab in the drawer. Here you can organize them into different categories, the category changes the icon a show has in the project list. In the top right corner og the drawer you will find a serach bar to search through all of your shows. When a show is opened or changed, the text content will be cached, so you can search by the content as well as the title.
+All your shows can be found in the "Shows" tab in the drawer. Here you can organize them into different categories, the category changes the icon a show has in the project list. In the top right corner of the drawer you will find a search bar to search through all of your shows. When a show is opened or changed, the text content will be cached, so you can search by the content as well as the title.
 
 ## Presenting
 
