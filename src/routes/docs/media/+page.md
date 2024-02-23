@@ -35,6 +35,10 @@ FreeShow has a built-in screen recorder. To use it, right click on any of the sc
 
 If you drag a media element from the drawer or from the computer into a show, it will be added as a background to the slide you dropped it on or create a new slide. The media element (image/video) will then be played when that slide is clicked.
 
+### Control videos playing in output
+
+When a video is playing you can control it on the right side right under the clear buttons, if you can't find it please click on the small almost invisible button right under the media clear button to open it. Here you can also control some other things, like mute/unmute.
+
 ### Play audio from backgrounds
 
 All video backgrounds are muted by default but you can click on the "unmute" icon on the slide to allow it to play sound when the slide is clicked. This can also be toggled from the "Media" show tab on the right. Here you can also toggle the background loop.
