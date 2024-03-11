@@ -7,8 +7,8 @@ description: How to install the application on Linux.
 
 ## Preinstalled on
 
--   [UbuntuCE](https://ubuntuce.com/) - a Linux-based free and open source operating system geared towards Christians.
--   [Ubuntu Studio](https://ubuntustudio.org/) - a free and open source operating system made for creative people.
+- [UbuntuCE](https://ubuntuce.com/) - a Linux-based free and open source operating system geared towards Christians.
+- [Ubuntu Studio](https://ubuntustudio.org/) - a free and open source operating system made for creative people.
 
 #### snapcraft
 
@@ -32,6 +32,10 @@ Check out FreeShow on [snapcraft.io](https://snapcraft.io/freeshow).
 !!!
 
 :::
+
+#### arm64 devices
+
+The default download does not support "arm64" devices. But you can download a custom build from the [downloads page](/downloads), labeled "X-arm64.AppImage".
 
 ### Application data path
 

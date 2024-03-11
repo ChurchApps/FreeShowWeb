@@ -46,7 +46,8 @@ export const sidebar: SidebarConfig = {
 			{ title: 'RemoteShow', slug: '/docs/remote' },
 			{ title: 'StageShow', slug: '/docs/stage' },
 			{ title: 'ControlShow', slug: '/docs/controller' },
-			{ title: 'OutputShow', slug: '/docs/outputstream' }
+			{ title: 'OutputShow', slug: '/docs/outputstream' },
+			{ title: 'Bitfocus Companion', slug: '/docs/companion' }
 		],
 		Cloud: [{ title: 'Drive API', slug: '/docs/drive' }],
 		Actions: [
@@ -54,7 +55,10 @@ export const sidebar: SidebarConfig = {
 			{ title: 'Importing', slug: '/docs/importing' },
 			{ title: 'Exporting', slug: '/docs/exporting' }
 		],
-		Advanced: [{ title: 'Mirrors', slug: '/docs/mirrors' }],
+		Advanced: [
+			{ title: 'Mirrors', slug: '/docs/mirrors' },
+			{ title: 'Data storage', slug: '/docs/data' }
+		],
 		Tips: [
 			// { title: "Roadmap", slug: "/docs/roadmap" },
 			{ title: 'Styling', slug: '/docs/styling' },

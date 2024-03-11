@@ -27,7 +27,7 @@ Add custom animations for text or items, on the selected slides.
 
 Trigger another show when a slide with this action is played.
 
-### Next after media
+### Next on media finished
 
 This will automatically play the next slide when a video background, audio or timer has ended. This triggers even when the video is set to "loop".
 
@@ -51,7 +51,7 @@ This will send out a selected MIDI signal when the slide is activated.
 
 These actions will clear the selected layers:
 
--   Stop active timers
--   Clear background
--   Clear overlays
--   Clear audio
+- Stop active timers
+- Clear background
+- Clear overlays
+- Clear audio
