@@ -11,7 +11,7 @@ The first step is to install the [Companion software](https://bitfocus.io/compan
 
 When the interface opens, you have to click "Launch GUI", that will open a webview where you can install the "ChurchApps: FreeShow" module.
 
-If you can't find the module you can install it manually [from GitHub](https://github.com/vassbo/churchapps-freeshow), and open it by clicking on the gear icon in the top right, and selecting the folder with the downloaded module.
+If you can't find the module you can install it manually [from GitHub](https://github.com/bitfocus/companion-module-churchapps-freeshow), and open it by clicking on the gear icon in the top right, and selecting the folder with the downloaded module.
 
 ## Connecting
 
@@ -22,3 +22,7 @@ Then go to the settings in FreeShow, and in "Connection" make sure the "Bitfocus
 ## Buttons
 
 In the Companion configuration you can go to the "Buttons" page to add triggers. Press an empty area and then "Create button". Under "Press actions" you can import an action going to FreeShow. It's recommended to go to the "Presets" menu, and just drag in the configured buttons.
+
+## The API
+
+To see all the commands you can send to the API, please check out [this file](https://github.com/ChurchApps/FreeShow/blob/main/src/frontend/utils/api.ts)!
