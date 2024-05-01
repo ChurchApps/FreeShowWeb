@@ -28,3 +28,7 @@ _These are some of the main features._
 - **Lock Output:** Lock the output to know for sure that you can't accidentally change the output.
 - **Transitions:** Add custom transitions for every single slide and items.
 - **Cloud Sync:** Sync all the data with your Google Drive using your own Google API.
+
+## System requirements
+
+The current version is built using **Chromium 106**, check out [this for system requirements](https://support.google.com/chrome/a/answer/7100626).
