@@ -345,7 +345,7 @@
 	</div>
 
 	<div class="compare" style="position: relative;">
-		<Compare maxItems={13} />
+		<Compare maxItems={14} />
 
 		<div
 			class="circle"
