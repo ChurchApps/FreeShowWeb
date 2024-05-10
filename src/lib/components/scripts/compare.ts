@@ -167,10 +167,22 @@ export const features: Features = [
 		info: 'Add chords in text',
 		programs: {
 			fs: { content: true },
-			pp: { content: false },
+			pp: { content: true },
 			ew: { content: false },
 			vp: { content: true },
 			ol: { content: true },
+			pc: { content: false }
+		}
+	},
+  {
+		name: 'Themes',
+		info: 'Customize the look of the application',
+		programs: {
+			fs: { content: true },
+			pp: { content: false },
+			ew: { content: false },
+			vp: { content: true, note: 'Skins' },
+			ol: { content: false },
 			pc: { content: false }
 		}
 	},
@@ -392,18 +404,6 @@ export const features: Features = [
 			pp: { content: true },
 			ew: { content: false },
 			vp: { content: false },
-			ol: { content: false },
-			pc: { content: false }
-		}
-	},
-	{
-		name: 'Themes',
-		info: 'Customize the look of the application',
-		programs: {
-			fs: { content: true },
-			pp: { content: false },
-			ew: { content: false },
-			vp: { content: true, note: 'Skins' },
 			ol: { content: false },
 			pc: { content: false }
 		}
