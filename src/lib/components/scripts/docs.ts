@@ -57,7 +57,8 @@ export const sidebar: SidebarConfig = {
 		],
 		Advanced: [
 			{ title: 'Mirrors', slug: '/docs/mirrors' },
-			{ title: 'Data storage', slug: '/docs/data' }
+			{ title: 'Data storage', slug: '/docs/data' },
+			{ title: 'Troubleshooting', slug: '/docs/troubleshooting' }
 		],
 		Tips: [
 			// { title: "Roadmap", slug: "/docs/roadmap" },
