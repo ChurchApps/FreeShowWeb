@@ -69,7 +69,9 @@ export function getAssets(latest: Release | null, activeOS: string) {
 	let keys = assetKeys[activeOS];
 	keys.forEach((extension: string) => {
 		let asset = latest!.assets.find((a) =>
-			a.name.includes('arm64') && !extension.includes('arm64') ? false : a.name.includes(extension)
+			activeOS === 'Linux' && a.name.includes('arm64') && !extension.includes('arm64')
+				? false
+				: a.name.includes(extension)
 		);
 		if (!asset) return;
 
