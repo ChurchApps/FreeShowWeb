@@ -156,7 +156,7 @@ export const features: Features = [
 		programs: {
 			fs: { content: true },
 			pp: { content: true },
-			ew: { content: false },
+			ew: { content: true },
 			vp: { content: true },
 			ol: { content: true },
 			pc: { content: false }
@@ -174,7 +174,7 @@ export const features: Features = [
 			pc: { content: false }
 		}
 	},
-  {
+	{
 		name: 'Themes',
 		info: 'Customize the look of the application',
 		programs: {
@@ -352,7 +352,7 @@ export const features: Features = [
 		programs: {
 			fs: { content: true },
 			pp: { content: false },
-			ew: { content: false },
+			ew: { content: true },
 			vp: { content: false },
 			ol: { content: false },
 			pc: { content: false }
@@ -394,7 +394,7 @@ export const features: Features = [
 			pc: { content: true }
 		}
 	},
-	
+
 	// { name: "Contigious mode", info: "Show all project elements on one continious page", programs: { fs: "{n}", pp: "{y}", ew: "{n}", vp: "{n}", ol: "{n}", pc: "{y}" } },
 	{
 		name: 'Draw',
@@ -408,7 +408,7 @@ export const features: Features = [
 			pc: { content: false }
 		}
 	},
-  {
+	{
 		name: 'Import PowerPoint',
 		programs: {
 			fs: { content: true },
