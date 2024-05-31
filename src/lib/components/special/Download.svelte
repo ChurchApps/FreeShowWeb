@@ -72,14 +72,53 @@
 		goto('downloads');
 	}
 
-	function startDownload(redirect: boolean = true) {
-		let downloadURL = currentAssets[0]?.browser_download_url;
-		console.log(downloadURL);
+	function startDownload(redirect: boolean = true, arch: string = '') {
+		// get architecture
+		if (activeOS === 'MacOS' && !arch) return chooseArchMac();
 
+		let downloadURL = getDownloadURL(arch);
 		if (!downloadURL) return;
-		window.open(downloadURL, '_self');
 
+		window.open(downloadURL, '_self');
 		if (redirect) goto('downloading');
+	}
+
+	function getDownloadURL(arch: string = '') {
+		let URL = currentAssets[0]?.browser_download_url;
+
+		if (arch) {
+			URL = currentAssets.find((a) => a.name.includes(arch))?.browser_download_url || '';
+		}
+
+		return URL;
+	}
+
+	// MULTIPLE ARCHITECTURES
+
+	// WIP auto find: https://stackoverflow.com/a/75177111/10803046
+	let macArchPopup = false;
+	function chooseArchMac() {
+		if (getExistingArch()) return;
+
+		macArchPopup = true;
+	}
+
+	function getExistingArch() {
+		if (typeof localStorage === 'undefined') return false;
+
+		let savedArch = localStorage.getItem('arch') || '';
+		if (!savedArch) return false;
+
+		startDownload(true, savedArch);
+		return true;
+	}
+
+	function selectArch(arch: string) {
+		startDownload(true, arch);
+
+		if (typeof localStorage !== 'undefined') {
+			localStorage.setItem('arch', arch);
+		}
 	}
 </script>
 
@@ -89,6 +128,26 @@
 		on:click={() => (active = false)}
 		style="align-self: center;border: 2px solid var(--text);">Okay</Button
 	>
+</Popup>
+
+<Popup bind:active={macArchPopup}>
+	<p style="text-align: center;">
+		Please choose the version supported on your device, due to different MacOS architectures.
+		<br />
+		Macs produced before 2021 should be x64, and newer ones are arm64 based.
+	</p>
+	<div style="align-self: center;">
+		<Button
+			on:click={() => selectArch('x64')}
+			style="align-self: center;border: 2px solid var(--text);"
+			>x64 (Intel CPUs)
+		</Button>
+		<Button
+			on:click={() => selectArch('arm')}
+			style="align-self: center;border: 2px solid var(--text);"
+			>arm64 (Apple Silicon M chips)
+		</Button>
+	</div>
 </Popup>
 
 {#if !disableMain}

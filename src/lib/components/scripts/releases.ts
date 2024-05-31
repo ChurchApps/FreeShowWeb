@@ -105,10 +105,12 @@ export function toDate(d: string) {
 
 export function getOS(getSaved: boolean = false) {
 	if (getSaved && typeof localStorage !== 'undefined') {
-		let savedOS = localStorage.getItem('os');
+		let savedOS = localStorage.getItem('os') || '';
 		if (savedOS) return savedOS;
 	}
 
+	// OLD: https://developer.mozilla.org/en-US/docs/Web/API/Navigator/platform
+	// NEW: https://developer.mozilla.org/en-US/docs/Web/API/NavigatorUAData/platform
 	let platform = window.navigator.platform;
 
 	// desktop
