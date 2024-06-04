@@ -6,6 +6,7 @@
 	import Image from '$lib/components/main/Image.svelte';
 	import Section from '$lib/components/main/Section.svelte';
 	import Video from '$lib/components/main/Video.svelte';
+	import Badges from '$lib/components/special/Badges.svelte';
 	import Compare from '$lib/components/special/Compare.svelte';
 	import Download from '$lib/components/special/Download.svelte';
 	import Reviews from '$lib/components/special/Reviews.svelte';
@@ -169,8 +170,8 @@
 		<div class="text" style="align-self: center;padding: 30px 0;">
 			<h4 style="text-align: var(--center-small-left-big);width: 100%;">Multiple Views</h4>
 			<Feature icon="person" title="Simultaneous Outputs" white>
-				Show the same presentation with different looks for your in-person audience, online audience,
-				and a stage view for leaders.
+				Show the same presentation with different looks for your in-person audience, online
+				audience, and a stage view for leaders.
 			</Feature>
 			<Feature icon="tv" title="Web Output" white>
 				Users can connect to the presentation from their mobile devices. Perfect for pastor sermon
@@ -377,10 +378,9 @@
 
 <!-- </Section> -->
 
-<!-- WIP this is temporarily removed -->
-<!-- <Section style="padding: calc(var(--section-padding) / 2) var(--margin);" center>
+<Section style="padding: calc(var(--section-padding) / 2) var(--margin);" center>
 	<Badges />
-</Section> -->
+</Section>
 
 <style>
 	h1 {

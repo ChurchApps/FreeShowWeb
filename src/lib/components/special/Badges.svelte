@@ -1,6 +1,6 @@
 <div class="badges">
 	<!-- Slashdot -->
-	<div
+	<!-- <div
 		class="sf-root badge"
 		data-id="3503885"
 		data-badge="users-love-us-new-black"
@@ -10,7 +10,12 @@
 		<a href="https://slashdot.org/software/p/FreeShow/" target="_blank" rel="noreferrer"
 			>FreeShow reviews Slashdot</a
 		>
-	</div>
+	</div> -->
+
+	<!-- Best Ease of Use 2024 (Church Presentation) -->
+	<a class="badge" href="https://www.capterra.com/p/251606/FreeShow/">
+		<img src="https://capterra.s3.amazonaws.com/assets/images/gdm-badges/ca-ease_of_use-2024.png" />
+	</a>
 
 	<!-- Capterra -->
 	<a
@@ -20,13 +25,19 @@
 		rel="noreferrer"
 	>
 		<img
+			style="height: 70px;"
 			src="https://assets.capterra.com/badge/9d71bff6e2634c97eea1ed5485aacba4.svg?v=2207453&p=251606"
 			alt="FreeShow reviews Capterra"
 		/>
 	</a>
 
+	<!-- Best Value 2024 (Church Presentation) -->
+	<a class="badge" href="https://www.capterra.com/p/251606/FreeShow/">
+		<img src="https://capterra.s3.amazonaws.com/assets/images/gdm-badges/ca-value-2024.png" />
+	</a>
+
 	<!-- GetApp -->
-	<a
+	<!-- <a
 		class="badge"
 		href="https://www.getapp.com/nonprofit-software/a/freeshow/reviews/"
 		target="_blank"
@@ -36,10 +47,15 @@
 			src="https://www.getapp.com/ext/reviews_widget/v1/dark/freeshow-application"
 			alt="FreeShow reviews GetApp"
 		/>
-	</a>
+	</a> -->
+
+	<!-- Best Functionality & Features 2024 (Church Presentation) -->
+	<!-- <a href="https://www.getapp.com/nonprofit-software/a/freeshow/">
+		<img src="https://capterra.s3.amazonaws.com/assets/images/gdm-badges/ga-features_and_functionality-2024.png" />
+	</a> -->
 
 	<!-- SourceForge -->
-	<div
+	<!-- <div
 		class="sf-root badge"
 		data-id="3503885"
 		data-badge="customers-love-us-black"
@@ -68,7 +84,7 @@
 				p.parentNode.insertBefore(sd, p);
 			}, 3000);
 		})();
-	</script>
+	</script> -->
 </div>
 
 <style>
@@ -80,7 +96,8 @@
 		justify-content: space-evenly;
 		align-items: center;
 
-		filter: grayscale(1);
+		/* filter: grayscale(1); */
+		filter: saturate(0.5) hue-rotate(129deg);
 	}
 
 	img {
@@ -100,6 +117,6 @@
 		height: var(--height);
 	}
 	.badge:hover {
-		filter: brightness(0.8);
+		filter: saturate(1.5);
 	}
 </style>

@@ -22,6 +22,10 @@
 
 		let releases = await getReleases();
 		readReleases(releases);
+
+		// reset this in case it's the wrong arch (because user opened the downloads page)
+		if (typeof localStorage === 'undefined') return;
+		localStorage.removeItem('arch');
 	});
 
 	$: if (activeOS) updateOS();
