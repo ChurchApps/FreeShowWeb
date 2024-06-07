@@ -13,7 +13,12 @@
 	</div> -->
 
 	<!-- Best Ease of Use 2024 (Church Presentation) -->
-	<a class="badge" href="https://www.capterra.com/p/251606/FreeShow/">
+	<a
+		class="badge"
+		href="https://www.capterra.com/p/251606/FreeShow/"
+		target="_blank"
+		rel="noreferrer"
+	>
 		<img src="https://capterra.s3.amazonaws.com/assets/images/gdm-badges/ca-ease_of_use-2024.png" />
 	</a>
 
@@ -32,7 +37,12 @@
 	</a>
 
 	<!-- Best Value 2024 (Church Presentation) -->
-	<a class="badge" href="https://www.capterra.com/p/251606/FreeShow/">
+	<a
+		class="badge"
+		href="https://www.capterra.com/p/251606/FreeShow/"
+		target="_blank"
+		rel="noreferrer"
+	>
 		<img src="https://capterra.s3.amazonaws.com/assets/images/gdm-badges/ca-value-2024.png" />
 	</a>
 
@@ -50,8 +60,15 @@
 	</a> -->
 
 	<!-- Best Functionality & Features 2024 (Church Presentation) -->
-	<!-- <a href="https://www.getapp.com/nonprofit-software/a/freeshow/">
-		<img src="https://capterra.s3.amazonaws.com/assets/images/gdm-badges/ga-features_and_functionality-2024.png" />
+	<!-- <a
+		class="badge"
+		href="https://www.getapp.com/nonprofit-software/a/freeshow/"
+		target="_blank"
+		rel="noreferrer"
+	>
+		<img
+			src="https://capterra.s3.amazonaws.com/assets/images/gdm-badges/ga-features_and_functionality-2024.png"
+		/>
 	</a> -->
 
 	<!-- SourceForge -->

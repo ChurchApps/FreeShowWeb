@@ -58,7 +58,7 @@ export function getLatest(releases: Release[]) {
 export const osIcons: any = { Windows: 'windows', MacOS: 'apple', Linux: 'linux' };
 const assetKeys: any = {
 	Windows: ['.exe'],
-	MacOS: ['.dmg', 'arm64.dmg', 'x64-mac.zip', 'arm64-mac.zip'],
+	MacOS: ['.dmg', 'arm64.dmg', 'mac.zip', 'arm64-mac.zip'],
 	Linux: ['.AppImage', '.deb', 'arm64.AppImage']
 };
 // Others: blockmap, yml, png
