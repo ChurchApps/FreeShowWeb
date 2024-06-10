@@ -7,13 +7,13 @@ description: Trigger different actions when receiving a MIDI signal.
 
 > Trigger different actions when receiving a MIDI signal.
 
-In the settings you can add different actions that is triggered when receiving a MIDI in signal. You can also click on exising actions to trigger them. Here you will also see any [slide MIDI actions](./actions#play-on-midi-in).
+In the drawer you can add different actions that is triggered when receiving a MIDI in signal. You can also click on exising actions to trigger them directly. [Read more about actions here.](./functions#actions)
 
 ## Editing actions
 
-When creating or editing an action you have to choose a MIDI controller input. Also FreeShow has some default values for all of the actions, but you can set your own values by disabling the "Use default values" switch.
+When creating or editing an action you can choose to enable "Activate by MIDI signal". FreeShow has some default values for all of the actions, but you can set your own values by disabling the "Use default values" switch.
 
-Here is a short summary of all the different actions:
+Here is a short summary of some of the different actions:
 
 ## Show actions (Channel 1)
 
@@ -41,12 +41,12 @@ This will trigger a group in the selected show or if the group is selected it wi
 
 These actions will clear the selected layers:
 
--   Clear all
--   Clear background
--   Clear slide
--   Clear overlays
--   Clear audio
--   Clear next slide timer
+- Clear all
+- Clear background
+- Clear slide
+- Clear overlays
+- Clear audio
+- Clear next slide timer
 
 ## Style actions (Channel 4)
 
@@ -58,6 +58,6 @@ Change the style of the output. [Click here to read about styles.](./styles)
 
 The following actions will select an element using the velocity value as the index. This will trigger the first if no velocity is set.
 
--   "Project"
--   "Project item" in active project
--   "Slide" in outputted or active show
+- "Project"
+- "Project item" in active project
+- "Slide" in outputted or active show

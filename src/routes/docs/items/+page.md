@@ -21,7 +21,7 @@ This is for adding images or videos to your slide.
 
 ### Timer
 
-This is for adding a timer to your slide, that can be controlled from [Timers](./calendar#timers) under the "Calendar" tab in the drawer. You can also change the type to show a line or circle going from 100% filled to 0%.
+This is for adding a timer to your slide, that can be controlled from [Timers](./functions#timers) under the "Functions" tab in the drawer. You can also change the type to show a line or circle going from 100% filled to 0%.
 
 ### Clock
 
@@ -29,7 +29,7 @@ Show the system time either analog or digital.
 
 ### Variable
 
-Add a dynamic item to your slide. For creating and changing variables [see this](./overlays#variables).
+Add a dynamic item to your slide. For creating and changing variables [see this](./functions#variables).
 
 ### Website
 

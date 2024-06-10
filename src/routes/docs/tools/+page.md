@@ -13,7 +13,7 @@ Here you will find all of the current groups in the current show, and a list of 
 
 ### Media
 
-See all of the media layers in all of the layouts. This includes all of the backgrounds, audio, microphones and MIDI actions.
+See all of the media layers in all of the layouts. This includes all of the backgrounds, audio, microphones and actions.
 
 ### Metadata
 

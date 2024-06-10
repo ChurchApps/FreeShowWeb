@@ -45,7 +45,7 @@ All video backgrounds are muted by default but you can click on the "unmute" ico
 
 ### Go to next slide when video is finished
 
-Right click the slide, choose "Actions", then click on "Next on media finished" to automatically play the next slide when the video has ended. This triggers even when the video is set to "loop".
+Right click the slide, choose "Slide actions", then click on "Next on media finished" to automatically play the next slide when the video has ended. This triggers even when the video is set to "loop".
 
 ## Video time markers
 

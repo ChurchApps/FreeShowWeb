@@ -25,4 +25,4 @@ In the Companion configuration you can go to the "Buttons" page to add triggers.
 
 ## The API
 
-To see all the commands you can send to the API, please check out [this file](https://github.com/ChurchApps/FreeShow/blob/main/src/frontend/utils/api.ts)!
+To see all the commands you can send to the API, please check out [this file](https://github.com/ChurchApps/FreeShow/blob/main/src/frontend/components/actions/api.ts)!

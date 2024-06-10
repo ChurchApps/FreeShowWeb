@@ -46,6 +46,8 @@ Here you can find audio files from your computer. Works the same as [media](#med
 
 There's also a "Microphones" tab, that should work mostly the same as other audio. Click any to unmute any of the incoming audio signals.
 
+There is also a "Audio streams" tab where you can add a direct "http://" audio stream like e.g. a radio stream. You can find some good ones here: [https://fmstream.org/](https://fmstream.org/) (Make sure it is marked as _mp3_)
+
 ## Overlays
 
 Overlays are just like a normal slide, but it will show over the current slide output when clicked, and you can have multiple at the same time. These can be dragged over slides just like media backgrounds. You can also lock them in the output if you want them to stay there after "Clear all" is pressed.
@@ -68,6 +70,12 @@ Read [more here](./scripture).
 
 ## Calendar
 
-Create repeated events, and easily create a slideshow from any selected events. You can also create timers and schedule shows to play at a certain time.
+Create repeated events, and easily create a slideshow from any selected events. You can also schedule shows to play at a certain time.
 
 Read [more here](./calendar).
+
+## Functions
+
+Various functions including Actions, Timers, Variables & Triggers.
+
+Read [more here](./functions).

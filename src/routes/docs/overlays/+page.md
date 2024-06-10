@@ -18,11 +18,3 @@ Click on an overlay in the drawer to display it in the output. If you change it 
 ## Locking
 
 Right click an overlay and click "Lock to output" to enable the lock. All the locked overlays will not be cleared when the "Clear all" button is pressed, and they will remain in the output even when the program is restarted. The can be toggled on/off individually by clicking on them in the drawer.
-
-## Variables
-
-In the overlays tab, there is a section called "Variables". Here you can currently create either text, or number. Use them to easily change the number or text value in any [variable item](./items#variable), on any slide. Most commonly used for a score counter.
-
-## Triggers
-
-In the overlays tab, there is also a section called "Triggers". Here you can send HTTP requests in the form of a link, often used to trigger camera presets. E.g: "http://IP?cam=2&preset=5". They can be drag to any slide, to be triggered on slide click.

@@ -23,6 +23,10 @@ Here you have a bunch of different options to import different file types from v
 - OpenSong
 - ChordPro
 
+:::admonition type=tip
+Create and select a new empty show category to place all of the imported files here. Also if you do that when importing a VideoPsalm songbook the song number/ID will be automatically added to the title.
+:::
+
 ## PowerPoint
 
 Clicking on "PowerPoint" and selecting a presentation will import just the text and create a new show, which is useful for importing song lyrics.
