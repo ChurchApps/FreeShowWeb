@@ -21,7 +21,7 @@ In **YouTube** and **Vimeo** you have to add you own videos by clicking "Add" at
 
 In **Pixabay** you can search for any images or videos by using the [drawer search](./drawer#drawer-search). Please note that you need internet access to use these elements.
 
-Want to get videos from another platform? Send a mail to [dev@freeshow.app](mailto:dev@freeshow.app).
+Want to get videos from another platform? Send an email to [dev@freeshow.app](mailto:dev@freeshow.app). :)
 
 ## Screens and Cameras
 
