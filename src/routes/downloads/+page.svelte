@@ -11,6 +11,7 @@
 		type Asset,
 		type Release,
 		getLatest,
+		getLatestPrerelease,
 		getAssets,
 		osIcons
 	} from '$lib/components/scripts/releases';
@@ -42,9 +43,12 @@
 	let activeOS: string = '';
 	let showIndividualDownloads: boolean = false;
 	let changelogOpened: boolean = false;
+	let prerelease: Release | null = null;
 
 	function readReleases(releases: Release[]) {
 		latest = getLatest(releases);
+		prerelease = getLatestPrerelease(releases);
+		console.log(prerelease);
 		currentAssets = getAssets(latest, activeOS);
 		countDownloads(releases);
 	}
@@ -137,6 +141,18 @@
 			{/each}
 		{:else}
 			<p style="text-align: center;opacity: 0.8;">Getting releases! Please wait...</p>
+		{/if}
+
+		{#if !!prerelease}
+			<Link link={prerelease.html_url} target="_blank">
+				<div class="center" style="justify-content: left;">
+					<Icon icon="tags" />
+					Prerelease available!
+					<span style="font-size: 0.9em;opacity: 0.8;">
+						(Might have breaking changes, but has more features & should be more stable)
+					</span>
+				</div>
+			</Link>
 		{/if}
 
 		<Link

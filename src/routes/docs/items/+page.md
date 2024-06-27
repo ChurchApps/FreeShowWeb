@@ -5,7 +5,11 @@ description: Add many different items to your slide, like a textbox.
 
 # Items
 
-There are different types of items you can add, depending on what you want to present. Here is a list of the items:
+There are different types of items you can add, depending on what you want to present.
+
+After adding a new item, you can edit it's properties on the right side, by clicking on the tab left to "Item", and "Items" with the currently selected item name.
+
+Here is a list of the items:
 
 ### Text
 

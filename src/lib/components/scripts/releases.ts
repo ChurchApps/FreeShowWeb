@@ -53,13 +53,19 @@ export function getLatest(releases: Release[]) {
 	return filteredReleases[0];
 }
 
+export function getLatestPrerelease(releases: Release[]) {
+	let filteredReleases = releases.filter((a: any) => a.draft === false);
+	let isPrerelease = filteredReleases[0]?.prerelease === true;
+	return isPrerelease ? filteredReleases[0] : null;
+}
+
 // assets
 
 export const osIcons: any = { Windows: 'windows', MacOS: 'apple', Linux: 'linux' };
 const assetKeys: any = {
 	Windows: ['.exe'],
 	MacOS: ['.dmg', 'arm64.dmg', 'mac.zip', 'arm64-mac.zip'],
-	Linux: ['.AppImage', '.deb', 'arm64.AppImage']
+	Linux: ['.AppImage', 'arm64.AppImage', '.deb', 'arm64.deb']
 };
 // Others: blockmap, yml, png
 export function getAssets(latest: Release | null, activeOS: string) {
