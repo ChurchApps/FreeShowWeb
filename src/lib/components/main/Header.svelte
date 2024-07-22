@@ -125,6 +125,12 @@
 		height: 35px;
 	}
 
+	/* safari fix */
+	.logo :global(img) {
+		max-width: 50px;
+		object-fit: contain;
+	}
+
 	.hideHeader {
 		transform: translateY(-110%);
 	}

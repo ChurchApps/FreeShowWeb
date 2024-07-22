@@ -1,5 +1,12 @@
-<script>
+<script lang="ts">
+	import { onMount } from 'svelte';
 	import Download from '../special/Download.svelte';
+
+	let year: number = 2024;
+	onMount(() => {
+		let currentYear = new Date().getFullYear();
+		if (currentYear) year = currentYear;
+	});
 </script>
 
 <footer>
@@ -21,7 +28,7 @@
 
 		<br /><br />
 
-		<span>2023 &copy; </span>
+		<span>{year} &copy; </span>
 		<a href="https://livecs.org" target="_blank" rel="noreferrer"> Live Church Solutions </a>
 		<span> - A 501(c)(3) organization with EIN 45-5349618</span>
 	</div>

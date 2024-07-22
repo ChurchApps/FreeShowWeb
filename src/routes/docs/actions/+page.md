@@ -41,3 +41,17 @@ This will automatically play the next slide when a video background, audio or ti
 ### Animate
 
 Add custom animations for text or items, on the selected slides.
+
+## FAQ
+
+- **How to play a specific slide?**
+
+  An action can be set to play a slide by name or index on the currently selected show. If you need a specific show, you might have to set an action to change the show as well. But you can also right click a slide, and use the activate by MIDI signal if you want to activate a slide using a MIDI signal.
+
+- **What is the purpose of "Toggle action"?**
+
+  This is only needed if the action has a "Custom activation", that you only want to use in some occasions, so you can turn on/off this action using another action triggered from a slide.
+
+- **What is ID, and how to use it?**
+
+  They are a unique identifier for the specific item, you can find them in the stored app data file location. Should be used in specific scenarios. But it's recommended to just use the "select by name" instead.
