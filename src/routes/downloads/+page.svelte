@@ -48,7 +48,6 @@
 	function readReleases(releases: Release[]) {
 		latest = getLatest(releases);
 		prerelease = getLatestPrerelease(releases);
-		console.log(prerelease);
 		currentAssets = getAssets(latest, activeOS);
 		countDownloads(releases);
 	}
