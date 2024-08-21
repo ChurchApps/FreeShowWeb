@@ -21,6 +21,7 @@
 	$: description = meta?.description;
 
 	let searchValue: string = '';
+	let loading: boolean = false;
 	let searchMatches: any[] = [];
 	async function search(e: any) {
 		searchValue = e.target.value;
@@ -37,12 +38,16 @@
 			return;
 		}
 
+		loading = true;
+
 		const value = await searchDocs(searchValue);
 		searchMatches = getTextPreviews(value);
 
 		// hide elements
 		if (titleTextElem) titleTextElem.setAttribute('style', 'display: none;');
 		if (navigationElem) navigationElem.setAttribute('style', 'display: none;');
+
+		loading = false;
 	}
 
 	// generate preview
@@ -96,7 +101,11 @@
 					{/each}
 				{:else}
 					<p style="text-align: center;padding-top: 4rem;font-size: 2em;opacity: 0.9;">
-						No matches found! :(
+						{#if loading}
+							Loading...
+						{:else}
+							No matches found! :(
+						{/if}
 					</p>
 				{/if}
 			</div>
@@ -120,7 +129,6 @@
 	}
 
 	.matches {
-		padding: 2rem 4rem 0 4rem;
 		display: flex;
 		flex-direction: column;
 		gap: 20px;
@@ -129,13 +137,17 @@
 	.match {
 		padding: 15px;
 		background: var(--primary);
-		border-radius: 10px;
+		border-radius: 25px;
 	}
 	.match h3 {
 		text-transform: capitalize;
 		font-weight: bold;
 		font-size: 2em;
-		text-decoration: underline;
+		margin-top: 0 !important;
+	}
+
+	.match .preview {
+		margin: 0 !important;
 	}
 	.match .preview::before,
 	.match .preview::after {

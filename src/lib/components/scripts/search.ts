@@ -72,6 +72,7 @@ function findMatches(searchValue: string) {
 	}
 }
 
+const MAX_MATCHES = 8;
 export async function searchDocs(searchValue: string) {
 	if (!SEARCH_MAP?.length) await getSearchMap();
 	if (!SEARCH_MAP?.length) return [];
@@ -79,8 +80,8 @@ export async function searchDocs(searchValue: string) {
 	searchValue = trimSearchValue(searchValue);
 	const sortByMatches = findMatches(searchValue);
 
-	// return the 5 highest matches!
-	return sortByMatches.slice(0, 5);
+	// only return the highest matches!
+	return sortByMatches.slice(0, MAX_MATCHES);
 }
 
 // HIGHLIGHT
