@@ -38,14 +38,14 @@
 			return;
 		}
 
+		// hide elements
+		if (titleTextElem) titleTextElem.setAttribute('style', 'display: none;');
+		if (navigationElem) navigationElem.setAttribute('style', 'display: none;');
+
 		loading = true;
 
 		const value = await searchDocs(searchValue);
 		searchMatches = getTextPreviews(value);
-
-		// hide elements
-		if (titleTextElem) titleTextElem.setAttribute('style', 'display: none;');
-		if (navigationElem) navigationElem.setAttribute('style', 'display: none;');
 
 		loading = false;
 	}
@@ -135,9 +135,9 @@
 	}
 
 	.match {
-		padding: 15px;
+		padding: 25px;
 		background: var(--primary);
-		border-radius: 25px;
+		border-radius: 10px;
 	}
 	.match h3 {
 		text-transform: capitalize;
