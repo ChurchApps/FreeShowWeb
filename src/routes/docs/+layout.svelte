@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { sidebar } from '$lib/components/scripts/docs';
+	import { searchDocs, highlightContent } from '$lib/components/scripts/search';
 	import '$lib/styles/kit-docs.css';
 	import { KitDocs, KitDocsLayout, createSidebarContext } from '@svelteness/kit-docs';
 	import '@svelteness/kit-docs/client/polyfills/index.js';
@@ -18,6 +19,41 @@
 	$: category = $activeCategory ? `${$activeCategory}: ` : '';
 	$: title = meta ? `FreeShow Docs | ${category}${meta.title}` : null;
 	$: description = meta?.description;
+
+	let searchValue: string = '';
+	let searchMatches: any[] = [];
+	async function search(e: any) {
+		searchValue = e.target.value;
+
+		let titleTextElem = document.querySelector('article')?.querySelector('p');
+		let navigationElem = document.querySelector('main')?.querySelector('.text-gray-300');
+
+		if (!searchValue) {
+			searchMatches = [];
+
+			// show elements
+			if (titleTextElem) titleTextElem.removeAttribute('style');
+			if (navigationElem) navigationElem.removeAttribute('style');
+			return;
+		}
+
+		const value = await searchDocs(searchValue);
+		searchMatches = getTextPreviews(value);
+
+		// hide elements
+		if (titleTextElem) titleTextElem.setAttribute('style', 'display: none;');
+		if (navigationElem) navigationElem.setAttribute('style', 'display: none;');
+	}
+
+	// generate preview
+	function getTextPreviews(value: any[]) {
+		return value
+			.map((match) => ({
+				...match,
+				preview: highlightContent(match.content, searchValue)
+			}))
+			.filter((a) => a.preview?.length);
+	}
 </script>
 
 <svelte:head>
@@ -44,10 +80,29 @@
 					stroke-linejoin="round"
 				/></svg
 			>
-			<input type="text" placeholder="Search" />
+			<input type="text" placeholder="Search" value={searchValue} on:change={search} />
 		</div>
 
-		<slot />
+		{#if searchValue}
+			<div class="matches">
+				{#if searchMatches.length}
+					{#each searchMatches as match}
+						<div class="match">
+							<h3><a href="/docs/{match.name}">{match.name}</a></h3>
+							{#each match.preview as preview}
+								<p class="preview">{@html preview}</p>
+							{/each}
+						</div>
+					{/each}
+				{:else}
+					<p style="text-align: center;padding-top: 4rem;font-size: 2em;opacity: 0.9;">
+						No matches found! :(
+					</p>
+				{/if}
+			</div>
+		{:else}
+			<slot />
+		{/if}
 	</KitDocsLayout>
 </KitDocs>
 
@@ -62,6 +117,35 @@
 
 		--tw-bg-opacity: 1;
 		background-color: rgb(var(--kd-color-elevate) / var(--tw-bg-opacity));
+	}
+
+	.matches {
+		padding: 2rem 4rem 0 4rem;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.match {
+		padding: 15px;
+		background: var(--primary);
+		border-radius: 10px;
+	}
+	.match h3 {
+		text-transform: capitalize;
+		font-weight: bold;
+		font-size: 2em;
+		text-decoration: underline;
+	}
+	.match .preview::before,
+	.match .preview::after {
+		content: '...';
+		opacity: 0.6;
+	}
+
+	.match :global(.highlight) {
+		color: var(--kd-sidebar-border-active);
+		font-weight: bold;
 	}
 
 	svg {
