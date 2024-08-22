@@ -35,11 +35,13 @@ function getDocContent(name) {
 }
 
 function formatDoc(content) {
-	// store only letters & numbers!
+	// store only letters & numbers, and a few symbols!
 	return content
-		.replace(/\([^)]*\)/g, '')
-		.replace(/\n+/g, ' ')
-		.replace(/[^a-zA-Z0-9,.!:/ ]+/g, '');
+		.replace(/\([^)]*\)/g, '') // remove () with content, md urls
+		.replace(/\n+/g, ' ') // replace line breaks with space
+		.replace(/\s\s+/g, ' ') // remove multiple spaces in sequence
+		.replace(/[^a-zA-Z0-9,.!:/ ]+/g, '') // only keep the most common chars
+		.trim();
 }
 
 const buildPath = 'build/';

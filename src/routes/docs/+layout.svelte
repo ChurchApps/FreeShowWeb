@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { beforeNavigate } from '$app/navigation';
 	import { page } from '$app/stores';
 	import { sidebar } from '$lib/components/scripts/docs';
 	import { searchDocs, highlightContent } from '$lib/components/scripts/search';
@@ -8,6 +9,7 @@
 	import '@svelteness/kit-docs/client/styles/fonts.css';
 	import '@svelteness/kit-docs/client/styles/normalize.css';
 	import '@svelteness/kit-docs/client/styles/theme.css';
+	import { onMount } from 'svelte';
 
 	export let data: any;
 
@@ -20,27 +22,20 @@
 	$: title = meta ? `FreeShow Docs | ${category}${meta.title}` : null;
 	$: description = meta?.description;
 
+	///// SEARCH /////
+
 	let searchValue: string = '';
 	let loading: boolean = false;
 	let searchMatches: any[] = [];
 	async function search(e: any) {
-		searchValue = e.target.value;
-
-		let titleTextElem = document.querySelector('article')?.querySelector('p');
-		let navigationElem = document.querySelector('main')?.querySelector('.text-gray-300');
+		searchValue = e.target.value.trim();
 
 		if (!searchValue) {
-			searchMatches = [];
-
-			// show elements
-			if (titleTextElem) titleTextElem.removeAttribute('style');
-			if (navigationElem) navigationElem.removeAttribute('style');
+			clearSearch();
 			return;
 		}
 
-		// hide elements
-		if (titleTextElem) titleTextElem.setAttribute('style', 'display: none;');
-		if (navigationElem) navigationElem.setAttribute('style', 'display: none;');
+		toggleElements();
 
 		loading = true;
 
@@ -49,6 +44,26 @@
 
 		loading = false;
 	}
+
+	function clearSearch() {
+		searchMatches = [];
+		toggleElements(false);
+	}
+
+	function toggleElements(hide: boolean = true) {
+		let titleTextElem = document.querySelector('article')?.querySelector('p');
+		let navigationElem = document.querySelector('main')?.querySelector('.text-gray-300');
+		let thisPageElem = document.querySelector('.on-this-page');
+
+		[titleTextElem, navigationElem, thisPageElem].forEach((elem) => {
+			if (elem) elem.setAttribute('style', hide ? 'display: none;' : '');
+		});
+	}
+
+	beforeNavigate(() => {
+		searchValue = '';
+		clearSearch();
+	});
 
 	// generate preview
 	function getTextPreviews(value: any[]) {
@@ -59,6 +74,21 @@
 			}))
 			.filter((a) => a.preview?.length);
 	}
+
+	onMount(() => {
+		// remove hidden search bar on smaller devices
+		document.querySelectorAll('.search')[1]?.parentElement?.classList.remove('hidden');
+		// set search bar over other elements
+		document
+			.querySelector('.scrollbar')
+			?.querySelector('.scrollbar')
+			?.firstElementChild?.setAttribute('style', 'z-index: 5;');
+		// set X over search
+		document
+			.getElementById('main-sidebar')
+			?.querySelector('.sticky')
+			?.setAttribute('style', 'z-index: 6;');
+	});
 </script>
 
 <svelte:head>
