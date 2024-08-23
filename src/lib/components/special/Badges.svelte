@@ -114,7 +114,8 @@
 		align-items: center;
 
 		/* filter: grayscale(1); */
-		filter: saturate(0.5) hue-rotate(129deg);
+		/* filter: saturate(0.5) hue-rotate(129deg); */
+		/* filter: saturate(0.8); */
 	}
 
 	img {
@@ -134,6 +135,6 @@
 		height: var(--height);
 	}
 	.badge:hover {
-		filter: saturate(1.5);
+		filter: saturate(1.3);
 	}
 </style>

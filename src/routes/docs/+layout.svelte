@@ -131,7 +131,7 @@
 						</div>
 					{/each}
 				{:else if loading}
-					<p style="text-align: center;padding-top: 4rem;font-size: 2em;opacity: 0.9;">
+					<p style="text-align: center;padding-top: 4rem;font-size: 1.7em;opacity: 0.9;">
 						Loading...
 					</p>
 				{:else}
