@@ -34,6 +34,8 @@ On the right side, under the menu "Items" you can select a bunch of different bo
 
 ### Slide
 
-On the right side, if you select "Slide" you can change some options, like the background color. Here you can also set the output if you have multiple outputs and want the slide to show a specific output, instead of the first enabled output. And toggle "Output screen" to enable the stage view as a normal output (that can be sent through HDMI/NDI).
+On the right side, if you select "Slide" you can change some options, like the background color. Here you can also set the output if you have multiple outputs and want the slide to show a specific output, instead of the first enabled output.
 
-<!-- Passwords are comming -->
+### Output Window
+
+To create a stage output window that can be sent through HDMI/NDI, go to the [Outputs settings](./output#settings).

@@ -41,10 +41,19 @@ Set filters for the slide, choose for either the background, the foreground or b
 
 Change the background color, resolution or add notes to the current slide.
 
-## CSS
+## Item styling
+
+### Auto Size
+
+When enabling the "Auto size" option, the text will be resized to fit inside the current textbox. You can choose between two text fit options:
+
+1. Shrink to fit: Text is set font size by default, but can shrink if the text does not fit in the textbox. (default)
+2. Grow to fit: Text will grow to fill the entire textbox, but maximum the set font size.
+
+### Text scrolling
+
+When selecting a textbox you can choose to enable text scrolling if you want some effects.
+
+### CSS
 
 In some places there is a textbox to change the CSS directly. You don't need to use this if you don't know it, but if you know CSS you can do many different special things with the browser styling language.
-
-## Text scrolling
-
-When selecting a textbox you can choose to enable text scrolling.

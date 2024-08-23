@@ -13,8 +13,12 @@
 	<h1 style="z-index: 1;">Key <span class="gradient">Features</span></h1>
 </Section>
 
-<Section white>
+<Section white column style="gap: 20px;">
 	<Compare />
+
+	<p class="info">
+		Disclaimer: This is a general overview and may not be up to date or entirely accurate.
+	</p>
 </Section>
 
 <Section center>
@@ -25,3 +29,11 @@
 
 	<Gallery />
 </Section>
+
+<style>
+	.info {
+		text-align: center;
+		font-size: 0.7em;
+		opacity: 0.5;
+	}
+</style>

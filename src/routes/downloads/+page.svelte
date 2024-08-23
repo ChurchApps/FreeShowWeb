@@ -142,14 +142,32 @@
 			<p style="text-align: center;opacity: 0.8;">Getting releases! Please wait...</p>
 		{/if}
 
+		<!-- Download the last supported version for Windows 7/8, and macOS 10.14 or lower -->
+		{#if currentAssets.length && (activeOS === 'Windows' || activeOS === 'MacOS')}
+			<Link link="https://github.com/ChurchApps/FreeShow/releases/tag/v1.2.4" target="_blank">
+				<div class="center" style="justify-content: left;">
+					<Icon icon="archive" size={1.2} />
+					<p style="text-align: left;">
+						{activeOS === 'Windows' ? 'Windows 7/8' : 'MacOS 10.14 or lower'}
+						<span style="font-size: 0.9em;opacity: 0.8;padding-left: 5px;">
+							Use this version if you need FreeShow on an old OS!
+						</span>
+					</p>
+				</div>
+			</Link>
+		{/if}
+
+		<!-- Download pre-release/beta if available -->
 		{#if !!prerelease}
 			<Link link={prerelease.html_url} target="_blank">
 				<div class="center" style="justify-content: left;">
-					<Icon icon="tags" />
-					Prerelease available!
-					<span style="font-size: 0.9em;opacity: 0.8;">
-						(Might have breaking changes, but has more features & should be more stable)
-					</span>
+					<Icon icon="beta" size={1.2} />
+					<p style="text-align: left;">
+						Prerelease <span>{prerelease.tag_name}</span> available!
+						<span style="font-size: 0.9em;opacity: 0.8;padding-left: 5px;">
+							Might have breaking changes, but has more features & should be more stable
+						</span>
+					</p>
 				</div>
 			</Link>
 		{/if}
@@ -215,6 +233,10 @@
 
 		width: 100%;
 		gap: 10px;
+	}
+
+	.assets :global(.icon svg) {
+		min-width: 22px;
 	}
 
 	.name {

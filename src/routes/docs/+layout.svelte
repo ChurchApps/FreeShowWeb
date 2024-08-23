@@ -3,6 +3,7 @@
 	import { page } from '$app/stores';
 	import { sidebar } from '$lib/components/scripts/docs';
 	import { searchDocs, highlightContent } from '$lib/components/scripts/search';
+	import NoMatchFound from '$lib/components/special/NoMatchFound.svelte';
 	import '$lib/styles/kit-docs.css';
 	import { KitDocs, KitDocsLayout, createSidebarContext } from '@svelteness/kit-docs';
 	import '@svelteness/kit-docs/client/polyfills/index.js';
@@ -129,14 +130,12 @@
 							{/each}
 						</div>
 					{/each}
-				{:else}
+				{:else if loading}
 					<p style="text-align: center;padding-top: 4rem;font-size: 2em;opacity: 0.9;">
-						{#if loading}
-							Loading...
-						{:else}
-							No matches found! :(
-						{/if}
+						Loading...
 					</p>
+				{:else}
+					<NoMatchFound />
 				{/if}
 			</div>
 		{:else}

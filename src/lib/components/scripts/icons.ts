@@ -1,43 +1,44 @@
-import FaBrandsGithub from 'svelte-icons-pack/fa/FaBrandsGithub';
-import FaBrandsWindows from 'svelte-icons-pack/fa/FaBrandsWindows';
+import BsCameraVideoFill from 'svelte-icons-pack/bs/BsCameraVideoFill';
+import BsPeopleFill from 'svelte-icons-pack/bs/BsPeopleFill';
+import BsArchiveFill from 'svelte-icons-pack/bs/BsArchiveFill';
 import FaBrandsApple from 'svelte-icons-pack/fa/FaBrandsApple';
+import FaBrandsGithub from 'svelte-icons-pack/fa/FaBrandsGithub';
 import FaBrandsLinux from 'svelte-icons-pack/fa/FaBrandsLinux';
-import FaSolidPlay from 'svelte-icons-pack/fa/FaSolidPlay';
-import FaSolidKey from 'svelte-icons-pack/fa/FaSolidKey';
-import FaSolidCheckCircle from 'svelte-icons-pack/fa/FaSolidCheckCircle';
-import FaSolidTimesCircle from 'svelte-icons-pack/fa/FaSolidTimesCircle';
-import FaSolidInfoCircle from 'svelte-icons-pack/fa/FaSolidInfoCircle';
-import FaSolidStar from 'svelte-icons-pack/fa/FaSolidStar';
-import FaSolidStarHalfAlt from 'svelte-icons-pack/fa/FaSolidStarHalfAlt';
+import FaBrandsWindows from 'svelte-icons-pack/fa/FaBrandsWindows';
 import FaSolidArrowLeft from 'svelte-icons-pack/fa/FaSolidArrowLeft';
 import FaSolidArrowRight from 'svelte-icons-pack/fa/FaSolidArrowRight';
-import FaSolidGripLines from 'svelte-icons-pack/fa/FaSolidGripLines';
-import FaSolidHandHoldingHeart from 'svelte-icons-pack/fa/FaSolidHandHoldingHeart';
-import FaSolidSlidersH from 'svelte-icons-pack/fa/FaSolidSlidersH';
-import FaSolidEdit from 'svelte-icons-pack/fa/FaSolidEdit';
-import FaSolidHourglass from 'svelte-icons-pack/fa/FaSolidHourglass';
-import FaSolidTv from 'svelte-icons-pack/fa/FaSolidTv';
-import FaSolidMobileAlt from 'svelte-icons-pack/fa/FaSolidMobileAlt';
-import FaSolidNetworkWired from 'svelte-icons-pack/fa/FaSolidNetworkWired';
-import FaSolidEthernet from 'svelte-icons-pack/fa/FaSolidEthernet';
-import FaSolidMagic from 'svelte-icons-pack/fa/FaSolidMagic';
-import FaSolidImage from 'svelte-icons-pack/fa/FaSolidImage';
-import FaSolidLayerGroup from 'svelte-icons-pack/fa/FaSolidLayerGroup';
-import FaSolidThLarge from 'svelte-icons-pack/fa/FaSolidThLarge';
 import FaSolidBible from 'svelte-icons-pack/fa/FaSolidBible';
-import FaSolidMusic from 'svelte-icons-pack/fa/FaSolidMusic';
-import FaSolidFileImport from 'svelte-icons-pack/fa/FaSolidFileImport';
-import FaSolidFileExport from 'svelte-icons-pack/fa/FaSolidFileExport';
+import FaSolidCheckCircle from 'svelte-icons-pack/fa/FaSolidCheckCircle';
 import FaSolidCloudUploadAlt from 'svelte-icons-pack/fa/FaSolidCloudUploadAlt';
+import FaSolidEdit from 'svelte-icons-pack/fa/FaSolidEdit';
+import FaSolidEthernet from 'svelte-icons-pack/fa/FaSolidEthernet';
 import FaSolidExchangeAlt from 'svelte-icons-pack/fa/FaSolidExchangeAlt';
+import FaSolidFileExport from 'svelte-icons-pack/fa/FaSolidFileExport';
+import FaSolidFileImport from 'svelte-icons-pack/fa/FaSolidFileImport';
+import FaSolidHandHoldingHeart from 'svelte-icons-pack/fa/FaSolidHandHoldingHeart';
+import FaSolidHourglass from 'svelte-icons-pack/fa/FaSolidHourglass';
+import FaSolidImage from 'svelte-icons-pack/fa/FaSolidImage';
+import FaSolidInfoCircle from 'svelte-icons-pack/fa/FaSolidInfoCircle';
+import FaSolidKey from 'svelte-icons-pack/fa/FaSolidKey';
+import FaSolidLayerGroup from 'svelte-icons-pack/fa/FaSolidLayerGroup';
+import FaSolidMagic from 'svelte-icons-pack/fa/FaSolidMagic';
+import FaSolidMobileAlt from 'svelte-icons-pack/fa/FaSolidMobileAlt';
+import FaSolidMusic from 'svelte-icons-pack/fa/FaSolidMusic';
+import FaSolidNetworkWired from 'svelte-icons-pack/fa/FaSolidNetworkWired';
+import FaSolidPlay from 'svelte-icons-pack/fa/FaSolidPlay';
 import FaSolidQuoteRight from 'svelte-icons-pack/fa/FaSolidQuoteRight';
+import FaSolidSlidersH from 'svelte-icons-pack/fa/FaSolidSlidersH';
+import FaSolidStar from 'svelte-icons-pack/fa/FaSolidStar';
+import FaSolidStarHalfAlt from 'svelte-icons-pack/fa/FaSolidStarHalfAlt';
 import FaSolidTags from 'svelte-icons-pack/fa/FaSolidTags';
+import FaSolidThLarge from 'svelte-icons-pack/fa/FaSolidThLarge';
+import FaSolidTimesCircle from 'svelte-icons-pack/fa/FaSolidTimesCircle';
+import FaSolidTv from 'svelte-icons-pack/fa/FaSolidTv';
+import FaSolidWrench from 'svelte-icons-pack/fa/FaSolidWrench';
 import HiSolidArrowNarrowDown from 'svelte-icons-pack/hi/HiSolidArrowNarrowDown';
 import HiSolidMenuAlt3 from 'svelte-icons-pack/hi/HiSolidMenuAlt3';
-import BsPeopleFill from 'svelte-icons-pack/bs/BsPeopleFill';
-import BsCameraVideoFill from 'svelte-icons-pack/bs/BsCameraVideoFill';
-import IoStatsChart from 'svelte-icons-pack/io/IoStatsChart';
 import IoPerson from 'svelte-icons-pack/io/IoPerson';
+import IoStatsChart from 'svelte-icons-pack/io/IoStatsChart';
 
 // https://leshak.github.io/svelte-icons-pack/
 export const icons: any = {
@@ -75,6 +76,8 @@ export const icons: any = {
 	compare: FaSolidExchangeAlt,
 	quote: FaSolidQuoteRight,
 	tags: FaSolidTags,
+	beta: FaSolidWrench,
+	archive: BsArchiveFill,
 
 	down: HiSolidArrowNarrowDown,
 	lines: HiSolidMenuAlt3,
