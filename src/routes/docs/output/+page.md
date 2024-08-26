@@ -27,7 +27,7 @@ Hold <Key>CTRL/CMD</Key> while hovering over the output window to show a drag ba
 
 You can find the output settings by clicking the gear icon in the top right, and choosing "Outputs" from the left menu. Here you can change a lot of things, you can add [multiple outputs](./outputs), change the output style, or event enable an alpha key output.
 
-Click on "Add" at the bottom to create a new output, you can choose between a normal output, or a [stage output](./stage#output_window). At the bottom you can right click on the output you created to change e.g. the color, this can be useful if you have multiple.
+Click on "Add" at the bottom to create a new output, you can choose between a normal output, or a [stage output](./stage#output-window). At the bottom you can right click on the output you created to change e.g. the color, this can be useful if you have multiple.
 
 You can also disable always on top, if you want to hide a output behind another window. This is useful if you want to capture the window using another program. This will also make the window resizable.
 

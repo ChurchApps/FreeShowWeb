@@ -19,7 +19,10 @@
 		target="_blank"
 		rel="noreferrer"
 	>
-		<img src="https://capterra.s3.amazonaws.com/assets/images/gdm-badges/ca-ease_of_use-2024.png" />
+		<img
+			src="https://capterra.s3.amazonaws.com/assets/images/gdm-badges/ca-ease_of_use-2024.png"
+			alt="Best Ease of Use 2024"
+		/>
 	</a>
 
 	<!-- Capterra -->
@@ -43,7 +46,10 @@
 		target="_blank"
 		rel="noreferrer"
 	>
-		<img src="https://capterra.s3.amazonaws.com/assets/images/gdm-badges/ca-value-2024.png" />
+		<img
+			src="https://capterra.s3.amazonaws.com/assets/images/gdm-badges/ca-value-2024.png"
+			alt="Best Value 2024"
+		/>
 	</a>
 
 	<!-- GetApp -->
