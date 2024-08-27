@@ -63,7 +63,8 @@ export const sidebar: SidebarConfig = {
 		Tips: [
 			// { title: "Roadmap", slug: "/docs/roadmap" },
 			{ title: 'Styling', slug: '/docs/styling' },
-			{ title: 'Keyboard Shortcuts', slug: '/docs/shortcuts' }
+			{ title: 'Keyboard Shortcuts', slug: '/docs/shortcuts' },
+			{ title: 'FAQ', slug: '/docs/faq' }
 		]
 	}
 };

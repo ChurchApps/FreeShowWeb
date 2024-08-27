@@ -63,3 +63,5 @@ _Optional:_ If you have shared multiple folders, you can change the main folder 
 In Google Drive you can right click any of the files and click "Manage versions" to see and download old versions of the file (younger than 30 days) if you need it.
 
 :::
+
+If you are stuck and need a tutorial with images, [click here](https://docs.google.com/document/d/1_6RoONdTN1_gVZbIjyOo9vvCXawV_fomyIo_LofTIs0).

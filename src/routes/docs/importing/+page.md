@@ -44,3 +44,9 @@ A FreeShow project is a file containing a project and all of it shows, it's usef
 ## Calendar
 
 Import a calendar .ics file. It will be converted to the programs own calendar format, that can be accessed from the ["Calendar"](./calendar) drawer menu. If you import the same calendar multiple times, only the new/changed events are imported.
+
+## FAQ
+
+- **The EasyWorship files did not import the correct song names**
+
+The song names in EasyWorship are stored in a seperate file than the song content, so you need to select both the `SongsWords.db` (song content) file & the `Songs.db` (song data/names) file to get the proper names.
