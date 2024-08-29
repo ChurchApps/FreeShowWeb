@@ -58,3 +58,9 @@ The output has different layers, which determines what gets priority over what. 
 You can see all the layers in the "Show" view, on the right side right under the "Clear all" button, under the controls. If a layer is active you can click on it to clear it, also click the little almost invisible button right under to see more info, like media controls for the background.
 
 Press the big "Clear all" button to clear all layers.
+
+## Transitions
+
+Right under the preview, at the right side there is a button to change the global transitions. Clicking this will give you a popup with various different transition types, different options for text/media etc.
+
+In addition to the global transitions, you can also set transitions per textbox, slide & output! If a transition is set on a slide that will apply to all the textboxes, but if a single textbox has it's own transition that will be prioritized. So all transitions will be prioritized in this order: Textbox > Slide > Output Style > Global Transitions.

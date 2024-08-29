@@ -25,10 +25,6 @@ Pressing spacebar at the end of a show will go to the next show in the current p
 Pressing the arrow keys will always change the slides of the current outputted show, even when another show is active. But pressing spacebar will always play active show.
 :::
 
-## Transitions
-
-At the bottom right of the center show view, one of the buttons are for changing the global transition of slide content or media content. If you want to set transitions for individual slides, or a specific show, select the slides, right click and choose "Transition".
-
 ## Backgrounds
 
 Adding backgrounds are as easy as [dragging them](./media#add-as-backgrounds) over any of the slides. Say you add a background to the first slide, then that background will be applied to all the concurrent slides as "ghost" backgrounds, meaning they behave the same as the first slide when clicked, but you can only interact with the element on one slide. If you don't want any background to play on a specific slide, you can right click on the slide, choose "Slide actions", "Start action", and click "Clear background".

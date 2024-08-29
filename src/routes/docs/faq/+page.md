@@ -39,6 +39,10 @@ This might mean that you have set a custom output style with a template that ove
 
 If you experience that the UI stops resonding to your clicks this is due to a bug in the code, please remember what you did just before this happened, and create a new [issue about it on GitHub](https://github.com/ChurchApps/FreeShow/issues/). And please also attach the error log file found in the settings>"Other">"Open log file". This will help us track down the issue and fix it!
 
+### Auto updates not working
+
+You can update manually by downloading from the website. But to get auto updates working make sure the app has permissions to write the new files. On Windows you probably need to install/run as administrator.
+
 ## Still need help?
 
 - First search the docs to make sure it's not written here.
