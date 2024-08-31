@@ -11,7 +11,7 @@ description: FreeShow can export a song to various different formats.
 
 Access from the application menu: **File** -> **Export**. Or press <Key>CTRL/CMD + E</Key>.
 
-These are the currently cupported export options:
+These are the currently supported export options:
 
 ### TXT
 
