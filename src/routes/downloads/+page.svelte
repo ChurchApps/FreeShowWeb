@@ -142,13 +142,13 @@
 			<p style="text-align: center;opacity: 0.8;">Getting releases! Please wait...</p>
 		{/if}
 
-		<!-- Download the last supported version for Windows 7/8, and macOS 10.14 or lower -->
+		<!-- Download the last supported version for Windows 7/8, and macOS 10.13 & 10.14 -->
 		{#if currentAssets.length && (activeOS === 'Windows' || activeOS === 'MacOS')}
 			<Link link="https://github.com/ChurchApps/FreeShow/releases/tag/v1.2.4" target="_blank">
 				<div class="center" style="justify-content: left;">
 					<Icon icon="archive" size={1.2} />
 					<p style="text-align: left;">
-						{activeOS === 'Windows' ? 'Windows 7/8' : 'MacOS 10.14 or lower'}
+						{activeOS === 'Windows' ? 'Windows 7/8' : 'MacOS 10.13 & 10.14'}
 						<span style="font-size: 0.9em;opacity: 0.8;padding-left: 5px;">
 							Use this version if you need FreeShow on an old OS!
 						</span>

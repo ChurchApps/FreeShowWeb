@@ -33,4 +33,4 @@ _These are some of the main features._
 
 The current version of FreeShow is built using **Chromium 126**, it should run on any OS/hardware that can run a modern browser, check out [the system requirements](https://support.google.com/chrome/a/answer/7100626).
 
-Version [1.2.4](https://github.com/ChurchApps/FreeShow/releases/tag/v1.2.4) and lower runs on **Chromium 106**, that means support for Windows 7/8 & MacOS 10.14 or lower!
+Version [1.2.4](https://github.com/ChurchApps/FreeShow/releases/tag/v1.2.4) and lower runs on **Chromium 106**, that means support for Windows 7/8 & MacOS 10.13 & 10.14!
