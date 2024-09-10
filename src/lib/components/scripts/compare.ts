@@ -18,6 +18,7 @@ type Features = {
 	};
 }[];
 
+// I'm sure FreeShow & the other programs has some unique features not mentioned here!
 export const features: Features = [
 	{
 		name: 'Platforms',
@@ -34,11 +35,11 @@ export const features: Features = [
 		name: 'Price',
 		programs: {
 			fs: { content: 'Free' },
-			pp: { content: '$399', note: 'Starting at $399' },
+			pp: { content: '$289/yr', note: 'Starting at $289 yearly per seat' },
 			ew: { content: '$180/yr', note: 'Starting at $180 yearly' },
 			vp: { content: 'Free' },
 			ol: { content: 'Free' },
-			pc: { content: '$225/yr', note: 'Starting at $255 yearly' }
+			pc: { content: '$250/yr', note: 'Starting at $249.99 yearly' }
 		}
 	},
 	{
@@ -289,18 +290,18 @@ export const features: Features = [
 			pc: { content: true }
 		}
 	},
-	{
-		name: 'Lock output',
-		info: 'Prevent changes to the output',
-		programs: {
-			fs: { content: true },
-			pp: { content: false },
-			ew: { content: false },
-			vp: { content: false },
-			ol: { content: false },
-			pc: { content: false }
-		}
-	},
+	// {
+	// 	name: 'Lock output',
+	// 	info: 'Prevent changes to the output',
+	// 	programs: {
+	// 		fs: { content: true },
+	// 		pp: { content: false },
+	// 		ew: { content: false },
+	// 		vp: { content: false },
+	// 		ol: { content: false },
+	// 		pc: { content: false }
+	// 	}
+	// },
 	{
 		name: 'Remote controller',
 		programs: {
@@ -360,7 +361,7 @@ export const features: Features = [
 	},
 	{
 		name: 'NDI support',
-		info: 'Multiple outputs, useful for streaming',
+		info: 'Multiple/transparent outputs, useful for streaming',
 		programs: {
 			fs: { content: true },
 			pp: { content: true },
@@ -384,7 +385,7 @@ export const features: Features = [
 	},
 	{
 		name: 'CCLI',
-		info: 'Church Copyright Licensing International',
+		info: 'Church Copyright Licensing International attribution in output for each song',
 		programs: {
 			fs: { content: true },
 			pp: { content: true },
@@ -394,11 +395,35 @@ export const features: Features = [
 			pc: { content: true }
 		}
 	},
+	{
+		name: 'Localization',
+		info: 'Auto translate lyrics into another language',
+		programs: {
+			fs: { content: true },
+			pp: { content: false },
+			ew: { content: false },
+			vp: { content: false },
+			ol: { content: false },
+			pc: { content: false }
+		}
+	},
 
 	// { name: "Contigious mode", info: "Show all project elements on one continious page", programs: { fs: "{n}", pp: "{y}", ew: "{n}", vp: "{n}", ol: "{n}", pc: "{y}" } },
 	{
 		name: 'Draw',
 		info: 'Draw/point over output',
+		programs: {
+			fs: { content: true },
+			pp: { content: true },
+			ew: { content: false },
+			vp: { content: false },
+			ol: { content: false },
+			pc: { content: false }
+		}
+	},
+	{
+		name: 'PDF import/export',
+		info: 'Import PDF as image & export slides to PDF',
 		programs: {
 			fs: { content: true },
 			pp: { content: true },
@@ -417,17 +442,6 @@ export const features: Features = [
 			vp: { content: true },
 			ol: { content: true },
 			pc: { content: true }
-		}
-	},
-	{
-		name: 'Export as PDF',
-		programs: {
-			fs: { content: true },
-			pp: { content: true },
-			ew: { content: false },
-			vp: { content: false },
-			ol: { content: false },
-			pc: { content: false }
 		}
 	}
 ];
