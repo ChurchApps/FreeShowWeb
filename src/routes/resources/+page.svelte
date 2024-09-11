@@ -1,10 +1,15 @@
 <script>
 	import Section from '$lib/components/main/Section.svelte';
-	import { backgrounds, scriptures } from '$lib/components/scripts/resources';
+	import { backgrounds, scriptures, tools } from '$lib/components/scripts/resources';
 </script>
 
 <svelte:head>
 	<title>FreeShow | Resource Portal</title>
+
+	<meta
+		name="description"
+		content="Backgrounds, Bibles & more resources to use in your church for free with a presentation software like FreeShow."
+	/>
 </svelte:head>
 
 <Section center bubble>
@@ -43,14 +48,36 @@
 
 	<ul class="list">
 		{#each scriptures as scripture}
-			<li>
-				<p style="display: inline-flex;align-items: baseline;gap: 8px;">
+			<li style="white-space: nowrap;">
+				<p style="display: inline-flex;align-items: baseline;gap: 8px;white-space: normal;">
 					<span style="font-size: 1.4em;">
 						<a href={scripture.url} target="_blank" rel="noreferrer">{scripture.title}</a>:
 					</span>
 
-					<span>
+					<span style="white-space: normal;">
 						{scripture.description}
+					</span>
+				</p>
+			</li>
+		{/each}
+	</ul>
+
+	<br />
+
+	<div class="head">
+		<h2 id="tools">Tools</h2>
+	</div>
+
+	<ul class="list">
+		{#each tools as tool}
+			<li style="white-space: nowrap;">
+				<p style="display: inline-flex;align-items: baseline;gap: 8px;white-space: normal;">
+					<span style="font-size: 1.4em;">
+						<a href={tool.url} target="_blank" rel="noreferrer">{tool.title}</a>:
+					</span>
+
+					<span style="white-space: normal;">
+						{tool.description}
 					</span>
 				</p>
 			</li>
@@ -73,12 +100,12 @@
 		gap: var(--spacing);
 	}
 	.card {
-		width: calc(33.33% - var(--spacing));
+		width: 100%;
 
 		display: flex;
 		flex-direction: column;
 
-		background-color: #0e0e0e;
+		background-color: #060606;
 		color: white;
 
 		border-radius: 4px;
@@ -109,5 +136,23 @@
 		flex-direction: column;
 
 		list-style: inside;
+	}
+
+	/* media */
+
+	@media screen and (min-width: 650px) {
+		.card {
+			width: calc(50% - var(--spacing));
+		}
+
+		ul li p {
+			white-space: nowrap !important;
+		}
+	}
+
+	@media screen and (min-width: 1300px) {
+		.card {
+			width: calc(33.33% - var(--spacing));
+		}
 	}
 </style>

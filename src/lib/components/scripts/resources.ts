@@ -144,28 +144,53 @@ export const backgrounds = [
 
 export const scriptures = [
 	{
-		title: 'aJaytheCEO',
-		url: 'https://www.ajaytheceo.com/digital/bibles',
-		description: '25+ OpenSong/Zefania Bibles'
-	},
-	{
-		title: 'Zefaina',
+		title: 'Zefaina - SourceForge',
 		url: 'https://sourceforge.net/projects/zefania-sharp/files/Bibles/',
-		description: '100+ Zefania XML Bibles'
+		description: '150+ Zefania XML Bibles'
 	},
 	{
-		title: 'OSIS',
+		title: 'Zefaina - ph4',
+		url: 'https://www.ph4.org/b4_mobi.php?q=zefania',
+		description: '150+ Zefania XML Bibles'
+	},
+	{
+		title: 'OSIS - GitHub',
 		url: 'https://github.com/bzerangue/osis-bibles/blob/master/',
-		description: '100+ OSIS XML Bibles'
+		description: '150+ OSIS XML Bibles'
 	},
 	{
-		title: 'Beblia',
+		title: 'Beblia - GitHub',
 		url: 'https://github.com/Beblia/Holy-Bible-XML-Format',
 		description: '900+ Beblia XML Bibles'
 	},
 	{
-		title: 'ph4',
-		url: 'https://www.ph4.org/b4_mobi.php?q=zefania',
-		description: '150+ Zefania XML Bibles'
+		title: 'OpenSong/Zefania - aJaytheCEO',
+		url: 'https://www.ajaytheceo.com/digital/bibles',
+		description: '25+ OpenSong/Zefania XML Bibles'
+	}
+];
+
+export const tools = [
+	{
+		title: 'CMG Sans',
+		url: 'https://www.churchmotiongraphics.com/cmg-sans/',
+		description: '“The World’s Best Worship Lyric Font!” Included by default in FreeShow.'
+	},
+	{
+		title: 'Bitfocus Companion',
+		url: 'https://bitfocus.io/companion',
+		description: 'Remote Control FreeShow with any supported hardware, like StreamDeck.'
+	},
+	{
+		title: 'OBS',
+		url: 'https://obsproject.com/',
+		description:
+			'Open Broadcaster Software is free and open source software for video recording and live streaming. Stream to Twitch, YouTube and many other providers.'
+	},
+	{
+		title: 'vMix',
+		url: 'https://www.vmix.com/',
+		description:
+			'vMix is a live streaming and live production software video mixer and switcher for Windows. Easily Produce, Record and Live Stream professional looking content.'
 	}
 ];
