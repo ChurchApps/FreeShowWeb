@@ -75,6 +75,7 @@
 	<div class="links" class:show={menuOpened}>
 		<!-- <Link link="/mission">Mission</Link> -->
 		<Link link="/features">Features</Link>
+		<Link link="/resources">Resources</Link>
 		<Link link="/docs">Docs</Link>
 		<!-- <p style="z-index: 1;" class="onlyMenu">Source code</p> -->
 		<Link
