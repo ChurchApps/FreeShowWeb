@@ -10,6 +10,12 @@
 		name="description"
 		content="Backgrounds, Bibles & more resources to use in your church for free with a presentation software like FreeShow."
 	/>
+
+	<meta property="og:title" content="FreeShow — Resource Portal for Backgrounds, Bibles & more!" />
+	<meta
+		property="og:description"
+		content="Backgrounds, Bibles & more resources to use in your church for free with a presentation software like FreeShow."
+	/>
 </svelte:head>
 
 <Section center bubble>
@@ -134,6 +140,7 @@
 	.list {
 		display: flex;
 		flex-direction: column;
+		gap: 15px;
 
 		list-style: inside;
 	}
@@ -143,6 +150,10 @@
 	@media screen and (min-width: 650px) {
 		.card {
 			width: calc(50% - var(--spacing));
+		}
+
+		.list {
+			gap: 5px;
 		}
 
 		ul li p {

@@ -144,9 +144,14 @@ export const backgrounds = [
 
 export const scriptures = [
 	{
+		title: 'Bible List',
+		url: 'https://biblelist.netlify.app/',
+		description: 'Search through a database collection of 1550+ XML Bibles'
+	},
+	{
 		title: 'Zefaina - SourceForge',
 		url: 'https://sourceforge.net/projects/zefania-sharp/files/Bibles/',
-		description: '150+ Zefania XML Bibles'
+		description: '250+ Zefania XML Bibles'
 	},
 	{
 		title: 'Zefaina - ph4',
@@ -158,15 +163,17 @@ export const scriptures = [
 		url: 'https://github.com/bzerangue/osis-bibles/blob/master/',
 		description: '150+ OSIS XML Bibles'
 	},
+	// {
+	// 	// is this source creditable?
+	// 	title: 'Beblia - GitHub',
+	// 	url: 'https://github.com/Beblia/Holy-Bible-XML-Format',
+	// 	description: '900+ Beblia XML Bibles'
+	// },
 	{
-		title: 'Beblia - GitHub',
-		url: 'https://github.com/Beblia/Holy-Bible-XML-Format',
-		description: '900+ Beblia XML Bibles'
-	},
-	{
-		title: 'OpenSong/Zefania - aJaytheCEO',
+		title: 'Zefania - aJaytheCEO',
 		url: 'https://www.ajaytheceo.com/digital/bibles',
-		description: '25+ OpenSong/Zefania XML Bibles'
+		description: '25+ Zefania/OpenSong XML Bibles'
+		// NIV is OpenSong
 	}
 ];
 
