@@ -31,9 +31,7 @@
 		{#each backgrounds as background}
 			<div class="card">
 				<div class="images">
-					{#each background.thumbnails as src}
-						<img {src} alt="Media Preview" loading="lazy" />
-					{/each}
+					<img src={background.preview} alt="Media Preview" loading="lazy" />
 				</div>
 
 				<div class="text">
@@ -55,7 +53,7 @@
 	<ul class="list">
 		{#each scriptures as scripture}
 			<li style="white-space: nowrap;">
-				<p style="display: inline-flex;align-items: baseline;gap: 8px;white-space: normal;">
+				<p>
 					<span style="font-size: 1.4em;">
 						<a href={scripture.url} target="_blank" rel="noreferrer">{scripture.title}</a>:
 					</span>
@@ -77,7 +75,7 @@
 	<ul class="list">
 		{#each tools as tool}
 			<li style="white-space: nowrap;">
-				<p style="display: inline-flex;align-items: baseline;gap: 8px;white-space: normal;">
+				<p>
 					<span style="font-size: 1.4em;">
 						<a href={tool.url} target="_blank" rel="noreferrer">{tool.title}</a>:
 					</span>
@@ -130,7 +128,7 @@
 		flex-wrap: wrap;
 	}
 	.card .images img {
-		width: 50%;
+		width: 100%;
 		aspect-ratio: 16/9;
 		object-fit: cover;
 	}
@@ -145,6 +143,16 @@
 		list-style: inside;
 	}
 
+	.list li p {
+		display: inline-flex;
+		flex-direction: column;
+		gap: 2px;
+
+		max-width: 95%;
+		align-items: baseline;
+		white-space: normal;
+	}
+
 	/* media */
 
 	@media screen and (min-width: 650px) {
@@ -156,7 +164,10 @@
 			gap: 5px;
 		}
 
-		ul li p {
+		.list li p {
+			flex-direction: row;
+			gap: 8px;
+			max-width: initial;
 			white-space: nowrap !important;
 		}
 	}
