@@ -37,11 +37,13 @@ FreeShow sends the streams as "FreeShow NDI - _output name_". See this tutorial 
 - Make sure both the sending and receiving device are in the same network subnet.
 - Download NDI Tools from NewTek's official website, and use the Monitor on the same device as FreeShow, to diagnose if the problem is on the network or directly from the FreeShow output.
 
-## Step by step - How to create a custom NDI output for live stream
+## Step by step
 
-1. Go to "Outputs" in the settings, and at the bottom click "Add" to create a new output, you can rename the outputs so you have two called e.g. "Congregation" & "Live".
+#### How to create a custom NDI output for live stream
+
+1. Go to "Outputs" in the settings, and at the bottom click "Add" to create a new output, you can rename the outputs so you have two called e.g. "Congregation" & "Stream".
 2. Now go to "Styles" in the settings, and at the bottom click "Add" to create a new style, you can rename the styles so you have two called e.g. "Default" & "NDI".
 3. In the NDI style, make the changes you need. You can apply a custom template with lower thirds, click on the "Background" layer to toggle it off, set the lines to 2 to have max two lines, & more!
-4. Now go back to "Outputs" and select the "Live" output, and add the "NDI" style to that!
+4. Now go back to "Outputs" and select the "Stream" output, and add the "NDI" style to that!
 
 Remember that if you want to show a video on the stream you need to change the output style of the stream (this can also be automated using slide actions).

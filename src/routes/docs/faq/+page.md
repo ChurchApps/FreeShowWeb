@@ -21,6 +21,14 @@ Lastly if you need all the animations as well use PowerPoint to present (probabl
 
 This is possible with [scripture collections](./scripture#create-a-collection).
 
+### Multilingual songs
+
+FreeShow has integrated translation! Click the globe/translation button at the bottom of a show to automatically translate a song into another language! Choose from over 240 languages.
+
+### Videos are muted
+
+By default if you drop one video into a show it will be treated as a background, meaning it's muted & looping by default, but [you can change this](./media#play-audio-from-backgrounds). But by dropping more than one video, or dropping a video into your project it will be unmuted & not looping by default!
+
 ### CCLI Integration?
 
 Unfortunately CCLI has discontinued their API, meaning it's impossible for us to add integration. They still support programs that already has used their API, but are unwilling to collaborate with us. Read [more here](https://github.com/ChurchApps/FreeShow/issues/572#issuecomment-2163179642).

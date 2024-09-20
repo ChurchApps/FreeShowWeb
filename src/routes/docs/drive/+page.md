@@ -65,3 +65,9 @@ In Google Drive you can right click any of the files and click "Manage versions"
 :::
 
 If you are stuck and need a tutorial with images, [click here](https://docs.google.com/document/d/1_6RoONdTN1_gVZbIjyOo9vvCXawV_fomyIo_LofTIs0).
+
+## FAQ
+
+- **What is the Media path ID?**
+
+If the "Media path ID" is set to the same on two computers that means the exact media paths are the same (e.g. if an external drive is used). But in most cases they should be different, that way the different paths will be auto located and stored at the media path location for the current computer.
