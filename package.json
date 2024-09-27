@@ -37,6 +37,7 @@
 	"type": "module",
 	"dependencies": {
 		"@sveltejs/adapter-netlify": "^2.0.8",
+		"freeshow-api": "^1.0.0",
 		"svelte-icons-pack": "^2.1.0"
 	}
 }
