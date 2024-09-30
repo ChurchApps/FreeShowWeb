@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Button from '$lib/components/inputs/Button.svelte';
+	import Icon from '$lib/components/main/Icon.svelte';
 	import Section from '$lib/components/main/Section.svelte';
 	import api from 'freeshow-api';
 	import { onMount } from 'svelte';
@@ -31,6 +33,7 @@
 
 	function triggerAPI(action: string, data: any = {}) {
 		API.sendHTTP(action, data);
+		// API.sendREST(action, data); needs cors for browser
 	}
 
 	// WIP check/alert connection status
@@ -44,6 +47,20 @@
 		document.body.appendChild(script);
 		// created = true;
 	}
+
+	const sections: { [key: string]: string } = {
+		index_select_project: 'PROJECT',
+		name_select_show: 'SHOWS',
+		next_slide: 'PRESENTATION',
+		id_select_stage_layout: 'STAGE',
+		restore_output: 'CLEAR',
+		start_camera: 'MEDIA',
+		index_select_overlay: 'OVERLAYS',
+		change_volume: 'AUDIO',
+		name_start_timer: 'TIMERS',
+		id_select_output_style: 'VISUAL',
+		change_variable: 'OTHER'
+	};
 </script>
 
 <svelte:head>
@@ -66,34 +83,68 @@
 		<h2 id="actions">Actions</h2>
 	</div>
 
-	<!-- <input type="text" name="" id="" bind:value={url} /> -->
-	<input type="number" name="" id="" min={1025} max={65535} bind:value={port} />
-	<!-- WIP password -->
+	<div class="url">
+		<!-- <input type="text" name="" id="" bind:value={url} /> -->
+		<input
+			type="number"
+			min={1025}
+			max={65535}
+			title="FreeShow Connection Port"
+			bind:value={port}
+		/>
+		<!-- WIP password -->
 
-	{#key port}
-		{getUrl()}
-	{/key}
+		{#key port}
+			<p style="font-style: italic;">{getUrl()}</p>
+		{/key}
+	</div>
 
 	<div class="list">
 		{#each Object.keys(API.actions || {}) as action}
 			{@const actionType = API.actions[action]}
-			<div class="action">
-				<button on:click={() => triggerAPI(action)}>
-					{action}
 
-					{#if actionType}
-						------- {JSON.stringify(actionType)}
+			{#if sections[action]}
+				<h3
+					id={sections[action].toLowerCase()}
+					style="font-size: 1.5em;padding-top: 20px;color: var(--secondary);"
+				>
+					{sections[action]}
+				</h3>
+			{/if}
+
+			<div class="action">
+				<div>
+					{#if !actionType}
+						<Button title="Try sending action to FreeShow" on:click={() => triggerAPI(action)}>
+							<Icon icon="play" />
+						</Button>
 					{/if}
-				</button>
+
+					<b>{action}</b>
+				</div>
+
+				{#if actionType}
+					<pre style="line-height: 1.2;"><code
+							class="language-js"
+							style="tab-size: 0.5;line-height: 1.2;">
+					{JSON.stringify(actionType).replaceAll('\\', '').replaceAll(':', ': ').replaceAll(',', ', ')}
+					</code></pre>
+				{/if}
 			</div>
 		{/each}
 	</div>
+
+	<hr />
 
 	<div class="head">
 		<h2 id="examples">Examples</h2>
 	</div>
 
-	<p>Make sure the WebSocket/REST API is active in the FreeShow "Connections" settings!</p>
+	<p>
+		Make sure the WebSocket/REST API is active in the FreeShow "<a href="/docs/connecting"
+			>Connections</a
+		>" settings!
+	</p>
 
 	<!-- WIP remake this on value update? -->
 	<!-- {#key url || port} -->
@@ -115,9 +166,65 @@
     socket.emit("data", JSON.stringify({ action: ACTION_ID, ...data }))`}
     </code></pre>
 	<!-- {/key} -->
+
+	<p>
+		For Node.js, check out the <a
+			href="https://www.npmjs.com/package/freeshow-api"
+			target="_blank"
+			rel="noreferrer">NPM Helper Package</a
+		>.
+	</p>
 </Section>
 
 <style>
+	.url {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	input {
+		/* background-color: inherit; */
+		background-color: var(--text);
+		font-family: inherit;
+		font-size: inherit;
+
+		padding: 6px;
+		border: 2px solid var(--secondary);
+		border-radius: 4px;
+	}
+
+	.list {
+		display: flex;
+		flex-direction: column;
+		gap: 6px;
+	}
+	.list :global(button:hover) {
+		/* background-color: rgb(0 0 0 / 0.2) !important; */
+		--secondary: var(--text);
+	}
+
+	.action {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+
+		border-radius: 8px;
+
+		padding: 10px;
+		background-color: var(--text);
+	}
+	.action div {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	hr {
+		border: 1px solid rgb(0 0 0 / 0.05);
+		margin: 80px 0;
+	}
+
 	pre {
 		padding: 0 !important;
 		margin: 0 !important;

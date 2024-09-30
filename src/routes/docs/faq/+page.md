@@ -39,6 +39,10 @@ Cloud sync is possible. FreeShow has a integrated support for syncing all the da
 
 If you also want to sync media files as well, you will need to use a custom sync like OneDrive, the Google Drive desktop app or another free alternative. Read [more here](https://github.com/ChurchApps/FreeShow/issues/402)!
 
+### Can I controll FreeShow from custom software?
+
+Yes, you can send [MIDI signals](./midi) to trigger actions, or use the [Bitfocus Companion plugin](./companion), or set up your own API connection, using the [FreeShow API](/api)!
+
 ### Text style not showing up in output
 
 This might mean that you have set a custom output style with a template that overrides the new style. To fix go to settings>"Styles", and take off any template set here. Optionally remove the style entirely from the output in "Outputs".
