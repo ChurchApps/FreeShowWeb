@@ -77,7 +77,11 @@
 			<li style="white-space: nowrap;">
 				<p>
 					<span style="font-size: 1.4em;">
-						<a href={tool.url} target="_blank" rel="noreferrer">{tool.title}</a>:
+						{#if tool.url.includes('http')}
+							<a href={tool.url} target="_blank" rel="noreferrer">{tool.title}</a>:
+						{:else}
+							<a href={tool.url}>{tool.title}</a>:
+						{/if}
 					</span>
 
 					<span style="white-space: normal;">

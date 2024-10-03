@@ -33,6 +33,10 @@ The best part about this feature is that you can sync it to play with any music 
 
 Pressing the arrow keys while a slide recording is playing will play next/previous slide in the recorded order. This will also change the music time if synced. Clicking any slide will also move the current play time to the nearest point in time when that slide was played.
 
+:::admonition type=tip
+Add actions to slides to take your recordings to the next level!
+:::
+
 ### Notes
 
 Add some notes to the show.

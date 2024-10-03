@@ -119,14 +119,21 @@ export const scriptures = [
 
 export const tools = [
 	{
-		title: 'CMG Sans',
-		url: 'https://www.churchmotiongraphics.com/cmg-sans/',
-		description: '“The World’s Best Worship Lyric Font!” Included by default in FreeShow.'
+		title: 'FreeShow API',
+		url: '/api',
+		description: 'Use our own API to integrate FreeShow control in your custom software.'
 	},
 	{
 		title: 'Bitfocus Companion',
+		// https://bitfocus.io/connections/churchapps-freeshow
 		url: 'https://bitfocus.io/companion',
-		description: 'Remote Control FreeShow with any supported hardware, like StreamDeck.'
+		description:
+			'With our custom module you can remote control FreeShow with any supported Companion hardware, like StreamDeck.'
+	},
+	{
+		title: 'CMG Sans',
+		url: 'https://www.churchmotiongraphics.com/cmg-sans/',
+		description: '“The World’s Best Worship Lyric Font!” Included by default in FreeShow.'
 	},
 	{
 		title: 'OBS',
