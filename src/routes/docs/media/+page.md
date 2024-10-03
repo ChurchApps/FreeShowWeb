@@ -50,3 +50,9 @@ Right click the slide, choose "Slide actions", then click on "Next on media fini
 ## Video time markers
 
 If you open a video from the project, or right click in the drawer and click "Open preview". You will get a full preview in the center of the screen, press "Show media preview controls" to show some inputs. On the right you will see a clock icon, click it to reveal a bar where you can add time markers to the video at the current preview position.
+
+## FAQ
+
+- **How to add media**
+
+First open the "Media" tab in the drawer, then at the bottom left click "New folder" and choose the folder with your media. You can also drag & drop folders directly from the computer to the folder area. After that you can drag & drop media files from the drawer into a project, to a show, or as a slide item. You can also drag & drop media files directly from the computer file system. (Note: By dragging just one background to a show it will be [added as a background](./faq#videos-are-muted)!)

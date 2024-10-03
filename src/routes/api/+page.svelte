@@ -92,7 +92,7 @@
 			title="FreeShow Connection Port"
 			bind:value={port}
 		/>
-		<!-- WIP password -->
+		<!-- WIP api password? -->
 
 		{#key port}
 			<p style="font-style: italic;">{getUrl()}</p>

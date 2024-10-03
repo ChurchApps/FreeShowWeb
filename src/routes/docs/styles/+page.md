@@ -27,4 +27,4 @@ Click on the different active layers to toggle them, useful again if you don't w
 
 ## Metadata
 
-Change the looks of show metadata og a show message, and choose when to display the metadata.
+Change the looks of show metadata or a show message, and choose when to display the metadata.

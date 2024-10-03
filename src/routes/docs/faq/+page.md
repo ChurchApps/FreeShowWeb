@@ -47,6 +47,10 @@ Yes, you can send [MIDI signals](./midi) to trigger actions, or use the [Bitfocu
 
 This might mean that you have set a custom output style with a template that overrides the new style. To fix go to settings>"Styles", and take off any template set here. Optionally remove the style entirely from the output in "Outputs".
 
+### Right click does not work properly on macOS
+
+A bug in some versions of macOS makes right clicking by pressing two fingers on the trackpad behave different to right clicking with Ctrl+trackpad or using an external mouse. Please resort to one of the two other alternatives if the first one does not work!
+
 ### FreeShow keeps freezing
 
 If you experience that the UI stops resonding to your clicks this is due to a bug in the code, please remember what you did just before this happened, and create a new [issue about it on GitHub](https://github.com/ChurchApps/FreeShow/issues/). And please also attach the error log file found in the settings>"Other">"Open log file". This will help us track down the issue and fix it!

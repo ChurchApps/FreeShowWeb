@@ -13,7 +13,7 @@ description: Send outputs over IP, useful for streaming.
 
 ## What's NDI?
 
-NDI stands for Network Device Interface, and enables high-definition video to be sent and received over a computer network with low-latency. In FreeShow it is used to send multiple output streams, it also supports transparent videos. The streams can be received and used by a streaming software such as OBS og vMix. It is recommended to use ethernet connection.
+NDI stands for Network Device Interface, and enables high-definition video to be sent and received over a computer network with low-latency. In FreeShow it is used to send multiple output streams, it also supports transparent videos. The streams can be received and used by a streaming software such as OBS or vMix. It is recommended to use ethernet connection.
 
 ## Enabling
 
