@@ -1,7 +1,6 @@
 {
-	"name": "freeshowwebnew",
-	"version": "0.0.1",
-	"private": true,
+	"name": "freeshowweb",
+	"version": "1.0.0",
 	"scripts": {
 		"dev": "vite dev",
 		"prepare": "svelte-kit sync",
@@ -37,7 +36,7 @@
 	"type": "module",
 	"dependencies": {
 		"@sveltejs/adapter-netlify": "^2.0.8",
-		"freeshow-api": "^1.0.1",
+		"freeshow-api": "^1.0.2",
 		"svelte-icons-pack": "^2.1.0"
 	}
 }
