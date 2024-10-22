@@ -51,6 +51,25 @@
 		toggleElements(false);
 	}
 
+
+  function addInsiderCode() {
+    const insiderCode = '<div class="hs-cta-embed hs-cta-simple-placeholder hs-cta-embed-180517799054" style="max-width:100%; max-height:100%; width:350px;height:150px" data-hubspot-wrapper-cta-id="180517799054">'
+    + '<a href="https://cta-service-cms2.hubspot.com/web-interactives/public/v1/track/redirect?encryptedPayload=AVxigLKaBAGaXCIIBwzStXCsKTnSaJJ4fi3ZbwxvqULNT2762z%2FiFv4eH2GUygOQb7iwcBqTCS%2FYjbGFncmjgUQV0UzK%2BN2sinyQSCUPU6e1SRDBo66yLw2Bs74GzFA4%2FbCob3a2qHfFPW41pkYudCs2rI802KGibKw9I8kchn%2B%2FUhPmC1xniun40u5ECeOavurpa0GEod8%3D&webInteractiveContentId=180517799054&portalId=20077299" target="_blank" rel="noopener" crossorigin="anonymous">'
+    + '<img alt="freeshow insider button" loading="lazy" src="https://no-cache.hubspot.com/cta/default/20077299/interactive-180517799054.png" style="object-fit: fill" onerror="this.style.display=\'none\'" />'
+    + '</a>'
+    + '</div>';
+    
+    
+    if (!document.getElementById('insiderCode')) {
+      const insiderElem = document.createElement('div');
+      insiderElem.id = 'insiderCode';
+      insiderElem.innerHTML = insiderCode;
+      //insiderElem.style.marginTop = '100px';
+      document.querySelector('.on-this-page')?.prepend(insiderElem);
+    }
+    
+  }
+
 	function toggleElements(hide: boolean = true) {
 		let titleTextElem = document.querySelector('article')?.querySelector('p');
 		let navigationElem = document.querySelector('main')?.querySelector('.text-gray-300');
@@ -89,6 +108,8 @@
 			.getElementById('main-sidebar')
 			?.querySelector('.sticky')
 			?.setAttribute('style', 'z-index: 6;');
+
+    addInsiderCode();
 	});
 </script>
 
