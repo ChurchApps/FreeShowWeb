@@ -15,6 +15,12 @@ First you have to go to "Shows" in the [drawer](./drawer). Here you will find a 
 
 All your shows can be found in the "Shows" tab in the drawer. Here you can organize them into different categories, the category changes the icon a show has in the project list. In the top right corner of the drawer you will find a search bar to search through all of your shows. When a show is opened or changed, the text content will be cached, so you can search by the content as well as the title.
 
+## Slides
+
+One [group](./groups) can have multiple slides. Right clicking a slide gives you different options.
+
+One of them is to disable a slide, this can be useful if you might use a slide sometimes but not always, or for more advenced uses. Keyboard navigation & slide timers will skip disabled slides, but you can still click it to play as normal.
+
 ## Presenting
 
 When opening a show, you will by default get a _"WYSIWYG"_ view, meaning the style of each slide will match the style of the output. You can click any slide to show it, and use the arrow right/left keys to change slides, or press spacebar. In the bottom of the show view you have some buttons to change the [layout](./layouts) of the current view.

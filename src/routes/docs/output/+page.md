@@ -25,7 +25,7 @@ Hold <Key>CTRL/CMD</Key> while hovering over the output window to show a drag ba
 
 ## Settings
 
-You can find the output settings by clicking the gear icon in the top right, and choosing "Outputs" from the left menu. Here you can change a lot of things, you can add [multiple outputs](./outputs), change the output style, or event enable an alpha key output.
+You can find the output settings by clicking the gear icon in the top right, and choosing "Outputs" from the left menu. Here you can change a lot of things, you can add [multiple outputs](./outputs), change the output style, enable NDI, and more.
 
 Click on "Add" at the bottom to create a new output, you can choose between a normal output, or a [stage output](./stage#output-window). At the bottom you can right click on the output you created to change e.g. the color, this can be useful if you have multiple.
 
@@ -63,4 +63,10 @@ Press the big "Clear all" button to clear all layers.
 
 Right under the preview, at the right side there is a button to change the global transitions. Clicking this will give you a popup with various different transition types, different options for text/media etc.
 
-In addition to the global transitions, you can also set transitions per textbox, slide & output! If a transition is set on a slide that will apply to all the textboxes, but if a single textbox has it's own transition that will be prioritized. So all transitions will be prioritized in this order: Textbox > Slide > Output Style > Global Transitions.
+In addition to the global transitions, you can also set transitions per textbox, slide & output! If a transition is set on a slide that will apply to all the textboxes, but if a single textbox has it's own transition that will be prioritized. So all transitions will be prioritized in this order: **Textbox** > **Slide** > **Output Style** > **Global Transitions**.
+
+:::admonition type=tip
+
+Press "Enable more specific transitions" for more customizability. This gives you the ability to set different transitions for **In** & **Out**. Also for slides you can set **Between** transitions, this means simply that if a slide layer is already active **Between** will be used until it is cleared, then the **Out** will trigger.
+
+:::

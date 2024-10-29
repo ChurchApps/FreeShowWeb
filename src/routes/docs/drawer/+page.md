@@ -32,6 +32,12 @@ This is where all your songs, events, presentations, and more are located. Click
 On the left you can organize them into categories by dragging any show over the category.
 On the right side you get information about the current selected show.
 
+:::admonition type=tip
+
+You can right click a category to mark it as "Archive". Doing this will hide it from the "All" tab and searches.
+
+:::
+
 ## Media
 
 Here you find all of the selected media from your computer. Click on them to open a preview of the file, or double click to show it in the output. They can also be dragged on slides.

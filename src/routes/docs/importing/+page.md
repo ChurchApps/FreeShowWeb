@@ -9,7 +9,7 @@ description: Import songs from many different programs.
 
 # Importing
 
-Access from the application menu: **File** -> **Import**. Or press <Key>CTRL/CMD + I</Key>.
+Access from the application menu: **File** -> **Import**. Or press <Key>CTRL/CMD + I</Key>. You can also press <Key>CTRL/CMD + ALT + I</Key> to quickly import directly from the clipboard.
 
 Here you have a bunch of different options to import different file types from various programs. Most of them will create a new show.
 
@@ -19,9 +19,19 @@ Here you have a bunch of different options to import different file types from v
 - ProPresenter 4-7 (If you have a .proBundle file, add .zip to the end and extract.)
 - EasyWorship 6-7
 - VideoPsalm
-- OpenLP + OpenLyrics
+- OpenLP (OpenLyrics)
 - OpenSong
+- Quela (If you have a .qsp file, add .zip to the end and extract.)
+- SoftProjector
+- Songbeamer
+
+<br>
+
+- Text
 - ChordPro
+- PDF
+- PowerPoint
+- Lessons.church
 
 :::admonition type=tip
 Create and select a new empty show category to place all of the imported files here. Also if you do that when importing a VideoPsalm songbook the song number/ID will be automatically added to the title.
@@ -49,4 +59,4 @@ Import a calendar .ics file. It will be converted to the programs own calendar f
 
 - **The EasyWorship files did not import the correct song names**
 
-The song names in EasyWorship are stored in a seperate file than the song content, so you need to select both the `SongsWords.db` (song content) file & the `Songs.db` (song data/names) file to get the proper names.
+  The song names in EasyWorship are stored in a seperate file than the song content, so you need to select both the `SongsWords.db` (song content) file & the `Songs.db` (song data/names) file to get the proper names.

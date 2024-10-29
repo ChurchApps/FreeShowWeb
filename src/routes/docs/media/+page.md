@@ -55,4 +55,8 @@ If you open a video from the project, or right click in the drawer and click "Op
 
 - **How to add media**
 
-First open the "Media" tab in the drawer, then at the bottom left click "New folder" and choose the folder with your media. You can also drag & drop folders directly from the computer to the folder area. After that you can drag & drop media files from the drawer into a project, to a show, or as a slide item. You can also drag & drop media files directly from the computer file system. (Note: By dragging just one background to a show it will be [added as a background](./faq#videos-are-muted)!)
+  First open the "Media" tab in the drawer, then at the bottom left click "New folder" and choose the folder with your media. You can also drag & drop folders directly from the computer to the folder area. After that you can drag & drop media files from the drawer into a project, to a show, or as a slide item. You can also drag & drop media files directly from the computer file system. (Note: By dragging just one background to a show it will be [added as a background](./faq#videos-are-muted)!)
+
+- **Use media across multiple computers**
+
+  If you use FreeShow with multiple computers all you need to do is make sure the folders with the media are added to the "Media" drawer in FreeShow. This way FreeShow can auto find missing media files even when the paths are different, as long as the name is the same!

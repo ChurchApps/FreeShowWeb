@@ -41,10 +41,18 @@ The "Max verses per slide" means the maximum amount of bible verses per slide be
 
 ## FAQ
 
+- **How can I customize the scripture layout?**
+
+  To customize the scripture, all you need to do is edit the "Scripture" template in the "Templates" drawer tab. You can also create a new different template and select that on the right side in the "Scriptures" drawer tab.
+
+- **The importing is not working**
+
+  Make sure you have selected the correct option, you can try multiple if you are unsure. If none of them work, please try [this converter](https://github.com/vassbo/bible-converter/) which supports many more formats, or take contact.
+
 - **The book names are in English, how to change?**
 
   FreeShow takes the Bible book names from the XML file. But sometimes they are in English for a different language or missing entirely, in that case you have to change the book names manually and import the file again: Edit the XML file, and add a `name=""` attributes to the `book` tags, like this: `<book name="Genesis"`.
 
 - **How to use Bibles offline**
 
-To use Bibles that does not rely on an internet connection or API.Bible. You need to import your own XML Bibles. To do that click "New scripture" in the bottom left of the "Scriptures" drawer, and find a Bible version available for use on the web of one of the [supported file types](./).
+  To use Bibles that does not rely on an internet connection or API.Bible. You need to import your own XML Bibles. To do that click "New scripture" in the bottom left of the "Scriptures" drawer, and find a Bible version available for use on the web of one of the [supported file types](./).

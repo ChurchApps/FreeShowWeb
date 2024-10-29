@@ -51,9 +51,23 @@ This might mean that you have set a custom output style with a template that ove
 
 A bug in some versions of macOS makes right clicking by pressing two fingers on the trackpad behave different to right clicking with Ctrl+trackpad or using an external mouse. Please resort to one of the two other alternatives if the first one does not work!
 
+### The app is slow
+
+First of all the app will most likely run slow on older computers. But you can improve the performance by making sure you do not use any feature requiring screen capture. These features should all be turned off for the best performance (if you do not use them):
+
+1. Any output with the NDI option enabled
+2. Any stage layout with a "Current output" item
+3. "OutputShow" in the "Connections" settings
+
+Another thing you can try is to toggle "Disable hardware acceleration" in the settings. By default it's disabled because some videos has stuttering issues with it enabled, but enabling it should lead to greater performance on some computers.
+
 ### FreeShow keeps freezing
 
 If you experience that the UI stops resonding to your clicks this is due to a bug in the code, please remember what you did just before this happened, and create a new [issue about it on GitHub](https://github.com/ChurchApps/FreeShow/issues/). And please also attach the error log file found in the settings>"Other">"Open log file". This will help us track down the issue and fix it!
+
+### Flagged falsly as virus
+
+Some antivirus programs might flag the program as a virus, this is most likely due to the included PowerPoint controller, as it has to spawn a system command shell to use it. But this can simply be ignored. [More here](https://github.com/ChurchApps/FreeShow/issues/865).
 
 ### Auto updates not working
 
