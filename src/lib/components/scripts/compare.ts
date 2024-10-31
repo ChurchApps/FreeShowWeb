@@ -45,7 +45,7 @@ export const features: Features = [
 	{
 		name: 'Multiple languages',
 		programs: {
-			fs: { content: true, note: '12+ languages' },
+			fs: { content: true, note: '20+ languages' },
 			pp: { content: true, note: '10 languages' },
 			ew: { content: false, note: 'Only english' },
 			vp: { content: true, note: 'Around 50 languages' },

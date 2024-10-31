@@ -24,6 +24,7 @@ Here you have a bunch of different options to import different file types from v
 - Quela (If you have a .qsp file, add .zip to the end and extract.)
 - SoftProjector
 - Songbeamer
+- EasySlides
 
 <br>
 
