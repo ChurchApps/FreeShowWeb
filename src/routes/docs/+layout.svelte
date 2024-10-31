@@ -45,6 +45,9 @@
 
 			const sidebar = document.querySelector('#main-sidebar');
 			sidebar?.classList.remove('translate-x-0');
+
+			// close virtual keyboard
+			(document.activeElement as any)?.blur();
 		}
 
 		toggleElements();
