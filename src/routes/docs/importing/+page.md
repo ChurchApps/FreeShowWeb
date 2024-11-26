@@ -16,15 +16,15 @@ Here you have a bunch of different options to import different file types from v
 ## Supported files
 
 - FreeShow
-- ProPresenter 4-7 (If you have a .proBundle file, add .zip to the end and extract.)
+- ProPresenter 4-7
 - EasyWorship 6-7
 - VideoPsalm
 - OpenLP (OpenLyrics)
 - OpenSong
-- Quela (If you have a .qsp file, add .zip to the end and extract.)
+- Quelea
 - SoftProjector
 - Songbeamer
-- EasySlides
+- Easyslides
 
 <br>
 

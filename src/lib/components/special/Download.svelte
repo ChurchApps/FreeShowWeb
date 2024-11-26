@@ -13,6 +13,7 @@
 	} from '../scripts/releases';
 	import Popup from '../main/Popup.svelte';
 
+	export let main: boolean = false;
 	export let disableMain: boolean = false;
 
 	let latest: Release | null = null;
@@ -20,12 +21,15 @@
 	let activeOS: string = '';
 
 	onMount(async () => {
+		if (disableMain) return;
+
 		activeOS = getOS();
 
 		let releases = await getReleases();
 		latest = getLatest(releases);
 		currentAssets = getAssets(latest, activeOS);
 
+		if (!main) return;
 		checkQuery();
 	});
 

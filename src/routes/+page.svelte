@@ -31,7 +31,7 @@
 		</p>
 
 		<div class="download">
-			<Download />
+			<Download main />
 		</div>
 	</div>
 </Section>
