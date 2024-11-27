@@ -18,3 +18,7 @@ I recommend creating a _main_ folder for each event. Then have more folders insi
 ## Creating a project
 
 Pressing the "New project" button next to the "New folder" button will create a new project. You can drag it into a folder if you want. Click to select it, or double click to select and open.
+
+## Project templates
+
+If you right click a project you can click "Create template" to create a template with the layout of this project. This way you can create a structure that can be reused, and simply click on the project template to create a new unique project with a preset structure!

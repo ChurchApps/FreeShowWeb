@@ -13,26 +13,24 @@ Also the remote has a randomly set password for security reasons. You can find i
 
 ## The different tabs
 
-### Projects
+### Search (Shows)
 
-This show all of the projects (not in the folders) in FreeShow.
+See a list of all your shows (same as the "Shows" drawer), click them to open. If you enable the "Quick play" the show will automatically play from this list. At the top there is a search bar to quickly find the show you are looking for.
+
+### Scriptures
+
+If you have any offline Bibles imported they will show up here, and you can use this to present scripture from your phone.
 
 ### Project
 
-See the active project and click on a show to open it. (Currently does not work for media.)
-
-### Shows
-
-See a list of all the existing shows in the program. Here you can also search for a specific show.
+If you have a project active it will be automatically opened, if not you will see a list of all your projects and open them. You can click the tab multiple times to toggle between the opened project and all projects.
 
 ### Show
 
-When you open a show you can see all the slides here, click on one of them to play it.
+When you open a show, or a show is already active, you can see all the slides here, click on one of them to play. At the bottom you can also change layout if multiple are available, or click "Groups" or "Edit" to edit the groups layout or text content.
 
-### Slide
+### Output
 
-When a slide is outputted this tab will be enabled, here you can see the playing slide and the next one. Click on the right side of the screen to go to next, and click on the left (1/3) to go to the previous slide.
+When a slide is outputted this tab will be enabled, here you can see the playing slide and the next one. You can also toggle to "Lyrics" mode to see all the text in a list without the styling.
 
-### Lyrics
-
-Same as the "Slide" tab but here you can see all the text of the whole show in a easy to read version.
+Click on the right side of the screen to go to next, and click on the left (1/3) to go to the previous slide.
