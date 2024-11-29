@@ -48,6 +48,22 @@
 		// created = true;
 	}
 
+	function formatType(type: string) {
+		return transformValue(
+			JSON.stringify(type).replaceAll('\\', '').replaceAll(':', ': ').replaceAll(',', ', ')
+		);
+	}
+	function transformValue(input: string) {
+		let inputString = typeof input === 'string' ? input : JSON.stringify(input, null, 2);
+
+		const transformed = inputString.replace(
+			/"(\w+\??)":\s*"((?:[^"]|"(?!,|\s*\}))*)"/g,
+			(_match, key, value) => `"${key}": ${value}`
+		);
+
+		return transformed;
+	}
+
 	const sections: { [key: string]: string } = {
 		index_select_project: 'PROJECT',
 		name_select_show: 'SHOWS',
@@ -59,7 +75,8 @@
 		change_volume: 'AUDIO',
 		name_start_timer: 'TIMERS',
 		id_select_output_style: 'VISUAL',
-		change_variable: 'OTHER'
+		change_variable: 'OTHER',
+		get_shows: 'GET'
 	};
 </script>
 
@@ -114,7 +131,7 @@
 
 			<div class="action">
 				<div>
-					{#if !actionType}
+					{#if !actionType && !action.includes('get_')}
 						<Button title="Try sending action to FreeShow" on:click={() => triggerAPI(action)}>
 							<Icon icon="play" />
 						</Button>
@@ -127,7 +144,7 @@
 					<pre style="line-height: 1.2;"><code
 							class="language-js"
 							style="tab-size: 0.5;line-height: 1.2;">
-					{JSON.stringify(actionType).replaceAll('\\', '').replaceAll(':', ': ').replaceAll(',', ', ')}
+					{formatType(actionType)}
 					</code></pre>
 				{/if}
 			</div>

@@ -15,7 +15,7 @@ Also the remote has a randomly set password for security reasons. You can find i
 
 ### Search (Shows)
 
-See a list of all your shows (same as the "Shows" drawer), click them to open. If you enable the "Quick play" the show will automatically play from this list. At the top there is a search bar to quickly find the show you are looking for.
+See a list of all your shows (same as the "Shows" drawer), click them to open. If you enable the "Quick play" the show will automatically play from this list when clicked without automatically changing to the preview. At the top there is a search bar to quickly find the show you are looking for.
 
 ### Scriptures
 
