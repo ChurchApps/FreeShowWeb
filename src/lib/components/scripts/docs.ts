@@ -65,6 +65,13 @@ export const sidebar: SidebarConfig = {
 			{ title: 'Styling', slug: '/docs/styling' },
 			{ title: 'Keyboard Shortcuts', slug: '/docs/shortcuts' },
 			{ title: 'FAQ', slug: '/docs/faq' }
+		],
+		Formats: [
+			{ title: '.show', slug: '/docs/format-show' },
+			{ title: '.project', slug: '/docs/format-project' },
+			// { title: '.template', slug: '/docs/format-template' }, // "fstemplate", "fst", "template", "json"
+			// { title: '.theme', slug: '/docs/format-theme' }, // "fstheme", "theme", "json"
+			{ title: '.fsb', slug: '/docs/format-bible' }
 		]
 	}
 };

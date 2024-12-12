@@ -247,4 +247,10 @@
 		--tw-text-opacity: 0.7;
 		color: rgb(var(--kd-color-soft) / var(--tw-text-opacity));
 	}
+
+	/* custom styles */
+
+	:global(.code-fence .overflow-scroll) {
+		overflow: auto;
+	}
 </style>

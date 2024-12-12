@@ -25,6 +25,10 @@ If you set this to 2 all the textboxes will show max 2 lines in the output at th
 
 Click on the different active layers to toggle them, useful again if you don't want to show the background in a livestream.
 
+## Template
+
+You can set a template to override the output style to get different styles in outputs with the same input, useful for [lower thirds](./outputs#how-to-create-lower-third-display-for-a-live-stream). The text color will not be changed by the template if you have a custom color, only if the color remains white (default) will the template text color be applied to the text.
+
 ## Metadata
 
 Change the looks of show metadata or a show message, and choose when to display the metadata.

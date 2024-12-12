@@ -43,10 +43,10 @@ Now the key file should be downloaded to your computer. Keep it a secure place. 
 
 You have to give access to a folder in Google Drive, where you want all the files to be uploaded.
 
-1. Copy the service account **mail adress**. (Should look like this: _freeshow@<project_id>.iam.gserviceaccount.com_).
+1. Copy the service account **mail address**. (Should look like this: _freeshow@<project_id>.iam.gserviceaccount.com_).
 2. In your Google Drive, **create a new folder** and call it e.g. **"FreeShow"**.
 3. Right click and choose **"Share"**.
-4. Paste the service account adress, **disable "Send notification"**, and click **"Share"**. (Make sure the access is set to "Editor").
+4. Paste the service account address, **disable "Send notification"**, and click **"Share"**. (Make sure the access is set to "Editor").
 
 ### Importing in FreeShow
 
