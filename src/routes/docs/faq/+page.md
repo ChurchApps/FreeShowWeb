@@ -39,7 +39,7 @@ Cloud sync is possible. FreeShow has a integrated support for syncing all the da
 
 If you also want to sync media files as well, you will need to use a custom sync like OneDrive, the Google Drive desktop app or another free alternative. Read [more here](https://github.com/ChurchApps/FreeShow/issues/402)!
 
-### Can I controll FreeShow from custom software?
+### Can I control FreeShow from custom software?
 
 Yes, you can send [MIDI signals](./midi) to trigger actions, or use the [Bitfocus Companion plugin](./companion), or set up your own API connection, using the [FreeShow API](/api)!
 
