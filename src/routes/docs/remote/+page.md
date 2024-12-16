@@ -1,11 +1,11 @@
 ---
 title: Remote
-description: Remote is used to controll the show from another device connected to the same router.
+description: Remote is used to control the show from another device connected to the same router.
 ---
 
 # Remote
 
-> Remote is used to controll the show from another device connected to the same router.
+> Remote is used to control the show from another device connected to the same router.
 
 If you are ready to connect, [see this](./connecting).
 
