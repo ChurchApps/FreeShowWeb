@@ -25,6 +25,7 @@ Here you have a bunch of different options to import different file types from v
 - SoftProjector
 - Songbeamer
 - Easyslides
+- VerseVIEW
 
 <br>
 

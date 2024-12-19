@@ -14,10 +14,10 @@ export const sidebar: SidebarConfig = {
 		],
 		Projects: [
 			{ title: 'Projects', slug: '/docs/projects' },
-			{ title: 'Project', slug: '/docs/project' }
+			{ title: 'Project', slug: '/docs/project-list' }
 		],
 		Show: [
-			{ title: 'Shows', slug: '/docs/show' },
+			{ title: 'Shows', slug: '/docs/show-type' },
 			{ title: 'Views', slug: '/docs/views' },
 			{ title: 'Editing', slug: '/docs/editing' },
 			{ title: 'Items', slug: '/docs/items' },

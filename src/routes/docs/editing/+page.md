@@ -57,3 +57,11 @@ When selecting a textbox you can choose to enable text scrolling if you want som
 ### CSS
 
 In some places there is a textbox to change the CSS directly. You don't need to use this if you don't know it, but if you know CSS you can do many different special things with the browser styling language.
+
+## Modes
+
+At the bottom you can change the edit mode, first you can click on "Chords" to [add chords](./chords). Also you can toggle "Text edit".
+
+### Text edit
+
+This works in a similar way to the "Quick lyrics" when [creating a show](./show#creating-a-show), or it is the same if it is empty. It will automatically change slides in the current layout based on the content of the text after editing. It will update the content when the textarea loses focus (If you press esc, or click on another area). Useful for copying/pasting song lyrics, and for splitting/joining slides.

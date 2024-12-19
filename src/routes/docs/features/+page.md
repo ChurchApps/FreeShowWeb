@@ -7,7 +7,7 @@ description: A list of some core features of FreeShow.
 
 _These are some of the main features._
 
-- **Languages:** FreeShow supports English, Norwegian, Spanish, Slovak, Brazilian Portuguese, German, Italian, Polish, Hungarian, Serbian, Slovenian, Ukrainian, Turkish, French, Russian, Korean, Dutch, Chinese & Romanian.
+- **Languages:** FreeShow supports English, Norwegian, Spanish, Slovak, Brazilian Portuguese, German, Italian, Polish, Hungarian, Serbian, Slovenian, Ukrainian, Turkish, French, Russian, Korean, Dutch, Chinese, Romanian & Czech.
 - **CMG Sans:** Includes a beautiful font by Church Motion Graphics.
 - **Drawer:** All the tools you need in one place.
 - **Projects:** Project manager inside the application.
