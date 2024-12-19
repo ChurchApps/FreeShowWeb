@@ -19,9 +19,15 @@ description: How to install the application on Windows.
 
 :::
 
+:::admonition type=note
+
+Some browsers like "Edge" might block the .exe download. If that happens, click on the more options (...) next to the downloaded file in the top right corner, then click on "Show more", and "Keep anyway".
+
+:::
+
 :::admonition type=info
 
-After launch, you will get an alert that the Firewall has blocked some features. If you don't allow access, then you can't connect to the application remotely. This includes the stage display, and remote controllers.
+After launch, you should get an alert that the Firewall has blocked some features. If you don't allow access, then you can't connect to the application remotely. This includes the stage display, and remote controllers.
 
 :::
 

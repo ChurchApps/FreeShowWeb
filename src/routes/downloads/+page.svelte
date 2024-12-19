@@ -198,7 +198,11 @@
 
 <Section column center style="gap: 10px;padding-bottom: 40px;">
 	<h2>All time downloads</h2>
-	<p class="downloads"><span class="gradient">{totalDownloads}</span></p>
+	<p class="downloads">
+		<span class="gradient" class:highlight={totalDownloads > 999999 && totalDownloads < 1010000}
+			>{totalDownloads}</span
+		>
+	</p>
 </Section>
 
 <style>
@@ -247,6 +251,28 @@
 	.downloads {
 		font-size: 4em;
 		font-weight: bold;
+		letter-spacing: 2px;
+	}
+
+	.downloads .gradient.highlight {
+		background: linear-gradient(120deg, #ec4985 30%, #ffd3a1 50%, #ff62ea 70%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+
+		background-size: 200% 200%;
+		animation: Move 8s ease infinite;
+	}
+	@keyframes Move {
+		0% {
+			background-position: 10% 0%;
+		}
+		50% {
+			background-position: 90% 100%;
+		}
+		100% {
+			background-position: 10% 0%;
+		}
 	}
 
 	/* media */

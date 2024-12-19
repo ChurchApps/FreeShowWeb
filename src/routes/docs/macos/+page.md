@@ -11,17 +11,11 @@ description: How to install the application on macOS.
 
 :::steps
 
-!!!step title="Install"|description='Open the .dmg file'
+!!!step title="Install"|description='Double click the .dmg file'
 !!!
-!!!step title="Copy"|description='Drag "FreeShow" icon into the "Applications" folder'
+!!!step title="Copy"|description='Drag the "FreeShow" icon into the "Applications" folder'
 !!!
-!!!step title="Open"|description='Go to "Applications", right-click on the FreeShow app, and click "Open"'
-!!!
-!!!step title="Prompt"|description='If it says "Open", click it. If it says "Move to Trash", click "Cancel" and proceed'
-!!!
-!!!step title="Open"|description='Again, go to "Applications", right-click on the FreeShow app, and click "Open"'
-!!!
-!!!step title="Prompt"|description='Click "Open"'
+!!!step title="Open"|description='Find and open the app'
 !!!
 
 :::
