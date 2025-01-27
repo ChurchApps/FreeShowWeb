@@ -199,6 +199,10 @@
 		background-color: rgb(var(--secondary-rgb), 0.6);
 		--offset: 2px;
 	}
+	button:hover:not(:disabled) :global(.icon svg path),
+	button:focus :global(.icon svg path) {
+		fill: white;
+	}
 
 	button:active:not(:disabled),
 	button.active:not(:disabled) {

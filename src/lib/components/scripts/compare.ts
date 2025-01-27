@@ -384,6 +384,18 @@ export const features: Features = [
 		}
 	},
 	{
+		name: 'Planning Center',
+		info: 'Syncing integration with the Planning Center services',
+		programs: {
+			fs: { content: true },
+			pp: { content: true },
+			ew: { content: false },
+			vp: { content: false },
+			ol: { content: true },
+			pc: { content: true }
+		}
+	},
+	{
 		name: 'CCLI',
 		info: 'Church Copyright Licensing International attribution in output for each song',
 		programs: {

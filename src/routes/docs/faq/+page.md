@@ -29,6 +29,10 @@ FreeShow has integrated translation! Click the globe/translation button at the b
 
 By default if you drop one video into a show it will be treated as a background, meaning it's muted & looping by default, but [you can change this](./media#play-audio-from-backgrounds). But by dropping more than one video, or dropping a video into your project it will be unmuted & not looping by default!
 
+### Planning Center Integration?
+
+FreeShow allows you to connect your Planning Center account, and automatically sync your services planned ahead of time. Go to the "Connections" tab in the settings, and connect your account, then FreeShow will automatically download any future services within one week on startup.
+
 ### CCLI Integration?
 
 Unfortunately CCLI has discontinued their API, meaning it's impossible for us to add integration. They still support programs that already has used their API, but are unwilling to collaborate with us. Read [more here](https://github.com/ChurchApps/FreeShow/issues/572#issuecomment-2163179642).
