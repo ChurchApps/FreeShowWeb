@@ -27,7 +27,7 @@ Click on the different active layers to toggle them, useful again if you don't w
 
 ## Template
 
-You can set a template to override the output style to get different styles in outputs with the same input, useful for [lower thirds](./outputs#how-to-create-lower-third-display-for-a-live-stream). The text color will not be changed by the template if you have a custom color, only if the color remains white (default) will the template text color be applied to the text.
+You can set a template to override the output style to get different styles in outputs with the same input, useful for [lower thirds](./outputs#how-to-create-lower-third-display-for-a-live-stream). The template text color will be used, unless the slide item text has multiple colors, in that case the original colors will be used!
 
 ## Metadata
 

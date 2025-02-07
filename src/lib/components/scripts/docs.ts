@@ -49,7 +49,10 @@ export const sidebar: SidebarConfig = {
 			{ title: 'OutputShow', slug: '/docs/outputstream' },
 			{ title: 'Bitfocus Companion', slug: '/docs/companion' }
 		],
-		Cloud: [{ title: 'Drive API', slug: '/docs/drive' }],
+		Cloud: [
+			{ title: 'Drive API', slug: '/docs/drive' },
+			{ title: 'Integrations', slug: '/docs/integrations' }
+		],
 		Actions: [
 			{ title: 'MIDI', slug: '/docs/midi' },
 			{ title: 'Importing', slug: '/docs/importing' },

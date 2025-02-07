@@ -31,7 +31,7 @@ By default if you drop one video into a show it will be treated as a background,
 
 ### Planning Center Integration?
 
-FreeShow allows you to connect your Planning Center account, and automatically sync your services planned ahead of time. Go to the "Connections" tab in the settings, and connect your account, then FreeShow will automatically download any future services within one week on startup.
+See [this](./integrations#planning-center).
 
 ### CCLI Integration?
 
