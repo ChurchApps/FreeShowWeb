@@ -11,6 +11,12 @@ Template works very similar to [overlays](./overlays). Clicking on a template wh
 
 You can also drag a template to a specific slide to apply the style to just that slide.
 
+:::admonition type=tip
+
+_For advanced users:_ If you need to change the between templates, and need the item layer position to change, but want the text content to move textbox position. One way to do that is to add the same text content to any textbox in your first and second template and the text content will move from the first box over to the other box with the same content!
+
+:::
+
 ## FAQ
 
 - **Templates are rolling around the items when clicked**

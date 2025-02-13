@@ -171,6 +171,7 @@
 	</code></pre>
 
 	<h5>REST</h5>
+	<p>Note: Must be a <b>POST</b> request.</p>
 	<pre><code class="language-js">
     {`fetch("${getUrl(
 				true

@@ -51,9 +51,19 @@ Yes, you can send [MIDI signals](./midi) to trigger actions, or use the [Bitfocu
 
 This might mean that you have set a custom output style with a template that overrides the new style. To fix go to settings>"Styles", and take off any template set here. Optionally remove the style entirely from the output in "Outputs".
 
+### How to transfer the files between computers?
+
+You can set up [cloud sync](./drive). Or you can go to **settings > Other > Backup everything**. Then move the .json files to your other computer, go to **settings > Other > Restore**, and select the files. This will copy your exact setup.
+
+Note that media files are linked to the system and must be moved seperately. There is an option to **Bundle all media files** if the files are scattered across your entire system. Adding the media folder to the "Media" drawer will ensure the media files are replaced if they can't be found at the original location anymore.
+
 ### Right click does not work properly on macOS
 
 A bug in some versions of macOS makes right clicking by pressing two fingers on the trackpad behave different to right clicking with Ctrl+trackpad or using an external mouse. Please resort to one of the two other alternatives if the first one does not work!
+
+### I turned on kiosk mode on macOS, and the screen is black
+
+First of all the kiosk mode should automatically be turned off after 5 seconds if you do not confirm. But if you are stuck on a black screen after restarting the program, you can place any file with the name **DISABLE_KIOSK_MODE** in the **Documents/FreeShow** folder. The program will then turn off kiosk mode on startup.
 
 ### The app is slow
 

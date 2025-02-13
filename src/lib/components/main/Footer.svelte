@@ -24,6 +24,8 @@
 			Report a bug or request a feature
 		</a>
 		<span>●</span>
+		<a href="https://churchapps.org/partner" title="Give a thanks">Donate</a>
+		<span>●</span>
 		<a href="mailto:dev@freeshow.app" title="Send mail to the developers">dev@freeshow.app</a>
 
 		<br /><br />
