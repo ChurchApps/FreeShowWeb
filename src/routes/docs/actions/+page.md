@@ -42,6 +42,10 @@ This will automatically play the next slide when a video background, audio or ti
 
 Add custom animations for text or items, on the selected slides.
 
+### Emitters
+
+In the bottom right you can click "Manage emitters" to create emitters used to send OSC/HTTP messages, this way you can set up message templates that can be used with the "Emit data" action. For one emitter you must set the receiver signal location. Then it's ready to be used, but adding message templates can be useful. If the "Value" field is empty you can add a custom value to that later, if not it will be fixed to the set value. If the type is OSC the "Name" input can be set to anything.
+
 ## FAQ
 
 - **How to play a specific slide?**

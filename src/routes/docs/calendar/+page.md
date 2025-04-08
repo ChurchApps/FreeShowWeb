@@ -1,11 +1,11 @@
 ---
 title: Calendar
-description: Create repeated events, and easily create a slideshow from any selected events. You can also schedule shows to play at a certain time.
+description: Create repeated events, and easily create a slideshow from any selected events. You can also schedule actions to run at a certain time.
 ---
 
 # Calendar
 
-> Create repeated events, and easily create a slideshow from any selected events. You can also schedule shows to play at a certain time.
+> Create repeated events, and easily create a slideshow from any selected events. You can also schedule actions to run at a certain time.
 
 ## Creating an event
 
@@ -17,6 +17,6 @@ Add a new event from the "New event" button in the center, or edit an existing e
 
 If you hold down the mouse while dragging, or hold CTRL/CMD you can select multiple events. On the right panel you can see a short summary of all the added events. Here you can also "Include slides from show", if you select a show. Lastly click the "New show" button to create a show with the events added in an easy to read format, and it also has "go to next slide" timers.
 
-## Schedule shows
+## Schedule actions
 
-If you select "Schedule show" on the left side, you can add events to automatically start a selected show any time in the future, as long as FreeShow is opened. This will notify you about it starting a minute before it plays.
+If you select "Schedule action" on the left side, you can add events to automatically start specific actions any time in the future, as long as FreeShow is opened. This will notify you about it starting a minute before it runs.

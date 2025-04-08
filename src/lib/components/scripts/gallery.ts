@@ -79,7 +79,7 @@ export const images = [
 		src: 'preview/calendar.webp',
 		name: 'Calendar',
 		description:
-			'A calendar for all your events. Select them and create a show with info about upcomming events. Or schedule shows to autoplay.'
+			'A calendar for all your events. Select them and create a show with info about upcomming events. Or schedule actions to run automatically.'
 	},
 	{
 		src: 'preview/scripture.webp',

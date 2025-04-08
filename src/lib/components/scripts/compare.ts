@@ -269,7 +269,7 @@ export const features: Features = [
 	},
 	{
 		name: 'Calendar',
-		info: 'Create events and schedule shows',
+		info: 'Create events and schedule actions',
 		programs: {
 			fs: { content: true },
 			pp: { content: false },

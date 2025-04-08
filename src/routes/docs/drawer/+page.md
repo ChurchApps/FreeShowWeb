@@ -76,7 +76,7 @@ Read [more here](./scripture).
 
 ## Calendar
 
-Create repeated events, and easily create a slideshow from any selected events. You can also schedule shows to play at a certain time.
+Create repeated events, and easily create a slideshow from any selected events. You can also schedule actions to run at a certain time.
 
 Read [more here](./calendar).
 
