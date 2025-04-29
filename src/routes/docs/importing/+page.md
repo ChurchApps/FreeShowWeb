@@ -47,7 +47,7 @@ But if you want to import the presentation as it is, with all of it styles, you 
 
 ## PDF
 
-When importing a PDF file, all the pages will be converted to images, placed in the "documents/FreeShow/Import/" folder. And then added as backgrounds in a show.
+You can import a PDF file, there is also an option to convert the PDF pages to images, this way you can add next slide timers and edit it the same as a normal show.
 
 ## Project
 

@@ -39,7 +39,13 @@
 	// WIP check/alert connection status
 
 	// let created: boolean = false;
-	onMount(initPrism);
+	onMount(() => {
+		initPrism();
+
+		if (localStorage.getItem('autoFilled')) {
+			autoFilled = JSON.parse(localStorage.getItem('autoFilled')!);
+		}
+	});
 	function initPrism() {
 		// must be assigned after creation & updates
 		let script = document.createElement('script');
@@ -78,6 +84,39 @@
 		change_variable: 'OTHER',
 		get_shows: 'GET'
 	};
+
+	let autoFilled: { [key: string]: string } = {};
+	const fillValues: any = {
+		start_camera: async (): Promise<string> => {
+			return new Promise((resolve) => {
+				navigator.mediaDevices
+					.getUserMedia({ video: { frameRate: { ideal: 30 } } })
+					.then(() => navigator.mediaDevices.enumerateDevices())
+					.then((devices) => {
+						let cameras = devices
+							.filter((a) => a.kind === 'videoinput')
+							.map((a) => ({ name: a.label, id: a.deviceId, groupId: a.groupId }));
+						const actionString = cameras
+							.map((a) => `{"name": "${a.name}", "id": "${a.id}", "groupId": "${a.groupId}"}`)
+							.join('\n   ');
+						resolve(actionString);
+					})
+					.catch((err) => {
+						console.error('Error accessing media devices:', err);
+					});
+			});
+		}
+	};
+
+	async function fillValue(action: any) {
+		const value = await fillValues[action]();
+		autoFilled[action] = value;
+
+		initPrism();
+
+		// save to local storage
+		localStorage.setItem('autoFilled', JSON.stringify(autoFilled));
+	}
 </script>
 
 <svelte:head>
@@ -141,11 +180,26 @@
 				</div>
 
 				{#if actionType}
-					<pre style="line-height: 1.2;"><code
-							class="language-js"
-							style="tab-size: 0.5;line-height: 1.2;">
-					{formatType(actionType)}
+					<div>
+						{#if fillValues[action]}
+							<Button title="Auto fill value" on:click={() => fillValue(action)}>
+								<!-- autoFilled[action] ? 'refresh' :  -->
+								<Icon icon="magic" />
+							</Button>
+						{/if}
+
+						{#key autoFilled[action]}
+							<pre style="line-height: 1.2;flex: 1;"><code
+									class="language-js"
+									style="tab-size: 0.5;line-height: 1.2;">
+						{#if autoFilled[action]}
+										{autoFilled[action]}
+									{:else}
+										{formatType(actionType)}
+									{/if}
 					</code></pre>
+						{/key}
+					</div>
 				{/if}
 			</div>
 		{/each}

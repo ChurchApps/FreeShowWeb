@@ -39,6 +39,7 @@ import HiSolidArrowNarrowDown from 'svelte-icons-pack/hi/HiSolidArrowNarrowDown'
 import HiSolidMenuAlt3 from 'svelte-icons-pack/hi/HiSolidMenuAlt3';
 import IoPerson from 'svelte-icons-pack/io/IoPerson';
 import IoStatsChart from 'svelte-icons-pack/io/IoStatsChart';
+import IoRefresh from 'svelte-icons-pack/io/IoRefresh';
 
 // https://leshak.github.io/svelte-icons-pack/
 export const icons: any = {
@@ -86,5 +87,7 @@ export const icons: any = {
 	video: BsCameraVideoFill,
 
 	midi: IoStatsChart,
-	person: IoPerson
+	person: IoPerson,
+
+	refresh: IoRefresh
 };
