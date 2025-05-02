@@ -71,7 +71,7 @@
 	}
 
 	const sections: { [key: string]: string } = {
-		index_select_project: 'PROJECT',
+		id_select_project: 'PROJECT',
 		name_select_show: 'SHOWS',
 		next_slide: 'PRESENTATION',
 		id_select_stage_layout: 'STAGE',
@@ -81,7 +81,10 @@
 		change_volume: 'AUDIO',
 		name_start_timer: 'TIMERS',
 		id_select_output_style: 'VISUAL',
-		change_variable: 'OTHER',
+		change_variable: 'FUNCTIONS',
+		sync_drive: 'OTHER',
+		name_run_action: 'ACTION',
+		add_to_project: 'EDIT',
 		get_shows: 'GET'
 	};
 
@@ -154,6 +157,24 @@
 			<p style="font-style: italic;">{getUrl()}</p>
 		{/key}
 	</div>
+
+	<ul class="info" style="list-style: inside;">
+		<li>The first value is the action ID. (Example: "<b>name_run_action</b>")</li>
+		<li>
+			The value in the black box is the data you can pass with the action, in JSON format. (Example: <span
+				class="code">{'{'}<span class="token property">"value?"</span>: boolean | string{'}'}</span
+			>
+			can be
+			<span class="code"
+				>{'{'}<span class="token property">"value"</span>:
+				<span class="token boolean">true</span>{'}'}</span
+			>)
+		</li>
+		<li>
+			<span class="code" style="color: #f92672;">?</span> means that the value is optional,
+			<span class="code">|</span> means OR, and <span class="code">any</span> is not specified here
+		</li>
+	</ul>
 
 	<div class="list">
 		{#each Object.keys(API.actions || {}) as action}
@@ -264,6 +285,18 @@
 		padding: 6px;
 		border: 2px solid var(--secondary);
 		border-radius: 4px;
+	}
+
+	ul li {
+		margin: 5px 0;
+	}
+
+	.code {
+		font-family: monospace;
+		background-color: #05020d;
+		border-radius: 4px;
+		color: #f8f8f2;
+		padding: 4px 6px;
 	}
 
 	.list {
