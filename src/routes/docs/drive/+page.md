@@ -48,6 +48,12 @@ You have to give access to a folder in Google Drive, where you want all the file
 3. Right click and choose **"Share"**.
 4. Paste the service account address, **disable "Send notification"**, and click **"Share"**. (Make sure the access is set to "Editor").
 
+:::admonition type=tip
+
+The Google Drive folder must be owned by a personal Google Account. Google Workspace accounts are currently not supported.
+
+:::
+
 ### Importing in FreeShow
 
 1. Go to settings, then **"Cloud"**.
