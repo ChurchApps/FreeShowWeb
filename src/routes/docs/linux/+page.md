@@ -7,8 +7,8 @@ description: How to install the application on Linux.
 
 ## Preinstalled on
 
-- [UbuntuCE](https://ubuntuce.com/) - a Linux-based free and open source operating system geared towards Christians.
-- [Ubuntu Studio](https://ubuntustudio.org/) - a free and open source operating system made for creative people.
+-   [UbuntuCE](https://ubuntuce.com/) - a Linux-based free and open source operating system geared towards Christians.
+-   [Ubuntu Studio](https://ubuntustudio.org/) - a free and open source operating system made for creative people.
 
 #### snapcraft
 
@@ -16,9 +16,17 @@ description: How to install the application on Linux.
 sudo snap install freeshow
 ```
 
-Check out FreeShow on [snapcraft.io](https://snapcraft.io/freeshow).
+Check it out on [snapcraft.io](https://snapcraft.io/freeshow).
 
 <!-- -   **AppImage:** Right-click the .AppImage file, choose "Properties", go to "Permissions", and check the box that says "Allow executing file as program", then double-click the file and you should be good to go! -->
+
+#### Arch PKGBUILD
+
+```bash
+sudo pacman -S freeshow-git
+```
+
+Check it out on [archlinux.org](https://aur.archlinux.org/packages/freeshow-git).
 
 #### .AppImage
 
