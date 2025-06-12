@@ -43,7 +43,11 @@ Check it out on [archlinux.org](https://aur.archlinux.org/packages/freeshow-git)
 
 #### arm64 devices
 
-The default download does not support "arm64" devices. But you can download a custom build from the [downloads page](/downloads), labeled "X-arm64.AppImage".
+You can download a custom ARM build from the [downloads page](/downloads), marked with "arm64" or "aarch64" in the file name.
+
+#### Other versions
+
+We also have .deb (debian) and .rpm (Red Hat) available.
 
 ### Application data path
 

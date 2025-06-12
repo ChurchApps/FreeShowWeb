@@ -53,10 +53,17 @@ If you open a video from the project, or right click in the drawer and click "Op
 
 ## FAQ
 
-- **How to add media**
+-   **How to add media**
 
-  First open the "Media" tab in the drawer, then at the bottom left click "New folder" and choose the folder with your media. You can also drag & drop folders directly from the computer to the folder area. After that you can drag & drop media files from the drawer into a project, to a show, or as a slide item. You can also drag & drop media files directly from the computer file system. (Note: By dragging just one background to a show it will be [added as a background](./faq#videos-are-muted)!)
+    First open the "Media" tab in the drawer, then at the bottom left click "New folder" and choose the folder with your media. You can also drag & drop folders directly from the computer to the folder area. After that you can drag & drop media files from the drawer into a project, to a show, or as a slide item. You can also drag & drop media files directly from the computer file system. (Note: By dragging just one background to a show it will be [added as a background](./faq#videos-are-muted)!)
 
-- **Use media across multiple computers**
+-   **Use media across multiple computers**
 
-  If you use FreeShow with multiple computers all you need to do is make sure the folders with the media are added to the "Media" drawer in FreeShow. This way FreeShow can auto find missing media files even when the paths are different, as long as the name is the same!
+    If you use FreeShow with multiple computers all you need to do is make sure the folders with the media are added to the "Media" drawer in FreeShow. This way FreeShow can auto find missing media files even when the paths are different, as long as the name is the same!
+
+-   **How to toggle the media looping**
+
+    When a video is playing you can toggle the looping temporaily right under the preview.
+    When you add media as a background to a slide it will loop by defaul, you can find a tab called "Media" on the right side, click that to find some options including a loop icon to toggle it on/off permanently.
+    If you add the video to a project instead it will not be looping by default!
+    You can also right click a video, click "Edit" and set the type to "Foreground" to make it never loop.

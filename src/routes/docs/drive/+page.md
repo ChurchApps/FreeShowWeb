@@ -56,7 +56,7 @@ The Google Drive folder must be owned by a personal Google Account. Google Works
 
 ### Importing in FreeShow
 
-1. Go to settings, then **"Cloud"**.
+1. Go to settings, then **"Files"**.
 2. Click **"Import keys file"**, and select the file.
 3. If you have existing data in the cloud, you will get asked to choose to either keep the local data, or keep the data in the cloud.
 
@@ -74,6 +74,6 @@ If you are stuck and need a tutorial with images, [click here](https://docs.goog
 
 ## FAQ
 
-- **What is the Media path ID?**
+-   **What is the Media path ID?**
 
-  If the "Media path ID" is set to the same on two computers that means the exact media paths are the same (e.g. if an external drive is used). But in most cases they should be different, that way the different paths will be auto located and stored at the media path location for the current computer.
+    If the "Media path ID" is set to the same on two computers that means the exact media paths are the same (e.g. if an external drive is used). But in most cases they should be different, that way the different paths will be auto located and stored at the media path location for the current computer.
