@@ -87,9 +87,13 @@ Some antivirus programs might flag the program as a virus, this is most likely d
 
 You can update manually by downloading from the website. But to get auto updates working make sure the app has permissions to write the new files. On Windows you probably need to install/run as administrator.
 
+### Can I contrubute to the docs?
+
+Yes, we need all the help we can get to keep the docs updated and relevant. All you need is an account on [GitHub](http://github.com/), and you need to understand [Markdown](https://commonmark.org/help/). Then go to the [docs files](https://github.com/ChurchApps/FreeShowWeb/tree/main/src/routes/docs). Editing an existing docs file should be straight forward, but you can also fork the repository to create new pages, in that case you also need to create a link in [this file](https://github.com/ChurchApps/FreeShowWeb/blob/main/src/lib/components/scripts/docs.ts).
+
 ## Still need help?
 
-- First search the docs to make sure it's not written here.
-- Also please join our [community on Facebook](https://www.facebook.com/groups/freeshowapp).
-- You can also open a [discussion on GitHub](https://github.com/orgs/ChurchApps/discussions/categories/freeshow).
-- Or search for [existing issues on GitHub](https://github.com/ChurchApps/FreeShow/issues?q=label%3Aquestion).
+-   First search the docs to make sure it's not written here.
+-   Also please join our [community on Facebook](https://www.facebook.com/groups/freeshowapp).
+-   You can also open a [discussion on GitHub](https://github.com/orgs/ChurchApps/discussions/categories/freeshow).
+-   Or search for [existing issues on GitHub](https://github.com/ChurchApps/FreeShow/issues?q=label%3Aquestion).
