@@ -5,6 +5,8 @@ description: How to install the application on Windows.
 
 # Install on Windows
 
+#### .exe
+
 Download the .exe file and double click to install.
 
 <!-- #### .exe
@@ -15,6 +17,16 @@ Download the .exe file and double click to install.
 !!!
 
 ::: -->
+
+#### WinGet
+
+```bash
+winget install --id=ChurchApps.FreeShow  -e
+```
+
+_This format is not regularily updated!_
+<br>
+Check it out on [winstall.app](https://winstall.app/apps/ChurchApps.FreeShow).
 
 :::admonition type=info
 

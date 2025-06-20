@@ -3,6 +3,10 @@ title: Media
 description: Import videos and images with drag and drop from the drawer or the computer.
 ---
 
+<script>
+    import Key from '../../../lib/components/markdown/Key.svelte';
+</script>
+
 # Media
 
 > Play a video, or add a image or video as a slide background.
@@ -67,3 +71,7 @@ If you open a video from the project, or right click in the drawer and click "Op
     When you add media as a background to a slide it will loop by defaul, you can find a tab called "Media" on the right side, click that to find some options including a loop icon to toggle it on/off permanently.
     If you add the video to a project instead it will not be looping by default!
     You can also right click a video, click "Edit" and set the type to "Foreground" to make it never loop.
+
+-   **How can I apply the same filter to many media files?**
+
+    If you first apply a style you like to one media file, you can in the drawer select that, then press <Key>CTRL/CMD + C</Key> to copy the style, then select all the other media files you would like to apply it to and press <Key>CTRL/CMD + V</Key>.

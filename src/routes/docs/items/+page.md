@@ -51,9 +51,9 @@ Add a progress meter to display the current slide progress. Choose between "Numb
 
 This item will display upcomming events from the "Calendar" tab, either to a selected date, or today/tomorrow etc.
 
-### Mirror
+### Weather
 
-This is for adding a "link" to another shows item, can be used for showing multiple versions of a song/scripture in the same show. Or to show a stage display. [See more here.](./mirrors)
+Display weather forecast information by providing the latitude and longitude of the position. Either show for the current day, or four days forward in time.
 
 ### Vizualiser
 
