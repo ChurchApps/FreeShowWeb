@@ -7,7 +7,7 @@ description: Add many different items to your slide, like a textbox.
 
 There are different types of items you can add, depending on what you want to present.
 
-After adding a new item, you can edit it's properties on the right side, by clicking on the tab left to "Item", and "Items" with the currently selected item name.
+After adding a new item, you can edit its properties on the right side, by clicking on the tab left to "Item", and "Items" with the currently selected item name.
 
 Here is a list of the items:
 
@@ -49,13 +49,13 @@ Add a progress meter to display the current slide progress. Choose between "Numb
 
 ### Events
 
-This item will display upcomming events from the "Calendar" tab, either to a selected date, or today/tomorrow etc.
+This item will display upcoming events from the "Calendar" tab, either to a selected date, or today/tomorrow etc.
 
 ### Weather
 
 Display weather forecast information by providing the latitude and longitude of the position. Either show for the current day, or four days forward in time.
 
-### Vizualiser
+### Visualizer
 
 Show a visualizer for playing audio. This will show some lines changing height depending on the frequency and volume of the playing audio. Might cause some lag.
 

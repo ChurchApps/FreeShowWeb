@@ -51,7 +51,7 @@ You can import a PDF file, there is also an option to convert the PDF pages to i
 
 ## Project
 
-A FreeShow project is a file containing a project and all of it shows, it's useful to easily transfer a project to another computer.
+A FreeShow project is a file containing a project and all of its shows, it's useful to easily transfer a project to another computer.
 
 ## Calendar
 
@@ -61,4 +61,4 @@ Import a calendar .ics file. It will be converted to the programs own calendar f
 
 - **The EasyWorship files did not import the correct song names**
 
-  The song names in EasyWorship are stored in a seperate file than the song content, so you need to select both the `SongsWords.db` (song content) file & the `Songs.db` (song data/names) file to get the proper names.
+  The song names in EasyWorship are stored in a separate file than the song content, so you need to select both the `SongsWords.db` (song content) file & the `Songs.db` (song data/names) file to get the proper names.

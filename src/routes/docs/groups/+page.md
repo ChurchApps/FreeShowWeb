@@ -1,6 +1,6 @@
 ---
 title: Groups
-description: All slides is a part of a group. You can have multiple of the same group meaining that when you edit one slide all of the same slides will be changed.
+description: All slides is a part of a group. You can have multiple of the same group meaning that when you edit one slide all of the same slides will be changed.
 ---
 
 # Groups

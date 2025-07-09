@@ -9,7 +9,7 @@ description: Stage is used to display content exclusive to the people on stage.
 
 ### Editing
 
-When you are in "Stage" view, you can edit the apperance of your stage displays. You can add multiple slides/layouts with the "New layout" button in the left panel. In the right panel you can click on any of the options to activate them, or change the style of any selected. And resize them in the middle.
+When you are in "Stage" view, you can edit the appearance of your stage displays. You can add multiple slides/layouts with the "New layout" button in the left panel. In the right panel you can click on any of the options to activate them, or change the style of any selected. And resize them in the middle.
 
 :::admonition type=tip
 Right click on a stage slide for the option to disable it, or move all connected devices to that one.

@@ -15,7 +15,7 @@ Your text should should be clear, meaning you should center the text and remove 
 
 ## Backgrounds are key
 
-Use backgrounds matching the theme of the song, or just abstract shapes, preferable with suttle movements. But don't let the background distract from the song.
+Use backgrounds matching the theme of the song, or just abstract shapes, preferable with subtle movements. But don't let the background distract from the song.
 
 ## Who are your audience?
 

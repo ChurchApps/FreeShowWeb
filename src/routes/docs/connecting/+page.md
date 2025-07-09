@@ -7,7 +7,7 @@ description: How to connect to the program remotely on the same router.
 
 Go to "Connection" in the settings. Make sure the server you want to use is enabled, and click on the button of the app you want to use, e.g. "RemoteShow", you will get a popup with an IP address, that you can either manually type in any browser. Or scan the QR code.
 
-The IP should be similar to this: _192.168.10.100:5510_. It is different for each device, and the port can be changed by you, but it's not neccesary if the ports are not in use by another program.
+The IP should be similar to this: _192.168.10.100:5510_. It is different for each device, and the port can be changed by you, but it's not necessary if the ports are not in use by another program.
 
 ### Troubleshooting
 

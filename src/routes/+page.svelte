@@ -148,7 +148,7 @@
 			<h4>Timed & Automated Play</h4>
 			<Feature icon="play" title="Autoplay">Set timers on slides for seamless transitions.</Feature>
 			<Feature icon="timer" title="Countdowns">
-				Easily let your congregation know when services will start with built in countdowns.
+				Easily let your congregation know when services will start with built-in countdowns.
 			</Feature>
 			<Feature icon="midi" title="MIDI Controls">
 				Receive MIDI commands to advance slides or send MIDI commands on slide change to trigger
@@ -183,7 +183,7 @@
 			</Feature>
 			<Feature icon="mobile" title="Remote Control" white>
 				Allow your pastor or worship minister to control the show directly from their mobile device.
-				Excellent for rehearsals of for smaller churches.
+				Excellent for rehearsals or for smaller churches.
 			</Feature>
 		</div>
 
@@ -249,7 +249,7 @@
 					smooth flow in your presentations.
 				</Feature>
 				<Feature icon="image" title="Dynamic Media Integration">
-					Effortlessly drag images and videos into your slides as backgrounds enhancing the visual
+					Effortlessly drag images and videos into your slides as backgrounds, enhancing the visual
 					appeal of your presentations.
 				</Feature>
 			</div>

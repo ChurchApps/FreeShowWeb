@@ -7,7 +7,7 @@ description: Trigger different actions when receiving a MIDI signal.
 
 > Trigger different actions when receiving a MIDI signal.
 
-In the drawer you can add different actions that is triggered when receiving a MIDI in signal. You can also click on exising actions to trigger them directly. [Read more about actions here.](./functions#actions)
+In the drawer you can add different actions that is triggered when receiving a MIDI in signal. You can also click on existing actions to trigger them directly. [Read more about actions here.](./functions#actions)
 
 ## Editing actions
 

@@ -55,7 +55,7 @@ This might mean that you have set a custom output style with a template that ove
 
 You can set up [cloud sync](./drive). Or you can go to **settings > Other > Backup everything**. Then move the .json files to your other computer, go to **settings > Other > Restore**, and select the files. This will copy your exact setup.
 
-Note that media files are linked to the system and must be moved seperately. There is an option to **Bundle all media files** if the files are scattered across your entire system. Adding the media folder to the "Media" drawer will ensure the media files are replaced if they can't be found at the original location anymore.
+Note that media files are linked to the system and must be moved separately. There is an option to **Bundle all media files** if the files are scattered across your entire system. Adding the media folder to the "Media" drawer will ensure the media files are replaced if they can't be found at the original location anymore.
 
 ### Right click does not work properly on macOS
 
@@ -77,9 +77,9 @@ Another thing you can try is to toggle "Disable hardware acceleration" in the se
 
 ### FreeShow keeps freezing
 
-If you experience that the UI stops resonding to your clicks this is due to a bug in the code, please remember what you did just before this happened, and create a new [issue about it on GitHub](https://github.com/ChurchApps/FreeShow/issues/). And please also attach the error log file found in the settings>"Other">"Open log file". This will help us track down the issue and fix it!
+If you experience that the UI stops responding to your clicks this is due to a bug in the code, please remember what you did just before this happened, and create a new [issue about it on GitHub](https://github.com/ChurchApps/FreeShow/issues/). And please also attach the error log file found in the settings>"Other">"Open log file". This will help us track down the issue and fix it!
 
-### Flagged falsly as virus
+### Flagged falsely as virus
 
 Some antivirus programs might flag the program as a virus, this is most likely due to the included PowerPoint controller, as it has to spawn a system command shell to use it. But this can simply be ignored. [More here](https://github.com/ChurchApps/FreeShow/issues/865).
 
@@ -87,7 +87,7 @@ Some antivirus programs might flag the program as a virus, this is most likely d
 
 You can update manually by downloading from the website. But to get auto updates working make sure the app has permissions to write the new files. On Windows you probably need to install/run as administrator.
 
-### Can I contrubute to the docs?
+### Can I contribute to the docs?
 
 Yes, we need all the help we can get to keep the docs updated and relevant. All you need is an account on [GitHub](http://github.com/), and you need to understand [Markdown](https://commonmark.org/help/). Then go to the [docs files](https://github.com/ChurchApps/FreeShowWeb/tree/main/src/routes/docs). Editing an existing docs file should be straight forward, but you can also fork the repository to create new pages, in that case you also need to create a link in [this file](https://github.com/ChurchApps/FreeShowWeb/blob/main/src/lib/components/scripts/docs.ts).
 

@@ -15,13 +15,13 @@ Add folders from the computer in the "Media" drawer tab and view all media files
 
 #### Favourites
 
-Right click any media and click "Favourite" to add them to your favouries for easy access.
+Right click any media and click "Favourite" to add them to your favourites for easy access.
 
 ### Online media
 
 Included on the left side is a tab called "Online". Here you will find more tabs at the bottom with currently the options **YouTube**, **Vimeo** and **Pixabay**.
 
-In **YouTube** and **Vimeo** you have to add you own videos by clicking "Add" at the bottom and pasting a link to a video. Note that some YouTube videos wont work, because the creator has disabled embeds to their video.
+In **YouTube** and **Vimeo** you have to add you own videos by clicking "Add" at the bottom and pasting a link to a video. Note that some YouTube videos won't work, because the creator has disabled embeds to their video.
 
 In **Pixabay** you can search for any images or videos by using the [drawer search](./drawer#drawer-search). Please note that you need internet access to use these elements.
 
@@ -67,8 +67,8 @@ If you open a video from the project, or right click in the drawer and click "Op
 
 -   **How to toggle the media looping**
 
-    When a video is playing you can toggle the looping temporaily right under the preview.
-    When you add media as a background to a slide it will loop by defaul, you can find a tab called "Media" on the right side, click that to find some options including a loop icon to toggle it on/off permanently.
+    When a video is playing you can toggle the looping temporarily right under the preview.
+    When you add media as a background to a slide it will loop by default, you can find a tab called "Media" on the right side, click that to find some options including a loop icon to toggle it on/off permanently.
     If you add the video to a project instead it will not be looping by default!
     You can also right click a video, click "Edit" and set the type to "Foreground" to make it never loop.
 

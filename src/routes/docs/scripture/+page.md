@@ -9,7 +9,7 @@ description: Choose from over 230 online bible versions, or import your own bibl
 
 # Scripture
 
-Choose from over 200 bible versions from [API.Bible](https://scripture.api.bible/), or import you own local file from Zefania, OSIS, Beblia, or OpenSong in XML format. Search the web for available scriptures you can use (e.g. "XML Bible Download KJV"), make sure you have the proper rights to use them. In the center you can find all of the books, chapters and verses.
+Choose from over 200 bible versions from [API.Bible](https://scripture.api.bible/), or import your own local file from Zefania, OSIS, Beblia, or OpenSong in XML format. Search the web for available scriptures you can use (e.g. "XML Bible Download KJV"), make sure you have the proper rights to use them. In the center you can find all of the books, chapters and verses.
 
 ## Search
 

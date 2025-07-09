@@ -26,7 +26,7 @@ Check it out on [snapcraft.io](https://snapcraft.io/freeshow).
 sudo pacman -S freeshow-git
 ```
 
-_This format is not regularily updated!_
+_This format is not regularly updated!_
 <br>
 Check it out on [archlinux.org](https://aur.archlinux.org/packages/freeshow-git).
 

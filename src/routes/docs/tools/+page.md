@@ -1,6 +1,6 @@
 ---
 title: Tools
-description: A show have lots of different tools you can use to change it.
+description: A show has lots of different tools you can use to change it.
 ---
 
 # Show tools

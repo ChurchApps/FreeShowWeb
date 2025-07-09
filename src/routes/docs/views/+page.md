@@ -1,6 +1,6 @@
 ---
 title: Views
-description: The default show view is a grid of all the slide, but you can change this to just a text view.
+description: The default show view is a grid of all the slides, but you can change this to just a text view.
 ---
 
 # Different views
@@ -21,7 +21,7 @@ This is a trimmed down version of the grid view. All the slide icons, labels, an
 
 ### List view
 
-All of the slides from the grid view are shows on the left in a list, and on the right you can quickly change the text of any textboxes on the slides. Useful for quick editing of typos.
+All of the slides from the grid view are shown on the left in a list, and on the right you can quickly change the text of any textboxes on the slides. Useful for quick editing of typos.
 
 ### Lyrics view
 

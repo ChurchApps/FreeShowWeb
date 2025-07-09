@@ -21,7 +21,7 @@ If you add the "Run action" slide action and enable the "Override category actio
 
 ## Project Section Actions
 
-In the bottom right of a project section there is a "Settings" button, click this to get some options to set a specific action that will trigger for either all sections, or just the selected one. Note that it will not trigger when just opening the section, as you should be able to navigate the project without triggering anything. But it's triggered when you are on the last slide in the sohw before and then press arrow right to go to next.
+In the bottom right of a project section there is a "Settings" button, click this to get some options to set a specific action that will trigger for either all sections, or just the selected one. Note that it will not trigger when just opening the section, as you should be able to navigate the project without triggering anything. But it's triggered when you are on the last slide in the show before and then press arrow right to go to next.
 
 ## Show actions
 
@@ -33,7 +33,7 @@ Here is a short summary of some of the different actions:
 
 ### Start action
 
-Start many different useful actions, incuding ones to clear the active layer. Read [more here](./functions#actions).
+Start many different useful actions, including ones to clear the active layer. Read [more here](./functions#actions).
 Here is a short list of some of them:
 
 -   **Start show:** Trigger another show when a slide with this action is played.

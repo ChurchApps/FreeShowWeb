@@ -15,7 +15,7 @@ The drawer is located at the bottom of the application, it can be opened by clic
 
 #### Drawer search
 
-The drawer has a serach bar on the right to quickly find what you are looking for. Click the icon or press <Key>CTRL/CMD + F</Key> to start a search.
+The drawer has a search bar on the right to quickly find what you are looking for. Click the icon or press <Key>CTRL/CMD + F</Key> to start a search.
 
 :::admonition type=tip
 Hold <Key>CTRL/CMD</Key> while pressing any <Key>Arrow keys</Key> to navigate inside the drawer.

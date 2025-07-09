@@ -9,7 +9,7 @@ description: Create repeated events, and easily create a slideshow from any sele
 
 ## Creating an event
 
-If you have an existing caledar with events you can [import the events](./importing#calendar) from an .ics file.
+If you have an existing calendar with events you can [import the events](./importing#calendar) from an .ics file.
 
 Add a new event from the "New event" button in the center, or edit an existing event in the right panel. You will get a popup with different options, including enabling "Repeat" if the event is repeated in a specific pattern.
 

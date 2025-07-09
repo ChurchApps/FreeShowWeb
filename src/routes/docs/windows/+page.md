@@ -24,7 +24,7 @@ Download the .exe file and double click to install.
 winget install --id=ChurchApps.FreeShow  -e
 ```
 
-_This format is not regularily updated!_
+_This format is not regularly updated!_
 <br>
 Check it out on [winstall.app](https://winstall.app/apps/ChurchApps.FreeShow).
 
