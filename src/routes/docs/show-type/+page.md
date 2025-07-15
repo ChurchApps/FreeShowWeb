@@ -14,7 +14,7 @@ First you have to go to "Shows" in the [drawer](./drawer). At the bottom centre 
 ## Quick Lyrics
 ### Syntax
 #### Song Parts (Groups)
-Parts of a song can be marked using the part name in square brackets (ie. `[Verse]`. A group will be created for each part. These groups can be added and removed from a shows layouts. This makes it possible to save multiple arrangements of the song parts into the layouts.
+Parts of a song can be marked using the part name in square brackets (ie. **[Verse]**. A group will be created for each part. These groups can be added and removed from show layouts. This makes it possible to save multiple arrangements of the song parts into the layouts.
 
 If there are multiples of a song part there is no need to add a number to the end. Quick Lyrics will recognize there are multiples and name them with numbers accordingly.
 
@@ -49,7 +49,7 @@ Line 3
 
 ```
 #### Divide into slides with blank lines
-Lines of a song part can be divided into separate slides by adding an empty line between the song part lines. However normally this is not needed as you can also say how many lines are display in the **Styles** section of the **Settings**. During the show presentation a progress indicator will display below the song part slide to show how much of the song part has already been displayed.
+Lines of a song part can be divided into separate slides by adding an empty line between the song part lines. However normally this is not needed as you can also set how many lines are display in the **Styles** section of the **Settings**. During the show presentation a progress indicator will display below the song part slide to show how much of the song part has already been displayed.
 
 Here is an example of a verse with four lines that is divided so that the first two lines are on one slide and lines three and four are on the second slide.
 ```
@@ -61,9 +61,9 @@ Line 3
 Line 4
 ```
 #### Metadata Import
-Metadata can be imported in Quick Lyrics by adding lines using the metadata field name, an equal sign and the text that the metadata field should be set to (ie. `Title=Song Title`). This can also be done for custom metadata fields too.
+Metadata can be imported in Quick Lyrics by adding lines to the text box using the metadata field name, an equal sign and the text that the metadata field should be set to (ie. **Title=Song Title**).
 
-**NOTE:** For the **Song ID (CCLI)** field just use `CCLI=`. Here is an example metadata import text.
+**NOTE:** For the **Song ID (CCLI)** field just use **CCLI=**. Here is an example metadata import text.
 
 ```
 Title=Song Title
@@ -78,15 +78,15 @@ custom title with spaces=Some Text
 customtitlewithspaces=Some Text
 ```
 ### Options
-Under the Quick Lyrics text entry box is an Options button. Clicking on this will show the following options.
+Under the Quick Lyrics text entry box is an **Options** button. Clicking on this will show the following options.
 
 **NOTE:** FreeShow will remember the settings for these options for future Quick Lyric imports.
 #### Auto assign groups
-If **Auto assign groups** option is on and square brackets are not used this will attempt to use the first line of a paragraph as the group name. Otherwise, it will be placed in the `Verse` group.
+If **Auto assign groups** option is on and square brackets are not used this will attempt to use the first line of a paragraph as the group name. Otherwise, it will be placed in the **Verse** group.
 #### Format text
 If the **Format text** option is on, in will format text with auto capitalize, trim/split text & more.
 #### Max lines per slide
-Entering a number into the `Max lines per slide` field will cause Quick Lyrics to auto split after then requested number of lines breaking the song parts into multiple slides. This can better be done by setting the maximum number of lines in the **Styles** section of the Settings.
+Entering a number into the **Max lines per slide** field will cause Quick Lyrics to auto split after the requested number of lines breaking the song parts into multiple slides. This can better be done by setting the maximum number of lines in the **Styles** section of the Settings.
 
 ## Finding your shows
 
