@@ -14,7 +14,7 @@ First you have to go to "Shows" in the [drawer](./drawer). At the bottom centre 
 ## Quick Lyrics
 ### Syntax
 #### Song Parts (Groups)
-Parts of a song can be marked using the part name in square brackets (ie. **[Verse]**. A group will be created for each part. These groups can be added and removed from show layouts. This makes it possible to save multiple arrangements of the song parts into the layouts.
+Parts of a song can be marked using the part name in square brackets (ie. **[Verse]**). A group will be created for each part. These groups can be added and removed from show layouts. This makes it possible to save multiple arrangements of the song parts into the layouts.
 
 If there are multiples of a song part there is no need to add a number to the end. Quick Lyrics will recognize there are multiples and name them with numbers accordingly.
 
