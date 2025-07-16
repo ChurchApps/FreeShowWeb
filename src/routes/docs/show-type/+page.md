@@ -9,16 +9,17 @@ description: A show is your slideshow. It can be song lyrics, events, presentati
 
 ## Creating a show
 
-First you have to go to "Shows" in the [drawer](./drawer). At the bottom centre you will find a **+ New show link**. Clicking it will display a popup. Here you can type a name, and select a category the new show will be placed in. Freeshow will default to the category that you were in when you clicked the **+ New show link**. There are buttons for an empty show, web search for lyrics and quick lyrics, which is recommended if you want to create song lyrics. The program will try to apply groups automatically. Finally, press **+ New show** to save your new show.
+First you have to go to "Shows" in the [drawer](./drawer). At the bottom center you will find a **New show** button. Clicking it will display a popup. Here you can type a name, and select a category the new show will be placed in. The selected category will default to the currently opened category, or the set category of the opened show. There are buttons for an empty show, web search for lyrics and quick lyrics, which is recommended if you want to create song lyrics. The program will try to apply groups automatically. Finally, once text is pasted/typed, press **New show** to create your new show.
 
 ## Quick Lyrics
 ### Syntax
 #### Song Parts (Groups)
-Parts of a song can be marked using the part name in square brackets (ie. **[Verse]**). A group will be created for each part. These groups can be added and removed from show layouts. This makes it possible to save multiple arrangements of the song parts into the layouts.
 
-If there are multiples of a song part there is no need to add a number to the end. Quick Lyrics will recognize there are multiples and name them with numbers accordingly.
+Parts of a song can be marked using the part name in square brackets (e.g. **[Verse]**). A group will be created for each part. These groups can be added and removed from show layouts. This makes it possible to have multiple "arrangements" of the same song parts/groups into different layouts.
 
-Here is a Quick Lyrics example song with two verses, a pre-chorus and bridge.
+If there are multiple of the same song parts there is no need to add a number to the end of the group name. FreeShow will by default automatically add numbers to the labels accordingly.
+
+Here is a Quick Lyrics example song with two verses, chorus and bridge:
 ```
 [Verse]
 Line 1
@@ -26,7 +27,18 @@ Line 2
 Line 3
 Line 4
 
-[Pre-Chorus]
+[Chorus]
+Line 1
+Line 2
+Line 3
+
+[Verse]
+Line 5
+Line 6
+Line 7
+Line 8
+
+[Bridge]
 Line 1
 Line 2
 
@@ -34,24 +46,12 @@ Line 2
 Line 1
 Line 2
 Line 3
-Line 4
-
-[Verse]
-Line 1
-Line 2
-Line 3
-Line 4
-
-[Bridge]
-Line 1
-Line 2
-Line 3
-
 ```
+
 #### Divide into slides with blank lines
 Lines of a song part can be divided into separate slides by adding an empty line between the song part lines. However normally this is not needed as you can also set how many lines are display in the **Styles** section of the **Settings**. During the show presentation a progress indicator will display below the song part slide to show how much of the song part has already been displayed.
 
-Here is an example of a verse with four lines that is divided so that the first two lines are on one slide and lines three and four are on the second slide.
+Here is an example of a verse with four lines that is divided so that the first two lines are on one slide and lines three and four are on the second slide:
 ```
 [Verse]
 Line 1
@@ -60,33 +60,39 @@ Line 2
 Line 3
 Line 4
 ```
+
 #### Metadata Import
-Metadata can be imported in Quick Lyrics by adding lines to the text box using the metadata field name, an equal sign and the text that the metadata field should be set to (ie. **Title=Song Title**).
+Metadata can be imported in Quick Lyrics by adding lines to the text box using the metadata field name, an equal sign and the text that the metadata field should be set to (e.g. **Title=Song Title**).
 
-**NOTE:** For the **Song ID (CCLI)** field just use **CCLI=**. Here is an example metadata import text.
-
+**NOTE:** For the **Song ID (CCLI)** field just use **CCLI=**.
+Here is an example metadata import text:
 ```
 Title=Song Title
 CCLI=1234567
 Copyright=© 2011 The Best Words Ever Sung; © 2011 ACME Song Factory LTD.
 Author=John Doe | Jill Doe | Samuel Somebody
 ```
-Custom metadata fields can also be imported this way. For custom metadata fields with spaces they can be left in or taken out. Both of the following lines will import the same metadata.
 
+You can add custom metadata options in **Settings**>**General**>**Manage metadata**, that way they can also be parsed from Quick Lyrics.
+For custom metadata fields with spaces, both of the following lines will work:
 ```
 custom title with spaces=Some Text
 customtitlewithspaces=Some Text
 ```
+
 ### Options
 Under the Quick Lyrics text entry box is an **Options** button. Clicking on this will show the following options.
 
 **NOTE:** FreeShow will remember the settings for these options for future Quick Lyric imports.
+
 #### Auto assign groups
-If **Auto assign groups** option is on and square brackets are not used this will attempt to use the first line of a paragraph as the group name. Otherwise, it will be placed in the **Verse** group.
+If **Auto assign groups** option is on and square brackets are not used this will attempt to add the most likely song part (group) based on how the song is structured (whether that is a verse, pre-chorus, chorus or bridge). Otherwise, it will be placed in the default **Verse** group.
+
 #### Format text
-If the **Format text** option is on, in will format text with auto capitalize, trim/split text & more.
+If the **Format text** option is on, it will auto capitalize the first letter in each line, remove trailing white spaces and punctuations. And split long lines into multiple lines.
+
 #### Max lines per slide
-Entering a number into the **Max lines per slide** field will cause Quick Lyrics to auto split after the requested number of lines breaking the song parts into multiple slides. This can better be done by setting the maximum number of lines in the **Styles** section of the Settings.
+Entering a number into the **Max lines per slide** field will cause Quick Lyrics to auto split after the requested number of lines breaking the song parts into multiple slides. This can better be done by setting the maximum number of lines in the **Styles** section of the **Settings**.
 
 ## Finding your shows
 
