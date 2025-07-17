@@ -47,6 +47,8 @@ Line 1
 Line 2
 Line 3
 ```
+![Screenshot of Quick Lyrics example song with two verses, chorus and bridge](/images/docs/Show_type-Quick_Lyrics_example_song_with_two_verses_chorus_and_bridge.jpeg)
+
 
 #### Divide into slides with blank lines
 Lines of a song part can be divided into separate slides by adding an empty line between the song part lines. However normally this is not needed as you can also set how many lines are display in the **Styles** section of the **Settings**. During the show presentation a progress indicator will display below the song part slide to show how much of the song part has already been displayed.
@@ -60,6 +62,7 @@ Line 2
 Line 3
 Line 4
 ```
+![Screenshot of a verse with four lines that is divided in two](/images/docs/Show_type-Quick_Lyrics_divided_verse.jpeg)
 
 #### Metadata Import
 Metadata can be imported in Quick Lyrics by adding lines to the text box using the metadata field name, an equal sign and the text that the metadata field should be set to (e.g. **Title=Song Title**).
@@ -72,6 +75,7 @@ CCLI=1234567
 Copyright=© 2011 The Best Words Ever Sung; © 2011 ACME Song Factory LTD.
 Author=John Doe | Jill Doe | Samuel Somebody
 ```
+![Screenshot of Import Metadata Example](/images/docs/Show_type-Quick_Lyrics_Import_Metadata_Example.jpeg)
 
 You can add custom metadata options in **Settings**>**General**>**Manage metadata**, that way they can also be parsed from Quick Lyrics.
 For custom metadata fields with spaces, both of the following lines will work:
