@@ -67,8 +67,9 @@ Line 4
 
 #### Metadata Import
 Metadata can be imported in Quick Lyrics by adding lines to the text box using the metadata field name, an equal sign and the text that the metadata field should be set to (e.g. **Title=Song Title**).
-
-**NOTE:** For the **Song ID (CCLI)** field just use **CCLI=**.
+:::admonition type=note
+For the **Song ID (CCLI)** field just use **CCLI=**.
+:::
 Here is an example metadata import text:
 ```
 Title=Song Title
