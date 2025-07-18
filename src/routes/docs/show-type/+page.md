@@ -12,6 +12,7 @@ description: A show is your slideshow. It can be song lyrics, events, presentati
 First you have to go to "Shows" in the [drawer](./drawer). At the bottom center you will find a **New show** button. Clicking it will display a popup. Here you can type a name, and select a category the new show will be placed in. The selected category will default to the currently opened category, or the set category of the opened show. There are buttons for an empty show, web search for lyrics and quick lyrics, which is recommended if you want to create song lyrics. The program will try to apply groups automatically. Finally, once text is pasted/typed, press **New show** to create your new show.
 
 ## Quick Lyrics
+![Screenshot of Quick Lyrics window](/images/docs/Show_type-Quick_Lyrics.webp)
 ### Syntax
 #### Song Parts (Groups)
 
@@ -47,7 +48,7 @@ Line 1
 Line 2
 Line 3
 ```
-![Screenshot of Quick Lyrics example song with two verses, chorus and bridge](/images/docs/Show_type-Quick_Lyrics_example_song_with_two_verses_chorus_and_bridge.jpeg)
+![Screenshot of Quick Lyrics example song with two verses, chorus and bridge](/images/docs/Show_type-Quick_Lyrics_example_song_with_two_verses_chorus_and_bridge.webp)
 
 
 #### Divide into slides with blank lines
@@ -62,7 +63,7 @@ Line 2
 Line 3
 Line 4
 ```
-![Screenshot of a verse with four lines that is divided in two](/images/docs/Show_type-Quick_Lyrics_divided_verse.jpeg)
+![Screenshot of a verse with four lines that is divided in two](/images/docs/Show_type-Quick_Lyrics_divided_verse.webp)
 
 #### Metadata Import
 Metadata can be imported in Quick Lyrics by adding lines to the text box using the metadata field name, an equal sign and the text that the metadata field should be set to (e.g. **Title=Song Title**).
@@ -75,7 +76,7 @@ CCLI=1234567
 Copyright=© 2011 The Best Words Ever Sung; © 2011 ACME Song Factory LTD.
 Author=John Doe | Jill Doe | Samuel Somebody
 ```
-![Screenshot of Import Metadata Example](/images/docs/Show_type-Quick_Lyrics_Import_Metadata_Example.jpeg)
+![Screenshot of Import Metadata Example](/images/docs/Show_type-Quick_Lyrics_Import_Metadata_Example.webp)
 
 You can add custom metadata options in **Settings**>**General**>**Manage metadata**, that way they can also be parsed from Quick Lyrics.
 For custom metadata fields with spaces, both of the following lines will work:
@@ -86,7 +87,7 @@ customtitlewithspaces=Some Text
 
 ### Options
 Under the Quick Lyrics text entry box is an **Options** button. Clicking on this will show the following options.
-
+![Screenshot of Quick Lyrics options](/images/docs/Show_type-Quick_Lyrics.webp)
 **NOTE:** FreeShow will remember the settings for these options for future Quick Lyric imports.
 
 #### Auto assign groups
