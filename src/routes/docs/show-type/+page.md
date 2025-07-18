@@ -12,6 +12,7 @@ description: A show is your slideshow. It can be song lyrics, events, presentati
 First you have to go to "Shows" in the [drawer](./drawer). At the bottom center you will find a **New show** button. Clicking it will display a popup. Here you can type a name, and select a category the new show will be placed in. The selected category will default to the currently opened category, or the set category of the opened show. There are buttons for an empty show, web search for lyrics and quick lyrics, which is recommended if you want to create song lyrics. The program will try to apply groups automatically. Finally, once text is pasted/typed, press **New show** to create your new show.
 
 ## Quick Lyrics
+![Screenshot of Quick Lyrics window](/images/docs/Show_type-Quick_Lyrics.webp)
 ### Syntax
 #### Song Parts (Groups)
 
@@ -47,6 +48,8 @@ Line 1
 Line 2
 Line 3
 ```
+![Screenshot of Quick Lyrics example song with two verses, chorus and bridge](/images/docs/Show_type-Quick_Lyrics_example_song_with_two_verses_chorus_and_bridge.webp)
+
 
 #### Divide into slides with blank lines
 Lines of a song part can be divided into separate slides by adding an empty line between the song part lines. However normally this is not needed as you can also set how many lines are display in the **Styles** section of the **Settings**. During the show presentation a progress indicator will display below the song part slide to show how much of the song part has already been displayed.
@@ -60,11 +63,13 @@ Line 2
 Line 3
 Line 4
 ```
+![Screenshot of a verse with four lines that is divided in two](/images/docs/Show_type-Quick_Lyrics_divided_verse.webp)
 
 #### Metadata Import
 Metadata can be imported in Quick Lyrics by adding lines to the text box using the metadata field name, an equal sign and the text that the metadata field should be set to (e.g. **Title=Song Title**).
-
-**NOTE:** For the **Song ID (CCLI)** field just use **CCLI=**.
+:::admonition type=note
+For the **Song ID (CCLI)** field just use **CCLI=**.
+:::
 Here is an example metadata import text:
 ```
 Title=Song Title
@@ -72,6 +77,11 @@ CCLI=1234567
 Copyright=© 2011 The Best Words Ever Sung; © 2011 ACME Song Factory LTD.
 Author=John Doe | Jill Doe | Samuel Somebody
 ```
+![Screenshot of Import Metadata Example](/images/docs/Show_type-Quick_Lyrics_Import_Metadata_Example.webp)
+
+:::admonition type=tip
+If you are adding a song title using the metadata import there is no need to enter a name for your show, as it will default to the song title.
+:::
 
 You can add custom metadata options in **Settings**>**General**>**Manage metadata**, that way they can also be parsed from Quick Lyrics.
 For custom metadata fields with spaces, both of the following lines will work:
@@ -82,8 +92,14 @@ customtitlewithspaces=Some Text
 
 ### Options
 Under the Quick Lyrics text entry box is an **Options** button. Clicking on this will show the following options.
+![Screenshot of Quick Lyrics options](/images/docs/Show_type-Quick_Lyrics_options.webp)
+:::admonition type=note
+FreeShow will remember the settings for these options for future Quick Lyric imports.
+:::
 
-**NOTE:** FreeShow will remember the settings for these options for future Quick Lyric imports.
+:::admonition type=tip
+If you normally copy your song text, metadata imports and then  paste them into the Quick Lyrics editor without editing them further or changing options, you can instead after copying them press CTRL+ALT+I (MacOS CMD+ALT+I) to instantly create a new show.
+:::
 
 #### Auto assign groups
 If **Auto assign groups** option is on and square brackets are not used this will attempt to add the most likely song part (group) based on how the song is structured (whether that is a verse, pre-chorus, chorus or bridge). Otherwise, it will be placed in the default **Verse** group.
