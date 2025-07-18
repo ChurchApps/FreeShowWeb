@@ -95,6 +95,10 @@ Under the Quick Lyrics text entry box is an **Options** button. Clicking on this
 ![Screenshot of Quick Lyrics options](/images/docs/Show_type-Quick_Lyrics_options.webp)
 **NOTE:** FreeShow will remember the settings for these options for future Quick Lyric imports.
 
+:::admonition type=tip
+If you normally copy your song text, metadata imports and then  paste them into the Quick Lyrics editor without editing them further or changing options, you can instead after copying them press CTRL+ALT+I (MacOS CMD+ALT+I) to instantly create a new show.
+:::
+
 #### Auto assign groups
 If **Auto assign groups** option is on and square brackets are not used this will attempt to add the most likely song part (group) based on how the song is structured (whether that is a verse, pre-chorus, chorus or bridge). Otherwise, it will be placed in the default **Verse** group.
 
