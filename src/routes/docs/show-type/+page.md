@@ -78,6 +78,8 @@ Author=John Doe | Jill Doe | Samuel Somebody
 ```
 ![Screenshot of Import Metadata Example](/images/docs/Show_type-Quick_Lyrics_Import_Metadata_Example.webp)
 
+**TIP:** If you are adding a song title using the metadata import there is no need to enter a name for your show, as it will default to the song title.
+
 You can add custom metadata options in **Settings**>**General**>**Manage metadata**, that way they can also be parsed from Quick Lyrics.
 For custom metadata fields with spaces, both of the following lines will work:
 ```
