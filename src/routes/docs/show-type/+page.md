@@ -89,7 +89,7 @@ customtitlewithspaces=Some Text
 
 ### Options
 Under the Quick Lyrics text entry box is an **Options** button. Clicking on this will show the following options.
-![Screenshot of Quick Lyrics options](/images/docs/Show_type-Quick_Lyrics.webp)
+![Screenshot of Quick Lyrics options](/images/docs/Show_type-Quick_Lyrics_options.webp)
 **NOTE:** FreeShow will remember the settings for these options for future Quick Lyric imports.
 
 #### Auto assign groups
