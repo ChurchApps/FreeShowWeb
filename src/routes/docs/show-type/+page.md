@@ -93,7 +93,9 @@ customtitlewithspaces=Some Text
 ### Options
 Under the Quick Lyrics text entry box is an **Options** button. Clicking on this will show the following options.
 ![Screenshot of Quick Lyrics options](/images/docs/Show_type-Quick_Lyrics_options.webp)
-**NOTE:** FreeShow will remember the settings for these options for future Quick Lyric imports.
+:::admonition type=note
+FreeShow will remember the settings for these options for future Quick Lyric imports.
+:::
 
 :::admonition type=tip
 If you normally copy your song text, metadata imports and then  paste them into the Quick Lyrics editor without editing them further or changing options, you can instead after copying them press CTRL+ALT+I (MacOS CMD+ALT+I) to instantly create a new show.
