@@ -38,6 +38,11 @@ _These commands can simplify and speed up common tasks in FreeShow._
 | Undo                   | <Key>CTRL/CMD + Z</Key>     |
 | Shortcuts              | <Key>CTRL/CMD + ?</Key>     |
 |                        |                             |
+| Toggle Focus Mode      | <Key>CTRL/CMD + SHIFT + F</Key>|
+| Change Slide View      | <Key>CTRL/CMD + SHIFT + V</Key>|
+|                        |                             |
+| Show Import from Clipboard | <Key>CTRL/CMD + ALT + I</Key>|
+|                        |                             |
 | Remove Selection       | <Key>ESC</Key>              |
 | Clear All              | <Key>ESC</Key>              |
 | Clear Background       | <Key>F1</Key>               |
