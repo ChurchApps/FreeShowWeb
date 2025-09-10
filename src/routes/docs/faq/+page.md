@@ -53,7 +53,7 @@ This might mean that you have set a custom output style with a template that ove
 
 ### How to transfer the files between computers?
 
-You can set up [cloud sync](./drive). Or you can go to **settings > Other > Backup everything**. Then move the .json files to your other computer, go to **settings > Other > Restore**, and select the files. This will copy your exact setup.
+You can set up [cloud sync](./drive). Or you can go to **Settings > Files > Backup (buttons at the bottom of the page) everything**. Then move the .json files to your other computer, go to **Settings > Files > Restore**, and select the files. This will copy your exact setup.
 
 Note that media files are linked to the system and must be moved separately. There is an option to **Bundle all media files** if the files are scattered across your entire system. Adding the media folder to the "Media" drawer will ensure the media files are replaced if they can't be found at the original location anymore.
 
