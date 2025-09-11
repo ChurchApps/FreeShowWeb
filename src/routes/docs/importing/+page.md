@@ -15,25 +15,28 @@ Here you have a bunch of different options to import different file types from v
 
 ## Supported files
 
-- FreeShow
-- ProPresenter 4-7
-- EasyWorship 6-7
-- VideoPsalm
-- OpenLP (OpenLyrics)
-- OpenSong
-- Quelea
-- SoftProjector
-- Songbeamer
-- Easyslides
-- VerseVIEW
+-   FreeShow
+-   ProPresenter (4-7+)
+-   EasyWorship (6-7)
+-   VideoPsalm
+-   OpenLP (OpenLyrics)
+-   OpenSong
+-   MediaShout
+-   Quelea
+-   SoftProjector
+-   Songbeamer
+-   Easyslides
+-   VerseVIEW
 
 <br>
 
-- Text
-- ChordPro
-- PDF
-- PowerPoint
-- Lessons.church
+-   Text
+-   CSV
+-   ChordPro
+-   Word
+-   PowerPoint
+-   PDF
+-   Lessons.church
 
 :::admonition type=tip
 Create and select a new empty show category to place all of the imported files here. Also if you do that when importing a VideoPsalm songbook the song number/ID will be automatically added to the title.
@@ -59,6 +62,6 @@ Import a calendar .ics file. It will be converted to the programs own calendar f
 
 ## FAQ
 
-- **The EasyWorship files did not import the correct song names**
+-   **The EasyWorship files did not import the correct song names**
 
-  The song names in EasyWorship are stored in a separate file than the song content, so you need to select both the `SongsWords.db` (song content) file & the `Songs.db` (song data/names) file to get the proper names.
+    The song names in EasyWorship are stored in a separate file than the song content, so you need to select both the `SongsWords.db` or `SongWords.db` (song content) file & the `Songs.db` (song data/names) file to get the proper names.
