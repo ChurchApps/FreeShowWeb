@@ -62,7 +62,7 @@ The first two buttons _Previous Slide_ and _Next Slide_ are for changing the cur
 
 :::admonition type=tip
 
-In addition to being able to lock all outputs, each individual output's lock status can be toggled by clicking on the title bar of a preview window. A colored dot shows the status of each output.
+In addition to being able to lock all outputs, each individual output's lock status can be toggled by clicking on the title bar of its preview window. A colored dot shows the status of each output.
 
 #### Output Statuses
 - Green - Active, presenting
