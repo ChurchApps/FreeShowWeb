@@ -19,6 +19,10 @@ _For advanced users:_ If you need to change the between templates, and need the 
 
 ## FAQ
 
-- **Templates are rolling around the items when clicked**
+-   **How to switch the items around**
 
-  The reason it toggles between items is that FreeShow does not know which textbox in the new template you want the text on, so with this feature you can actually click more to easily get it the way you want! But if you leave the same template on a show, and change the styling there is no need to click the template, becuase the change will automatically be applied to the show with the same order on the textboxes!
+    Holding the shift key while pressing the template will swap the text content between different items on the slide.
+
+-   **Multiple colors with templates**
+
+    Each line in a template can have different colors, and those changes will be transferred over to the slide lines. But if the slide has multiple text colors and the template is set to override in an output style, the slide colors will be used instead. ([Read more](https://github.com/ChurchApps/FreeShow/issues/1241))

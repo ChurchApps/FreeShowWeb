@@ -24,3 +24,11 @@ Click the button in the bottom of the project area to add a new section. Here yo
 :::admonition type=tip
 Press <Key>CTRL/CMD + F</Key> to start searching in the drawer, and press enter to quickly add the first result to the current project.
 :::
+
+## Project file
+
+Go to File>Export>Project to export a .project file. This file is useful for transferring files between computers. The project file is a .zip file and a .json file containing all of your media in the project, including all shows/overlays/actions used.
+
+Go to File>Import>Project to import a .project file.
+
+You can also right click a project button/project title to export/import quicker.

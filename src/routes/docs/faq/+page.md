@@ -37,6 +37,12 @@ See [this](./integrations#planning-center).
 
 Unfortunately CCLI has discontinued their API, meaning it's impossible for us to add integration. They still support programs that already has used their API, but are unwilling to collaborate with us. Read [more here](https://github.com/ChurchApps/FreeShow/issues/572#issuecomment-2163179642).
 
+### Move data between computers
+
+To transfer all of the application data (settings, projects, shows, etc.) between computers, you can go to settings>"Files">"Export everything", that will give you some .json files you can transfer.
+
+Then on the other computer go to settings>"Files">"Import", find and select all (or just some) of the files, and click to import them.
+
 ### Cloud sync between two computers
 
 Cloud sync is possible. FreeShow has a integrated support for syncing all the data files [using Google Drive](./drive), this is completely free.

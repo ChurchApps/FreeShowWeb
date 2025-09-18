@@ -66,3 +66,15 @@ Add live speech to text captions to your slide.
 ### Icon
 
 This is for adding an SVG icon to your slide.
+
+## Item actions
+
+Right click any item, and choose "Item actions".
+
+### Line by line reveal
+
+Add this option to only reveal one line at a time on slide click/next press. If "Click reveal" is set, this will not start until that has triggered.
+
+### Click reveal
+
+Add this option to reveal the item after a click/next press while the current slide is active.

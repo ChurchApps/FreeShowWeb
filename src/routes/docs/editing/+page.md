@@ -67,3 +67,11 @@ At the bottom you can change the edit mode, first you can click on "Chords" to [
 This works in a similar way to the "Quick lyrics" when [creating a show](./show#creating-a-show), or it is the same if it is empty. It will automatically change slides in the current layout based on the content of the text after editing. It will update the content when the textarea loses focus (If you press esc, or click on another area). Useful for copying/pasting song lyrics, and for splitting/joining slides.
 
 Slides are seperated with an empty line, and labeled by **[Group name]**. And textboxes are seperated with **[#1]**, **[#2]**, etc. Textboxes can also be marked with a language ID **[#3:en]**.
+
+## Virtual line breaks (Virtual breaks)
+
+This is a method of creating line breaks in some outputs but not in others at a given spot.
+
+At the bottom of the editor you can press the more options arrow to reveal a button that will insert these characters: "[_VB]" into the selected caret position. By default this behaves like a normal line break.
+
+But the power of this comes with using multiple outputs, in the output style settings you can click the "Lines" option to open a popup, where you can find a toggle to "Skip virtual break", on the outputs with this enabled the line will continue straight with no breaks. Often used in addition to reducing the lines amount to 2.
