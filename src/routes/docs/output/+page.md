@@ -1,6 +1,6 @@
 ---
 title: Output
-description: The output is one or more windows that displays the main content to the audience.
+description: A FreeShow output is one or more windows that display content on a physical HDMI screen/projector.
 ---
 
 <script>
@@ -9,7 +9,7 @@ description: The output is one or more windows that displays the main content to
 
 # The output
 
-> An output is one or more windows that display a project's show content on physical or virtual displays for presentation.
+> An output is one or more windows that display content (backgrounds, slides, overlays, and more) on a physical HDMI screen/projector. But can also be sent wirelessly through NDI.
 
 ## Layers
 
@@ -99,8 +99,8 @@ Under Window you can select the physical display to set the output to. If the _I
 
 You can disable _Always on top_, if you want to hide a output behind another window. This is useful if you want to capture the window using another program. This will also make the window resizable.
 
-But if you want to change the position of the current output window, try this:
+If you want to change the position of the output window, you can do this:
 
-- Click "Choose screen", and follow the instructions on screen.
-- If you have to change the output values manually then change the X/Y values (use the mouse wheel to change faster) until you can see the window over the screen.
+- Click "Choose screen" in the settings, and follow the instructions on screen.
+- If you can't see your output screen for some reason you can change the output values manually by clicking "Change output screen values" and changing the the X/Y values until the window is positioned over the screen.
 - Remember to click the button in the top right to enable the output windows. It should be red when activated.
