@@ -98,7 +98,7 @@ FreeShow will remember the settings for these options for future Quick Lyric imp
 :::
 
 :::admonition type=tip
-If you normally copy your song text, metadata imports and then  paste them into the Quick Lyrics editor without editing them further or changing options, you can instead after copying them press CTRL+ALT+I (MacOS CMD+ALT+I) to instantly create a new show.
+If you normally copy your song text, metadata imports and then  paste them into the Quick Lyrics editor without editing them further or changing options, you can instead after copying them press CTRL+ALT+I (MacOS CMD+OPTION+I) to instantly create a new show.
 :::
 
 #### Auto assign groups
