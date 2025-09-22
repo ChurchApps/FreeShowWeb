@@ -98,7 +98,7 @@ FreeShow will remember the settings for these options for future Quick Lyric imp
 :::
 
 :::admonition type=tip
-If you normally copy your song text, metadata imports and then  paste them into the Quick Lyrics editor without editing them further or changing options, you can instead after copying them press CTRL+ALT+I (MacOS CMD+ALT+I) to instantly create a new show.
+If you normally copy your song text, metadata imports and then  paste them into the Quick Lyrics editor without editing them further or changing options, you can instead after copying them press CTRL+ALT+I (MacOS CMD+OPTION+I) to instantly create a new show.
 :::
 
 #### Auto assign groups
@@ -118,7 +118,7 @@ All your shows can be found in the "Shows" tab in the drawer. Here you can organ
 
 One [group](./groups) can have multiple slides. Right clicking a slide gives you different options.
 
-One of them is to disable a slide, this can be useful if you might use a slide sometimes but not always, or for more advenced uses. Keyboard navigation & slide timers will skip disabled slides, but you can still click it to play as normal.
+One of them is to disable a slide, this can be useful if you might use a slide sometimes but not always, or for more advanced uses. Keyboard navigation & slide timers will skip disabled slides, but you can still click it to play as normal.
 
 ## Presenting
 
@@ -132,7 +132,7 @@ Pressing the arrow keys will always change the slides of the current outputted s
 
 ## Backgrounds
 
-Adding backgrounds are as easy as [dragging them](./media#add-as-backgrounds) over any of the slides. Say you add a background to the first slide, then that background will be applied to all the concurrent slides as "ghost" backgrounds, meaning they behave the same as the first slide when clicked, but you can only interact with the element on one slide. If you don't want any background to play on a specific slide, you can right click on the slide, choose "Slide actions", "Start action", and click "Clear background".
+Adding backgrounds are as easy as [dragging them](./media#add-as-backgrounds) over any of the slides. Say you add a background to the first slide, then that background will be applied to all the concurrent slides as "ghost" backgrounds, meaning they behave the same as the first slide when clicked, but you can only interact with the element on one slide. If you don't want any background to play on a specific slide, you can right-click on the slide, choose "Slide actions", "Start action", and click "Clear background".
 
 :::admonition type=tip
 If the background can't be found, e.g. the file is moved, or different computer, the program will auto search and find any media with matching file name, as long as it's inside a folder added to "Media" in the drawer.
