@@ -1,65 +1,51 @@
 <script lang="ts">
-	import Button from '$lib/components/inputs/Button.svelte';
-	import Link from '$lib/components/inputs/Link.svelte';
-	import Icon from '$lib/components/main/Icon.svelte';
-	import Section from '$lib/components/main/Section.svelte';
-	import {
-		convertSize,
-		getOS,
-		getReleases,
-		toDate,
-		type Asset,
-		type Release,
-		getLatest,
-		getLatestPrerelease,
-		getAssets,
-		osIcons
-	} from '$lib/components/scripts/releases';
-	import { onMount } from 'svelte';
-	import { fade } from 'svelte/transition';
+	import Button from "$lib/components/inputs/Button.svelte"
+	import Link from "$lib/components/inputs/Link.svelte"
+	import Icon from "$lib/components/main/Icon.svelte"
+	import Section from "$lib/components/main/Section.svelte"
+	import { convertSize, getOS, getReleases, toDate, type Asset, type Release, getLatest, getLatestPrerelease, getAssets, osIcons } from "$lib/components/scripts/releases"
+	import { onMount } from "svelte"
+	import { fade } from "svelte/transition"
 
 	onMount(async () => {
-		activeOS = getOS(true);
+		activeOS = getOS(true)
 
-		let releases = await getReleases();
-		readReleases(releases);
+		let releases = await getReleases()
+		readReleases(releases)
 
 		// reset this in case it's the wrong arch (because user opened the downloads page)
-		if (typeof localStorage === 'undefined') return;
-		localStorage.removeItem('arch');
-	});
+		if (typeof localStorage === "undefined") return
+		localStorage.removeItem("arch")
+	})
 
-	$: if (activeOS) updateOS();
+	$: if (activeOS) updateOS()
 	function updateOS() {
-		currentAssets = getAssets(latest, activeOS);
+		currentAssets = getAssets(latest, activeOS)
 
-		if (typeof localStorage === 'undefined') return;
-		localStorage.setItem('os', activeOS);
+		if (typeof localStorage === "undefined") return
+		localStorage.setItem("os", activeOS)
 	}
 
-	let latest: Release | null = null;
-	let currentAssets: Asset[] = [];
-	let totalDownloads: number = 0;
-	let activeOS: string = '';
-	let showIndividualDownloads: boolean = false;
-	let changelogOpened: boolean = false;
-	let prerelease: Release | null = null;
+	let latest: Release | null = null
+	let currentAssets: Asset[] = []
+	let totalDownloads: number = 0
+	let activeOS: string = ""
+	let showIndividualDownloads: boolean = false
+	let changelogOpened: boolean = false
+	let prerelease: Release | null = null
 
 	function readReleases(releases: Release[]) {
-		latest = getLatest(releases);
-		prerelease = getLatestPrerelease(releases);
-		currentAssets = getAssets(latest, activeOS);
-		countDownloads(releases);
+		latest = getLatest(releases)
+		prerelease = getLatestPrerelease(releases)
+		currentAssets = getAssets(latest, activeOS)
+		countDownloads(releases)
 	}
 
 	function countDownloads(releases: any[]) {
 		totalDownloads = releases.reduce((total: number, data: any) => {
-			let currentVersionDownloads = data.assets.reduce(
-				(total: number, asset: any) => total + asset.download_count,
-				0
-			);
-			return total + currentVersionDownloads;
-		}, 0);
+			let currentVersionDownloads = data.assets.reduce((total: number, asset: any) => total + asset.download_count, 0)
+			return total + currentVersionDownloads
+		}, 0)
 	}
 </script>
 
@@ -75,35 +61,20 @@
 <Section white column>
 	<div class="row" style="width: 100%;justify-content: space-between;align-items: center;">
 		<h2 on:dblclick={() => (showIndividualDownloads = !showIndividualDownloads)}>
-			{latest?.tag_name || 'v0.0.0'}
+			{latest?.tag_name || "v0.0.0"}
 			<span style="opacity: 0.5;font-size: 0.6em;font-weight: normal;">
-				{toDate(latest?.published_at || '')}
+				{toDate(latest?.published_at || "")}
 			</span>
 		</h2>
 
 		<div class="os" style="background-color: var(--text-inverted);">
-			<Button
-				title="Select Windows"
-				active={activeOS === 'Windows'}
-				style="border-radius: 0;"
-				on:click={() => (activeOS = 'Windows')}
-			>
+			<Button title="Select Windows" active={activeOS === "Windows"} style="border-radius: 0;" on:click={() => (activeOS = "Windows")}>
 				<Icon icon="windows" size={2.5} white />
 			</Button>
-			<Button
-				title="Select MacOS"
-				active={activeOS === 'MacOS'}
-				style="border-radius: 0;"
-				on:click={() => (activeOS = 'MacOS')}
-			>
+			<Button title="Select MacOS" active={activeOS === "MacOS"} style="border-radius: 0;" on:click={() => (activeOS = "MacOS")}>
 				<Icon icon="apple" size={2.5} white />
 			</Button>
-			<Button
-				title="Select Linux"
-				active={activeOS === 'Linux'}
-				style="border-radius: 0;"
-				on:click={() => (activeOS = 'Linux')}
-			>
+			<Button title="Select Linux" active={activeOS === "Linux"} style="border-radius: 0;" on:click={() => (activeOS = "Linux")}>
 				<Icon icon="linux" size={2.5} white />
 			</Button>
 		</div>
@@ -112,16 +83,8 @@
 	<div class="assets">
 		{#if currentAssets.length}
 			{#each currentAssets as asset, i}
-				<Link
-					title="Download"
-					link={asset.browser_download_url}
-					style="width: 100%;"
-					outline={i === 0}
-				>
-					<div
-						class="flex"
-						style="display: flex;justify-content: space-between;align-items: center;width: 100%;z-index: 1;"
-					>
+				<Link title="Download" link={asset.browser_download_url} style="width: 100%;" outline={i === 0}>
+					<div class="flex" style="display: flex;justify-content: space-between;align-items: center;width: 100%;z-index: 1;">
 						<div class="name" style="display: flex;align-items: center;gap: 10px;">
 							<Icon icon={osIcons[activeOS]} />
 							{asset.name}
@@ -142,16 +105,27 @@
 			<p style="text-align: center;opacity: 0.8;">Getting releases! Please wait...</p>
 		{/if}
 
+		<!-- Download the last supported version for macOS 10.15 (Catalina) -->
+		{#if currentAssets.length && activeOS === "MacOS"}
+			<Link link="https://github.com/ChurchApps/FreeShow/releases/tag/v1.4.9" target="_blank">
+				<div class="center" style="justify-content: left;">
+					<Icon icon="archive" size={1.2} />
+					<p style="text-align: left;">
+						macOS 10.15
+						<span style="font-size: 0.9em;opacity: 0.8;padding-left: 5px;"> Use this version if you need FreeShow on an old OS! </span>
+					</p>
+				</div>
+			</Link>
+		{/if}
 		<!-- Download the last supported version for Windows 7/8, and macOS 10.13 & 10.14 -->
-		{#if currentAssets.length && (activeOS === 'Windows' || activeOS === 'MacOS')}
+		<!-- || activeOS === "MacOS" -->
+		{#if currentAssets.length && activeOS === "Windows"}
 			<Link link="https://github.com/ChurchApps/FreeShow/releases/tag/v1.2.4" target="_blank">
 				<div class="center" style="justify-content: left;">
 					<Icon icon="archive" size={1.2} />
 					<p style="text-align: left;">
-						{activeOS === 'Windows' ? 'Windows 7/8' : 'MacOS 10.13 & 10.14'}
-						<span style="font-size: 0.9em;opacity: 0.8;padding-left: 5px;">
-							Use this version if you need FreeShow on an old OS!
-						</span>
+						{activeOS === "Windows" ? "Windows 7/8" : "macOS 10.13 & 10.14"}
+						<span style="font-size: 0.9em;opacity: 0.8;padding-left: 5px;"> Use this version if you need FreeShow on an old OS! </span>
 					</p>
 				</div>
 			</Link>
@@ -164,19 +138,13 @@
 					<Icon icon="beta" size={1.2} />
 					<p style="text-align: left;">
 						Prerelease <span>{prerelease.tag_name}</span> available!
-						<span style="font-size: 0.9em;opacity: 0.8;padding-left: 5px;">
-							Might have breaking changes, but has more features & should be more stable
-						</span>
+						<span style="font-size: 0.9em;opacity: 0.8;padding-left: 5px;"> Might have breaking changes, but has more features & should be more stable </span>
 					</p>
 				</div>
 			</Link>
 		{/if}
 
-		<Link
-			link="https://github.com/ChurchApps/FreeShow/releases"
-			target="_blank"
-			style="margin-top: 10px;"
-		>
+		<Link link="https://github.com/ChurchApps/FreeShow/releases" target="_blank" style="margin-top: 10px;">
 			<div class="center">
 				<Icon icon="tags" white />
 				See all releases
@@ -187,21 +155,17 @@
 	{#if changelogOpened}
 		<div class="changelog" transition:fade>
 			<h3 style="font-weight: bold;font-size: 1.8em;">What's new</h3>
-			{@html latest?.body?.replaceAll('\n', '<br>') || ''}
+			{@html latest?.body?.replaceAll("\n", "<br>") || ""}
 		</div>
 	{:else}
-		<Button on:click={() => (changelogOpened = true)} style="align-self: center;" primary>
-			View Changelog
-		</Button>
+		<Button on:click={() => (changelogOpened = true)} style="align-self: center;" primary>View Changelog</Button>
 	{/if}
 </Section>
 
 <Section column center style="gap: 10px;padding-bottom: 40px;">
 	<h2>All time downloads</h2>
 	<p class="downloads">
-		<span class="gradient" class:highlight={totalDownloads > 999999 && totalDownloads < 1010000}
-			>{totalDownloads}</span
-		>
+		<span class="gradient" class:highlight={totalDownloads > 999999 && totalDownloads < 1010000}>{totalDownloads}</span>
 	</p>
 </Section>
 
