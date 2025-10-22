@@ -50,9 +50,9 @@ Read [more here](./media).
 
 Here you can find audio files from your computer. Works the same as [media](#media), can also be dragged over slides. You can play multiple files at the same time. And change the volume at the right side.
 
-There's also a "Microphones" tab, that should work mostly the same as other audio. Click any to unmute any of the incoming audio signals.
+There is also a "Microphones" tab, that should work mostly the same as other audio. Click any to unmute any of the incoming audio signals.
 
-There is also a "Audio streams" tab where you can add a direct "http://" audio stream like e.g. a radio stream. You can find some good ones here: [https://fmstream.org/](https://fmstream.org/) (Make sure it is marked as _mp3_)
+There is also an "Audio streams" tab where you can add a direct "http://" audio stream, which is commonly from a radio station. You can find some good ones here: [https://fmstream.org/](https://fmstream.org/) (Make sure it is marked as _mp3_)
 
 ## Overlays
 
