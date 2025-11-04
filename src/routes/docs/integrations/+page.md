@@ -20,11 +20,11 @@ FreeShow allows you to connect your Planning Center account, and automatically s
 
 -   [Planning Center](https://www.planningcenter.com/integrations/freeshow)
 
-### Chums
+### ChurchApps
 
-FreeShow allows you to connect to CHUMS, our free Church Management System and upload your existing song shows to its database, and automatically download your service plans a week ahead of time. Go to the "Connections" tab in the settings, and connect your account to get started.
+FreeShow allows you to connect to ChurchApps (B1.church), our free Church Management System, and upload your existing song shows to its database, and automatically download your service plans a week ahead of time. Go to the "Connections" tab in the settings, and connect your account to get started.
 
--   [Chums](https://chums.org/)
+-   [ChurchApps](https://churchapps.org/)
 
 ### Pixabay & Unsplash
 
