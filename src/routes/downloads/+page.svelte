@@ -13,6 +13,8 @@
 		let releases = await getReleases()
 		readReleases(releases)
 
+		getExistingArch()
+
 		// reset this in case it's the wrong arch (because user opened the downloads page)
 		if (typeof localStorage === "undefined") return
 		localStorage.removeItem("arch")
@@ -46,6 +48,20 @@
 			let currentVersionDownloads = data.assets.reduce((total: number, asset: any) => total + asset.download_count, 0)
 			return total + currentVersionDownloads
 		}, 0)
+	}
+
+	let currentArch = "x64"
+	function getExistingArch() {
+		if (typeof localStorage === "undefined") return
+
+		currentArch = localStorage.getItem("arch") || "x64"
+	}
+
+	function setArchitecture(arch: string) {
+		// if (typeof localStorage === "undefined") return
+		// localStorage.setItem("arch", arch)
+
+		currentArch = arch
 	}
 </script>
 
@@ -82,24 +98,34 @@
 
 	<div class="assets">
 		{#if currentAssets.length}
-			{#each currentAssets as asset, i}
-				<Link title="Download" link={asset.browser_download_url} style="width: 100%;" outline={i === 0}>
-					<div class="flex" style="display: flex;justify-content: space-between;align-items: center;width: 100%;z-index: 1;">
-						<div class="name" style="display: flex;align-items: center;gap: 10px;">
-							<Icon icon={osIcons[activeOS]} />
-							{asset.name}
-						</div>
+			{#if activeOS !== "Windows"}
+				<div class="tabs">
+					Architecture:
+					<Button active={currentArch === "x64"} on:click={() => setArchitecture("x64")}>{activeOS === "MacOS" ? "Intel (x64)" : "x86_64"}</Button>
+					<Button active={currentArch === "arm"} on:click={() => setArchitecture("arm")}>{activeOS === "MacOS" ? "Silicon (ARM)" : "arm64"}</Button>
+				</div>
+			{/if}
 
-						<div class="size">
-							{convertSize(asset.size)}
-							{#if showIndividualDownloads}
-								<span style="min-width: 50px;text-align: right;">
-									- {asset.download_count} downloads
-								</span>
-							{/if}
+			{#each currentAssets as asset, i}
+				{#if currentArch === "arm" ? asset.name.includes("arm64") || asset.name.includes("aarch64") : !asset.name.includes("arm64") && !asset.name.includes("aarch64")}
+					<Link title="Download" link={asset.browser_download_url} style="width: 100%;" outline={i === 0}>
+						<div class="flex" style="display: flex;justify-content: space-between;align-items: center;width: 100%;z-index: 1;">
+							<div class="name" style="display: flex;align-items: center;gap: 10px;">
+								<Icon icon={osIcons[activeOS]} />
+								{asset.name}
+							</div>
+
+							<div class="size">
+								{convertSize(asset.size)}
+								{#if showIndividualDownloads}
+									<span style="min-width: 50px;text-align: right;">
+										- {asset.download_count} downloads
+									</span>
+								{/if}
+							</div>
 						</div>
-					</div>
-				</Link>
+					</Link>
+				{/if}
 			{/each}
 		{:else}
 			<p style="text-align: center;opacity: 0.8;">Getting releases! Please wait...</p>
@@ -176,6 +202,17 @@
 		border-radius: var(--border-radius);
 		overflow: hidden;
 		/* border: 5px solid var(--secondary); */
+	}
+
+	.tabs {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		margin-bottom: 10px;
+		padding: 0 100px;
+	}
+	.tabs :global(button span p) {
+		justify-content: center;
 	}
 
 	.assets {

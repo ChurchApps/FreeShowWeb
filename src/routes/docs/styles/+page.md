@@ -27,6 +27,12 @@ Click on the different active layers to toggle them, useful again if you don't w
 
 You can set a template to override the output style to get different styles in outputs with the same input, useful for [lower thirds](./outputs#how-to-create-lower-third-display-for-a-live-stream). The template text color will be used, unless the slide item text has multiple colors, in that case the original colors will be used!
 
+:::admonition type=tip
+
+If a media item in the template has on set file path, and the background layer is turned off in the style; any slide backgrounds on the first slide (or current) in the show will be applied to the item.
+
+:::
+
 ## Metadata
 
 Change the looks of show metadata or a show message, and choose when to display the metadata.

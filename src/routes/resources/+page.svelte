@@ -1,21 +1,15 @@
 <script>
-	import Section from '$lib/components/main/Section.svelte';
-	import { backgrounds, scriptures, tools } from '$lib/components/scripts/resources';
+	import Section from "$lib/components/main/Section.svelte"
+	import { backgrounds, scriptures, tools } from "$lib/components/scripts/resources"
 </script>
 
 <svelte:head>
 	<title>FreeShow | Resource Portal</title>
 
-	<meta
-		name="description"
-		content="Backgrounds, Bibles & more resources to use in your church for free with a presentation software like FreeShow."
-	/>
+	<meta name="description" content="Backgrounds, Bibles & more resources to use in your church for free with a presentation software like FreeShow." />
 
 	<meta property="og:title" content="FreeShow — Resource Portal for Backgrounds, Bibles & more!" />
-	<meta
-		property="og:description"
-		content="Backgrounds, Bibles & more resources to use in your church for free with a presentation software like FreeShow."
-	/>
+	<meta property="og:description" content="Backgrounds, Bibles & more resources to use in your church for free with a presentation software like FreeShow." />
 </svelte:head>
 
 <Section center bubble>
@@ -43,6 +37,27 @@
 			</div>
 		{/each}
 	</div>
+
+	<ul class="list">
+		<li style="white-space: nowrap;">
+			<p>
+				<span style="font-size: 1.4em;">
+					<a href="https://ministrydesigns.media/collections/worship-motion-backgrounds" target="_blank" rel="noreferrer">Ministry Designs</a>
+				</span>
+
+				<span style="white-space: normal;">Worship motion backgrounds</span>
+			</p>
+		</li>
+		<li style="white-space: nowrap;">
+			<p>
+				<span style="font-size: 1.4em;">
+					<a href="https://snapshots.vrbm.org/" target="_blank" rel="noreferrer">The Virtual Bible Snapshot Project</a>
+				</span>
+
+				<span style="white-space: normal;">Bible Images, AI Art and Photographs for anyone to teach and understand the Bible better</span>
+			</p>
+		</li>
+	</ul>
 
 	<br />
 
@@ -77,7 +92,7 @@
 			<li style="white-space: nowrap;">
 				<p>
 					<span style="font-size: 1.4em;">
-						{#if tool.url.includes('http')}
+						{#if tool.url.includes("http")}
 							<a href={tool.url} target="_blank" rel="noreferrer">{tool.title}</a>:
 						{:else}
 							<a href={tool.url}>{tool.title}</a>:

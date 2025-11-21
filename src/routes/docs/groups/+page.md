@@ -7,6 +7,12 @@ description: All slides is a part of a group. You can have multiple of the same 
 
 All the current groups are located at the right side of a show. One group can be a verse, and another for chorus. A group can have multiple slides. Click or drag a group from the right to the center to add it to your current [layout](./layouts). Changing the slide in one group, will change all of the same groups in your layouts at the same time. Groups can be changed from the context menu.
 
+:::admonition type=note
+
+Editing a global slide in the editor will update all the slides in the layout that uses the same group. Notice that a group with the same name can be added multiple times, and will automatically be assigned a number. If you use the **Text edit** editor, the text you input is what you get out, meaning any groups with the exact same text will be merged into one, and any differences results in different groups.
+
+:::
+
 ### None groups
 
 Renaming a group to "." or setting it to the "None" option will mark it as a hidden group, which will not show up in the groups list on the right. This can be useful for presentations, or if you don't want the same group to be added multiple times.

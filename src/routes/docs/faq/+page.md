@@ -71,6 +71,10 @@ A bug in some versions of macOS makes right clicking by pressing two fingers on 
 
 First of all the kiosk mode should automatically be turned off after 5 seconds if you do not confirm. But if you are stuck on a black screen after restarting the program, you can place any file with the name **DISABLE_KIOSK_MODE** in the **Documents/FreeShow** folder. The program will then turn off kiosk mode on startup.
 
+### Forgot the Admin profile password
+
+Place any file with the name **ADMIN_PROFILE** in the **Documents/FreeShow** folder to open the Admin profile directly. Or you can enter a **--profile=admin** argument when running the executable, that can also be used to open any profile, e.g. **-p=Editor**.
+
 ### The app is slow
 
 First of all the app will most likely run slow on older computers. But you can improve the performance by making sure you do not use any feature requiring screen capture. These features should all be turned off for the best performance (if you do not use them):

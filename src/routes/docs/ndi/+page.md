@@ -33,9 +33,11 @@ FreeShow sends the streams as "FreeShow NDI - _output name_". See this tutorial 
 
 ## Troubleshooting
 
-- Use an ethernet cable if possible, because it is more reliable and less prone to latency.
-- Make sure both the sending and receiving device are in the same network subnet.
-- Download NDI Tools from NewTek's official website, and use the Monitor on the same device as FreeShow, to diagnose if the problem is on the network or directly from the FreeShow output.
+-   Use an ethernet cable if possible, because it is more reliable and less prone to latency.
+-   Make sure both the sending and receiving device are in the same network subnet.
+-   Download NDI Tools from NewTek's official website, and use the Monitor on the same device as FreeShow, to diagnose if the problem is on the network or directly from the FreeShow output.
+-   On macOS make sure "Local Network" is enabled in the settings.
+-   You can also try changing the computer hostname if you are having issues still.
 
 ## Step by step
 
