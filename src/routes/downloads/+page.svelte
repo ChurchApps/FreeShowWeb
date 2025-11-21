@@ -107,8 +107,8 @@
 			{/if}
 
 			{#each currentAssets as asset, i}
-				{#if currentArch === "arm" ? asset.name.includes("arm64") || asset.name.includes("aarch64") : !asset.name.includes("arm64") && !asset.name.includes("aarch64")}
-					<Link title="Download" link={asset.browser_download_url} style="width: 100%;" outline={i === 0}>
+				{#if activeOS === "Windows" || (currentArch === "arm" ? asset.name.includes("arm64") || asset.name.includes("aarch64") : !asset.name.includes("arm64") && !asset.name.includes("aarch64"))}
+					<Link title="Download" link={asset.browser_download_url} style="width: 100%;" outline={i === 0 || asset.name.includes(".dmg") || asset.name.includes(".AppImage")}>
 						<div class="flex" style="display: flex;justify-content: space-between;align-items: center;width: 100%;z-index: 1;">
 							<div class="name" style="display: flex;align-items: center;gap: 10px;">
 								<Icon icon={osIcons[activeOS]} />
