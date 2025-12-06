@@ -1,137 +1,131 @@
 <script lang="ts">
-	import { goto } from '$app/navigation';
-	import { onMount } from 'svelte';
-	import Button from '../inputs/Button.svelte';
-	import {
-		getAssets,
-		getLatest,
-		getOS,
-		getReleases,
-		type Asset,
-		type Release,
-		osIcons
-	} from '../scripts/releases';
-	import Popup from '../main/Popup.svelte';
+	import { goto } from "$app/navigation"
+	import { onMount } from "svelte"
+	import Button from "../inputs/Button.svelte"
+	import Popup from "../main/Popup.svelte"
+	import { getArchitecture, getAssets, getLatest, getOS, getReleases, osIcons, type Asset, type Release } from "../scripts/releases"
 
-	export let main: boolean = false;
-	export let disableMain: boolean = false;
+	export let main: boolean = false
+	export let disableMain: boolean = false
 
-	let latest: Release | null = null;
-	let currentAssets: Asset[] = [];
-	let activeOS: string = '';
+	let latest: Release | null = null
+	let currentAssets: Asset[] = []
+	let activeOS: string = ""
 
 	onMount(async () => {
-		if (disableMain) return;
+		if (disableMain) return
 
-		activeOS = getOS();
+		activeOS = getOS()
 
-		let releases = await getReleases();
-		latest = getLatest(releases);
-		currentAssets = getAssets(latest, activeOS);
+		let releases = await getReleases()
+		latest = getLatest(releases)
+		currentAssets = getAssets(latest, activeOS)
 
-		if (!main) return;
-		checkQuery();
-	});
+		if (!main) return
+		checkQuery()
+	})
 
-	let message: string = '';
-	let active: boolean = false;
+	let message: string = ""
+	let active: boolean = false
 	function checkQuery() {
-		const query = window.location.href.split('/?')[1] || '';
-		if (!query) return;
+		const query = window.location.href.split("/?")[1] || ""
+		if (!query) return
 
 		// /?v0.1.0
-		if (latest && query[0] === 'v' && query.length > 2 && query.length < 8) {
-			let newVersion = latest.tag_name;
+		if (latest && query[0] === "v" && query.length > 2 && query.length < 8) {
+			let newVersion = latest.tag_name
 			if (query !== newVersion)
 				message = `
                     <h2>There is a new update! :D</h2>${query} -> ${newVersion}
                     <br><br><b>What's new</b>
-                    ${latest.body.replaceAll('\n', '<br>')}
-                `;
-			else message = 'You are up to date! ;)';
-			active = true;
+                    ${latest.body.replaceAll("\n", "<br>")}
+                `
+			else message = "You are up to date! ;)"
+			active = true
 		}
 
 		// /?download
-		if (query === 'download') {
-			startDownload();
+		if (query === "download") {
+			startDownload()
 		}
 
 		// /?payment_successful
-		if (query === 'payment_successful') {
-			localStorage.setItem('purchased', 'true');
-			startDownload(false);
-			message = '<h2>Thank you for being awesome! :)</h2>Your download should begin shortly.<br>';
-			active = true;
+		if (query === "payment_successful") {
+			localStorage.setItem("purchased", "true")
+			startDownload(false)
+			message = "<h2>Thank you for being awesome! :)</h2>Your download should begin shortly.<br>"
+			active = true
 		}
 	}
 
 	// download
 
 	function anotherVersion(os: string) {
-		if (typeof localStorage !== 'undefined') {
-			localStorage.setItem('os', os);
+		if (typeof localStorage !== "undefined") {
+			localStorage.setItem("os", os)
 		}
 
-		goto('downloads');
+		goto("downloads")
 	}
 
-	function startDownload(redirect: boolean = true, arch: string = '') {
+	function startDownload(redirect: boolean = true, arch: string = "") {
 		// get architecture
-		if (activeOS === 'MacOS' && !arch) return chooseArchMac();
+		if (activeOS === "MacOS" && !arch) return chooseArchMac()
 
-		let downloadURL = getDownloadURL(arch);
-		if (!downloadURL) return;
+		let downloadURL = getDownloadURL(arch)
+		if (!downloadURL) return
 
-		window.open(downloadURL, '_self');
-		if (redirect) goto('downloading');
+		window.open(downloadURL, "_self")
+		if (redirect) goto("downloading")
 	}
 
-	function getDownloadURL(arch: string = '') {
-		let URL = currentAssets[0]?.browser_download_url;
+	function getDownloadURL(arch: string = "") {
+		let URL = currentAssets[0]?.browser_download_url
 
 		if (arch) {
-			URL = currentAssets.find((a) => a.name.includes(arch))?.browser_download_url || '';
+			URL = currentAssets.find((a) => a.name.includes(arch))?.browser_download_url || ""
 		}
 
-		return URL;
+		return URL
 	}
 
 	// MULTIPLE ARCHITECTURES
 
-	// WIP auto find: https://stackoverflow.com/a/75177111/10803046
-	let macArchPopup = false;
-	function chooseArchMac() {
-		if (getExistingArch()) return;
+	let macArchPopup = false
+	async function chooseArchMac() {
+		if (await getExistingArch()) return
 
-		macArchPopup = true;
+		macArchPopup = true
 	}
 
-	function getExistingArch() {
-		if (typeof localStorage === 'undefined') return false;
+	async function getExistingArch() {
+		const detectedArch = await getArchitecture()
+		if (detectedArch) {
+			startDownload(true, detectedArch)
+			return true
+		}
 
-		let savedArch = localStorage.getItem('arch') || '';
-		if (!savedArch) return false;
+		if (typeof localStorage === "undefined") return false
 
-		startDownload(true, savedArch);
-		return true;
+		let savedArch = localStorage.getItem("arch") || ""
+		if (!savedArch) return false
+
+		startDownload(true, savedArch)
+		return true
 	}
 
 	function selectArch(arch: string) {
-		startDownload(true, arch);
+		startDownload(true, arch)
 
-		if (typeof localStorage !== 'undefined') {
-			localStorage.setItem('arch', arch);
+		if (typeof localStorage !== "undefined") {
+			localStorage.setItem("arch", arch)
 		}
 	}
 </script>
 
 <Popup bind:active>
 	{@html message}
-	<Button
-		on:click={() => (active = false)}
-		style="align-self: center;border: 2px solid var(--text);">Okay</Button
-	>
+	<Button on:click={() => (active = false)} style="align-self: center;border: 2px solid var(--text);">Okay</Button>
 </Popup>
 
 <Popup bind:active={macArchPopup}>
@@ -141,54 +135,23 @@
 		Macs produced before 2021 should be x64, and newer ones are arm64 based.
 	</p>
 	<div style="align-self: center;">
-		<Button
-			on:click={() => selectArch('x64')}
-			style="align-self: center;border: 2px solid var(--text);"
-			>x64 (Intel CPUs)
-		</Button>
-		<Button
-			on:click={() => selectArch('arm')}
-			style="align-self: center;border: 2px solid var(--text);"
-			>arm64 (Apple Silicon M chips)
-		</Button>
+		<Button on:click={() => selectArch("x64")} style="align-self: center;border: 2px solid var(--text);">x64 (Intel CPUs)</Button>
+		<Button on:click={() => selectArch("arm")} style="align-self: center;border: 2px solid var(--text);">arm64 (Apple Silicon M chips)</Button>
 	</div>
 </Popup>
 
 {#if !disableMain}
-	<Button
-		on:click={() => startDownload()}
-		title="Download FreeShow {latest?.tag_name} for {activeOS || 'OS'}"
-		primary
-		icon={osIcons[activeOS]}
-		disabled={!activeOS}
-		big
-	>
-		Download{activeOS ? ` for ${activeOS}` : ''}
+	<Button on:click={() => startDownload()} title="Download FreeShow {latest?.tag_name} for {activeOS || 'OS'}" primary icon={osIcons[activeOS]} disabled={!activeOS} big>
+		Download{activeOS ? ` for ${activeOS}` : ""}
 	</Button>
 
 	<p style="opacity: 0.8;font-size: 0.8em;">Download another version:</p>
 {/if}
 
 <div class="more">
-	<Button
-		on:click={() => anotherVersion('Windows')}
-		icon="windows"
-		title="Download for Windows"
-		outline
-	/>
-	<Button
-		on:click={() => anotherVersion('MacOS')}
-		icon="apple"
-		title="Download for MacOS"
-		outline
-		variant
-	/>
-	<Button
-		on:click={() => anotherVersion('Linux')}
-		icon="linux"
-		title="Download for Linux"
-		outline
-	/>
+	<Button on:click={() => anotherVersion("Windows")} icon="windows" title="Download for Windows" outline />
+	<Button on:click={() => anotherVersion("MacOS")} icon="apple" title="Download for MacOS" outline variant />
+	<Button on:click={() => anotherVersion("Linux")} icon="linux" title="Download for Linux" outline />
 </div>
 
 <style>

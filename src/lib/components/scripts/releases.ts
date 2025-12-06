@@ -129,3 +129,40 @@ export function getOS(getSaved: boolean = false) {
 
 	return "Windows"
 }
+
+export async function getArchitecture() {
+	if (!navigator.userAgentData) return null
+
+	try {
+		const ua = await navigator.userAgentData.getHighEntropyValues(["architecture"])
+
+		if (ua.architecture === "arm") return "arm"
+		if (ua.architecture === "x86") return "x64"
+
+		return null
+	} catch (err) {
+		console.error("Could not get high entropy User-Agent Client Hints:", err)
+	}
+
+	return null
+}
+
+export function isLikelyOldWindows() {
+	const userAgent = navigator.userAgent
+
+	// not Windows
+	if (userAgent.indexOf("Windows") === -1) return false
+
+	// get the Windows NT version number
+	const winNTMatch = userAgent.match(/Windows NT ([\d.]+)/)
+
+	if (winNTMatch && winNTMatch[1]) {
+		// parse the major version number
+		const version = parseFloat(winNTMatch[1])
+
+		// Windows 7/8 = 6.x
+		return version < 10
+	}
+
+	return true
+}

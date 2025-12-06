@@ -3,17 +3,19 @@
 	import Link from "$lib/components/inputs/Link.svelte"
 	import Icon from "$lib/components/main/Icon.svelte"
 	import Section from "$lib/components/main/Section.svelte"
-	import { convertSize, getOS, getReleases, toDate, type Asset, type Release, getLatest, getLatestPrerelease, getAssets, osIcons } from "$lib/components/scripts/releases"
+	import { convertSize, getArchitecture, getAssets, getLatest, getLatestPrerelease, getOS, getReleases, isLikelyOldWindows, osIcons, toDate, type Asset, type Release } from "$lib/components/scripts/releases"
 	import { onMount } from "svelte"
 	import { fade } from "svelte/transition"
 
+	let systemOS = ""
 	onMount(async () => {
 		activeOS = getOS(true)
+		systemOS = getOS()
 
 		let releases = await getReleases()
 		readReleases(releases)
 
-		getExistingArch()
+		await getExistingArch()
 
 		// reset this in case it's the wrong arch (because user opened the downloads page)
 		if (typeof localStorage === "undefined") return
@@ -50,8 +52,16 @@
 		}, 0)
 	}
 
+	let autoDetected = false
 	let currentArch = "x64"
-	function getExistingArch() {
+	async function getExistingArch() {
+		const detectedArch = await getArchitecture()
+		if (detectedArch) {
+			currentArch = detectedArch
+			autoDetected = true
+			return
+		}
+
 		if (typeof localStorage === "undefined") return
 
 		currentArch = localStorage.getItem("arch") || "x64"
@@ -98,7 +108,7 @@
 
 	<div class="assets">
 		{#if currentAssets.length}
-			{#if activeOS !== "Windows"}
+			{#if activeOS !== "Windows" && systemOS === activeOS && !autoDetected}
 				<div class="tabs">
 					Architecture:
 					<Button active={currentArch === "x64"} on:click={() => setArchitecture("x64")}>{activeOS === "MacOS" ? "Intel (x64)" : "x86_64"}</Button>
@@ -107,7 +117,7 @@
 			{/if}
 
 			{#each currentAssets as asset, i}
-				{#if activeOS === "Windows" || (currentArch === "arm" ? asset.name.includes("arm64") || asset.name.includes("aarch64") : !asset.name.includes("arm64") && !asset.name.includes("aarch64"))}
+				{#if activeOS === "Windows" || systemOS !== activeOS || (currentArch === "arm" ? asset.name.includes("arm64") || asset.name.includes("aarch64") : !asset.name.includes("arm64") && !asset.name.includes("aarch64"))}
 					<Link title="Download" link={asset.browser_download_url} style="width: 100%;" outline={i === 0 || asset.name.includes(".dmg") || asset.name.includes(".AppImage")}>
 						<div class="flex" style="display: flex;justify-content: space-between;align-items: center;width: 100%;z-index: 1;">
 							<div class="name" style="display: flex;align-items: center;gap: 10px;">
@@ -132,7 +142,7 @@
 		{/if}
 
 		<!-- Download the last supported version for macOS 10.15 (Catalina) -->
-		{#if currentAssets.length && activeOS === "MacOS"}
+		{#if currentAssets.length && activeOS === "MacOS" && systemOS === "MacOS" && currentArch !== "arm"}
 			<Link link="https://github.com/ChurchApps/FreeShow/releases/tag/v1.4.9" target="_blank">
 				<div class="center" style="justify-content: left;">
 					<Icon icon="archive" size={1.2} />
@@ -145,7 +155,7 @@
 		{/if}
 		<!-- Download the last supported version for Windows 7/8, and macOS 10.13 & 10.14 -->
 		<!-- || activeOS === "MacOS" -->
-		{#if currentAssets.length && activeOS === "Windows"}
+		{#if currentAssets.length && activeOS === "Windows" && systemOS === "Windows" && isLikelyOldWindows()}
 			<Link link="https://github.com/ChurchApps/FreeShow/releases/tag/v1.2.4" target="_blank">
 				<div class="center" style="justify-content: left;">
 					<Icon icon="archive" size={1.2} />
@@ -209,7 +219,7 @@
 		align-items: center;
 		gap: 10px;
 		margin-bottom: 10px;
-		padding: 0 100px;
+		padding: 0 20px;
 	}
 	.tabs :global(button span p) {
 		justify-content: center;
@@ -279,6 +289,10 @@
 	/* media */
 
 	@media only screen and (min-width: 900px) {
+		.tabs {
+			padding: 0 100px;
+		}
+
 		.downloads {
 			font-size: 8em;
 		}
