@@ -11,6 +11,12 @@ description: Choose from over 230 online bible versions, or import your own bibl
 
 Choose from over 200 bible versions from [API.Bible](https://scripture.api.bible/), or import your own local file from Zefania, OSIS, Beblia, or OpenSong in XML format. Search the web for available scriptures you can use (e.g. "XML Bible Download KJV"), make sure you have the proper rights to use them. In the center you can find all of the books, chapters and verses.
 
+## Template
+
+In v1.5.5 a new and better scripture system got introduced. The default templates will use it, the content is now structured with dynamic values. Any template set to "Scripture" mode _(click the small arrow at the right side)_ will show the possible values when you right click a textbox and click "Dynamic values". This allows you to have different styling for different parts in the same textbox or in a different textbox.
+
+For Collections a number can be added to the value, like this: **{scripture2_reference}**. You can use that to get just the name of a specific Bible, instead of all in one string.
+
 ## Search
 
 Start searching (<Key>CTRL/CMD + F</Key>) to quickly select any verse in the bible, it will auto complete the book name. Can be like this: **"John 1:1-4"**, or like this: **"Genesis 1:1-2+5"**, then press <Key>Enter</Key> to show in output.
@@ -27,10 +33,10 @@ Select two or more of the scriptures in the left drawer panel, right click and p
 
 ## Options
 
-On the right you have many options to change how the scriptures are displayed. Here you can also change the template used. Please note that for collections the templates must have at least as many textboxes as there are scriptures.
+On the right you have a few options to change how the scriptures are displayed. Here you can also change the template used, that will determine how the content is styled and where its placed.
 
 :::admonition type=tip
-Enabling "Show version" will show the scripture name, but not any content inside parentheses. So you can hide e.g. the abbreviation.
+The value **{scripture_name}** will show the scripture name, but not any content inside parentheses. So you can hide e.g. the abbreviation.
 :::
 
 ## Create a show
@@ -41,18 +47,18 @@ The "Max verses per slide" means the maximum amount of bible verses per slide be
 
 ## FAQ
 
-- **How can I customize the scripture layout?**
+-   **How can I customize the scripture layout?**
 
-  To customize the scripture, all you need to do is edit the "Scripture" template in the "Templates" drawer tab. You can also create a new different template and select that on the right side in the "Scriptures" drawer tab.
+    To customize the scripture, all you need to do is edit the "Scripture" template in the "Templates" drawer tab. You can also create a new different template and select that on the right side in the "Scriptures" drawer tab.
 
-- **The importing is not working**
+-   **The importing is not working**
 
-  Make sure you have selected the correct option, you can try multiple if you are unsure. If none of them work, please try [this converter](https://github.com/vassbo/bible-converter/) which supports many more formats, or take contact.
+    Make sure you have selected the correct option, you can try multiple if you are unsure. If none of them work, please try [this converter](https://github.com/vassbo/bible-converter/) which supports many more formats, or take contact.
 
-- **The book names are in English, how to change?**
+-   **The book names are in English, how to change?**
 
-  FreeShow takes the Bible book names from the XML file. But sometimes they are in English for a different language or missing entirely, in that case you have to change the book names manually and import the file again: Edit the XML file, and add a `name=""` attributes to the `book` tags, like this: `<book name="Genesis"`.
+    FreeShow takes the Bible book names from the XML file. But sometimes they are in English for a different language or missing entirely, in that case you have to change the book names manually and import the file again: Edit the XML file, and add a `name=""` attributes to the `book` tags, like this: `<book name="Genesis"`.
 
-- **How to use Bibles offline**
+-   **How to use Bibles offline**
 
-  To use Bibles that does not rely on an internet connection or API.Bible. You need to import your own XML Bibles. To do that click "New scripture" in the bottom left of the "Scriptures" drawer, and find a Bible version available for use on the web of one of the [supported file types](./).
+    To use Bibles that does not rely on an internet connection or API.Bible. You need to import your own XML Bibles. To do that click "New scripture" in the bottom left of the "Scriptures" drawer, and find a Bible version available for use on the web of one of the [supported file types](./).
