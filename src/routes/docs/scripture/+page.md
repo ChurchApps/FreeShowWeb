@@ -15,7 +15,7 @@ Choose from over 200 bible versions from [API.Bible](https://scripture.api.bible
 
 In v1.5.5 a new and better scripture system got introduced. The default templates will use it, the content is now structured with dynamic values. Any template set to "Scripture" mode _(click the small arrow at the right side)_ will show the possible values when you right click a textbox and click "Dynamic values". This allows you to have different styling for different parts in the same textbox or in a different textbox.
 
-For Collections a number can be added to the value, like this: **{scripture2_reference}**. You can use that to get just the name of a specific Bible, instead of all in one string.
+For Collections a number can be added to the value, like this: **scripture2_reference**, with curly brackets. You can use that to get just the name of a specific Bible, instead of all in one string.
 
 ## Search
 
@@ -36,7 +36,7 @@ Select two or more of the scriptures in the left drawer panel, right click and p
 On the right you have a few options to change how the scriptures are displayed. Here you can also change the template used, that will determine how the content is styled and where its placed.
 
 :::admonition type=tip
-The value **{scripture_name}** will show the scripture name, but not any content inside parentheses. So you can hide e.g. the abbreviation.
+The value **scripture_name** will show the scripture name, but not any content inside parentheses. So you can hide e.g. the abbreviation.
 :::
 
 ## Create a show
