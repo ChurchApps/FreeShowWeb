@@ -41,3 +41,7 @@ _For advanced users_
 ```json
 %AppData%/freeshow
 ```
+
+### Older hardware
+
+-   Windows 7/8: Use [version 1.2.4](https://github.com/ChurchApps/FreeShow/releases/tag/v1.2.4)
