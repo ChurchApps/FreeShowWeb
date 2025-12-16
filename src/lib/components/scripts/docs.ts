@@ -61,8 +61,8 @@ export const sidebar: SidebarConfig = {
 		],
 		Advanced: [
 			// { title: "Mirrors", slug: "/docs/mirrors" },
-			{ title: "Data storage", slug: "/docs/data" }
-			// { title: "Troubleshooting", slug: "/docs/troubleshooting" }
+			{ title: "Data storage", slug: "/docs/data" },
+			{ title: "CCLI Reporting", slug: "/docs/advanced/ccli-reporting" }
 		],
 		Tips: [
 			// { title: "Roadmap", slug: "/docs/roadmap" },
