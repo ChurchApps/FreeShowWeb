@@ -37,7 +37,7 @@ When creating an action, click the 👁️ icon, and under "Other" you will find
 
 ![reporting action](/images/docs/reporting-action.webp)
 
-You can also use FreeShow's API to programmatically enable or disable logging - For example, using Bitfocus Companion. 
+You can also use [FreeShow's API](/api) to programmatically enable or disable logging - For example, using [Bitfocus Companion](/docs/companion). 
 
 
 ## Generating Reports
