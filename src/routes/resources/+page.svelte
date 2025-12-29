@@ -57,6 +57,24 @@
 				<span style="white-space: normal;">Bible Images, AI Art and Photographs for anyone to teach and understand the Bible better</span>
 			</p>
 		</li>
+		<li style="white-space: nowrap;">
+			<p>
+				<span style="font-size: 1.4em;">
+					<a href="https://www.visualrevival.com/" target="_blank" rel="noreferrer">Visual Revival</a>
+				</span>
+
+				<span style="white-space: normal;">Premium-quality church media that engages and inspires.</span>
+			</p>
+		</li>
+		<li style="white-space: nowrap;">
+			<p>
+				<span style="font-size: 1.4em;">
+					<a href="https://sundayscreens.com/" target="_blank" rel="noreferrer">Sunday Screens</a>
+				</span>
+
+				<span style="white-space: normal;">Beautiful visuals for your entire church service</span>
+			</p>
+		</li>
 	</ul>
 
 	<br />

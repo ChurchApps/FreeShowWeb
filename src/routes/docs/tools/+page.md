@@ -17,7 +17,7 @@ See all of the media layers in all of the layouts. This includes all of the back
 
 ### Metadata
 
-Set metadata like title, artist and CCLI data about the current song. This can be enabled to display under the output settings. You can also get the EXIF metadata from JPEG images set as background. Also at the bottom you can change the looks and change the slides they are showing at. This can also be set globally on the output with [Styles](./styles).
+Set metadata like title, artist and CCLI data about the current song. This can be enabled to display under the output settings. Also at the bottom you can change the looks and change the slides they are showing at. This can also be set globally on the output with [Styles](./styles).
 
 In addition you can type a "Message" here that will display on all the slides when the show is playing. Right click the message textbox for the ability to add dynamic values.
 

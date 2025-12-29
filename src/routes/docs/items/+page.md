@@ -67,6 +67,14 @@ Add live speech to text captions to your slide.
 
 This is for adding an SVG icon to your slide.
 
+## Dynamic values
+
+Right click any item and choose, dynamic values to add any value that will change dynamically, like the date, names, metadata, variables and much more.
+
+:::admonition type=tip
+Add "|" to the end to set a fallback value, example: **{show_name|No show}**.
+:::
+
 ## Item actions
 
 Right click any item, and choose "Item actions".
