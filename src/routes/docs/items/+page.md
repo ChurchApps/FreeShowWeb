@@ -72,7 +72,7 @@ This is for adding an SVG icon to your slide.
 Right click any item and choose, dynamic values to add any value that will change dynamically, like the date, names, metadata, variables and much more.
 
 :::admonition type=tip
-Add "|" to the end to set a fallback value, example: **{show_name|No show}**.
+Add "|" to the end to set a fallback value, example: **show_name|No show** (inside the curly brackets).
 :::
 
 ## Item actions
