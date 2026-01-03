@@ -63,11 +63,11 @@ The scripture tab is a slim version of the scripture tab in the main app. The se
 
 <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
 <figure style="margin: 0;">
-<img src="/images/docs/Remote-Tablet-Scriptures_grid.webp" alt="Scripture grid view on tablet" width="400">
+<img src="/images/docs/Remote-Tablet-Scriptures_grid.webp" alt="Scripture grid view on tablet" width="600">
 <figcaption style="text-align: center; font-size: 0.9em;">Grid View</figcaption>
 </figure>
 <figure style="margin: 0;">
-<img src="/images/docs/Remote-Tablet-Scriptures_list.webp" alt="Scripture list view on tablet" width="400">
+<img src="/images/docs/Remote-Tablet-Scriptures_list.webp" alt="Scripture list view on tablet" width="600">
 <figcaption style="text-align: center; font-size: 0.9em;">List View</figcaption>
 </figure>
 </div>
