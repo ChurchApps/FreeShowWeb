@@ -45,9 +45,9 @@ Then on the other computer go to settings>"Files">"Import", find and select all 
 
 ### Cloud sync between two computers
 
-Cloud sync is possible. FreeShow has a integrated support for syncing all the data files [using Google Drive](./drive), this is completely free.
+Cloud sync is possible. FreeShow has a integrated support for syncing all the data files using our own [cloud Sync](./cloud), this is completely free.
 
-If you also want to sync media files as well, you will need to use a custom sync like OneDrive, the Google Drive desktop app or another free alternative. Read [more here](https://github.com/ChurchApps/FreeShow/issues/402)!
+If you want to sync media files as well, you will need to use a custom sync like OneDrive, the Google Drive desktop app or another free alternative. Read [more here](https://github.com/ChurchApps/FreeShow/issues/402)!
 
 ### Can I control FreeShow from custom software?
 
@@ -59,7 +59,7 @@ This might mean that you have set a custom output style with a template that ove
 
 ### How to transfer the files between computers?
 
-You can set up [cloud sync](./drive). Or you can go to **Settings > Files > Backup everything** (buttons at the bottom of the page). Then move the .json files to your other computer, go to **Settings > Files > Restore**, and select the files. This will copy your exact setup.
+You can set up [cloud sync](./cloud). Or you can go to **Settings > Files > Backup everything** (buttons at the bottom of the page). Then move the .json files to your other computer, go to **Settings > Files > Restore**, and select the files. This will copy your exact setup.
 
 Note that media files are linked to the system and must be moved separately. There is an option to **Bundle all media files** if the files are scattered across your entire system. Adding the media folder to the "Media" drawer will ensure the media files are replaced if they can't be found at the original location anymore.
 

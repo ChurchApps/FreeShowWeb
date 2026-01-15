@@ -58,7 +58,7 @@ export const features: Features = [
 		programs: {
 			fs: {
 				content: true,
-				note: 'Sync with your Google Drive using your own Google API. Or use a repository linked to your local file system.'
+				note: 'Sync all your songs/settings with our integrated cloud sync. Use a repository linked to your local file system for media.'
 			},
 			pp: { content: true, note: 'Use a repository linked to your local file system.' },
 			ew: { content: false },

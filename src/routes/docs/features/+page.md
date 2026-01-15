@@ -27,7 +27,7 @@ _These are some of the main features._
 -   **Chords:** Add chords to the text and show them in stage display.
 -   **Lock Output:** Lock the output to know for sure that you can't accidentally change the output.
 -   **Transitions:** Add custom transitions for every single slide and items.
--   **Cloud Sync:** Sync all the data with your Google Drive using your own Google API.
+-   **Cloud Sync:** Sync all your data between computers.
 
 ## System requirements
 

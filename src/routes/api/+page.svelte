@@ -77,7 +77,7 @@
 		name_start_timer: "TIMERS",
 		id_select_output_style: "VISUAL",
 		change_variable: "FUNCTIONS",
-		sync_drive: "OTHER",
+		sync_content_provider: "OTHER",
 		name_run_action: "ACTION",
 		add_to_project: "EDIT",
 		get_shows: "GET"

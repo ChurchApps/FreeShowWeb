@@ -51,7 +51,7 @@ export const sidebar: SidebarConfig = {
 			{ title: "Bitfocus Companion", slug: "/docs/companion" }
 		],
 		Cloud: [
-			{ title: "Drive API", slug: "/docs/drive" },
+			{ title: "Cloud Sync", slug: "/docs/cloud" },
 			{ title: "Integrations", slug: "/docs/integrations" }
 		],
 		Actions: [

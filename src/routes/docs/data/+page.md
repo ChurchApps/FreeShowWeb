@@ -21,4 +21,4 @@ When enabling the "Save user settings at 'Data location'" option, all of the use
 
 ## Cloud storage
 
-It is recommended to set up a custom solution like OneDrive for syncing media. But you can use the built in "Cloud" option for syncing data like shows and projects across different computers. Please check out the [Drive page](./drive) for a setup tutorial.
+Use our integrated [Cloud Sync](./cloud) to sync your shows/projects/settings. For media ir is recommended to set up a custom solution like OneDrive/Google Drive.
