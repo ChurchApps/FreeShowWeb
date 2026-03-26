@@ -19,13 +19,29 @@ Right click any media and click "Favourite" to add them to your favourites for e
 
 ### Online media
 
-Included on the left side is a tab called "Online". Here you will find more tabs at the bottom with currently the options **YouTube**, **Vimeo** and **Pixabay**.
+Included on the left side is a tab called "Online". Here you will find more tabs at the bottom with currently the options **YouTube**, **Vimeo**, **Pixabay**, **Unsplash** or **Canva**.
 
 In **YouTube** and **Vimeo** you have to add you own videos by clicking "Add" at the bottom and pasting a link to a video. Note that some YouTube videos won't work, because the creator has disabled embeds to their video.
 
-In **Pixabay** you can search for any images or videos by using the [drawer search](./drawer#drawer-search). Please note that you need internet access to use these elements.
+In **Pixabay** or **Unsplash** you can search for any images or videos by using the [drawer search](./drawer#drawer-search). Please note that you need internet access to use these elements.
+
+In **Canva** you can connect to your account and drag in designs you own directly as images. See the steps below on how to connect.
 
 Want to get videos from another platform? Send an email to [dev@freeshow.app](mailto:dev@freeshow.app). :)
+
+### Connecting to Canva
+
+Due to public Canva API keys only being allowed on web apps, the workaround is to setup your own "personal" API key. Head over to [Canva API Integrations](https://www.canva.com/developers/integrations/connect-api), log in with the account that has your designs, click **Create an integration** (you need to set up an account password and MFA if you haven't already), agree to the terms and Create.
+
+Set the integration name to **FreeShow**. Now copy the **Client ID** and paste in FreeShow, then click **Generate secret**, copy that and paste in FreeShow.
+
+Next go to **Scopes** on the left side, and check the **Read** access on **asset**, **design:meta** and **folder**.
+
+Next go to **Authentication**, and set **URL 1** to **http://127.0.0.1:5520/auth/complete**.
+
+Now you are all set up! The integration can remain as a draft. Note that the API ID/Secret will only work when you log in to the same Canva account you used to set up the API Integration.
+
+Now in FreeShow, click **Connect to Canva**, then **Allow**, and you should be good to go.
 
 ## Screens and Cameras
 

@@ -13,9 +13,11 @@ Go to "Connection" in the settings. Make sure the server you want to use is enab
 
 The IP should be similar to this: _192.168.10.100:5510_. It is different for each device, and the port can be changed by you, but it's not necessary if the ports are not in use by another program.
 
+The default IP (QR-code) uses the first one available, but might not always be the correct one if you have multiple local IPs, use the command line to list all IPs and try one of them instead if the default one does not work.
+
 ### Troubleshooting
 
--   Make sure the IP and port is correct.
+-   Make sure the IP and port is correct. (Might be different to the visible one)
 -   Make sure both the computer with FreeShow and the device you want the stage display on, are connected to the same network.
 -   Check that the network type on the computer is set to private (not public).
 -   Make sure FreeShow is allowed through the computer firewall.
