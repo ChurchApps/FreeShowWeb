@@ -35,7 +35,7 @@ Due to public Canva API keys only being allowed on web apps, the workaround is t
 
 Set the integration name to **FreeShow**. Now copy the **Client ID** and paste in FreeShow, then click **Generate secret**, copy that and paste in FreeShow.
 
-Next go to **Scopes** on the left side, and check the **Read** access on **asset**, **design:meta** and **folder**.
+Next go to **Scopes** on the left side, and check the **Read** access on **asset**, **design:content**, **design:meta** and **folder**.
 
 Next go to **Authentication**, and set **URL 1** to **http://127.0.0.1:5520/auth/complete**.
 
