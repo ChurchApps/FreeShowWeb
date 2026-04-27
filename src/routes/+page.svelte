@@ -229,7 +229,7 @@
 		<p style="width: 100%;">
 			Unlike other presentation software providers, we are not a business. We are a non-profit that exists solely to serve churches. Our biggest difference is in the name. FreeShow is and always will be free. This is possible due to the
 			generous support of donors.
-			<a href="https://churchapps.org/contribute" target="_blank">Learn more.</a>
+			<a href="https://churchapps.org/partner" target="_blank">Learn more.</a>
 			That isn't the only way FreeShow stands above the alternatives. It is also a very feature-rich application. Here is how we stack up.
 		</p>
 	</div>

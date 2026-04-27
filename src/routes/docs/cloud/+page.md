@@ -31,10 +31,10 @@ If a users access to a team has changed in B1.Church (e.g. if you add your accou
 
 Now we are done with the main setup. In FreeShow go to **settings>Files**, click "Connect to ChurchApps", and "Allow" access to "Plans".
 
-If your account have access to multiple teams, you will be prompted to choose one. First time it will sync right away, if there is data in the cloud already you will get some options on how you want to deal with that, **Merge** will be fine in most cases.
+If your account has access to multiple teams, you will be prompted to choose one. First time it will sync right away, if there is data in the cloud already you will get some options on how you want to deal with that, **Merge** will be fine in most cases.
 
 :::admonition type=info
-A sync will happen automatically each time FreeShow is opened/closed, and when "Autosave" is triggerd. You will see a status indicator in the top left corner.
+A sync will happen automatically each time FreeShow is opened/closed, and when "Autosave" is triggered. You will see a status indicator in the top left corner.
 :::
 
 ## Syncing Media
