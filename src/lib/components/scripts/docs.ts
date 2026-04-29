@@ -40,7 +40,8 @@ export const sidebar: SidebarConfig = {
 			{ title: "Output", slug: "/docs/output" },
 			{ title: "NDI®", slug: "/docs/ndi" },
 			{ title: "Multiple outputs", slug: "/docs/outputs" },
-			{ title: "Styles", slug: "/docs/styles" }
+			{ title: "Styles", slug: "/docs/styles" },
+			{ title: "Livestreaming", slug: "/docs/livestreaming" }
 		],
 		Remote: [
 			{ title: "Connecting", slug: "/docs/connecting" },
