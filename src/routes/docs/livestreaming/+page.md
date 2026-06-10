@@ -9,4 +9,4 @@ Currently the best way to livestream is to use a program called [OBS Studio](htt
 
 ### Setting up OBS control from FreeShow
 
-FreeShow supports controlling OBS directly, so you don't need to switch back and forth, just leave OBS open in the background and control your stream from FreeShow. To use that feature you must enable the WebSocket server in OBS. Go to **Tools > WebSocket Server Settings** and make sure **Enable WebSocket server** is turned on. Then go to **Functions > OBS** in FreeShow and click **Connect**.
+FreeShow supports controlling OBS directly, so you don't need to switch back and forth, just leave OBS open in the background and control your stream from FreeShow. To use that feature you must enable the WebSocket server in OBS. Go to **Tools > WebSocket Server Settings** and make sure **Enable WebSocket server** is turned on. Then in FreeShow enable the OBS Controller in **settings > Connection** and go to **Functions > OBS Studio** and click **Connect**.
