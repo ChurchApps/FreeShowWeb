@@ -1,6 +1,6 @@
 <script>
 	import Section from "$lib/components/main/Section.svelte"
-	import { backgrounds, scriptures, tools } from "$lib/components/scripts/resources"
+	import { backgrounds, backgroundsList, scriptures, tools } from "$lib/components/scripts/resources"
 </script>
 
 <svelte:head>
@@ -39,42 +39,17 @@
 	</div>
 
 	<ul class="list">
-		<li style="white-space: nowrap;">
-			<p>
-				<span style="font-size: 1.4em;">
-					<a href="https://ministrydesigns.media/collections/worship-motion-backgrounds" target="_blank" rel="noreferrer">Ministry Designs</a>
-				</span>
+		{#each backgroundsList as background}
+			<li style="white-space: nowrap;">
+				<p>
+					<span style="font-size: 1.4em;">
+						<a href={background.url} target="_blank" rel="noreferrer">{background.title}</a>
+					</span>
 
-				<span style="white-space: normal;">Worship motion backgrounds</span>
-			</p>
-		</li>
-		<li style="white-space: nowrap;">
-			<p>
-				<span style="font-size: 1.4em;">
-					<a href="https://snapshots.vrbm.org/" target="_blank" rel="noreferrer">The Virtual Bible Snapshot Project</a>
-				</span>
-
-				<span style="white-space: normal;">Bible Images, AI Art and Photographs for anyone to teach and understand the Bible better</span>
-			</p>
-		</li>
-		<li style="white-space: nowrap;">
-			<p>
-				<span style="font-size: 1.4em;">
-					<a href="https://www.visualrevival.com/" target="_blank" rel="noreferrer">Visual Revival</a>
-				</span>
-
-				<span style="white-space: normal;">Premium-quality church media that engages and inspires.</span>
-			</p>
-		</li>
-		<li style="white-space: nowrap;">
-			<p>
-				<span style="font-size: 1.4em;">
-					<a href="https://sundayscreens.com/" target="_blank" rel="noreferrer">Sunday Screens</a>
-				</span>
-
-				<span style="white-space: normal;">Beautiful visuals for your entire church service</span>
-			</p>
-		</li>
+					<span style="white-space: normal;">{background.description}</span>
+				</p>
+			</li>
+		{/each}
 	</ul>
 
 	<br />

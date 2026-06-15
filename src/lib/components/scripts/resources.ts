@@ -34,25 +34,27 @@ export const backgrounds = [
 			'With free church images, graphics, church videos and much more, your creative ideas can come to life with our free content on CreationSwap.',
 		preview: '/images/resources/creationswap.webp'
 	},
-	{
-		title: 'Freepik',
-		url: 'https://www.freepik.com/videos/free-worship-backgrounds',
-		description:
-			'Discover 6000 handpicked, high-quality stock videos in the Free Worship Backgrounds category. Download now in HD or 4K and elevate your next project.',
-		preview: '/images/resources/freepik.webp'
-	},
-	{
-		title: 'free indeed media',
-		url: 'https://freeindeedmedia.org/',
-		description: 'if the Son sets you free, you will be free indeed',
-		preview: '/images/resources/freeindedmedia.webp'
-	},
-	{
-		title: 'freely.',
-		url: 'https://www.freelyphotos.com/',
-		description: 'The home of free CC0 christian photos and images for church, churches, ministry.',
-		preview: '/images/resources/freely.webp'
-	},
+	// {
+	// 	title: 'Freepik',
+	// 	url: 'https://www.freepik.com/videos/free-worship-backgrounds',
+	// 	description:
+	// 		'Discover 6000 handpicked, high-quality stock videos in the Free Worship Backgrounds category. Download now in HD or 4K and elevate your next project.',
+	// 	preview: '/images/resources/freepik.webp'
+	// },
+	// Discontinued:
+	// {
+	// 	title: 'free indeed media',
+	// 	url: 'https://freeindeedmedia.org/',
+	// 	description: 'if the Son sets you free, you will be free indeed',
+	// 	preview: '/images/resources/freeindedmedia.webp'
+	// },
+	// Discontinued:
+	// {
+	// 	title: 'freely.',
+	// 	url: 'https://www.freelyphotos.com/',
+	// 	description: 'The home of free CC0 christian photos and images for church, churches, ministry.',
+	// 	preview: '/images/resources/freely.webp'
+	// },
 	{
 		title: 'MotionBolt',
 		url: 'https://www.motionbolt.com/',
@@ -81,6 +83,34 @@ export const backgrounds = [
 		preview: '/images/resources/unsplash.webp'
 	}
 ];
+
+export const backgroundsList = [
+	{
+		title: "Freepik",
+		url: "https://www.freepik.com/videos/free-worship-backgrounds",
+		description: "Discover 6000 handpicked, high-quality stock videos in the Free Worship Backgrounds category."
+	},
+	{
+		title: "Ministry Designs",
+		url: "https://ministrydesigns.media/collections/worship-motion-backgrounds",
+		description: "Worship motion backgrounds"
+	},
+	{
+		title: "The Virtual Bible Snapshot Project",
+		url: "https://snapshots.vrbm.org/",
+		description: "Bible Images, AI Art and Photographs for anyone to teach and understand the Bible better"
+	},
+	{
+		title: "Visual Revival",
+		url: "https://www.visualrevival.com/",
+		description: "Premium-quality church media that engages and inspires."
+	},
+	{
+		title: "Sunday Screens",
+		url: "https://sundayscreens.com/",
+		description: "Beautiful visuals for your entire church service"
+	}
+]
 
 export const scriptures = [
 	{
