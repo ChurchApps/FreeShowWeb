@@ -25,6 +25,6 @@ In addition you can type a "Message" here that will display on all the slides wh
 To get a custom layout on the metadata, edit your metadata template with custom text and add the metadata values with dynamic values (can be added with right click).
 :::
 
-### Notes
+## Top menu
 
-Add some notes to the show.
+At the top you will find three dots, here you can toggle Notes for the show, and also toggle a timeline where you can record the slides.

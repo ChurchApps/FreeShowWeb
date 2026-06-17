@@ -39,7 +39,7 @@ Set filters for the slide, choose for either the background, the foreground or b
 
 ### 5. Slide
 
-Change the background color, or add notes to the current slide.
+Change slide style, including background color.
 
 ## Item styling
 
