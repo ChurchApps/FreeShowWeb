@@ -8,6 +8,14 @@
 	let donatePopup = false
 	const ONE_DAY = 24 * 60 * 60 * 1000
 	onMount(() => {
+		if (typeof sessionStorage !== "undefined") {
+			const downloadUrl = sessionStorage.getItem("downloadUrl")
+			if (downloadUrl) {
+				sessionStorage.removeItem("downloadUrl")
+				window.location.href = downloadUrl
+			}
+		}
+
 		if (typeof localStorage === "undefined") return
 
 		let downloadCount = parseInt(localStorage.getItem("downloadCount") || "0") + 1

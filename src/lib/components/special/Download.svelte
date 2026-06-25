@@ -75,8 +75,14 @@
 		let downloadURL = getDownloadURL(arch)
 		if (!downloadURL) return
 
-		window.open(downloadURL, "_self")
-		if (redirect) goto("downloading")
+		if (redirect) {
+			if (typeof sessionStorage !== "undefined") {
+				sessionStorage.setItem("downloadUrl", downloadURL)
+			}
+			goto("downloading")
+		} else {
+			window.open(downloadURL, "_self")
+		}
 	}
 
 	function getDownloadURL(arch: string = "") {
