@@ -13,7 +13,7 @@ description: Sync all your important files for backups, and to access your files
 
 First you need a ChurchApps account, head over to [B1.Church](https://admin.b1.church/login) to **Register or Sign in**.
 
-Now click on the dropdown in the top left corner, go to the [Serving](https://admin.b1.church/serving) tab. Here you need to create a **new ministry** if you haven't already, it can be named e.g. "FreeShow". After that you can create a **new team** inside of that ministry, name that team e.g. "Main". (Not to be confused with "Groups")
+Now click on the dropdown in the top left corner, go to the [Serving](https://admin.b1.church/serving) tab, then click on [Plans](https://admin.b1.church/serving/plans). Here you need to click **Add Ministry** to create one if you haven't already, it can be named e.g. "FreeShow". After that you can create a **New Serving Team** inside of that ministry, name that team e.g. "Main". (Not to be confused with "Groups")
 
 :::admonition type=tip
 It's possible to create multiple teams that has different data. A team can have many members, and a user can be a member of multiple teams. This makes it easy to change the access a user has to different cloud data.
