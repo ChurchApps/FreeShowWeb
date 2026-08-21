@@ -174,7 +174,7 @@
 		<Card outline bubble={2} style="--card-padding: var(--card-padding-big);width: var(--full-small-half-big);">
 			<div style="display: flex;flex-direction: column;gap: 25px;position: relative;z-index: 1;">
 				<h4>Create & Show</h4>
-				<Feature icon="magic" title="Create Impactful Shows">Easily arrange slides and layouts for lyrics, presentations, events, and more, ensuring a smooth flow in your presentations.</Feature>
+				<Feature icon="magic" title="Create Impactful Shows">Easily arrange slides for lyrics, presentations, events, and more, ensuring a smooth flow in your presentations.</Feature>
 				<Feature icon="image" title="Dynamic Media Integration">Effortlessly drag images and videos into your slides as backgrounds, enhancing the visual appeal of your presentations.</Feature>
 			</div>
 

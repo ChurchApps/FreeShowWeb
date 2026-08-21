@@ -9,11 +9,11 @@ The show tools are located on the right side when you are in "Show" view, with a
 
 ### Groups
 
-Here you will find all of the current groups in the current show, and a list of all your global groups. Click or drag them to the center to add them to the current layout.
+Here you will find all of the current groups in the current show, and a list of all your global groups. Click or drag them to the center to add them to the current arrangement.
 
 ### Media
 
-See all of the media layers in all of the layouts. This includes all of the backgrounds, audio, microphones and actions.
+See all of the media layers in all of the arrangements. This includes all of the backgrounds, audio, microphones and actions.
 
 ### Metadata
 

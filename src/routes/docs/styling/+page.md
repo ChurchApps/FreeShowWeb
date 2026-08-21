@@ -27,7 +27,7 @@ The font you use could be day/night difference, the letters should not be clumpe
 
 ## Simple
 
-I have noticed people having "(x4)" at the end of some slides. But it's not recommended, because both you and the audience have to "count", which could be distracting. This leaves a possibility for you to miscount, or maybe they repeat the bridge a few more times than planned, leaving the audience confused. It's much better to just repeat the same slide in your layout, which is easy to do in FreeShow. Meaning you always know where you are in the lyrics.
+I have noticed people having "(x4)" at the end of some slides. But it's not recommended, because both you and the audience have to "count", which could be distracting. This leaves a possibility for you to miscount, or maybe they repeat the bridge a few more times than planned, leaving the audience confused. It's much better to just repeat the same slide in your arrangement, which is easy to do in FreeShow. Meaning you always know where you are in the lyrics.
 
 ## Be early
 

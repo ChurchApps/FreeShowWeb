@@ -23,7 +23,7 @@ export const sidebar: SidebarConfig = {
 			{ title: "Items", slug: "/docs/items" },
 			{ title: "Chords", slug: "/docs/chords" },
 			{ title: "Groups", slug: "/docs/groups" },
-			{ title: "Layouts", slug: "/docs/layouts" },
+			{ title: "Arrangements", slug: "/docs/arrangements" },
 			{ title: "Tools", slug: "/docs/tools" }
 		],
 		Drawer: [

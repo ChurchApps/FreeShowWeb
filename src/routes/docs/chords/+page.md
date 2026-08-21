@@ -33,7 +33,7 @@ This method changes the chords in the show file itself, affecting all displays (
 4. Click the **up arrow** to transpose up a semitone or the **down arrow** to transpose down a semitone
 5. Continue clicking to reach your desired key
 
-**When to use:** When you want to permanently change the key of a song, or when creating different layouts for the same song in different keys.
+**When to use:** When you want to permanently change the key of a song, or when creating different arrangements for the same song in different keys.
 
 ### Local transpose (Stage display only)
 
@@ -49,4 +49,3 @@ This method transposes chords only on the stage display device, without changing
 6. To reset back to the original show key, set the transpose value to **0**
 
 **When to use:** When different musicians need the same song in different keys.
-

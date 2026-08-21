@@ -18,7 +18,7 @@ The data type is **JSON**. Supported file extensions are _.show_ or _.json_.
 	"name": "Show name",
 	"category": null, // the category id (can be left as null, unsorted)
 	"settings": {
-		"activeLayout": "<layout_id>", // the id of the layout, as set below
+		"activeLayout": "<layout_id>", // the id of the layout/arrangement, as set below
 		"template": null // apply a template (can be left at null)
 	},
 	"timestamps": {
@@ -84,7 +84,7 @@ The data type is **JSON**. Supported file extensions are _.show_ or _.json_.
 		}
 	},
 	"layouts": {
-		// multiple layouts can be used to rearrange the same slide groups with different orders
+		// multiple layouts/arrangements can be used to rearrange the same slide groups with different orders
 		// only one layout is required
 		// the same slide groups can be added multiple times in the same layout
 		"<layout_id>": {

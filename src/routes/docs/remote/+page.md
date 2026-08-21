@@ -48,7 +48,7 @@ If you have a project active it will be automatically opened, if not you will se
 
 ### Show
 
-When you open a show, or a show is already active, you can see all the slides here, click on one of them to play. At the bottom you can also change layout if multiple are available, or click "Groups" or "Edit" to edit the groups layout or text content.
+When you open a show, or a show is already active, you can see all the slides here, click on one of them to play. At the bottom you can also change arrangement if multiple are available, or click "Groups" or "Edit" to edit the groups arrangement or text content.
 
 ### Output
 

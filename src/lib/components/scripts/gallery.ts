@@ -2,7 +2,7 @@ export const images = [
 	{
 		src: "preview/show.webp",
 		name: "Show",
-		description: "Create a show for lyrics, presentations, events and more. Arrange slides, and create different layouts for the same song."
+		description: "Create a show for lyrics, presentations, events and more. Arrange slides, and create different arrangements for the same song."
 	},
 	{
 		src: "preview/media.webp",
