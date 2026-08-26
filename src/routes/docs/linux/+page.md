@@ -51,6 +51,14 @@ You can download a custom ARM build from the [downloads page](/downloads), marke
 
 We also have .deb (debian) and .rpm (Red Hat) available.
 
+#### Chromebook
+
+Chromebooks run on Linux, so if you set up the "Linux development environment" you can install the .deb file.
+
+#### Android
+
+Android devices runs on Linux under the hood. So if you really need FreeShow on an Android device, you should be able to find a tutorial on the internet.
+
 ### Application data path
 
 _For advanced users_

@@ -82,6 +82,6 @@ Read [more here](./calendar).
 
 ## Functions
 
-Various functions including Actions, Timers, Variables & Triggers.
+Various functions including Actions, Timers, Variables & Interactions.
 
 Read [more here](./functions).
