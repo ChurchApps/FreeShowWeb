@@ -1,12 +1,12 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	import Download from '../special/Download.svelte';
+	import { onMount } from "svelte"
+	import Download from "../special/Download.svelte"
 
-	let year: number = 2024;
+	let year: number = 2026 // from 2024
 	onMount(() => {
-		let currentYear = new Date().getFullYear();
-		if (currentYear) year = currentYear;
-	});
+		let currentYear = new Date().getFullYear()
+		if (currentYear) year = currentYear
+	})
 </script>
 
 <footer>
@@ -15,14 +15,7 @@
 	<!-- TODO: social accounts! -->
 
 	<div class="text">
-		<a
-			href="https://github.com/ChurchApps/FreeShow/issues"
-			title="Go to FreeShow issues on GitHub"
-			target="_blank"
-			rel="noreferrer"
-		>
-			Report a bug or request a feature
-		</a>
+		<a href="https://github.com/ChurchApps/FreeShow/issues" title="Go to FreeShow issues on GitHub" target="_blank" rel="noreferrer">Report a bug or request a feature</a>
 		<span>●</span>
 		<a href="https://churchapps.org/partner" title="Give a thanks">Donate</a>
 		<span>●</span>
@@ -31,8 +24,14 @@
 		<br /><br />
 
 		<span>{year} &copy; </span>
-		<a href="https://livecs.org" target="_blank" rel="noreferrer"> Live Church Solutions </a>
+		<a href="https://livecs.org" target="_blank" rel="noreferrer">Live Church Solutions</a>
 		<span> - A 501(c)(3) organization with EIN 45-5349618</span>
+
+		<br /><br />
+
+		<a href="https://churchapps.org/privacy" target="_blank" rel="noreferrer" style="font-size: 0.8em;opacity: 0.8;">Privacy Policy</a>
+		<span style="font-size: 0.8em;opacity: 0.8;">●</span>
+		<a href="https://churchapps.org/terms" target="_blank" rel="noreferrer" style="font-size: 0.8em;opacity: 0.8;">Terms of Service</a>
 	</div>
 </footer>
 
@@ -59,7 +58,7 @@
 	footer :global(.more)::after {
 		display: var(--hide-small-show-big);
 
-		content: '';
+		content: "";
 		position: absolute;
 		top: 50%;
 		left: 0;
@@ -70,19 +69,7 @@
 
 		border-bottom: var(--border-width) solid var(--secondary);
 		border-image-slice: 1;
-		border-image-source: linear-gradient(
-			to right,
-			transparent,
-			transparent,
-			#6937bf,
-			#d71e93,
-			transparent,
-			transparent,
-			#d71e93,
-			#6937bf,
-			transparent,
-			transparent
-		);
+		border-image-source: linear-gradient(to right, transparent, transparent, #6937bf, #d71e93, transparent, transparent, #d71e93, #6937bf, transparent, transparent);
 	}
 
 	.text {
