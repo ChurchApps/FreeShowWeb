@@ -3,7 +3,7 @@ title: Smart
 description: Smart Mode transcribes your microphone input to text (STT), and suggests relevant actions based on what is heard. Can also be linked to LLM models for better understanding and context.
 ---
 
-# Functions
+# Smart
 
 > Smart Mode transcribes your microphone input to text (STT), and suggests relevant actions based on what is heard. Can also be linked to LLM models for better understanding and context.
 
@@ -23,6 +23,8 @@ It's useful for auto presenting scriptures if you use API Scriptures.
 You can choose one of the online providers, or run one yourself locally using "Ollama".
 
 #### Ollama
+
+If you want to use LLM features, and run locally, here's a guide to set up Ollama:
 
 Go to [ollama.com](https://ollama.com/), click "Download" and install the program. Then load any model of choice.
 
