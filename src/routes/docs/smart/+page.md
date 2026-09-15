@@ -34,6 +34,6 @@ The recommended one is "Gemma 3 4B", enter "ollama pull gemma3:4b" in Ollama to 
 
 Currently it's main feature is to be able to suggest or auto present scripture verses, based on your installed scriptures, you should import and use local XML Bibles.
 
-For example if you say "John three sixteen" or "John chapter three verse sixteen" it should suggest "John 3:16".
+For example if you say "John three sixteen" or "John chapter three verse sixteen" it should suggest "John 3:16". Or you can read any verse content and it should detect the verse.
 
 You can make it auto present if the confidence is above a certain threshold.

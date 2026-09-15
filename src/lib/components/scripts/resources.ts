@@ -139,12 +139,6 @@ export const scriptures = [
 	// 	url: 'https://github.com/Beblia/Holy-Bible-XML-Format',
 	// 	description: '900+ Beblia XML Bibles'
 	// },
-	{
-		title: 'Zefania - aJaytheCEO',
-		url: 'https://www.ajaytheceo.com/digital/bibles',
-		description: '25+ Zefania/OpenSong XML Bibles'
-		// NIV is OpenSong
-	}
 ];
 
 export const tools = [
