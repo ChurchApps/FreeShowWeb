@@ -35,6 +35,8 @@ See [this](./integrations#planning-center).
 
 ### CCLI Integration?
 
+Via SongSelect it's pretty straight forward to import lyrics. On the SongSelect lyrics page, hit the "Copy" button, and paste into the "Quick lyrics" area in FreeShow when creating a new show.
+
 Unfortunately CCLI has discontinued their API, meaning it's impossible for us to add integration. They still support programs that already has used their API, but are unwilling to collaborate with us. Read [more here](https://github.com/ChurchApps/FreeShow/issues/572#issuecomment-2163179642).
 
 ### Move data between computers
