@@ -34,6 +34,11 @@
 	function triggerAPI(action: string, data: any = {}) {
 		API.sendHTTP(action, data)
 		// API.sendREST(action, data); needs cors for browser
+
+		// fetch(`http://localhost:5506?auth=${AUTH_KEY}&action=${action}&data=${JSON.stringify(data)}`)
+		// 	.then((response) => response.json())
+		// 	.then((data) => console.log("API response:", data))
+		// 	.catch((err) => console.error("Error triggering API action:", err))
 	}
 
 	// WIP check/alert connection status
@@ -205,26 +210,39 @@
 
 	<p>
 		Make sure the WebSocket/REST API is active in the FreeShow "<a href="/docs/connecting">Connections</a>" settings!
+		<br />
+		If an optional password (auth key) is configured, <code>401</code> will be returned if an auth key is not provided.
 	</p>
 
 	<!-- WIP remake this on value update? -->
 	<!-- {#key url || port} -->
 	<h5>HTTP</h5>
 	<pre><code class="language-js">
-    {`fetch(\`${getUrl(true)}?action=\${ACTION_ID}&data=\${JSON.stringify(data)}\`)`}
+	{`fetch(\`${getUrl(true)}?action=\${ACTION_ID}&data=\${JSON.stringify(data)}&auth=\${AUTH_KEY}\`)`}
 	</code></pre>
 
 	<h5>REST</h5>
 	<p>Note: Must be a <b>POST</b> request.</p>
 	<pre><code class="language-js">
-    {`fetch("${getUrl(true)}", { method: "POST", body: JSON.stringify({ action: ACTION_ID, ...data }) })`}
+	{`fetch("${getUrl(true)}", {
+		method: "POST",
+		headers: { "Authorization": \`Bearer \${AUTH_KEY}\` },
+		body: JSON.stringify({ action: ACTION_ID, ...data })
+	})`}
 	</code></pre>
 
 	<h5>WebSocket</h5>
 	<pre><code class="language-js">
-    {`let socket = io.connect("${getUrl()}", { transports: ["websocket"] })
-    socket.emit("data", JSON.stringify({ action: ACTION_ID, ...data }))`}
-    </code></pre>
+	{`let socket = io.connect("${getUrl()}", { transports: ["websocket"], auth: { token: AUTH_KEY } })
+	socket.emit("data", JSON.stringify({ action: ACTION_ID, ...data }))`}
+	</code></pre>
+
+	<h5>OSC (Open Sound Control)</h5>
+	<pre><code class="language-js">
+	{`Send to UDP port with JSON payload or extra argument:
+	Address: /freeshow/\${ACTION_ID}
+	Argument: JSON.stringify({ auth: AUTH_KEY, ...data })`}
+	</code></pre>
 	<!-- {/key} -->
 
 	<p>
