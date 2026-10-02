@@ -23,6 +23,10 @@ This is for adding images or videos to your slide.
 
 Load a website or a local html file. You can navigate this in the output window.
 
+Turn on **Send next/previous slide to website** to step through a web presentation (e.g. a [Canva link](./media#presenting-a-canva-link) or published Google Slides): while the slide is live, next/previous slide goes to the website instead of changing the FreeShow slide.
+
+Websites stay loaded between slides, so going back to a website slide shows it where you left it. Right click a slide and choose **Refresh website** to reload it.
+
 ### Timer
 
 This is for adding a timer to your slide, that can be controlled from [Timers](./functions#timers) under the "Functions" tab in the drawer. You can also change the type to show a line or circle going from 100% filled to 0%.
