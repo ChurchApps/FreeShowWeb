@@ -37,7 +37,7 @@ This is the quickest way to show a Canva presentation, e.g. one a guest speaker 
 2. Choose **Embed** and copy the **Smart embed link**. A view link works too, as long as the design is shared with **Anyone with the link**.
 3. In FreeShow, go to **Media** > **Online** > **Canva**, paste the link under **Present a Canva design**, optionally give it a name, and click **Add as show**. (If your account is connected, use the **Canva link** button at the bottom instead.)
 
-This creates a show with one slide that plays the design as a [website item](./items#website). When the slide is live, next/previous slide (keyboard, clicker, remote) moves through the Canva pages. The design stays loaded, so you can leave it for another show and come back to the same page. Right click the slide and choose **Refresh website** to start over.
+This creates a show with one slide that plays the design as a [website item](./items#website). When the slide is live, next/previous slide (keyboard, clicker, remote) moves through the Canva pages. The design stays loaded, so you can leave it for another show and come back to the same page. Under the output preview you also get previous, next and refresh buttons for it.
 
 Edit links (ending in `/edit`) and short `canva.link` links don't work. Use the Smart embed link or the full view link. A link can only be presented live; to import the slides as images, connect your account below.
 

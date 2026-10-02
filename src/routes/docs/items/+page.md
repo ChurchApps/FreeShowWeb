@@ -25,7 +25,7 @@ Load a website or a local html file. You can navigate this in the output window.
 
 Turn on **Send next/previous slide to website** to step through a web presentation (e.g. a [Canva link](./media#presenting-a-canva-link) or published Google Slides): while the slide is live, next/previous slide goes to the website instead of changing the FreeShow slide.
 
-Websites stay loaded between slides, so going back to a website slide shows it where you left it. Right click a slide and choose **Refresh website** to reload it.
+Websites stay loaded between slides, so going back to a website slide shows it where you left it. While a website is live, the panel under the output preview has previous, next and refresh buttons for it.
 
 ### Timer
 
