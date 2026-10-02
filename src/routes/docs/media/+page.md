@@ -25,9 +25,21 @@ In **YouTube** and **Vimeo** you have to add you own videos by clicking "Add" at
 
 In **Pixabay** or **Unsplash** you can search for any images or videos by using the [drawer search](./drawer#drawer-search). Please note that you need internet access to use these elements.
 
-In **Canva** you can connect to your account and drag in designs you own directly as images. See the steps below on how to connect.
+In **Canva** you can present a design from a link (live, with videos and animations, no account needed), or connect to your account and drag in designs you own directly as images. See the steps below.
 
 Want to get videos from another platform? Send an email to [dev@freeshow.app](mailto:dev@freeshow.app). :)
+
+### Presenting a Canva link
+
+This is the quickest way to show a Canva presentation, e.g. one a guest speaker has shared with you. It doesn't need a Canva account or API key, and videos and animations keep working.
+
+1. In Canva, open the design and click **Share**.
+2. Choose **Embed** and copy the **Smart embed link**. A view link works too, as long as the design is shared with **Anyone with the link**.
+3. In FreeShow, go to **Media** > **Online** > **Canva**, paste the link under **Present a Canva design**, optionally give it a name, and click **Add as show**. (If your account is connected, use the **Canva link** button at the bottom instead.)
+
+This creates a show with one slide that plays the design as a [website item](./items#website). When the slide is live, next/previous slide (keyboard, clicker, remote) moves through the Canva pages. The design stays loaded, so you can leave it for another show and come back to the same page. Under the output preview you also get previous, next and refresh buttons for it.
+
+Edit links (ending in `/edit`) and short `canva.link` links don't work. Use the Smart embed link or the full view link. A link can only be presented live; to import the slides as images, connect your account below.
 
 ### Connecting to Canva
 
