@@ -1,0 +1,20 @@
+User-agent: *
+Disallow: /auth_redirect
+Disallow: /downloading
+Disallow: /kit-docs/
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /xmlrpc.php
+Disallow: /.env
+Disallow: /.git/
+Disallow: /phpmyadmin/
+Disallow: /vendor/
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: CCBot
+Disallow: /

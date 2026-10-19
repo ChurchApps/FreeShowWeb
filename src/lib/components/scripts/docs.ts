@@ -1,7 +1,6 @@
 import type { SidebarConfig } from "@svelteness/kit-docs"
 
-export const sidebar: SidebarConfig = {
-	links: {
+const links: SidebarConfig["links"] = {
 		"Getting started": [
 			{ title: "Introduction", slug: "/docs/introduction" },
 			{ title: "Features", slug: "/docs/features" }
@@ -79,5 +78,18 @@ export const sidebar: SidebarConfig = {
 			// { title: '.theme', slug: '/docs/format-theme' }, // "fstheme", "theme", "json"
 			{ title: ".fsb", slug: "/docs/format-bible" }
 		]
-	}
 }
+
+export const sidebar: SidebarConfig = { links }
+
+export const docsSlugs = Object.values(links)
+	.flat()
+	.map((entry) => entry.slug.replace(/^\/docs\//, ""))
+
+export const docsSidebarDirs = Array.from(
+	new Set(
+		docsSlugs
+			.map((slug) => slug.split("/")[0])
+			.filter(Boolean)
+	)
+)

@@ -231,7 +231,7 @@
 	})`}
 	</code></pre>
 
-	<h5>WebSocket</h5>
+	<h5>WebSocket (Socket.IO)</h5>
 	<pre><code class="language-js">
 	{`let socket = io.connect("${getUrl()}", { transports: ["websocket"], auth: { token: AUTH_KEY } })
 	socket.emit("data", JSON.stringify({ action: ACTION_ID, ...data }))`}
