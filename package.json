@@ -15,6 +15,7 @@
 	"devDependencies": {
 		"@iconify-json/ri": "^1.1.12",
 		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/adapter-static": "^2.0.3",
 		"@sveltejs/kit": "^1.20.4",
 		"@svelteness/kit-docs": "^1.1.5",
 		"@typescript-eslint/eslint-plugin": "^6.0.0",
@@ -36,7 +37,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltejs/adapter-netlify": "^2.0.8",
 		"freeshow-api": "^1.0.6",
 		"svelte-icons-pack": "^2.1.0"
 	}
