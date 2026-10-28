@@ -3,7 +3,7 @@
 	import Link from "$lib/components/inputs/Link.svelte"
 	import Icon from "$lib/components/main/Icon.svelte"
 	import Section from "$lib/components/main/Section.svelte"
-	import { convertSize, getArchitecture, getAssets, getLatest, getLatestPrerelease, getOS, getReleases, isLikelyOldWindows, osIcons, toDate, type Asset, type Release } from "$lib/components/scripts/releases"
+	import { convertSize, getArchitecture, getAssets, getLatest, getLatestPrerelease, getOS, getReleases, isLikelyOldMacos, isLikelyOldWindows, osIcons, toDate, type Asset, type Release } from "$lib/components/scripts/releases"
 	import { onMount } from "svelte"
 	import { fade } from "svelte/transition"
 
@@ -141,27 +141,26 @@
 			<p style="text-align: center;opacity: 0.8;">Getting releases! Please wait...</p>
 		{/if}
 
-		<!-- Download the last supported version for macOS 10.15 (Catalina) -->
-		{#if currentAssets.length && activeOS === "MacOS" && systemOS === "MacOS" && currentArch !== "arm"}
-			<Link link="https://github.com/ChurchApps/FreeShow/releases/tag/v1.4.9" target="_blank">
+		<!-- Download the last supported version for Windows 7/8 -->
+		{#if currentAssets.length && activeOS === "Windows" && systemOS === "Windows" && isLikelyOldWindows()}
+			<Link link="/docs/windows#older-hardware" target="_blank">
 				<div class="center" style="justify-content: left;">
 					<Icon icon="archive" size={1.2} />
 					<p style="text-align: left;">
-						macOS 10.15
-						<span style="font-size: 0.9em;opacity: 0.8;padding-left: 5px;"> Use this version if you need FreeShow on an old OS! </span>
+						Windows 7/8
+						<span style="font-size: 0.9em;opacity: 0.8;padding-left: 5px;"> See versions available for older Windows versions </span>
 					</p>
 				</div>
 			</Link>
 		{/if}
-		<!-- Download the last supported version for Windows 7/8, and macOS 10.13 & 10.14 -->
-		<!-- || activeOS === "MacOS" -->
-		{#if currentAssets.length && activeOS === "Windows" && systemOS === "Windows" && isLikelyOldWindows()}
-			<Link link="https://github.com/ChurchApps/FreeShow/releases/tag/v1.2.4" target="_blank">
+		<!-- Download the last supported version for macOS 10 (Catalina), macOS 11 (Big Sur) & 12 (Monterey) -->
+		{#if currentAssets.length && activeOS === "MacOS" && systemOS === "MacOS" && isLikelyOldMacos()}
+			<Link link="/docs/macos#older-hardware" target="_blank">
 				<div class="center" style="justify-content: left;">
 					<Icon icon="archive" size={1.2} />
 					<p style="text-align: left;">
-						{activeOS === "Windows" ? "Windows 7/8" : "macOS 10.13 & 10.14"}
-						<span style="font-size: 0.9em;opacity: 0.8;padding-left: 5px;"> Use this version if you need FreeShow on an old OS! </span>
+						macOS 10-12
+						<span style="font-size: 0.9em;opacity: 0.8;padding-left: 5px;"> See versions available for older macOS versions </span>
 					</p>
 				</div>
 			</Link>

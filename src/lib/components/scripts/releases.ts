@@ -166,3 +166,15 @@ export function isLikelyOldWindows() {
 
 	return true
 }
+
+export function isLikelyOldMacos() {
+	const ua = navigator.userAgent
+
+	// not Mac
+	if (!/Macintosh|Mac OS X/i.test(ua)) return false
+
+	// if the browser supports modern multi-screen APIs, they are likely on macOS 13+
+	if ("ScreenDetailed" in window || "getScreenDetails" in window) return false
+
+	return true
+}

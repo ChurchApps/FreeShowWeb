@@ -36,6 +36,8 @@ _For advanced users_
 
 ### Older hardware
 
+-   macOS 12: Use [version 1.6.7](https://github.com/ChurchApps/FreeShow/releases/tag/v1.6.7)
+-   macOS 11: Use [version 1.6.7](https://github.com/ChurchApps/FreeShow/releases/tag/v1.6.7)
 -   macOS 10.15: Use [version 1.4.9](https://github.com/ChurchApps/FreeShow/releases/tag/v1.4.9)
 -   macOS 10.14: Use [version 1.2.4](https://github.com/ChurchApps/FreeShow/releases/tag/v1.2.4)
 -   macOS 10.13: Use [version 1.2.4](https://github.com/ChurchApps/FreeShow/releases/tag/v1.2.4)
