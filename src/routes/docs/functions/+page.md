@@ -27,6 +27,10 @@ Enable "Overflow when reached end" to allow the time to go past the end time.
 
 In the overlays tab, there is a section called "Variables". Here you can currently create either text, or number. Use them to easily change the number or text value in any [variable item](./items#variable), on any slide. Most commonly used for a score counter.
 
+## Scenes
+
+Scenes operate as a form of global snapshot for your screen layout. They are designed to change the information on the outputs while avoiding losing information in the preview monitors. Scenes allow for the global environment behaviors to  give independent control over template formatting and layer visibility across multiple displays instantly without impacting what the operator will see. 
+
 ## Interactions
 
 Create a poll or quiz to interact with your audience.
